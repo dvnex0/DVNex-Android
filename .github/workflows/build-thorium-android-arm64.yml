@@ -49,36 +49,67 @@ jobs:
       - name: Fetch Chromium source without full Git history
         working-directory: ${{ github.workspace }}
         run: |
-          mkdir -p "$CR_DIR"
+          mkdir -p "$(dirname "$CR_DIR")"
           cd "$CR_DIR/.."
           fetch --nohooks --no-history chromium
 
       - name: Configure Chromium checkout for Android
         run: |
           python3 - <<'PY'
+          import ast
           from pathlib import Path
-          p = Path("chromium/.gclient")
-          s = p.read_text()
-          if 'target_os = ["android"]' not in s and "target_os = ['android']" not in s:
-              s += '\\ntarget_os = ["android"]\\n'
-          if "checkout_pgo_profiles" not in s:
-              marker = '"name": "src"'
-              if marker not in s:
-                  marker = "'name': 'src'"
-              i = s.find(marker)
-              if i < 0:
-                  raise SystemExit("Could not find Chromium src solution in .gclient")
-              start = s.rfind("{", 0, i)
-              end = s.find("}", i)
-              if start < 0 or end < 0:
-                  raise SystemExit("Could not locate Chromium src solution dictionary")
-              block = s[start:end]
-              if "custom_vars" not in block:
-                  s = s[:end] + ',\\n        "custom_vars": {"checkout_pgo_profiles": True}' + s[end:]
-              else:
-                  raise SystemExit("custom_vars exists; refusing unsafe automatic edit")
-          p.write_text(s)
-          print(p.read_text())
+
+          path = Path("chromium/.gclient")
+          source = path.read_text()
+          tree = ast.parse(source)
+          solutions = next(
+              node.value for node in tree.body
+              if isinstance(node, ast.Assign)
+              and any(isinstance(t, ast.Name) and t.id == "solutions" for t in node.targets)
+          )
+          solution = next(
+              item for item in solutions.elts
+              if isinstance(item, ast.Dict)
+              and any(
+                  isinstance(k, ast.Constant) and k.value == "name"
+                  and isinstance(v, ast.Constant) and v.value == "src"
+                  for k, v in zip(item.keys, item.values)
+              )
+          )
+          custom_vars = next(
+              (v for k, v in zip(solution.keys, solution.values)
+               if isinstance(k, ast.Constant) and k.value == "custom_vars"),
+              None,
+          )
+          lines = source.splitlines(keepends=True)
+
+          def absolute_offset(line, column):
+              return sum(len(x) for x in lines[:line - 1]) + column
+
+          if custom_vars is None:
+              pos = absolute_offset(solution.end_lineno, solution.end_col_offset - 1)
+              before = source[:pos].rstrip()
+              separator = "" if before.endswith(",") else ","
+              source = source[:pos] + separator + '\n        "custom_vars": {"checkout_pgo_profiles": True},' + source[pos:]
+          else:
+              if not isinstance(custom_vars, ast.Dict):
+                  raise SystemExit("Unexpected custom_vars format in .gclient")
+              has_pgo = any(
+                  isinstance(k, ast.Constant) and k.value == "checkout_pgo_profiles"
+                  for k in custom_vars.keys
+              )
+              if not has_pgo:
+                  pos = absolute_offset(custom_vars.end_lineno, custom_vars.end_col_offset - 1)
+                  before = source[:pos].rstrip()
+                  separator = "" if before.endswith(",") or before.endswith("{") else ","
+                  source = source[:pos] + separator + '"checkout_pgo_profiles": True' + source[pos:]
+
+          if 'target_os = ["android"]' not in source and "target_os = ['android']" not in source:
+              source += '\ntarget_os = ["android"]\n'
+
+          ast.parse(source)
+          path.write_text(source)
+          print(source)
           PY
           gclient sync --with_branch_heads --with_tags --nohooks --delete_unversioned_trees
 
