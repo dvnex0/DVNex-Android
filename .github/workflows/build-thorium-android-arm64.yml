@@ -16,7 +16,6 @@ jobs:
       THOR_DIR: ${{ github.workspace }}/thorium
       CR_DIR: ${{ github.workspace }}/chromium/src
       DEPOT_TOOLS_DIR: ${{ github.workspace }}/depot_tools
-      PATH: ${{ github.workspace }}/depot_tools:${{ env.PATH }}
 
     steps:
       - name: Free runner disk space
