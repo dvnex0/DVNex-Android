@@ -154,6 +154,48 @@ df -h /
 echo "=== Apply Thorium Android patches and resources ==="
 python3 setup.py --android
 
+echo "=== Remove obsolete launcher resources excluded by Thorium branding ==="
+python3 - "$CR_DIR" <<'PY'
+import sys
+from pathlib import Path
+
+chromium = Path(sys.argv[1]).resolve()
+launcher = chromium / "chrome/android/java/res_base/drawable/ic_launcher_round.xml"
+
+if not launcher.is_file():
+    raise SystemExit(f"Expected patched Android launcher XML is missing: {launcher}")
+
+launcher_source = launcher.read_text()
+legacy_references = (
+    "@mipmap/layered_app_icon_background",
+    "@mipmap/layered_app_icon_foreground",
+)
+if any(reference in launcher_source for reference in legacy_references):
+    raise SystemExit(
+        "Refusing to remove legacy launcher resources: the patched launcher "
+        "still references them."
+    )
+
+obsolete_resources = (
+    "chrome/android/java/res_chromium_base/mipmap-hdpi/layered_app_icon_background.png",
+    "chrome/android/java/res_chromium_base/mipmap-mdpi/layered_app_icon_background.png",
+    "chrome/android/java/res_chromium_base/mipmap-xhdpi/layered_app_icon_background.png",
+    "chrome/android/java/res_chromium_base/mipmap-xxhdpi/layered_app_icon_background.png",
+    "chrome/android/java/res_chromium_base/mipmap-xxxhdpi/layered_app_icon_background.png",
+    "chrome/android/java/res_chromium_base/mipmap-nodpi/layered_app_icon_foreground.xml",
+)
+
+for relative_path in obsolete_resources:
+    resource = chromium / relative_path
+    if resource.exists():
+        resource.unlink()
+        print(f"Removed unused resource: {relative_path}")
+    else:
+        print(f"Already absent: {relative_path}")
+
+print("Verified Thorium launcher does not reference removed resources.")
+PY
+
 echo "=== Fix Thorium ThinLTO GN scope for Android ==="
 python3 "$ROOT/.github/scripts/fix-thorium-thinlto.py" "$CR_DIR"
 
@@ -170,13 +212,13 @@ echo "=== Select safe parallelism from runner RAM ==="
 MEM_KB="$(awk '/^MemTotal:/ {print $2}' /proc/meminfo)"
 BUILD_JOBS=2
 if (( MEM_KB >= 14 * 1024 * 1024 )); then
-  BUILD_JOBS=3
+  BUILD_JOBS=4
 fi
 echo "Runner RAM: $((MEM_KB / 1024 / 1024)) GiB; Ninja jobs: $BUILD_JOBS"
 
-echo "=== Compile Thorium Android ARM64 APK targets ==="
+echo "=== Compile only the Thorium browser APK (skip Content Shell and WebView) ==="
 cd "$THOR_DIR"
-python3 build.py --expect-os android --expect-cpu arm64 -j "$BUILD_JOBS"
+python3 build.py --expect-os android --expect-cpu arm64 --target chrome_public_apk -j "$BUILD_JOBS"
 
 echo "=== APK outputs ==="
 if [ -d "$CR_DIR/out/thorium" ]; then
