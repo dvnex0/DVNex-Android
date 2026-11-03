@@ -39,6 +39,12 @@ jobs:
           echo "$DEPOT_TOOLS_DIR" >> "$GITHUB_PATH"
           echo "DEPOT_TOOLS_UPDATE=0" >> "$GITHUB_ENV"
 
+      - name: Bootstrap depot_tools
+        run: |
+          "$DEPOT_TOOLS_DIR/ensure_bootstrap"
+          test -s "$DEPOT_TOOLS_DIR/python3_bin_reldir.txt"
+          python3 --version
+
       - name: Clone pinned Thorium M150 source
         run: |
           git clone --branch M150 --single-branch https://github.com/Alex313031/thorium.git "$THOR_DIR"
