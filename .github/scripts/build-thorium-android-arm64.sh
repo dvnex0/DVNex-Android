@@ -5,6 +5,7 @@ ROOT="${GITHUB_WORKSPACE:-$(pwd)}"
 THOR_DIR="$ROOT/thorium"
 CR_DIR="$ROOT/chromium/src"
 DEPOT_TOOLS_DIR="$ROOT/depot_tools"
+export THOR_DIR CR_DIR DEPOT_TOOLS_DIR
 THORIUM_CHROMIUM_TAG="150.0.7871.129"
 
 cd "$ROOT"
