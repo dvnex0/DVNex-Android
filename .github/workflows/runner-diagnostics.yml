@@ -1,0 +1,51 @@
+name: DVNex - Diagnostico do Runner Gratuito
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    name: Verificar recursos do GitHub Actions
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+
+    steps:
+      - name: Informacoes iniciais
+        run: |
+          echo "=== SISTEMA ==="
+          uname -a
+          lsb_release -a || true
+          echo "=== CPU ==="
+          nproc
+          lscpu | grep -E 'Model name|CPU\(s\)|Architecture' || true
+          echo "=== MEMORIA ==="
+          free -h
+          echo "=== DISCO ANTES DA LIMPEZA ==="
+          df -h /
+
+      - name: Liberar caches e componentes grandes pre-instalados
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
+          sudo rm -rf /usr/local/share/boost
+          sudo rm -rf /usr/local/.ghcup
+          sudo apt-get clean
+          echo "=== DISCO DEPOIS DA LIMPEZA ==="
+          df -h /
+          echo "=== ESPACO DISPONIVEL EM GB ==="
+          df -BG --output=avail / | tail -n 1
+
+      - name: Resultado para avaliar Chromium/Thorium
+        run: |
+          AVAILABLE_GB=$(df -BG --output=avail / | tail -n 1 | tr -dc '0-9')
+          echo "Espaco livre final: ${AVAILABLE_GB} GB"
+          if [ "${AVAILABLE_GB}" -ge 75 ]; then
+            echo "Resultado: espaco suficiente para avancar para uma prova de compilacao."
+          else
+            echo "Resultado: espaco abaixo dos 75 GB recomendados pela documentacao do Thorium."
+            echo "Nao foi iniciada nenhuma compilacao pesada."
+          fi
