@@ -1,10 +1,11 @@
 name: DVNex - Build Thorium Android ARM64
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
+
+concurrency:
+  group: thorium-android-arm64
+  cancel-in-progress: true
 
 permissions:
   contents: read
