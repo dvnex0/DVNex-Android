@@ -84,9 +84,48 @@ echo "=== Install Chromium Linux build dependencies ==="
 cd "$CR_DIR"
 ./build/install-build-deps.sh --arm --chromeos-fonts
 
+run_version_sync_with_retry() {
+  local attempt=1
+  local max_attempts=4
+  local wait_seconds=60
+  local log_file="/tmp/dvnex-thorium-version-sync.log"
+  local status=1
+
+  while (( attempt <= max_attempts )); do
+    echo "=== Thorium dependency sync: attempt ${attempt}/${max_attempts} ==="
+
+    if python3 "$THOR_DIR/version.py" >"$log_file" 2>&1; then
+      cat "$log_file"
+      return 0
+    else
+      status=$?
+      cat "$log_file"
+    fi
+
+    if ! grep -Eqi \
+      'HTTP 429|HTTP 5[0-9][0-9]|RPC failed|Connection reset|temporarily unavailable|early EOF' \
+      "$log_file"; then
+      echo "Thorium sync failed for a non-transient reason; not retrying." >&2
+      return "$status"
+    fi
+
+    if (( attempt == max_attempts )); then
+      echo "Thorium sync still failing after ${max_attempts} attempts." >&2
+      return "$status"
+    fi
+
+    echo "Temporary Git/network failure detected; retrying in ${wait_seconds}s..."
+    sleep "$wait_seconds"
+    attempt=$((attempt + 1))
+    wait_seconds=$((wait_seconds * 2))
+  done
+
+  return "$status"
+}
+
 echo "=== Pin Chromium revision and download Android dependencies ==="
 cd "$THOR_DIR"
-python3 version.py
+run_version_sync_with_retry
 df -h /
 
 echo "=== Apply Thorium Android patches and resources ==="
