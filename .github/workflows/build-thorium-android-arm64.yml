@@ -148,10 +148,20 @@ jobs:
 
       - name: Show APK outputs
         if: always()
-        working-directory: ${{ env.CR_DIR }}
+        working-directory: ${{ github.workspace }}
         run: |
           echo "=== APK FILES ==="
-          find out/thorium -type f -name '*.apk' -print || true
+          if [ -d "$CR_DIR/out/thorium" ]; then
+            find "$CR_DIR/out/thorium" -type f -name '*.apk' -print || true
+          else
+            echo "Chromium checkout/build directory does not exist: $CR_DIR"
+          fi
+          echo "=== CHECKOUT STATUS ==="
+          if [ -d "$CR_DIR" ]; then
+            echo "Chromium source checkout exists."
+          else
+            echo "Chromium source checkout was not created."
+          fi
           echo "=== DISK ==="
           df -h /
 
