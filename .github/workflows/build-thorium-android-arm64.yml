@@ -16,6 +16,7 @@ jobs:
       THOR_DIR: ${{ github.workspace }}/thorium
       CR_DIR: ${{ github.workspace }}/chromium/src
       DEPOT_TOOLS_DIR: ${{ github.workspace }}/depot_tools
+      THORIUM_CHROMIUM_TAG: "150.0.7871.129"
 
     steps:
       - name: Free runner disk space
@@ -116,18 +117,38 @@ jobs:
           path.write_text(source)
           print(source)
           PY
-          gclient sync --with_branch_heads --with_tags --nohooks --delete_unversioned_trees
+          python3 - "$THOR_DIR/version.py" "$THORIUM_CHROMIUM_TAG" <<'PY'
+          import re
+          import sys
+          from pathlib import Path
+
+          version_source = Path(sys.argv[1]).read_text()
+          expected_tag = sys.argv[2]
+          match = re.search(
+              r'^THORIUM_VERSION\s*=\s*["\']([^"\']+)["\']',
+              version_source,
+              re.MULTILINE,
+          )
+          if not match or match.group(1) != expected_tag:
+              actual = match.group(1) if match else "not found"
+              raise SystemExit(
+                  f"Thorium version mismatch: expected {expected_tag}, found {actual}"
+              )
+          print(f"Verified Thorium Chromium tag: {expected_tag}")
+          PY
+          git -C "$CR_DIR" fetch --depth=1 --no-tags origin \
+            "refs/tags/${THORIUM_CHROMIUM_TAG}:refs/tags/${THORIUM_CHROMIUM_TAG}"
+          git -C "$CR_DIR" show-ref --verify --quiet "refs/tags/${THORIUM_CHROMIUM_TAG}"
 
       - name: Install Chromium Linux build dependencies
         working-directory: ${{ env.CR_DIR }}
         run: |
-          ./build/install-build-deps.sh --no-nacl
+          ./build/install-build-deps.sh --arm --chromeos-fonts
 
       - name: Pin Chromium revision and download Android dependencies
         working-directory: ${{ env.THOR_DIR }}
         run: |
           python3 version.py
-          gclient runhooks
           df -h /
 
       - name: Apply Thorium Android patches and resources
@@ -146,11 +167,9 @@ jobs:
           df -h /
 
       - name: Compile Thorium Android ARM64 APK targets
-        working-directory: ${{ env.CR_DIR }}
+        working-directory: ${{ env.THOR_DIR }}
         run: |
-          export NINJA_SUMMARIZE_BUILD=1
-          export NINJA_STATUS='[%r processes, %f/%t @ %o/s | %e sec.] '
-          autoninja -C out/thorium chrome_public_apk content_shell_apk system_webview_64_apk -j2
+          python3 build.py --expect-os android --expect-cpu arm64 -j 2
 
       - name: Show APK outputs
         if: always()
