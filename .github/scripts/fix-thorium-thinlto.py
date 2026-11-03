@@ -1,3 +1,4 @@
+
 import sys
 from pathlib import Path
 
@@ -6,7 +7,26 @@ if len(sys.argv) != 2:
 
 chromium_src = Path(sys.argv[1]).resolve()
 path = chromium_src / "build/config/compiler/BUILD.gn"
+
+if not path.is_file():
+    raise SystemExit(f"Chromium GN file not found: {path}")
+
 source = path.read_text()
+
+# Restrict all modifications to thinlto_optimize_max.
+config_marker = 'config("thinlto_optimize_max") {'
+end_marker = "# This provides the basic options to select the target CPU and ABI."
+
+if source.count(config_marker) != 1:
+    raise SystemExit("Expected exactly one thinlto_optimize_max configuration.")
+
+start = source.index(config_marker)
+end = source.find(end_marker, start)
+
+if end == -1:
+    raise SystemExit("Could not locate the end of thinlto_optimize_max.")
+
+block = source[start:end]
 
 old_assignment = """    _thorium_x86_thinlto =
         is_full_optimization_build && lto_opt_level == 2 &&
@@ -14,22 +34,24 @@ old_assignment = """    _thorium_x86_thinlto =
 
     if (is_win) {
 """
+
 new_assignment = """    if (is_win) {
       _thorium_x86_thinlto =
           is_full_optimization_build && lto_opt_level == 2 &&
           (current_cpu == "x86" || current_cpu == "x64")
 """
 
-if source.count(old_assignment) != 1:
+if block.count(old_assignment) != 1:
     raise SystemExit(
-        "Expected exactly one Thorium ThinLTO assignment before the Windows branch; "
-        "source does not match the audited patch."
+        "Expected exactly one ThinLTO assignment inside thinlto_optimize_max."
     )
-source = source.replace(old_assignment, new_assignment, 1)
+
+block = block.replace(old_assignment, new_assignment, 1)
 
 old_linux = """    } else if (is_linux) {
       ldflags = [ "-Wl,--lto-O" + lto_opt_level ]
 """
+
 new_linux = """    } else if (is_linux) {
       _thorium_x86_thinlto =
           is_full_optimization_build && lto_opt_level == 2 &&
@@ -37,16 +59,24 @@ new_linux = """    } else if (is_linux) {
       ldflags = [ "-Wl,--lto-O" + lto_opt_level ]
 """
 
-if source.count(old_linux) != 1:
+if block.count(old_linux) != 1:
     raise SystemExit(
-        "Expected exactly one Thorium Linux ThinLTO branch; "
-        "source does not match the audited patch."
+        "Expected exactly one Linux ThinLTO branch inside thinlto_optimize_max."
     )
-source = source.replace(old_linux, new_linux, 1)
+
+block = block.replace(old_linux, new_linux, 1)
 
 expected = "is_full_optimization_build && lto_opt_level == 2"
-if source.count(expected) != 2:
+
+if block.count(expected) != 2:
     raise SystemExit("ThinLTO branch validation failed.")
 
+if block.count("_thorium_x86_thinlto =") != 2:
+    raise SystemExit("ThinLTO variable scope validation failed.")
+
+# Preserve all other GN configurations unchanged.
+source = source[:start] + block + source[end:]
+
 path.write_text(source)
-print("Fixed Thorium ThinLTO temporary-variable scope for Android.")
+
+print("Fixed Thorium ThinLTO variable scope for Android.")
