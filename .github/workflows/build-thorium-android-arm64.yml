@@ -52,6 +52,18 @@ jobs:
           git -C "$THOR_DIR" checkout a212fdaa6b9de74d08e68390137cf08d8e41017a
           git -C "$THOR_DIR" submodule update --init --recursive
 
+      - name: Preflight pinned Thorium build configuration
+        run: |
+          python3 -m py_compile "$THOR_DIR/version.py" "$THOR_DIR/setup.py" "$THOR_DIR/build.py"
+          test -s "$THOR_DIR/arm/android/arm64_args.gn"
+          python3 "$THOR_DIR/build.py" --help > /tmp/dvnex-build-help.txt
+          grep -q -- "--expect-os" /tmp/dvnex-build-help.txt
+          grep -q -- "--expect-cpu" /tmp/dvnex-build-help.txt
+          python3 "$THOR_DIR/setup.py" --help > /tmp/dvnex-setup-help.txt
+          grep -q -- "--android" /tmp/dvnex-setup-help.txt
+          git ls-remote --exit-code --refs https://chromium.googlesource.com/chromium/src.git \
+            "refs/tags/$THORIUM_CHROMIUM_TAG"
+
       - name: Fetch Chromium source without full Git history
         working-directory: ${{ github.workspace }}
         run: |
