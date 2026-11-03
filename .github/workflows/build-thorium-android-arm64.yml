@@ -1,0 +1,135 @@
+name: DVNex - Build Thorium Android ARM64
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-android-arm64:
+    name: Build Thorium base for Android ARM64
+    runs-on: ubuntu-24.04
+    timeout-minutes: 350
+
+    env:
+      THOR_DIR: ${{ github.workspace }}/thorium
+      CR_DIR: ${{ github.workspace }}/chromium/src
+      DEPOT_TOOLS_DIR: ${{ github.workspace }}/depot_tools
+      PATH: ${{ github.workspace }}/depot_tools:${{ env.PATH }}
+
+    steps:
+      - name: Free runner disk space
+        run: |
+          sudo rm -rf /usr/share/dotnet
+          sudo rm -rf /usr/local/lib/android
+          sudo rm -rf /opt/ghc
+          sudo rm -rf /usr/local/share/boost
+          sudo rm -rf /usr/local/.ghcup
+          sudo apt-get clean
+          df -h /
+
+      - name: Install Git and Python prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git python3 python3-venv python3-pip curl
+
+      - name: Clone depot_tools
+        run: |
+          git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git "$DEPOT_TOOLS_DIR"
+          echo "$DEPOT_TOOLS_DIR" >> "$GITHUB_PATH"
+          echo "DEPOT_TOOLS_UPDATE=0" >> "$GITHUB_ENV"
+
+      - name: Clone pinned Thorium M150 source
+        run: |
+          git clone --branch M150 --single-branch https://github.com/Alex313031/thorium.git "$THOR_DIR"
+          git -C "$THOR_DIR" checkout a212fdaa6b9de74d08e68390137cf08d8e41017a
+          git -C "$THOR_DIR" submodule update --init --recursive
+
+      - name: Fetch Chromium source without full Git history
+        working-directory: ${{ github.workspace }}
+        run: |
+          mkdir -p "$CR_DIR"
+          cd "$CR_DIR/.."
+          fetch --nohooks --no-history chromium
+
+      - name: Configure Chromium checkout for Android
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("chromium/.gclient")
+          s = p.read_text()
+          if 'target_os = ["android"]' not in s and "target_os = ['android']" not in s:
+              s += '\\ntarget_os = ["android"]\\n'
+          if "checkout_pgo_profiles" not in s:
+              marker = '"name": "src"'
+              if marker not in s:
+                  marker = "'name': 'src'"
+              i = s.find(marker)
+              if i < 0:
+                  raise SystemExit("Could not find Chromium src solution in .gclient")
+              start = s.rfind("{", 0, i)
+              end = s.find("}", i)
+              if start < 0 or end < 0:
+                  raise SystemExit("Could not locate Chromium src solution dictionary")
+              block = s[start:end]
+              if "custom_vars" not in block:
+                  s = s[:end] + ',\\n        "custom_vars": {"checkout_pgo_profiles": True}' + s[end:]
+              else:
+                  raise SystemExit("custom_vars exists; refusing unsafe automatic edit")
+          p.write_text(s)
+          print(p.read_text())
+          PY
+          gclient sync --with_branch_heads --with_tags --nohooks --delete_unversioned_trees
+
+      - name: Install Chromium Linux build dependencies
+        working-directory: ${{ env.CR_DIR }}
+        run: |
+          ./build/install-build-deps.sh --no-nacl
+
+      - name: Pin Chromium revision and download Android dependencies
+        working-directory: ${{ env.THOR_DIR }}
+        run: |
+          python3 version.py
+          gclient runhooks
+          df -h /
+
+      - name: Apply Thorium Android patches and resources
+        working-directory: ${{ env.THOR_DIR }}
+        run: |
+          python3 setup.py --android
+
+      - name: Configure ARM64 release build
+        working-directory: ${{ env.CR_DIR }}
+        run: |
+          mkdir -p out/thorium
+          cp "$THOR_DIR/arm/android/arm64_args.gn" out/thorium/args.gn
+          gn gen out/thorium
+          gn args out/thorium --list > /tmp/dvnex-gn-args.txt
+          grep -E 'target_os|target_cpu|is_official_build|is_debug' out/thorium/args.gn || true
+          df -h /
+
+      - name: Compile Thorium Android ARM64 APK targets
+        working-directory: ${{ env.CR_DIR }}
+        run: |
+          export NINJA_SUMMARIZE_BUILD=1
+          export NINJA_STATUS='[%r processes, %f/%t @ %o/s | %e sec.] '
+          autoninja -C out/thorium chrome_public_apk content_shell_apk system_webview_64_apk -j2
+
+      - name: Show APK outputs
+        if: always()
+        working-directory: ${{ env.CR_DIR }}
+        run: |
+          echo "=== APK FILES ==="
+          find out/thorium -type f -name '*.apk' -print || true
+          echo "=== DISK ==="
+          df -h /
+
+      - name: Upload Android APK artifacts
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: thorium-android-arm64-base
+          path: ${{ env.CR_DIR }}/out/thorium/**/*.apk
+          if-no-files-found: error
+          retention-days: 7
