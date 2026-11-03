@@ -61,6 +61,25 @@ jobs:
           grep -q -- "--expect-cpu" /tmp/dvnex-build-help.txt
           python3 "$THOR_DIR/setup.py" --help > /tmp/dvnex-setup-help.txt
           grep -q -- "--android" /tmp/dvnex-setup-help.txt
+          python3 - "$THOR_DIR/version.py" "$THORIUM_CHROMIUM_TAG" <<'PY'
+          import re
+          import sys
+          from pathlib import Path
+
+          version_source = Path(sys.argv[1]).read_text()
+          expected_tag = sys.argv[2]
+          match = re.search(
+              r'^THORIUM_VERSION\s*=\s*"([^"]+)"',
+              version_source,
+              re.MULTILINE,
+          )
+          if not match or match.group(1) != expected_tag:
+              actual = match.group(1) if match else "not found"
+              raise SystemExit(
+                  f"Thorium version mismatch: expected {expected_tag}, found {actual}"
+              )
+          print(f"Verified Thorium Chromium tag: {expected_tag}")
+          PY
           git ls-remote --exit-code --refs https://chromium.googlesource.com/chromium/src.git \
             "refs/tags/$THORIUM_CHROMIUM_TAG"
 
@@ -128,25 +147,6 @@ jobs:
           ast.parse(source)
           path.write_text(source)
           print(source)
-          PY
-          python3 - "$THOR_DIR/version.py" "$THORIUM_CHROMIUM_TAG" <<'PY'
-          import re
-          import sys
-          from pathlib import Path
-
-          version_source = Path(sys.argv[1]).read_text()
-          expected_tag = sys.argv[2]
-          match = re.search(
-              r'^THORIUM_VERSION\s*=\s*["\']([^"\']+)["\']',
-              version_source,
-              re.MULTILINE,
-          )
-          if not match or match.group(1) != expected_tag:
-              actual = match.group(1) if match else "not found"
-              raise SystemExit(
-                  f"Thorium version mismatch: expected {expected_tag}, found {actual}"
-              )
-          print(f"Verified Thorium Chromium tag: {expected_tag}")
           PY
           git -C "$CR_DIR" fetch --depth=1 --no-tags origin \
             "refs/tags/${THORIUM_CHROMIUM_TAG}:refs/tags/${THORIUM_CHROMIUM_TAG}"
