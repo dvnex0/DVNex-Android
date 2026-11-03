@@ -1,0 +1,30 @@
+# Chromium / depot_tools checkouts
+/chromium/
+/depot_tools/
+/thorium/
+/src/
+/out/
+/.cache/
+/ccache/
+
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+*.iml
+
+# Build outputs and local secrets
+*.apk
+*.aab
+*.ap_
+*.keystore
+*.jks
+*.p12
+*.pem
+*.profdata
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
