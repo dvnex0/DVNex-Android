@@ -36,6 +36,29 @@ git clone --branch M150 --single-branch https://github.com/Alex313031/thorium.gi
 git -C "$THOR_DIR" checkout a212fdaa6b9de74d08e68390137cf08d8e41017a
 git -C "$THOR_DIR" submodule update --init --recursive
 
+echo "=== Optimize Thorium dependency sync for pinned Android build ==="
+python3 - "$THOR_DIR/version.py" <<'PY'
+import sys
+from pathlib import Path
+
+path = Path(sys.argv[1])
+source = path.read_text()
+
+old = '''            "--with_branch_heads",
+            "--with_tags",
+'''
+new = '''            "--no-history",
+'''
+
+if source.count(old) != 1:
+    raise SystemExit(
+        "Could not safely locate the pinned Thorium gclient sync arguments."
+    )
+
+path.write_text(source.replace(old, new, 1))
+print("Removed unnecessary branch-head/tag downloads; enabled shallow DEPS sync.")
+PY
+
 echo "=== Preflight pinned Thorium build configuration ==="
 python3 -m py_compile "$THOR_DIR/version.py" "$THOR_DIR/setup.py" "$THOR_DIR/build.py"
 test -s "$THOR_DIR/arm/android/arm64_args.gn"
@@ -143,9 +166,17 @@ gn args out/thorium --list > /tmp/dvnex-gn-args.txt
 grep -E 'target_os|target_cpu|is_official_build|is_debug' out/thorium/args.gn || true
 df -h /
 
+echo "=== Select safe parallelism from runner RAM ==="
+MEM_KB="$(awk '/^MemTotal:/ {print $2}' /proc/meminfo)"
+BUILD_JOBS=2
+if (( MEM_KB >= 14 * 1024 * 1024 )); then
+  BUILD_JOBS=3
+fi
+echo "Runner RAM: $((MEM_KB / 1024 / 1024)) GiB; Ninja jobs: $BUILD_JOBS"
+
 echo "=== Compile Thorium Android ARM64 APK targets ==="
 cd "$THOR_DIR"
-python3 build.py --expect-os android --expect-cpu arm64 -j 2
+python3 build.py --expect-os android --expect-cpu arm64 -j "$BUILD_JOBS"
 
 echo "=== APK outputs ==="
 if [ -d "$CR_DIR/out/thorium" ]; then
