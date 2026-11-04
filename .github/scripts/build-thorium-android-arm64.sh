@@ -19,9 +19,19 @@ sudo rm -rf /usr/local/.ghcup
 sudo apt-get clean
 df -h /
 
-echo "=== Install Git and Python prerequisites ==="
-sudo apt-get update
-sudo apt-get install -y git python3 python3-venv python3-pip curl
+echo "=== Check basic build prerequisites ==="
+if ! command -v git >/dev/null 2>&1 \
+  || ! command -v python3 >/dev/null 2>&1 \
+  || ! command -v curl >/dev/null 2>&1 \
+  || ! python3 -m pip --version >/dev/null 2>&1 \
+  || ! python3 -m venv --help >/dev/null 2>&1; then
+  echo "A required base tool is missing; installing prerequisites."
+  sudo apt-get update
+  sudo apt-get install -y git python3 python3-venv python3-pip curl
+else
+  echo "Git, Python, pip, venv and curl are already available; skipping redundant apt update/install."
+fi
+python3 --version
 
 echo "=== Restore or clone depot_tools ==="
 if [ -d "$DEPOT_TOOLS_DIR/.git" ]; then
