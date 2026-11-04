@@ -35,7 +35,7 @@ python3 --version
 
 echo "=== Restore or clone depot_tools ==="
 if [ -d "$DEPOT_TOOLS_DIR/.git" ]; then
-  echo "Reusing depot_tools restored from the CircleCI workspace."
+  echo "Reusing existing depot_tools checkout in the runner workspace."
 else
   rm -rf "$DEPOT_TOOLS_DIR"
   git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git "$DEPOT_TOOLS_DIR"
@@ -48,7 +48,7 @@ python3 --version
 
 echo "=== Restore or clone pinned Thorium M150 source ==="
 if [ -d "$THOR_DIR/.git" ]; then
-  echo "Reusing Thorium source restored from the CircleCI workspace."
+  echo "Reusing existing Thorium checkout in the runner workspace."
 else
   rm -rf "$THOR_DIR"
   git clone --branch M150 --single-branch https://github.com/Alex313031/thorium.git "$THOR_DIR"
@@ -118,7 +118,7 @@ git ls-remote --exit-code --refs https://chromium.googlesource.com/chromium/src.
 echo "=== Restore or fetch Chromium source without full Git history ==="
 mkdir -p "$(dirname "$CR_DIR")"
 if [ -d "$CR_DIR/.git" ]; then
-  echo "Reusing Chromium source restored from the CircleCI workspace."
+  echo "Reusing existing Chromium checkout in the runner workspace."
 else
   rm -rf "$CR_DIR"
   cd "$(dirname "$CR_DIR")"
