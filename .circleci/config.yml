@@ -1,0 +1,46 @@
+version: 2.1
+
+jobs:
+  runner-preflight:
+    machine:
+      image: ubuntu-2404:current
+    resource_class: large
+    steps:
+      - checkout
+      - run:
+          name: Diagnostico do runner CircleCI (sem compilar Chromium)
+          command: |
+            set -eu
+            echo "=== SISTEMA ==="
+            uname -a
+            lsb_release -a || true
+
+            echo "=== CPU ==="
+            nproc
+            lscpu | grep -E 'Model name|CPU\\(s\\)|Architecture' || true
+
+            echo "=== MEMORIA ==="
+            free -h
+
+            echo "=== DISCO ==="
+            df -h /
+            df -BG --output=size,used,avail,pcent /
+
+            echo "=== DISPOSITIVOS ==="
+            lsblk -o NAME,SIZE,TYPE,MOUNTPOINTS || true
+
+            echo "=== INODES ==="
+            df -i /
+
+            echo "=== LIMITE DE PROCESSOS ==="
+            ulimit -a
+
+            echo "=== TAMANHO DO CHECKOUT ==="
+            du -sh . .github 2>/dev/null || true
+
+            echo "PRE-FLIGHT CONCLUIDO. Nenhuma compilacao foi iniciada."
+
+workflows:
+  preflight:
+    jobs:
+      - runner-preflight
