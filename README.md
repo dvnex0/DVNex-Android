@@ -1,40 +1,34 @@
-# DVNex NEW for Android
+# DVNex NEW 3 — protótipo Chromium Android
 
-Projeto para desenvolver o **DVNex NEW como navegador Android completo**, baseado no código-fonte Chromium e nas modificações do projeto Thorium.
+Esta branch contém uma base experimental para compilar um **navegador Android real baseado em Chromium**, usando a série de patches Cromite como ponto de partida. Não usa Android WebView nem GeckoView.
 
-> **Estado atual:** estrutura inicial e planejamento técnico. Ainda não existe APK próprio nem pipeline de compilação validado.
+> **Estado:** script de preparação/compilação criado; ainda não existe APK gerado ou build integral validado. O primeiro alvo é ARM64.
 
-## Objetivo
+## O que está nesta branch
 
-- Navegador Android independente, não um aplicativo baseado em Android WebView.
-- Base Chromium/Thorium, com interface e identidade visual DVNex.
-- Primeiro alvo de validação: **Android ARM64**.
-- Depois de validar o build ARM64, avaliar ARM32 e x86_64 e decidir entre APK universal e distribuição por variantes.
+- Script: [scripts/build-dvnex-cromium-arm64.sh](scripts/build-dvnex-cromium-arm64.sh)
+- Guia técnico e pins exatos: [docs/CROMIUM_CROMITE_153_ALPHA.md](docs/CROMIUM_CROMITE_153_ALPHA.md)
+- Alvo GN: `chrome_public_apk`
+- Application ID: `com.browser.dvnexnew3`
+- Nome do aplicativo: `DVNex NEW 3`
 
-## Repositórios de referência
+## Atenção à versão
 
-- [Thorium (código-fonte e patches)](https://github.com/Alex313031/thorium)
-- [Thorium Android (distribuição Android)](https://github.com/Alex313031/Thorium-Android)
+Esta branch fixa Chromium **153.0.8010.37** para corresponder ao conjunto de patches Cromite que foi inspecionado. Em 4 de novembro de 2026, Chrome Stable para Android já está na versão **157.0.8103.38**. Portanto, esta branch é apenas para validar a cadeia de compilação e testar o aplicativo; não deve ser usada como navegador diário nem distribuída publicamente.
 
-Este repositório contém a integração e as personalizações do DVNex; ele não replica o enorme checkout completo do Chromium.
+A etapa de lançamento exigirá portar e validar os patches para o Chromium estável atual.
 
-## Plano de desenvolvimento
+## Como compilar
 
-1. Validar o ambiente Linux de compilação e a revisão Chromium usada pelo Thorium.
-2. Sincronizar Chromium + depot_tools + Thorium e preparar a configuração Android.
-3. Compilar o APK ARM64 sem alterações de marca.
-4. Instalar e testar em dispositivo real e emulador.
-5. Aplicar package ID, nome, ícones, recursos e interface DVNex.
-6. Repetir testes e planejar as variantes de arquitetura.
+A compilação completa exige Linux x86_64, bastante armazenamento e memória. Consulte o guia antes de executar:
 
-## Requisitos de compilação
+```bash
+chmod +x scripts/build-dvnex-cromium-arm64.sh
+./scripts/build-dvnex-cromium-arm64.sh
+```
 
-A compilação Chromium/Thorium não é uma compilação Android Studio comum. Consulte [docs/BUILD_STRATEGY.md](docs/BUILD_STRATEGY.md) antes de configurar uma máquina.
+O script baixa Chromium e suas dependências. O repositório Git contém apenas scripts e configuração, não uma cópia do checkout completo do Chromium.
 
-## Licenças e atribuições
+## Histórico
 
-Chromium e Thorium possuem componentes e avisos de licença próprios. As modificações deste projeto deverão preservar os avisos de copyright, as licenças de terceiros e as atribuições exigidas. Consulte também os arquivos de licença nos repositórios de origem.
-
-## Aviso
-
-Não use este repositório como se já fosse um navegador pronto. O primeiro marco é obter um APK ARM64 reproduzível; interface, sincronização e distribuição vêm depois.
+A branch `main` e o pipeline anterior baseado em Thorium foram preservados. Esta branch é uma linha separada de experimentação com Cromite/Chromium 153.
