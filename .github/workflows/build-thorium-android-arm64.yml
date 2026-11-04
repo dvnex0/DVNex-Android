@@ -1,46 +1,13 @@
-name: DVNex - Build Thorium Android ARM64
+name: LEGACY - Thorium Android ARM64 (disabled on Ultimatum branch)
 
 on:
   workflow_dispatch:
 
-concurrency:
-  group: thorium-android-arm64
-  cancel-in-progress: true
-
-permissions:
-  contents: read
-
+# This branch now targets Ultimatum. The previous Thorium build script is
+# intentionally disabled here so it cannot be mistaken for the new build.
 jobs:
-  build-android-arm64:
-    name: Build Thorium base for Android ARM64
+  legacy-thorium:
+    if: false
     runs-on: ubuntu-24.04
-    # GitHub-hosted jobs have a hard six-hour maximum.
-    timeout-minutes: 360
-
     steps:
-      - name: Checkout DVNex build scripts
-        uses: actions/checkout@v4
-
-      - name: Compile Thorium Android ARM64
-        run: bash .github/scripts/build-thorium-android-arm64.sh
-
-      - name: Show APK outputs
-        if: always()
-        run: |
-          echo "=== APK FILES ==="
-          if [ -d "chromium/src/out/thorium" ]; then
-            find chromium/src/out/thorium -type f -name '*.apk' -print || true
-          else
-            echo "Chromium build directory does not exist."
-          fi
-          echo "=== DISK ==="
-          df -h /
-
-      - name: Upload Android APK artifacts
-        if: success()
-        uses: actions/upload-artifact@v4
-        with:
-          name: thorium-android-arm64-base
-          path: chromium/src/out/thorium/**/*.apk
-          if-no-files-found: error
-          retention-days: 7
+      - run: echo "This legacy Thorium workflow is disabled. Use the Ultimatum build plan in docs/ULTIMATUM_BASE.md."
