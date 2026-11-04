@@ -28,3 +28,6 @@ local.properties
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Experimental Cromite/Chromium source and build tree
+/.dvnex-build/
