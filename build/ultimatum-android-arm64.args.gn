@@ -1,0 +1,18 @@
+# Starting GN args for DVNex NEW 3 based on Ultimatum.
+# Copy to: out/DVNex/args.gn
+
+target_os = "android"
+target_cpu = "arm64"
+
+is_debug = false
+is_component_build = false
+symbol_level = 0
+blink_symbol_level = 0
+v8_symbol_level = 0
+
+ffmpeg_branding = "Chrome"
+proprietary_codecs = true
+
+enable_desktop_android_extensions = true
+enable_guest_view = true
+enable_platform_apps = false
