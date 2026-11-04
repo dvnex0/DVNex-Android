@@ -34,6 +34,8 @@ O Ultimatum adiciona suporte a WebExtensions no Android. Esse suporte tem limita
 
 Este repositório DVNex contém configuração e documentação de integração; ele **não contém o checkout completo do Chromium**. Chromium não é um projeto Gradle pequeno para abrir e compilar diretamente no Android Studio. A compilação Android exige Linux, `depot_tools`, GN, Ninja/autoninja, dependências e espaço em disco substancial.
 
+O workflow antigo de Thorium e os scripts associados ainda existem nesta branch como histórico de trabalho, mas **não devem ser executados para compilar Ultimatum**. O pipeline de Ultimatum ainda precisa ser implementado e validado.
+
 Não há promessa de build em 30 minutos. O primeiro marco é uma compilação ARM64 reproduzível.
 
 ## Licenças
