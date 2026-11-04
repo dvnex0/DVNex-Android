@@ -1,75 +1,82 @@
-# Estratégia de compilação Android
+# Estratégia de compilação Android — Ultimatum
 
-## Por que não começar pelo Android Studio
+## Base e revisão
 
-O Thorium não é um SDK pequeno que possa ser adicionado como dependência Gradle. O objetivo é compilar o alvo de navegador Android do Chromium, e depois personalizar a aplicação Android resultante. Isso exige o checkout Chromium completo, ferramentas do projeto Chromium e os patches do Thorium.
+O DVNex NEW 3 usa o fork completo [gonzazoid/Ultimatum](https://github.com/gonzazoid/Ultimatum), na revisão fixada:
 
-Referências oficiais do projeto:
+`ultimatum_android_147.0.7727.93`
 
-- [Thorium build instructions](https://github.com/Alex313031/thorium/blob/main/docs/BUILDING.md)
-- [Thorium Android build script](https://github.com/Alex313031/thorium/blob/main/build_android.sh)
-- [Thorium source repository](https://github.com/Alex313031/thorium)
+O Ultimatum é um fork do Chromium com alterações para WebExtensions no Android. Não é uma biblioteca Gradle nem um projeto Android Studio convencional.
 
-## Recursos
+Consulte [docs/ULTIMATUM_BASE.md](ULTIMATUM_BASE.md) para a decisão de arquitetura e a sequência de validação.
 
-A documentação de build do Thorium lista como referência:
+## Requisitos do host
 
-- Host Linux x86_64.
-- Pelo menos 8 GB de RAM; 16 GB ou mais são recomendados.
-- Pelo menos 75 GB livres em disco.
-- Git e Python 3.8 ou superior.
-- Ubuntu 22.04 é a plataforma principal de desenvolvimento indicada.
+A documentação oficial do Chromium para Android exige um host Linux x86_64. Ela indica pelo menos 8 GB de RAM, recomenda mais de 16 GB e exige pelo menos 100 GB livres em disco. Windows e macOS não são plataformas suportadas para compilar o cliente Android do Chromium.
 
-Esses valores são um mínimo documentado, não uma garantia de que qualquer máquina com esses recursos concluirá a compilação. Mais RAM, armazenamento e CPU reduzem o risco de falha.
+Referência: [Chromium — Android build instructions](https://chromium.googlesource.com/chromium/src/+/main/docs/android_build_instructions.md).
 
-## Fluxo de alto nível
+Esses valores são requisitos mínimos documentados, não garantia de sucesso. Um checkout completo e a compilação podem consumir muito mais tempo e recursos.
 
-1. Instalar e configurar depot_tools.
-2. Clonar o repositório Thorium com submódulos.
-3. Fazer o checkout Chromium com fetch --nohooks chromium.
-4. Instalar dependências do host e executar gclient runhooks.
-5. Executar os scripts Thorium na ordem documentada para sincronizar a revisão Chromium e aplicar os patches.
-6. Preparar a configuração GN Android apropriada.
-7. Gerar o alvo Android com GN e compilar com autoninja.
-8. Localizar, assinar quando necessário, instalar e testar o APK gerado.
+## Ferramentas
 
-**Atenção:** a ordem exata e os argumentos Android devem acompanhar a revisão específica do Thorium que for fixada neste projeto. Não se deve misturar scripts de uma revisão com patches ou argumentos de outra.
+- Linux x86_64 (Ubuntu é a plataforma mais comum).
+- Git e Python.
+- `depot_tools` (inclui `fetch`, `gclient`, `gn` e ferramentas de build).
+- Android SDK/NDK e dependências instaladas pelos scripts Chromium.
+- GN e Ninja/autoninja.
+- Espaço de armazenamento suficiente para checkout, dependências, cache e diretório de build.
 
-## Primeiro alvo: ARM64
+## Configuração GN inicial
 
-O script Android do Thorium define, para ARM64, os alvos:
+O arquivo [../build/ultimatum-android-arm64.args.gn](../build/ultimatum-android-arm64.args.gn) contém os argumentos indicados pelo README do Ultimatum para Android ARM64, incluindo:
 
-- chrome_public_apk
-- content_shell_apk
-- system_webview_64_apk
+- `target_os = "android"`
+- `target_cpu = "arm64"`
+- build release não componentizado;
+- símbolos reduzidos;
+- `enable_desktop_android_extensions = true`;
+- `enable_guest_view = true`;
+- `enable_platform_apps = false`.
 
-O primeiro artefato de navegador a validar é chrome_public_apk. Os demais alvos são auxiliares e não substituem o navegador.
+Use essa configuração como ponto de partida para `out/DVNex/args.gn`. Não misture flags de outras versões do Chromium sem validar a compatibilidade.
 
-## GitHub Actions e custo de infraestrutura
+## Fluxo de build
 
-GitHub Actions pode automatizar etapas, armazenar logs e publicar artefatos. Isso não torna a compilação Chromium leve. O checkout e a compilação consomem muito armazenamento, memória, CPU e tempo; um runner hospedado gratuito padrão não deve ser tratado como ambiente garantido para compilar Chromium completo.
+1. Preparar o host Linux e instalar `depot_tools`.
+2. Fazer checkout da revisão exata do Ultimatum.
+3. Configurar o checkout como solução do `gclient` e sincronizar as dependências definidas pelo arquivo `DEPS`.
+4. Instalar dependências do host e executar os hooks Chromium.
+5. Criar `out/DVNex/args.gn` usando o arquivo de argumentos deste repositório.
+6. Gerar os arquivos de build com GN.
+7. Compilar primeiro o alvo `chrome_public_apk` com `autoninja`.
+8. Instalar e validar o APK original antes de modificar marca ou recursos.
+9. Somente após o build base funcionar, iniciar o rebranding DVNex.
 
-A estratégia inicial deve usar um host Linux x86_64 com recursos suficientes (por exemplo, uma máquina própria ou runner dedicado). O workflow automatizado só deve ser ativado depois de validar manualmente o processo e confirmar a capacidade do runner. Não colocar chaves de assinatura, tokens ou credenciais no código.
+A forma exata de configurar o checkout e sincronizar dependências deve seguir as instruções Chromium aplicáveis à revisão fixada. Não usar um script de Thorium: a base agora é Ultimatum.
 
-## APK universal: decisão posterior
+## Tempo e infraestrutura
 
-Um APK universal precisa incluir as bibliotecas nativas de todas as arquiteturas suportadas. Isso aumenta o tamanho e exige que cada ABI esteja realmente compilada e testada. O fato de um projeto gerar APK ARM64 não significa que ele funcionará em ARM32 ou x86.
+O checkout pode levar pelo menos dezenas de minutos mesmo em uma conexão rápida; a documentação Chromium informa que pode levar muitas horas em conexões lentas. A compilação vem depois do checkout e dos hooks.
 
-A ordem correta é:
+GitHub Actions e CircleCI não tornam o Chromium leve. Um runner hospedado gratuito padrão não deve ser tratado como ambiente garantido para compilar o Chromium completo. Primeiro validar a build num host Linux com recursos suficientes; depois automatizar num runner compatível.
 
-1. Validar ARM64.
-2. Adicionar e testar outras ABIs, se forem viáveis.
-3. Comparar APK universal com APKs separados ou Android App Bundle.
-4. Escolher o formato de distribuição.
+## Rebranding
 
-## Rebranding DVNex
+Depois do APK base validado, mapear os pontos corretos da revisão para alterar:
 
-A personalização só começa depois do APK Thorium/Chromium original funcionar. As mudanças deverão incluir, conforme os pontos de extensão disponíveis na revisão escolhida:
+- application ID para `com.browser.dvnexnew3`;
+- nome exibido, ícones e recursos;
+- strings e identidade visual;
+- página Nova guia e página inicial;
+- preferências e distribuição.
 
-- Application ID próprio.
-- Nome e ícones DVNex.
-- Recursos e identidade visual.
-- Interface e páginas internas.
-- Configurações de distribuição e atualização.
+Não fazer substituições globais cegas de `Chrome`, `Chromium` ou `org.chromium`: isso pode quebrar dependências e serviços.
 
-Não remover avisos de licença nem atribuições do Chromium, Thorium ou dependências de terceiros.
+## Arquitetura
+
+A primeira meta é ARM64. ARM32, x86_64 e APK universal só devem ser considerados depois que ARM64 estiver compilado e testado. Um APK ARM64 não funciona automaticamente em todas as arquiteturas.
+
+## Licenças
+
+Preservar avisos de copyright, arquivos de licença e atribuições do Chromium, Ultimatum e dependências de terceiros. Revisar todas as licenças antes de distribuir o APK.
