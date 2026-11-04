@@ -71,7 +71,7 @@ if [[ ! -d "$CHROMIUM_SRC/.git" ]]; then
 fi
 [[ -d "$CHROMIUM_SRC/.git" ]] || die "fetch did not create chromium/src."
 
-echo "=== Configure Android checkout and PGO profile dependency ==="
+echo "=== Configure the Chromium checkout for Android ==="
 python3 - "$CHROMIUM_ROOT/.gclient" <<'PY'
 import ast
 import re
@@ -85,25 +85,24 @@ ast.parse(source)
 if not re.search(r"(?m)^target_os\s*=", source):
     source += '\ntarget_os = ["android"]\n'
 
-statement = (
-    'solutions[0]["custom_vars"] = {'
-    '**solutions[0].get("custom_vars", {}), '
-    '"checkout_pgo_profiles": True}'
-)
-if "checkout_pgo_profiles" not in source:
-    source += "\n" + statement + "\n"
-
 ast.parse(source)
 path.write_text(source, encoding="utf-8")
-print("Configured target_os=android and checkout_pgo_profiles=True.")
+print("Configured target_os=android. PGO profiles are not requested for this development build.")
 PY
 
 echo "=== Checkout the Chromium version pinned by Cromite ==="
-git -C "$CHROMIUM_SRC" fetch --depth=1 --no-tags origin \
-  "refs/tags/$CHROMIUM_TAG:refs/tags/$CHROMIUM_TAG"
-git -C "$CHROMIUM_SRC" checkout --detach "refs/tags/$CHROMIUM_TAG"
-[[ "$(git -C "$CHROMIUM_SRC" describe --tags --exact-match HEAD)" == "$CHROMIUM_TAG" ]] \
-  || die "Chromium checkout is not on the expected tag."
+if [[ -f "$WORKSPACE/.dvnex-patches-applied" ]]; then
+  echo "Patch marker found; preserving the already patched Chromium HEAD."
+else
+  if [[ -d "$CHROMIUM_SRC/.git/rebase-apply" ]]; then
+    git -C "$CHROMIUM_SRC" am --abort || true
+  fi
+  git -C "$CHROMIUM_SRC" fetch --depth=1 --no-tags origin \
+    "refs/tags/$CHROMIUM_TAG:refs/tags/$CHROMIUM_TAG"
+  git -C "$CHROMIUM_SRC" checkout --detach "refs/tags/$CHROMIUM_TAG"
+  [[ "$(git -C "$CHROMIUM_SRC" describe --tags --exact-match HEAD)" == "$CHROMIUM_TAG" ]] \
+    || die "Chromium checkout is not on the expected tag."
+fi
 
 if [[ "${SKIP_BUILD_DEPS:-0}" != "1" ]]; then
   echo "=== Install Linux dependencies for Android Chromium ==="
