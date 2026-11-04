@@ -41,13 +41,6 @@ new_assignment = """    if (is_win) {
           (current_cpu == "x86" || current_cpu == "x64")
 """
 
-if block.count(old_assignment) != 1:
-    raise SystemExit(
-        "Expected exactly one ThinLTO assignment inside thinlto_optimize_max."
-    )
-
-block = block.replace(old_assignment, new_assignment, 1)
-
 old_linux = """    } else if (is_linux) {
       ldflags = [ "-Wl,--lto-O" + lto_opt_level ]
 """
@@ -59,12 +52,28 @@ new_linux = """    } else if (is_linux) {
       ldflags = [ "-Wl,--lto-O" + lto_opt_level ]
 """
 
-if block.count(old_linux) != 1:
+if old_assignment in block:
+    if block.count(old_assignment) != 1:
+        raise SystemExit(
+            "Expected exactly one ThinLTO assignment inside thinlto_optimize_max."
+        )
+    block = block.replace(old_assignment, new_assignment, 1)
+elif block.count(new_assignment) != 1:
     raise SystemExit(
-        "Expected exactly one Linux ThinLTO branch inside thinlto_optimize_max."
+        "ThinLTO Windows branch is neither original nor already patched."
     )
 
-block = block.replace(old_linux, new_linux, 1)
+
+if old_linux in block:
+    if block.count(old_linux) != 1:
+        raise SystemExit(
+            "Expected exactly one Linux ThinLTO branch inside thinlto_optimize_max."
+        )
+    block = block.replace(old_linux, new_linux, 1)
+elif block.count(new_linux) != 1:
+    raise SystemExit(
+        "ThinLTO Linux branch is neither original nor already patched."
+    )
 
 expected = "is_full_optimization_build && lto_opt_level == 2"
 
