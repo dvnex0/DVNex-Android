@@ -1,40 +1,41 @@
-# DVNex NEW for Android
+# DVNex NEW 3 para Android
 
-Projeto para desenvolver o **DVNex NEW como navegador Android completo**, baseado no código-fonte Chromium e nas modificações do projeto Thorium.
+Projeto para desenvolver o **DVNex NEW 3 como navegador Android completo**, usando o Chromium nativo por meio do fork **Ultimatum**.
 
-> **Estado atual:** estrutura inicial e planejamento técnico. Ainda não existe APK próprio nem pipeline de compilação validado.
+> **Estado desta branch:** base técnica selecionada, revisão fixada e parâmetros GN ARM64 adicionados. Ainda não existe APK DVNex compilado nem build validado de ponta a ponta.
 
-## Objetivo
+## Base do navegador
 
-- Navegador Android independente, não um aplicativo baseado em Android WebView.
-- Base Chromium/Thorium, com interface e identidade visual DVNex.
-- Primeiro alvo de validação: **Android ARM64**.
-- Depois de validar o build ARM64, avaliar ARM32 e x86_64 e decidir entre APK universal e distribuição por variantes.
+- Projeto upstream: [gonzazoid/Ultimatum](https://github.com/gonzazoid/Ultimatum)
+- Revisão fixada: `ultimatum_android_147.0.7727.93`
+- Motor: Chromium nativo, sem Android WebView e sem GeckoView.
+- Primeiro alvo: Android ARM64 (`arm64-v8a`).
+- Alvo de compilação inicial: `chrome_public_apk`.
+- Application ID pretendido: `com.browser.dvnexnew3`.
 
-## Repositórios de referência
+O Ultimatum adiciona suporte a WebExtensions no Android. Esse suporte tem limitações documentadas; não significa que todas as extensões de desktop funcionarão.
 
-- [Thorium (código-fonte e patches)](https://github.com/Alex313031/thorium)
-- [Thorium Android (distribuição Android)](https://github.com/Alex313031/Thorium-Android)
+## Arquivos desta branch
 
-Este repositório contém a integração e as personalizações do DVNex; ele não replica o enorme checkout completo do Chromium.
+- [docs/ULTIMATUM_BASE.md](docs/ULTIMATUM_BASE.md) — arquitetura, revisão fixada e sequência de validação.
+- [build/ultimatum-android-arm64.args.gn](build/ultimatum-android-arm64.args.gn) — argumentos GN iniciais para ARM64.
+- [docs/BUILD_STRATEGY.md](docs/BUILD_STRATEGY.md) — requisitos e estratégia de compilação.
 
-## Plano de desenvolvimento
+## Etapas
 
-1. Validar o ambiente Linux de compilação e a revisão Chromium usada pelo Thorium.
-2. Sincronizar Chromium + depot_tools + Thorium e preparar a configuração Android.
-3. Compilar o APK ARM64 sem alterações de marca.
-4. Instalar e testar em dispositivo real e emulador.
-5. Aplicar package ID, nome, ícones, recursos e interface DVNex.
-6. Repetir testes e planejar as variantes de arquitetura.
+1. Preparar host Linux x86_64 e ferramentas Chromium.
+2. Fazer checkout da revisão Ultimatum e sincronizar dependências.
+3. Gerar e compilar o APK base ARM64 sem rebranding.
+4. Testar navegação, abas, downloads e extensões.
+5. Alterar package ID, nome, ícones, página inicial e interface para DVNex.
+6. Recompilar e testar o APK DVNex.
 
-## Requisitos de compilação
+## Importante
 
-A compilação Chromium/Thorium não é uma compilação Android Studio comum. Consulte [docs/BUILD_STRATEGY.md](docs/BUILD_STRATEGY.md) antes de configurar uma máquina.
+Este repositório DVNex contém configuração e documentação de integração; ele **não contém o checkout completo do Chromium**. Chromium não é um projeto Gradle pequeno para abrir e compilar diretamente no Android Studio. A compilação Android exige Linux, `depot_tools`, GN, Ninja/autoninja, dependências e espaço em disco substancial.
 
-## Licenças e atribuições
+Não há promessa de build em 30 minutos. O primeiro marco é uma compilação ARM64 reproduzível.
 
-Chromium e Thorium possuem componentes e avisos de licença próprios. As modificações deste projeto deverão preservar os avisos de copyright, as licenças de terceiros e as atribuições exigidas. Consulte também os arquivos de licença nos repositórios de origem.
+## Licenças
 
-## Aviso
-
-Não use este repositório como se já fosse um navegador pronto. O primeiro marco é obter um APK ARM64 reproduzível; interface, sincronização e distribuição vêm depois.
+Preservar avisos de copyright, licenças de terceiros e atribuições de Chromium, Ultimatum e demais dependências. Consulte os arquivos de licença upstream antes de distribuir APKs.
