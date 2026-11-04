@@ -87,3 +87,34 @@ If patch application fails partway through, do not rerun against the half-patche
 ## Licensing
 
 This build combines Chromium, Cromite patches, and other third-party components with different licenses. Preserve all upstream copyright notices, license files, and attribution requirements. Review the license of each imported patch and dependency before distributing a binary.
+
+## Build without installing Linux on your computer: CircleCI
+
+This branch includes `.circleci/config.yml` configured to use a CircleCI-hosted Linux VM. Your Windows PC only needs to push this branch and open the CircleCI project page; Linux runs remotely.
+
+The selected CircleCI Linux VM class `large` has 4 vCPUs, about 15 GB RAM and 150 GB disk. Chromium's current Android build instructions require at least 8 GB RAM and 100 GB free disk, and recommend more than 16 GB RAM. The VM meets the documented minimum RAM and disk requirement, but its RAM is slightly below the recommendation, so memory pressure or an out-of-memory failure remains possible.
+
+### Important: CircleCI Free timeout
+
+CircleCI documents a **one-hour maximum runtime per job on the Free plan**. This is why the previous builds were stopping at approximately 60 minutes. The config persists `chromium/`, `cromite/`, `depot_tools/`, and the patch-completion marker to the same workflow workspace when the job ends.
+
+When the job reaches the one-hour limit:
+
+1. Open the failed job in the same CircleCI workflow.
+2. Choose **Rerun job** (or **Rerun failed jobs**) on that same workflow.
+3. Do not click **Rerun pipeline** and do not push an empty commit to start a new workflow; a new workflow has a new workspace and will not inherit the previous checkout.
+4. Repeat only while the same workflow workspace is still available.
+
+The CircleCI workspace is temporary and its storage may consume plan credits. Monitor your CircleCI usage. CircleCI states that public open-source projects on its Free plan can receive up to 400,000 Linux build credits per month; this is subject to the project remaining public and qualifying as open source. The `large` Linux VM uses credits faster than a small Docker job.
+
+### Start the remote build
+
+1. Push this branch to GitHub:
+   `dvnex/cromite-153-arm64-prototype`.
+2. Open the DVNex-Android project in CircleCI and select this branch's pipeline.
+3. Let the job run. If it stops at the Free plan's one-hour limit, rerun the failed job in the **same workflow** to restore the workspace and continue.
+4. When the build succeeds, open the job's **Artifacts** section and download the artifact under `dvnex-new3-chromium-arm64`.
+
+Do not expect an APK from a timed-out job. An APK is published only after `chrome_public_apk` completes successfully.
+
+This workflow has been authored but has **not** been executed end-to-end in this chat. The first real run must confirm that the CircleCI workspace persistence, the Cromite patch series and the memory/disk capacity all work as expected.
