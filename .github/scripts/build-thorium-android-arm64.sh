@@ -23,16 +23,26 @@ echo "=== Install Git and Python prerequisites ==="
 sudo apt-get update
 sudo apt-get install -y git python3 python3-venv python3-pip curl
 
-echo "=== Clone and bootstrap depot_tools ==="
-git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git "$DEPOT_TOOLS_DIR"
+echo "=== Restore or clone depot_tools ==="
+if [ -d "$DEPOT_TOOLS_DIR/.git" ]; then
+  echo "Reusing depot_tools restored from the CircleCI workspace."
+else
+  rm -rf "$DEPOT_TOOLS_DIR"
+  git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git "$DEPOT_TOOLS_DIR"
+fi
 export PATH="$DEPOT_TOOLS_DIR:$PATH"
 export DEPOT_TOOLS_UPDATE=0
 "$DEPOT_TOOLS_DIR/ensure_bootstrap"
 test -s "$DEPOT_TOOLS_DIR/python3_bin_reldir.txt"
 python3 --version
 
-echo "=== Clone pinned Thorium M150 source ==="
-git clone --branch M150 --single-branch https://github.com/Alex313031/thorium.git "$THOR_DIR"
+echo "=== Restore or clone pinned Thorium M150 source ==="
+if [ -d "$THOR_DIR/.git" ]; then
+  echo "Reusing Thorium source restored from the CircleCI workspace."
+else
+  rm -rf "$THOR_DIR"
+  git clone --branch M150 --single-branch https://github.com/Alex313031/thorium.git "$THOR_DIR"
+fi
 git -C "$THOR_DIR" checkout a212fdaa6b9de74d08e68390137cf08d8e41017a
 git -C "$THOR_DIR" submodule update --init --recursive
 
@@ -50,12 +60,16 @@ old = '''            "--with_branch_heads",
 new = '''            "--no-history",
 '''
 
-if source.count(old) != 1:
+if source.count(old) == 1:
+    source = source.replace(old, new, 1)
+elif source.count(new) == 1:
+    print("Shallow DEPS sync arguments were already applied.")
+else:
     raise SystemExit(
         "Could not safely locate the pinned Thorium gclient sync arguments."
     )
 
-path.write_text(source.replace(old, new, 1))
+path.write_text(source)
 print("Removed unnecessary branch-head/tag downloads; enabled shallow DEPS sync.")
 PY
 
@@ -91,10 +105,15 @@ PY
 git ls-remote --exit-code --refs https://chromium.googlesource.com/chromium/src.git \
   "refs/tags/$THORIUM_CHROMIUM_TAG"
 
-echo "=== Fetch Chromium source without full Git history ==="
+echo "=== Restore or fetch Chromium source without full Git history ==="
 mkdir -p "$(dirname "$CR_DIR")"
-cd "$(dirname "$CR_DIR")"
-fetch --nohooks --no-history chromium
+if [ -d "$CR_DIR/.git" ]; then
+  echo "Reusing Chromium source restored from the CircleCI workspace."
+else
+  rm -rf "$CR_DIR"
+  cd "$(dirname "$CR_DIR")"
+  fetch --nohooks --no-history chromium
+fi
 
 echo "=== Configure Chromium checkout for Android ==="
 cd "$ROOT"
@@ -147,12 +166,25 @@ run_version_sync_with_retry() {
 }
 
 echo "=== Pin Chromium revision and download Android dependencies ==="
-cd "$THOR_DIR"
-run_version_sync_with_retry
+VERSION_SYNC_MARKER="$THOR_DIR/.dvnex-version-sync.done"
+if [ -f "$VERSION_SYNC_MARKER" ]; then
+  echo "Chromium DEPS sync already completed; preserving the existing build tree."
+else
+  cd "$THOR_DIR"
+  run_version_sync_with_retry
+  touch "$VERSION_SYNC_MARKER"
+fi
 df -h /
 
 echo "=== Apply Thorium Android patches and resources ==="
-python3 setup.py --android
+SETUP_MARKER="$THOR_DIR/.dvnex-android-setup.done"
+if [ -f "$SETUP_MARKER" ]; then
+  echo "Thorium Android overlay and patch setup already completed; reusing it."
+else
+  cd "$THOR_DIR"
+  python3 setup.py --android
+  touch "$SETUP_MARKER"
+fi
 
 echo "=== Remove obsolete launcher resources excluded by Thorium branding ==="
 python3 - "$CR_DIR" <<'PY'
