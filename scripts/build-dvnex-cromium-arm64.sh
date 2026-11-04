@@ -6,7 +6,7 @@ set -Eeuo pipefail
 # Cromite's updater, and the reviewed UI patches deferred for DVNex adaptation.
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-WORKSPACE="\${WORKSPACE:-$ROOT/.dvnex-build}"
+WORKSPACE="${WORKSPACE:-$ROOT/.dvnex-build}"
 CROMITE_DIR="$WORKSPACE/cromite"
 CHROMIUM_ROOT="$WORKSPACE/chromium"
 CHROMIUM_SRC="$CHROMIUM_ROOT/src"
@@ -105,15 +105,15 @@ git -C "$CHROMIUM_SRC" checkout --detach "refs/tags/$CHROMIUM_TAG"
 [[ "$(git -C "$CHROMIUM_SRC" describe --tags --exact-match HEAD)" == "$CHROMIUM_TAG" ]] \
   || die "Chromium checkout is not on the expected tag."
 
+if [[ "${SKIP_BUILD_DEPS:-0}" != "1" ]]; then
+  echo "=== Install Linux dependencies for Android Chromium ==="
+  "$CHROMIUM_SRC/build/install-build-deps.sh" --android --no-prompt
+fi
+
 echo "=== Sync DEPS and run Chromium hooks ==="
 cd "$CHROMIUM_ROOT"
 gclient sync --no-history --jobs="$(nproc)"
 gclient runhooks
-
-if [[ "\${SKIP_BUILD_DEPS:-0}" != "1" ]]; then
-  echo "=== Install Linux dependencies for Android Chromium ==="
-  "$CHROMIUM_SRC/build/install-build-deps.sh" --android --no-prompt
-fi
 
 echo "=== Select the DVNex patch subset ==="
 PATCH_LIST="$CROMITE_DIR/build/cromite_patches_list.txt"
@@ -251,7 +251,7 @@ CPU_COUNT="$(nproc)"
 SAFE_JOBS=$((RAM_GB / 2))
 (( SAFE_JOBS < 1 )) && SAFE_JOBS=1
 (( SAFE_JOBS > CPU_COUNT )) && SAFE_JOBS="$CPU_COUNT"
-JOBS="\${JOBS:-$SAFE_JOBS}"
+JOBS="${JOBS:-$SAFE_JOBS}"
 echo "=== Compile Chromium browser APK with $JOBS jobs ==="
 autoninja -C "$OUT_DIR" -j "$JOBS" chrome_public_apk
 
@@ -265,7 +265,7 @@ echo "APK: $APK"
 ls -lh "$APK"
 sha256sum "$APK"
 
-if [[ "\${INSTALL:-0}" == "1" ]]; then
+if [[ "${INSTALL:-0}" == "1" ]]; then
   command -v adb >/dev/null || die "adb is not installed."
   adb install -r "$APK"
 fi
