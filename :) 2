@@ -1,0 +1,8688 @@
+PS C:\Users\Admin> Get-Content "$root\smali\wx9.smali"
+.class public final Lwx9;
+.super Ljava/lang/Object;
+.source "chromium-ChromePublic.apk-default-814400004"
+
+
+# static fields
+.field public static s0:I
+
+
+# instance fields
+.field public A:Z
+
+.field public B:Z
+
+.field public C:Lwm8;
+
+.field public D:Ln8a;
+
+.field public E:Lsi9;
+
+.field public F:Li5h;
+
+.field public G:Lzlh;
+
+.field public H:Lvx9;
+
+.field public I:Lj22;
+
+.field public J:Ljx9;
+
+.field public K:Llx9;
+
+.field public L:Laca;
+
+.field public M:Lkx9;
+
+.field public N:Laca;
+
+.field public O:Lkx9;
+
+.field public P:Lsw6;
+
+.field public Q:Landroid/view/ViewGroup;
+
+.field public R:Lrx9;
+
+.field public S:Lr7a;
+
+.field public T:Llbe;
+
+.field public U:Z
+
+.field public V:Z
+
+.field public W:Z
+
+.field public X:F
+
+.field public Y:Z
+
+.field public Z:Z
+
+.field public a:Lex9;
+
+.field public a0:Z
+
+.field public b:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+.field public b0:Z
+
+.field public c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+
+.field public c0:I
+
+.field public d:Lorg/chromium/ui/modelutil/PropertyModel;
+
+.field public d0:I
+
+.field public e:Lorg/chromium/chrome/browser/tab/TabImpl;
+
+.field public e0:Lol5;
+
+.field public f:Ld2g;
+
+.field public f0:Lh22;
+
+.field public g:Lxia;
+
+.field public g0:B
+
+.field public h:Lbx6;
+
+.field public h0:Z
+
+.field public i:Laca;
+
+.field public i0:Z
+
+.field public j:Lorg/chromium/ui/base/WindowAndroid;
+
+.field public j0:Lo43;
+
+.field public k:Lorg/chromium/chrome/browser/profiles/Profile;
+
+.field public k0:Lorg/chromium/components/contextual_search/InputState;
+
+.field public l:Lqd;
+
+.field public l0:B
+
+.field public m:Lfr1;
+
+.field public m0:B
+
+.field public n:Lwf9;
+
+.field public n0:I
+
+.field public o:Lfme;
+
+.field public o0:I
+
+.field public p:Z
+
+.field public p0:Lp8a;
+
+.field public q:Laca;
+
+.field public q0:B
+
+.field public r:Lsx9;
+
+.field public r0:B
+
+.field public s:Lorg/chromium/chrome/browser/omnibox/SearchEngineService;
+
+.field public t:Ljld;
+
+.field public u:Z
+
+.field public v:I
+
+.field public w:I
+
+.field public x:Z
+
+.field public y:I
+
+.field public z:Z
+
+
+# direct methods
+.method public static a(Lorg/chromium/components/contextual_search/InputState;)I
+    .locals 5
+
+    .line 1
+    invoke-static {}, Lzj2;->a()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    sget-object v0, Lyj2;->b:Lyj2;
+
+    .line 9
+    .line 10
+    const-string v2, "NtpAuroraV2"
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, v2}, Llj5;->j(Ljava/lang/String;)Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    if-eqz v0, :cond_0
+
+    .line 17
+    .line 18
+    const-string v0, "action_chips"
+
+    .line 19
+    .line 20
+    invoke-static {v2, v0}, Lxj2;->b(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v0
+
+    .line 24
+    goto :goto_0
+
+    .line 25
+    :cond_0
+    move v0, v1
+
+    .line 26
+    :goto_0
+    const/4 v2, 0x3
+
+    .line 27
+    const/4 v3, 0x2
+
+    .line 28
+    if-eq v0, v3, :cond_1
+
+    .line 29
+    .line 30
+    if-ne v0, v2, :cond_2
+
+    .line 31
+    .line 32
+    :cond_1
+    invoke-static {}, Lffa;->b()Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v4
+
+    .line 36
+    if-eqz v4, :cond_5
+
+    .line 37
+    .line 38
+    :cond_2
+    if-ne v0, v3, :cond_4
+
+    .line 39
+    .line 40
+    if-eqz p0, :cond_3
+
+    .line 41
+    .line 42
+    iget-object p0, p0, Lorg/chromium/components/contextual_search/InputState;->g:Ljava/util/List;
+
+    .line 43
+    .line 44
+    const/4 v1, 0x4
+
+    .line 45
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v1
+
+    .line 49
+    invoke-interface {p0, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
+
+    .line 50
+    .line 51
+    .line 52
+    move-result p0
+
+    .line 53
+    if-nez p0, :cond_4
+
+    .line 54
+    .line 55
+    :cond_3
+    move v1, v2
+
+    .line 56
+    goto :goto_1
+
+    .line 57
+    :cond_4
+    move v1, v0
+
+    .line 58
+    :cond_5
+    :goto_1
+    return v1
+.end method
+
+
+# virtual methods
+.method public final b()I
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Lwx9;->p:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-object v1, p0, Lwx9;->G:Lzlh;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v0, v1, Lzlh;->a:Lylh;
+
+    .line 10
+    .line 11
+    iget-byte v0, v0, Lylh;->a:B
+
+    .line 12
+    .line 13
+    const/4 v1, 0x2
+
+    .line 14
+    if-ge v0, v1, :cond_0
+
+    .line 15
+    .line 16
+    const v0, 0x7f0809c5
+
+    .line 17
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_0
+    const v0, 0x7f080952
+
+    .line 21
+    .line 22
+    .line 23
+    :goto_0
+    iget-object p0, p0, Lwx9;->b:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 24
+    .line 25
+    invoke-virtual {p0}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p0
+
+    .line 29
+    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result p0
+
+    .line 33
+    return p0
+.end method
+
+.method public final c(Lfx9;ZZLol5;Lx9h;Lzlh;Lnc;)V
+    .locals 25
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    move-object/from16 v2, p6
+
+    .line 4
+    .line 5
+    move-object/from16 v3, p7
+
+    .line 6
+    .line 7
+    iget-object v4, v0, Lwx9;->d:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 8
+    .line 9
+    iget-object v5, v0, Lwx9;->a:Lex9;
+
+    .line 10
+    .line 11
+    iget-boolean v6, v0, Lwx9;->p:Z
+
+    .line 12
+    .line 13
+    iget-object v7, v0, Lwx9;->s:Lorg/chromium/chrome/browser/omnibox/SearchEngineService;
+
+    .line 14
+    .line 15
+    iget-object v8, v0, Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+
+    .line 16
+    .line 17
+    iget-object v9, v0, Lwx9;->b:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 18
+    .line 19
+    iget-object v10, v0, Lwx9;->k:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 20
+    .line 21
+    const-string v11, "NewTabPageLayout.initialize()"
+
+    .line 22
+    .line 23
+    const/4 v12, 0x0
+
+    .line 24
+    invoke-static {v11, v12}, Lorg/chromium/base/TraceEvent;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 25
+    .line 26
+    .line 27
+    move-object/from16 v13, p4
+
+    .line 28
+    .line 29
+    iput-object v13, v0, Lwx9;->e0:Lol5;
+
+    .line 30
+    .line 31
+    iput-object v2, v0, Lwx9;->G:Lzlh;
+
+    .line 32
+    .line 33
+    iget-object v13, v0, Lwx9;->T:Llbe;
+
+    .line 34
+    .line 35
+    const/4 v14, 0x0
+
+    .line 36
+    const/4 v15, 0x1
+
+    .line 37
+    if-nez v13, :cond_0
+
+    .line 38
+    .line 39
+    move v12, v14
+
+    .line 40
+    goto :goto_0
+
+    .line 41
+    :cond_0
+    invoke-static {}, Lorg/chromium/base/ThreadUtils;->b()V
+
+    .line 42
+    .line 43
+    .line 44
+    iget-object v13, v13, Llbe;->C:Lfbe;
+
+    .line 45
+    .line 46
+    invoke-virtual {v13, v14}, Lfbe;->d(I)I
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v16
+
+    .line 50
+    invoke-virtual {v13, v15}, Lfbe;->d(I)I
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v13
+
+    .line 54
+    add-int v13, v13, v16
+
+    .line 55
+    .line 56
+    invoke-virtual {v9}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object v16
+
+    .line 60
+    invoke-virtual/range {v16 .. v16}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v12
+
+    .line 64
+    iget v12, v12, Landroid/util/DisplayMetrics;->density:F
+
+    .line 65
+    .line 66
+    int-to-float v13, v13
+
+    .line 67
+    div-float/2addr v13, v12
+
+    .line 68
+    invoke-static {v13}, Ljava/lang/Math;->round(F)I
+
+    .line 69
+    .line 70
+    .line 71
+    move-result v12
+
+    .line 72
+    :goto_0
+    iput v12, v2, Lzlh;->b:I
+
+    .line 73
+    .line 74
+    invoke-virtual {v2}, Lzlh;->d()V
+
+    .line 75
+    .line 76
+    .line 77
+    invoke-virtual {v9}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v2
+
+    .line 81
+    const v12, 0x7f080c08
+
+    .line 82
+    .line 83
+    .line 84
+    invoke-virtual {v2, v12}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 85
+    .line 86
+    .line 87
+    move-result v12
+
+    .line 88
+    const v13, 0x7f080c09
+
+    .line 89
+    .line 90
+    .line 91
+    invoke-virtual {v2, v13}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 92
+    .line 93
+    .line 94
+    move-result v13
+
+    .line 95
+    add-int/2addr v13, v12
+
+    .line 96
+    const v12, 0x7f080c0b
+
+    .line 97
+    .line 98
+    .line 99
+    invoke-virtual {v2, v12}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 100
+    .line 101
+    .line 102
+    move-result v12
+
+    .line 103
+    add-int/2addr v12, v13
+
+    .line 104
+    const v13, 0x7f080c0a
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {v2, v13}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 108
+    .line 109
+    .line 110
+    move-result v2
+
+    .line 111
+    const/4 v13, 0x3
+
+    .line 112
+    mul-int/2addr v2, v13
+
+    .line 113
+    new-instance v13, Landroid/graphics/Point;
+
+    .line 114
+    .line 115
+    invoke-direct {v13, v12, v2}, Landroid/graphics/Point;-><init>(II)V
+
+    .line 116
+    .line 117
+    .line 118
+    if-nez v6, :cond_1
+
+    .line 119
+    .line 120
+    invoke-static {}, Liy9;->a()I
+
+    .line 121
+    .line 122
+    .line 123
+    move-result v2
+
+    .line 124
+    if-nez v2, :cond_1
+
+    .line 125
+    .line 126
+    iget-object v2, v0, Lwx9;->G:Lzlh;
+
+    .line 127
+    .line 128
+    invoke-virtual {v2}, Lzlh;->d()V
+
+    .line 129
+    .line 130
+    .line 131
+    goto :goto_1
+
+    .line 132
+    :cond_1
+    new-instance v2, Lvx9;
+
+    .line 133
+    .line 134
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 135
+    .line 136
+    .line 137
+    iput-object v0, v2, Lvx9;->r:Lwx9;
+
+    .line 138
+    .line 139
+    iput-object v2, v0, Lwx9;->H:Lvx9;
+
+    .line 140
+    .line 141
+    iget-object v12, v0, Lwx9;->G:Lzlh;
+
+    .line 142
+    .line 143
+    invoke-virtual {v12, v2}, Lzlh;->a(Lsk4;)V
+
+    .line 144
+    .line 145
+    .line 146
+    :goto_1
+    const v2, 0x7f010ada
+
+    .line 147
+    .line 148
+    .line 149
+    invoke-virtual {v8, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 150
+    .line 151
+    .line 152
+    move-result-object v2
+
+    .line 153
+    check-cast v2, Landroid/view/ViewStub;
+
+    .line 154
+    .line 155
+    invoke-virtual {v10}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 156
+    .line 157
+    .line 158
+    iget-object v12, v0, Lwx9;->j:Lorg/chromium/ui/base/WindowAndroid;
+
+    .line 159
+    .line 160
+    sget-object v13, Lqfa;->m:Lw02;
+
+    .line 161
+    .line 162
+    invoke-virtual {v13}, Lw02;->b()Z
+
+    .line 163
+    .line 164
+    .line 165
+    move-result v13
+
+    .line 166
+    if-eqz v13, :cond_2
+
+    .line 167
+    .line 168
+    new-instance v12, Lhjc;
+
+    .line 169
+    .line 170
+    invoke-direct {v12}, Ljava/lang/Object;-><init>()V
+
+    .line 171
+    .line 172
+    .line 173
+    invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 174
+    .line 175
+    .line 176
+    move-result-object v13
+
+    .line 177
+    invoke-virtual {v2}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 178
+    .line 179
+    .line 180
+    move-result-object v18
+
+    .line 181
+    move-object/from16 v15, v18
+
+    .line 182
+    .line 183
+    check-cast v15, Landroid/view/ViewGroup;
+
+    .line 184
+    .line 185
+    invoke-virtual {v15, v2}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
+
+    .line 186
+    .line 187
+    .line 188
+    move-result v14
+
+    .line 189
+    invoke-static {v13}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    .line 190
+    .line 191
+    .line 192
+    move-result-object v13
+
+    .line 193
+    move-object/from16 v19, v11
+
+    .line 194
+    .line 195
+    const v11, 0x7f0e0350
+
+    .line 196
+    .line 197
+    .line 198
+    move-object/from16 v20, v7
+
+    .line 199
+    .line 200
+    const/4 v7, 0x0
+
+    .line 201
+    invoke-virtual {v13, v11, v15, v7}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    .line 202
+    .line 203
+    .line 204
+    move-result-object v11
+
+    .line 205
+    invoke-virtual {v15, v2}, Landroid/view/ViewGroup;->removeViewInLayout(Landroid/view/View;)V
+
+    .line 206
+    .line 207
+    .line 208
+    invoke-virtual {v15, v11, v14}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
+
+    .line 209
+    .line 210
+    .line 211
+    iput-object v11, v12, Lhjc;->r:Landroid/view/View;
+
+    .line 212
+    .line 213
+    move-object/from16 v21, v8
+
+    .line 214
+    .line 215
+    goto/16 :goto_4
+
+    .line 216
+    .line 217
+    :cond_2
+    move-object/from16 v20, v7
+
+    .line 218
+    .line 219
+    move-object/from16 v19, v11
+
+    .line 220
+    .line 221
+    new-instance v7, Lwjd;
+
+    .line 222
+    .line 223
+    invoke-direct {v7}, Ljava/lang/Object;-><init>()V
+
+    .line 224
+    .line 225
+    .line 226
+    new-instance v11, Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 227
+    .line 228
+    sget-object v13, Ldkd;->B:[Ln8c;
+
+    .line 229
+    .line 230
+    invoke-direct {v11, v13}, Lorg/chromium/ui/modelutil/PropertyModel;-><init>([Ln8c;)V
+
+    .line 231
+    .line 232
+    .line 233
+    iput-object v11, v7, Lwjd;->r:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 234
+    .line 235
+    invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 236
+    .line 237
+    .line 238
+    move-result-object v13
+
+    .line 239
+    invoke-virtual {v2}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 240
+    .line 241
+    .line 242
+    move-result-object v14
+
+    .line 243
+    check-cast v14, Landroid/view/ViewGroup;
+
+    .line 244
+    .line 245
+    invoke-virtual {v14, v2}, Landroid/view/ViewGroup;->indexOfChild(Landroid/view/View;)I
+
+    .line 246
+    .line 247
+    .line 248
+    move-result v15
+
+    .line 249
+    invoke-static {v13}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    .line 250
+    .line 251
+    .line 252
+    move-result-object v13
+
+    .line 253
+    const v1, 0x7f0e0198
+
+    .line 254
+    .line 255
+    .line 256
+    move-object/from16 v21, v8
+
+    .line 257
+    .line 258
+    const/4 v8, 0x0
+
+    .line 259
+    invoke-virtual {v13, v1, v14, v8}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    .line 260
+    .line 261
+    .line 262
+    move-result-object v1
+
+    .line 263
+    invoke-virtual {v14, v2}, Landroid/view/ViewGroup;->removeViewInLayout(Landroid/view/View;)V
+
+    .line 264
+    .line 265
+    .line 266
+    invoke-virtual {v14, v1, v15}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
+
+    .line 267
+    .line 268
+    .line 269
+    check-cast v1, Lorg/chromium/chrome/browser/ntp/search/SearchBoxContainerView;
+
+    .line 270
+    .line 271
+    iput-object v1, v7, Lwjd;->s:Lorg/chromium/chrome/browser/ntp/search/SearchBoxContainerView;
+
+    .line 272
+    .line 273
+    new-instance v2, Lbkd;
+
+    .line 274
+    .line 275
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 276
+    .line 277
+    .line 278
+    new-instance v8, Lyjd;
+
+    .line 279
+    .line 280
+    invoke-direct {v8}, Ljava/lang/Object;-><init>()V
+
+    .line 281
+    .line 282
+    .line 283
+    iput-object v2, v8, Lyjd;->r:Lbkd;
+
+    .line 284
+    .line 285
+    iput-object v8, v2, Lbkd;->z:Lyjd;
+
+    .line 286
+    .line 287
+    iput-object v9, v2, Lbkd;->r:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 288
+    .line 289
+    iput-object v11, v2, Lbkd;->s:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 290
+    .line 291
+    iput-object v1, v2, Lbkd;->t:Lorg/chromium/chrome/browser/ntp/search/SearchBoxContainerView;
+
+    .line 292
+    .line 293
+    iput-object v5, v2, Lbkd;->u:Lex9;
+
+    .line 294
+    .line 295
+    iput-object v10, v2, Lbkd;->y:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 296
+    .line 297
+    invoke-static {v10}, Lrng;->a(Lorg/chromium/chrome/browser/profiles/Profile;)Lorg/chromium/components/search_engines/TemplateUrlService;
+
+    .line 298
+    .line 299
+    .line 300
+    move-result-object v13
+
+    .line 301
+    iput-object v13, v2, Lbkd;->v:Lorg/chromium/components/search_engines/TemplateUrlService;
+
+    .line 302
+    .line 303
+    invoke-virtual {v13, v8}, Lorg/chromium/components/search_engines/TemplateUrlService;->a(Lqng;)V
+
+    .line 304
+    .line 305
+    .line 306
+    new-instance v8, Lkkd;
+
+    .line 307
+    .line 308
+    invoke-direct {v8}, Ljava/lang/Object;-><init>()V
+
+    .line 309
+    .line 310
+    .line 311
+    const/4 v14, 0x1
+
+    .line 312
+    invoke-static {v11, v1, v8, v14}, Ly8c;->a(Lorg/chromium/ui/modelutil/PropertyModel;Ljava/lang/Object;Lx8c;Z)Ly8c;
+
+    .line 313
+    .line 314
+    .line 315
+    const/4 v1, 0x0
+
+    .line 316
+    if-nez v6, :cond_3
+
+    .line 317
+    .line 318
+    invoke-virtual {v9}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 319
+    .line 320
+    .line 321
+    move-result-object v8
+
+    .line 322
+    const v14, 0x7f0809c9
+
+    .line 323
+    .line 324
+    .line 325
+    invoke-virtual {v8, v14}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 326
+    .line 327
+    .line 328
+    move-result v8
+
+    .line 329
+    int-to-float v8, v8
+
+    .line 330
+    goto :goto_2
+
+    .line 331
+    :cond_3
+    move v8, v1
+
+    .line 332
+    :goto_2
+    iput v8, v2, Lbkd;->w:F
+
+    .line 333
+    .line 334
+    iput-object v3, v2, Lbkd;->x:Lnc;
+
+    .line 335
+    .line 336
+    invoke-virtual {v3, v2}, Lnc;->b(Lna8;)V
+
+    .line 337
+    .line 338
+    .line 339
+    new-instance v8, Lzjd;
+
+    .line 340
+    .line 341
+    const/4 v14, 0x0
+
+    .line 342
+    invoke-direct {v8, v14}, Lzjd;-><init>(B)V
+
+    .line 343
+    .line 344
+    .line 345
+    iput-object v2, v8, Lzjd;->s:Lbkd;
+
+    .line 346
+    .line 347
+    sget-object v14, Ldkd;->p:Lt8c;
+
+    .line 348
+    .line 349
+    invoke-virtual {v11, v14, v8}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 350
+    .line 351
+    .line 352
+    new-instance v8, Lzjd;
+
+    .line 353
+    .line 354
+    const/4 v14, 0x1
+
+    .line 355
+    invoke-direct {v8, v14}, Lzjd;-><init>(B)V
+
+    .line 356
+    .line 357
+    .line 358
+    iput-object v2, v8, Lzjd;->s:Lbkd;
+
+    .line 359
+    .line 360
+    sget-object v14, Ldkd;->y:Lt8c;
+
+    .line 361
+    .line 362
+    invoke-virtual {v11, v14, v8}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 363
+    .line 364
+    .line 365
+    new-instance v8, Lzjd;
+
+    .line 366
+    .line 367
+    const/4 v14, 0x2
+
+    .line 368
+    invoke-direct {v8, v14}, Lzjd;-><init>(B)V
+
+    .line 369
+    .line 370
+    .line 371
+    iput-object v2, v8, Lzjd;->s:Lbkd;
+
+    .line 372
+    .line 373
+    sget-object v14, Ldkd;->l:Lt8c;
+
+    .line 374
+    .line 375
+    invoke-virtual {v11, v14, v8}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 376
+    .line 377
+    .line 378
+    new-instance v8, Lakd;
+
+    .line 379
+    .line 380
+    invoke-direct {v8}, Ljava/lang/Object;-><init>()V
+
+    .line 381
+    .line 382
+    .line 383
+    sget-object v14, Ldkd;->j:Lt8c;
+
+    .line 384
+    .line 385
+    invoke-virtual {v11, v14, v8}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 386
+    .line 387
+    .line 388
+    new-instance v8, Lzjd;
+
+    .line 389
+    .line 390
+    const/4 v14, 0x3
+
+    .line 391
+    invoke-direct {v8, v14}, Lzjd;-><init>(B)V
+
+    .line 392
+    .line 393
+    .line 394
+    iput-object v2, v8, Lzjd;->s:Lbkd;
+
+    .line 395
+    .line 396
+    sget-object v14, Ldkd;->a:Lt8c;
+
+    .line 397
+    .line 398
+    invoke-virtual {v11, v14, v8}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 399
+    .line 400
+    .line 401
+    sget-object v8, Ldkd;->d:Lp8c;
+
+    .line 402
+    .line 403
+    invoke-static {}, Lorg/chromium/base/DeviceInfo;->d()Z
+
+    .line 404
+    .line 405
+    .line 406
+    move-result v14
+
+    .line 407
+    invoke-virtual {v11, v8, v14}, Lorg/chromium/ui/modelutil/PropertyModel;->r(Lp8c;Z)V
+
+    .line 408
+    .line 409
+    .line 410
+    sget-object v8, Ldkd;->m:Ln8c;
+
+    .line 411
+    .line 412
+    invoke-virtual {v11, v8, v1}, Lorg/chromium/ui/modelutil/PropertyModel;->q(Ln8c;F)V
+
+    .line 413
+    .line 414
+    .line 415
+    sget-object v1, Ldkd;->i:Ln8c;
+
+    .line 416
+    .line 417
+    const/high16 v8, 0x3f800000    # 1.0f
+
+    .line 418
+    .line 419
+    invoke-virtual {v11, v1, v8}, Lorg/chromium/ui/modelutil/PropertyModel;->q(Ln8c;F)V
+
+    .line 420
+    .line 421
+    .line 422
+    const v1, 0x7f07016c
+
+    .line 423
+    .line 424
+    .line 425
+    invoke-virtual {v9, v1}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
+
+    .line 426
+    .line 427
+    .line 428
+    move-result-object v1
+
+    .line 429
+    sget-object v8, Ldkd;->n:Lt8c;
+
+    .line 430
+    .line 431
+    invoke-virtual {v11, v8, v1}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 432
+    .line 433
+    .line 434
+    invoke-static {}, Lorg/chromium/base/DeviceInfo;->d()Z
+
+    .line 435
+    .line 436
+    .line 437
+    move-result v1
+
+    .line 438
+    if-eqz v1, :cond_4
+
+    .line 439
+    .line 440
+    const/4 v1, 0x7
+
+    .line 441
+    invoke-static {v1, v10}, LJ/N;->ZO(ILjava/lang/Object;)Z
+
+    .line 442
+    .line 443
+    .line 444
+    move-result v1
+
+    .line 445
+    if-eqz v1, :cond_4
+
+    .line 446
+    .line 447
+    const/4 v1, 0x1
+
+    .line 448
+    goto :goto_3
+
+    .line 449
+    :cond_4
+    const/4 v1, 0x0
+
+    .line 450
+    :goto_3
+    sget-object v8, Ldkd;->b:Lp8c;
+
+    .line 451
+    .line 452
+    invoke-virtual {v11, v8, v1}, Lorg/chromium/ui/modelutil/PropertyModel;->r(Lp8c;Z)V
+
+    .line 453
+    .line 454
+    .line 455
+    sget-object v1, Ldkd;->o:Lp8c;
+
+    .line 456
+    .line 457
+    invoke-static {v10, v13}, Lla6;->a(Lorg/chromium/chrome/browser/profiles/Profile;Lorg/chromium/components/search_engines/TemplateUrlService;)Z
+
+    .line 458
+    .line 459
+    .line 460
+    move-result v8
+
+    .line 461
+    invoke-virtual {v11, v1, v8}, Lorg/chromium/ui/modelutil/PropertyModel;->r(Lp8c;Z)V
+
+    .line 462
+    .line 463
+    .line 464
+    iput-object v2, v7, Lwjd;->t:Lbkd;
+
+    .line 465
+    .line 466
+    iput-object v12, v7, Lwjd;->u:Lorg/chromium/ui/base/WindowAndroid;
+
+    .line 467
+    .line 468
+    move-object v12, v7
+
+    .line 469
+    :goto_4
+    iput-object v12, v0, Lwx9;->D:Ln8a;
+
+    .line 470
+    .line 471
+    sget-object v1, Lcy9;->c:Lt8c;
+
+    .line 472
+    .line 473
+    invoke-interface {v12}, Ln8a;->a()Landroid/view/View;
+
+    .line 474
+    .line 475
+    .line 476
+    move-result-object v2
+
+    .line 477
+    invoke-virtual {v4, v1, v2}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 478
+    .line 479
+    .line 480
+    invoke-virtual {v9}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 481
+    .line 482
+    .line 483
+    move-result-object v1
+
+    .line 484
+    iget-object v2, v0, Lwx9;->G:Lzlh;
+
+    .line 485
+    .line 486
+    invoke-static {v2}, Loba;->a(Ljava/lang/Object;)V
+
+    .line 487
+    .line 488
+    .line 489
+    invoke-static {v1, v2, v6}, Lj8a;->o(Landroid/content/res/Resources;Lzlh;Z)I
+
+    .line 490
+    .line 491
+    .line 492
+    move-result v1
+
+    .line 493
+    iput v1, v0, Lwx9;->c0:I
+
+    .line 494
+    .line 495
+    iget-object v1, v0, Lwx9;->I:Lj22;
+
+    .line 496
+    .line 497
+    new-instance v2, Lkx9;
+
+    .line 498
+    .line 499
+    const/4 v14, 0x3
+
+    .line 500
+    invoke-direct {v2, v14}, Lkx9;-><init>(B)V
+
+    .line 501
+    .line 502
+    .line 503
+    iput-object v0, v2, Lkx9;->s:Lwx9;
+
+    .line 504
+    .line 505
+    invoke-virtual {v1, v2}, Lj22;->b(Lorg/chromium/base/Callback;)Lh22;
+
+    .line 506
+    .line 507
+    .line 508
+    move-result-object v1
+
+    .line 509
+    iget-object v2, v0, Lwx9;->I:Lj22;
+
+    .line 510
+    .line 511
+    new-instance v6, Lkx9;
+
+    .line 512
+    .line 513
+    const/4 v7, 0x4
+
+    .line 514
+    invoke-direct {v6, v7}, Lkx9;-><init>(B)V
+
+    .line 515
+    .line 516
+    .line 517
+    iput-object v0, v6, Lkx9;->s:Lwx9;
+
+    .line 518
+    .line 519
+    invoke-virtual {v2, v6}, Lj22;->b(Lorg/chromium/base/Callback;)Lh22;
+
+    .line 520
+    .line 521
+    .line 522
+    move-result-object v2
+
+    .line 523
+    iput-object v2, v0, Lwx9;->f0:Lh22;
+
+    .line 524
+    .line 525
+    new-instance v6, Lwm8;
+
+    .line 526
+    .line 527
+    new-instance v8, Lix9;
+
+    .line 528
+    .line 529
+    const/4 v14, 0x1
+
+    .line 530
+    invoke-direct {v8, v14}, Lix9;-><init>(B)V
+
+    .line 531
+    .line 532
+    .line 533
+    iput-object v0, v8, Lix9;->s:Ljava/lang/Object;
+
+    .line 534
+    .line 535
+    invoke-direct {v6}, Ljava/lang/Object;-><init>()V
+
+    .line 536
+    .line 537
+    .line 538
+    iput-object v9, v6, Lwm8;->a:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 539
+    .line 540
+    new-instance v11, Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 541
+    .line 542
+    sget-object v12, Ldn8;->s:[Ln8c;
+
+    .line 543
+    .line 544
+    invoke-direct {v11, v12}, Lorg/chromium/ui/modelutil/PropertyModel;-><init>([Ln8c;)V
+
+    .line 545
+    .line 546
+    .line 547
+    iput-object v11, v6, Lwm8;->b:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 548
+    .line 549
+    iput-object v8, v6, Lwm8;->c:Lix9;
+
+    .line 550
+    .line 551
+    const v12, 0x7f0106fa
+
+    .line 552
+    .line 553
+    .line 554
+    move-object/from16 v13, v21
+
+    .line 555
+    .line 556
+    invoke-virtual {v13, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 557
+    .line 558
+    .line 559
+    move-result-object v12
+
+    .line 560
+    check-cast v12, Landroid/view/ViewStub;
+
+    .line 561
+    .line 562
+    invoke-virtual {v12}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+
+    .line 563
+    .line 564
+    .line 565
+    const v12, 0x7f0106f8
+
+    .line 566
+    .line 567
+    .line 568
+    invoke-virtual {v13, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 569
+    .line 570
+    .line 571
+    move-result-object v12
+
+    .line 572
+    check-cast v12, Lorg/chromium/chrome/browser/logo/LogoContainerView;
+
+    .line 573
+    .line 574
+    iput-object v12, v6, Lwm8;->e:Lorg/chromium/chrome/browser/logo/LogoContainerView;
+
+    .line 575
+    .line 576
+    new-instance v14, Lum8;
+
+    .line 577
+    .line 578
+    invoke-direct {v14}, Ljava/lang/Object;-><init>()V
+
+    .line 579
+    .line 580
+    .line 581
+    const/4 v15, 0x1
+
+    .line 582
+    invoke-static {v11, v12, v14, v15}, Ly8c;->a(Lorg/chromium/ui/modelutil/PropertyModel;Ljava/lang/Object;Lx8c;Z)Ly8c;
+
+    .line 583
+    .line 584
+    .line 585
+    invoke-static {}, Liy9;->a()I
+
+    .line 586
+    .line 587
+    .line 588
+    move-result v12
+
+    .line 589
+    const/4 v14, 0x2
+
+    .line 590
+    if-eq v12, v14, :cond_5
+
+    .line 591
+    .line 592
+    const/4 v15, 0x3
+
+    .line 593
+    if-ne v12, v15, :cond_6
+
+    .line 594
+    .line 595
+    :cond_5
+    invoke-static {v9}, Lorg/chromium/ui/base/DeviceFormFactor;->a(Landroid/content/Context;)I
+
+    .line 596
+    .line 597
+    .line 598
+    move-result v12
+
+    .line 599
+    if-lt v12, v14, :cond_7
+
+    .line 600
+    .line 601
+    :cond_6
+    const/4 v14, 0x0
+
+    .line 602
+    goto :goto_5
+
+    .line 603
+    :cond_7
+    sget-object v12, Ldn8;->c:Lr8c;
+
+    .line 604
+    .line 605
+    const/4 v14, 0x0
+
+    .line 606
+    invoke-virtual {v11, v12, v14}, Lorg/chromium/ui/modelutil/PropertyModel;->t(Lr8c;I)V
+
+    .line 607
+    .line 608
+    .line 609
+    :goto_5
+    const v12, 0x7f090363
+
+    .line 610
+    .line 611
+    .line 612
+    invoke-virtual {v9, v12}, Landroid/content/Context;->getDrawable(I)Landroid/graphics/drawable/Drawable;
+
+    .line 613
+    .line 614
+    .line 615
+    move-result-object v12
+
+    .line 616
+    if-nez v12, :cond_8
+
+    .line 617
+    .line 618
+    move-object/from16 p4, v8
+
+    .line 619
+    .line 620
+    const/4 v7, 0x0
+
+    .line 621
+    goto :goto_8
+
+    .line 622
+    :cond_8
+    sget-object v15, Lk7a;->a:Ll7a;
+
+    .line 623
+    .line 624
+    iget v15, v15, Ll7a;->c:I
+
+    .line 625
+    .line 626
+    invoke-static {v9, v14}, Lj8a;->n(Lzh2;Z)Ljava/lang/Integer;
+
+    .line 627
+    .line 628
+    .line 629
+    move-result-object v21
+
+    .line 630
+    invoke-static {v9}, Lyx2;->e(Landroid/content/Context;)Z
+
+    .line 631
+    .line 632
+    .line 633
+    move-result v14
+
+    .line 634
+    if-nez v14, :cond_9
+
+    .line 635
+    .line 636
+    if-nez v15, :cond_9
+
+    .line 637
+    .line 638
+    move-object/from16 p4, v8
+
+    .line 639
+    .line 640
+    goto :goto_7
+
+    .line 641
+    :cond_9
+    const/16 v22, -0x1
+
+    .line 642
+    .line 643
+    move-object/from16 p4, v8
+
+    .line 644
+    .line 645
+    const/4 v8, 0x2
+
+    .line 646
+    if-eq v15, v8, :cond_a
+
+    .line 647
+    .line 648
+    if-ne v15, v7, :cond_c
+
+    .line 649
+    .line 650
+    :cond_a
+    if-eqz v21, :cond_b
+
+    .line 651
+    .line 652
+    invoke-virtual/range {v21 .. v21}, Ljava/lang/Integer;->intValue()I
+
+    .line 653
+    .line 654
+    .line 655
+    move-result v22
+
+    .line 656
+    goto :goto_6
+
+    .line 657
+    :cond_b
+    if-eqz v14, :cond_d
+
+    .line 658
+    .line 659
+    :cond_c
+    :goto_6
+    move/from16 v7, v22
+
+    .line 660
+    .line 661
+    invoke-virtual {v12}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
+
+    .line 662
+    .line 663
+    .line 664
+    move-result-object v8
+
+    .line 665
+    invoke-virtual {v8, v7}, Landroid/graphics/drawable/Drawable;->setTint(I)V
+
+    .line 666
+    .line 667
+    .line 668
+    :cond_d
+    :goto_7
+    move-object/from16 v7, v21
+
+    .line 669
+    .line 670
+    :goto_8
+    iput-object v7, v6, Lwm8;->h:Ljava/lang/Integer;
+
+    .line 671
+    .line 672
+    invoke-virtual/range {p4 .. p4}, Lix9;->get()Ljava/lang/Object;
+
+    .line 673
+    .line 674
+    .line 675
+    move-result-object v7
+
+    .line 676
+    check-cast v7, Ljava/lang/Boolean;
+
+    .line 677
+    .line 678
+    invoke-virtual {v7}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 679
+    .line 680
+    .line 681
+    move-result v7
+
+    .line 682
+    iput-boolean v7, v6, Lwm8;->f:Z
+
+    .line 683
+    .line 684
+    const/4 v14, 0x1
+
+    .line 685
+    xor-int/2addr v7, v14
+
+    .line 686
+    sget-object v8, Ldn8;->p:Lq8c;
+
+    .line 687
+    .line 688
+    invoke-virtual {v11, v8, v7}, Lorg/chromium/ui/modelutil/PropertyModel;->s(Lq8c;I)V
+
+    .line 689
+    .line 690
+    .line 691
+    new-instance v7, Lcn8;
+
+    .line 692
+    .line 693
+    invoke-direct {v7}, Ljava/lang/Object;-><init>()V
+
+    .line 694
+    .line 695
+    .line 696
+    iput-boolean v14, v7, Lcn8;->F:Z
+
+    .line 697
+    .line 698
+    new-instance v8, Lfca;
+
+    .line 699
+    .line 700
+    invoke-direct {v8}, Lfca;-><init>()V
+
+    .line 701
+    .line 702
+    .line 703
+    iput-object v8, v7, Lcn8;->I:Lfca;
+
+    .line 704
+    .line 705
+    invoke-static {v9}, Lyx2;->e(Landroid/content/Context;)Z
+
+    .line 706
+    .line 707
+    .line 708
+    move-result v8
+
+    .line 709
+    iput-boolean v8, v7, Lcn8;->r:Z
+
+    .line 710
+    .line 711
+    iput-object v11, v7, Lcn8;->s:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 712
+    .line 713
+    iput-object v1, v7, Lcn8;->w:Lh22;
+
+    .line 714
+    .line 715
+    iput-object v12, v7, Lcn8;->y:Landroid/graphics/drawable/Drawable;
+
+    .line 716
+    .line 717
+    sget-object v1, Ldn8;->o:Lt8c;
+
+    .line 718
+    .line 719
+    invoke-virtual {v11, v1, v2}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 720
+    .line 721
+    .line 722
+    iput-object v7, v6, Lwm8;->d:Lcn8;
+
+    .line 723
+    .line 724
+    invoke-static {}, Lj8a;->q()Z
+
+    .line 725
+    .line 726
+    .line 727
+    move-result v1
+
+    .line 728
+    if-eqz v1, :cond_e
+
+    .line 729
+    .line 730
+    new-instance v1, Lvm8;
+
+    .line 731
+    .line 732
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    .line 733
+    .line 734
+    .line 735
+    iput-object v9, v1, Lvm8;->a:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 736
+    .line 737
+    iput-object v6, v1, Lvm8;->b:Lwm8;
+
+    .line 738
+    .line 739
+    iput-object v1, v6, Lwm8;->g:Lvm8;
+
+    .line 740
+    .line 741
+    sget-object v2, Lk7a;->a:Ll7a;
+
+    .line 742
+    .line 743
+    const/4 v14, 0x1
+
+    .line 744
+    invoke-virtual {v2, v1, v9, v14}, Ll7a;->a(Lj7a;Landroid/content/Context;Z)V
+
+    .line 745
+    .line 746
+    .line 747
+    :cond_e
+    iput-object v6, v0, Lwx9;->C:Lwm8;
+
+    .line 748
+    .line 749
+    iget-object v1, v7, Lcn8;->t:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 750
+    .line 751
+    if-nez v1, :cond_2a
+
+    .line 752
+    .line 753
+    iput-object v10, v7, Lcn8;->t:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 754
+    .line 755
+    invoke-static {v10}, Lrng;->a(Lorg/chromium/chrome/browser/profiles/Profile;)Lorg/chromium/components/search_engines/TemplateUrlService;
+
+    .line 756
+    .line 757
+    .line 758
+    move-result-object v1
+
+    .line 759
+    invoke-virtual {v1}, Lorg/chromium/components/search_engines/TemplateUrlService;->l()Z
+
+    .line 760
+    .line 761
+    .line 762
+    move-result v2
+
+    .line 763
+    iput-boolean v2, v7, Lcn8;->A:Z
+
+    .line 764
+    .line 765
+    invoke-virtual {v1}, Lorg/chromium/components/search_engines/TemplateUrlService;->e()Lorg/chromium/components/search_engines/TemplateUrl;
+
+    .line 766
+    .line 767
+    .line 768
+    move-result-object v2
+
+    .line 769
+    if-eqz v2, :cond_f
+
+    .line 770
+    .line 771
+    invoke-virtual {v2}, Lorg/chromium/components/search_engines/TemplateUrl;->c()Ljava/lang/String;
+
+    .line 772
+    .line 773
+    .line 774
+    move-result-object v2
+
+    .line 775
+    iput-object v2, v7, Lcn8;->G:Ljava/lang/String;
+
+    .line 776
+    .line 777
+    :cond_f
+    invoke-virtual {v7}, Lcn8;->c()V
+
+    .line 778
+    .line 779
+    .line 780
+    iget-boolean v2, v7, Lcn8;->z:Z
+
+    .line 781
+    .line 782
+    if-eqz v2, :cond_11
+
+    .line 783
+    .line 784
+    iget-object v2, v7, Lcn8;->t:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 785
+    .line 786
+    if-eqz v2, :cond_10
+
+    .line 787
+    .line 788
+    invoke-static {v2}, Lrng;->a(Lorg/chromium/chrome/browser/profiles/Profile;)Lorg/chromium/components/search_engines/TemplateUrlService;
+
+    .line 789
+    .line 790
+    .line 791
+    move-result-object v2
+
+    .line 792
+    invoke-virtual {v2}, Lorg/chromium/components/search_engines/TemplateUrlService;->l()Z
+
+    .line 793
+    .line 794
+    .line 795
+    move-result v2
+
+    .line 796
+    if-eqz v2, :cond_10
+
+    .line 797
+    .line 798
+    iget-object v2, v7, Lcn8;->y:Landroid/graphics/drawable/Drawable;
+
+    .line 799
+    .line 800
+    goto :goto_9
+
+    .line 801
+    :cond_10
+    const/4 v2, 0x0
+
+    .line 802
+    :goto_9
+    sget-object v6, Ldn8;->l:Lt8c;
+
+    .line 803
+    .line 804
+    invoke-virtual {v11, v6, v2}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 805
+    .line 806
+    .line 807
+    sget-object v2, Ldn8;->k:Lt8c;
+
+    .line 808
+    .line 809
+    const/4 v6, 0x0
+
+    .line 810
+    invoke-virtual {v11, v2, v6}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 811
+    .line 812
+    .line 813
+    sget-object v2, Ldn8;->j:Lt8c;
+
+    .line 814
+    .line 815
+    sget-object v6, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 816
+    .line 817
+    invoke-virtual {v11, v2, v6}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 818
+    .line 819
+    .line 820
+    iget-boolean v2, v7, Lcn8;->B:Z
+
+    .line 821
+    .line 822
+    if-eqz v2, :cond_11
+
+    .line 823
+    .line 824
+    const/4 v14, 0x0
+
+    .line 825
+    invoke-virtual {v7, v14}, Lcn8;->a(Z)V
+
+    .line 826
+    .line 827
+    .line 828
+    :cond_11
+    invoke-virtual {v1, v7}, Lorg/chromium/components/search_engines/TemplateUrlService;->a(Lqng;)V
+
+    .line 829
+    .line 830
+    .line 831
+    move/from16 v1, p2
+
+    .line 832
+    .line 833
+    move/from16 v2, p3
+
+    .line 834
+    .line 835
+    invoke-virtual {v0, v1, v2}, Lwx9;->m(ZZ)V
+
+    .line 836
+    .line 837
+    .line 838
+    const v1, 0x7f010809
+
+    .line 839
+    .line 840
+    .line 841
+    invoke-virtual {v13, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 842
+    .line 843
+    .line 844
+    move-result-object v1
+
+    .line 845
+    if-eqz v1, :cond_29
+
+    .line 846
+    .line 847
+    new-instance v2, Lsi9;
+
+    .line 848
+    .line 849
+    iget-object v6, v0, Lwx9;->G:Lzlh;
+
+    .line 850
+    .line 851
+    invoke-static {v6}, Loba;->a(Ljava/lang/Object;)V
+
+    .line 852
+    .line 853
+    .line 854
+    new-instance v7, Lpx9;
+
+    .line 855
+    .line 856
+    const/4 v14, 0x0
+
+    .line 857
+    invoke-direct {v7, v14}, Lpx9;-><init>(B)V
+
+    .line 858
+    .line 859
+    .line 860
+    iput-object v0, v7, Lpx9;->s:Lwx9;
+
+    .line 861
+    .line 862
+    new-instance v8, Lpx9;
+
+    .line 863
+    .line 864
+    const/4 v14, 0x1
+
+    .line 865
+    invoke-direct {v8, v14}, Lpx9;-><init>(B)V
+
+    .line 866
+    .line 867
+    .line 868
+    iput-object v0, v8, Lpx9;->s:Lwx9;
+
+    .line 869
+    .line 870
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 871
+    .line 872
+    .line 873
+    iput-object v9, v2, Lsi9;->r:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 874
+    .line 875
+    iput-object v3, v2, Lsi9;->s:Lnc;
+
+    .line 876
+    .line 877
+    iput-object v1, v2, Lsi9;->t:Landroid/view/View;
+
+    .line 878
+    .line 879
+    invoke-static {v9}, Lorg/chromium/ui/base/DeviceFormFactor;->a(Landroid/content/Context;)I
+
+    .line 880
+    .line 881
+    .line 882
+    move-result v11
+
+    .line 883
+    const/4 v14, 0x2
+
+    .line 884
+    if-lt v11, v14, :cond_12
+
+    .line 885
+    .line 886
+    const/4 v11, 0x1
+
+    .line 887
+    goto :goto_a
+
+    .line 888
+    :cond_12
+    const/4 v11, 0x0
+
+    .line 889
+    :goto_a
+    invoke-static {}, Liy9;->a()I
+
+    .line 890
+    .line 891
+    .line 892
+    move-result v12
+
+    .line 893
+    if-eqz v12, :cond_13
+
+    .line 894
+    .line 895
+    invoke-virtual {v9}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 896
+    .line 897
+    .line 898
+    move-result-object v14
+
+    .line 899
+    const v15, 0x7f080956
+
+    .line 900
+    .line 901
+    .line 902
+    invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 903
+    .line 904
+    .line 905
+    move-result v15
+
+    .line 906
+    move-object/from16 v21, v13
+
+    .line 907
+    .line 908
+    const v13, 0x7f080951
+
+    .line 909
+    .line 910
+    .line 911
+    invoke-virtual {v14, v13}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 912
+    .line 913
+    .line 914
+    move-result v13
+
+    .line 915
+    invoke-virtual {v1}, Landroid/view/View;->getPaddingStart()I
+
+    .line 916
+    .line 917
+    .line 918
+    move-result v14
+
+    .line 919
+    move-object/from16 v22, v4
+
+    .line 920
+    .line 921
+    invoke-virtual {v1}, Landroid/view/View;->getPaddingEnd()I
+
+    .line 922
+    .line 923
+    .line 924
+    move-result v4
+
+    .line 925
+    invoke-virtual {v1, v14, v15, v4, v13}, Landroid/view/View;->setPaddingRelative(IIII)V
+
+    .line 926
+    .line 927
+    .line 928
+    invoke-virtual {v2, v12}, Lsi9;->a(I)V
+
+    .line 929
+    .line 930
+    .line 931
+    goto :goto_b
+
+    .line 932
+    :cond_13
+    move-object/from16 v22, v4
+
+    .line 933
+    .line 934
+    move-object/from16 v21, v13
+
+    .line 935
+    .line 936
+    :goto_b
+    const v4, 0x7f01080a
+
+    .line 937
+    .line 938
+    .line 939
+    invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 940
+    .line 941
+    .line 942
+    move-result-object v12
+
+    .line 943
+    check-cast v12, Lorg/chromium/chrome/browser/suggestions/tile/MostVisitedTilesLayout;
+
+    .line 944
+    .line 945
+    new-instance v13, Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 946
+    .line 947
+    sget-object v14, Lcj9;->d:[Ln8c;
+
+    .line 948
+    .line 949
+    invoke-direct {v13, v14}, Lorg/chromium/ui/modelutil/PropertyModel;-><init>([Ln8c;)V
+
+    .line 950
+    .line 951
+    .line 952
+    new-instance v14, Ldj9;
+
+    .line 953
+    .line 954
+    invoke-direct {v14}, Ljava/lang/Object;-><init>()V
+
+    .line 955
+    .line 956
+    .line 957
+    iput-object v1, v14, Ldj9;->a:Landroid/view/View;
+
+    .line 958
+    .line 959
+    iput-object v12, v14, Ldj9;->b:Lorg/chromium/chrome/browser/suggestions/tile/MostVisitedTilesLayout;
+
+    .line 960
+    .line 961
+    new-instance v12, Lqi9;
+
+    .line 962
+    .line 963
+    invoke-direct {v12}, Ljava/lang/Object;-><init>()V
+
+    .line 964
+    .line 965
+    .line 966
+    const/4 v15, 0x1
+
+    .line 967
+    invoke-static {v13, v14, v12, v15}, Ly8c;->a(Lorg/chromium/ui/modelutil/PropertyModel;Ljava/lang/Object;Lx8c;Z)Ly8c;
+
+    .line 968
+    .line 969
+    .line 970
+    new-instance v12, Lixg;
+
+    .line 971
+    .line 972
+    if-nez v11, :cond_14
+
+    .line 973
+    .line 974
+    iget-object v14, v6, Lzlh;->a:Lylh;
+
+    .line 975
+    .line 976
+    iget-byte v15, v14, Lylh;->a:B
+
+    .line 977
+    .line 978
+    if-eqz v15, :cond_14
+
+    .line 979
+    .line 980
+    iget-boolean v14, v14, Lylh;->b:Z
+
+    .line 981
+    .line 982
+    if-eqz v14, :cond_14
+
+    .line 983
+    .line 984
+    const/4 v14, 0x1
+
+    .line 985
+    goto :goto_c
+
+    .line 986
+    :cond_14
+    const/4 v14, 0x2
+
+    .line 987
+    :goto_c
+    const/4 v15, 0x0
+
+    .line 988
+    invoke-direct {v12, v9, v14, v15}, Lixg;-><init>(Lorg/chromium/chrome/browser/ChromeTabbedActivity;ILp77;)V
+
+    .line 989
+    .line 990
+    .line 991
+    iput-object v12, v2, Lsi9;->v:Lixg;
+
+    .line 992
+    .line 993
+    new-instance v14, Lvi9;
+
+    .line 994
+    .line 995
+    invoke-direct {v14}, Ljava/lang/Object;-><init>()V
+
+    .line 996
+    .line 997
+    .line 998
+    invoke-virtual {v9}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 999
+    .line 1000
+    .line 1001
+    move-result-object v15
+
+    .line 1002
+    iput-object v15, v14, Lvi9;->a:Landroid/content/res/Resources;
+
+    .line 1003
+    .line 1004
+    iput-object v6, v14, Lvi9;->b:Lzlh;
+
+    .line 1005
+    .line 1006
+    iput-object v12, v14, Lvi9;->m:Lixg;
+
+    .line 1007
+    .line 1008
+    iput-object v13, v14, Lvi9;->e:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 1009
+    .line 1010
+    iput-boolean v11, v14, Lvi9;->f:Z
+
+    .line 1011
+    .line 1012
+    iput-object v7, v14, Lvi9;->i:Lpx9;
+
+    .line 1013
+    .line 1014
+    iput-object v8, v14, Lvi9;->j:Lpx9;
+
+    .line 1015
+    .line 1016
+    iput-object v1, v14, Lvi9;->c:Landroid/view/View;
+
+    .line 1017
+    .line 1018
+    invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 1019
+    .line 1020
+    .line 1021
+    move-result-object v1
+
+    .line 1022
+    check-cast v1, Lorg/chromium/chrome/browser/suggestions/tile/MostVisitedTilesLayout;
+
+    .line 1023
+    .line 1024
+    iput-object v1, v14, Lvi9;->d:Lorg/chromium/chrome/browser/suggestions/tile/MostVisitedTilesLayout;
+
+    .line 1025
+    .line 1026
+    const v4, 0x7f080d54
+
+    .line 1027
+    .line 1028
+    .line 1029
+    invoke-virtual {v15, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 1030
+    .line 1031
+    .line 1032
+    move-result v4
+
+    .line 1033
+    iput v4, v14, Lvi9;->g:I
+
+    .line 1034
+    .line 1035
+    const v4, 0x7f080d51
+
+    .line 1036
+    .line 1037
+    .line 1038
+    invoke-virtual {v15, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 1039
+    .line 1040
+    .line 1041
+    move-result v4
+
+    .line 1042
+    iput v4, v14, Lvi9;->h:I
+
+    .line 1043
+    .line 1044
+    const v4, 0x7f080952
+
+    .line 1045
+    .line 1046
+    .line 1047
+    invoke-virtual {v15, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 1048
+    .line 1049
+    .line 1050
+    move-result v4
+
+    .line 1051
+    const/16 v16, 0x1
+
+    .line 1052
+    .line 1053
+    shl-int/lit8 v4, v4, 0x1
+
+    .line 1054
+    .line 1055
+    iput v4, v14, Lvi9;->p:I
+
+    .line 1056
+    .line 1057
+    const v4, 0x7f080d52
+
+    .line 1058
+    .line 1059
+    .line 1060
+    invoke-virtual {v15, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 1061
+    .line 1062
+    .line 1063
+    move-result v4
+
+    .line 1064
+    iput v4, v14, Lvi9;->q:I
+
+    .line 1065
+    .line 1066
+    const v4, 0x7f080d53
+
+    .line 1067
+    .line 1068
+    .line 1069
+    invoke-virtual {v15, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 1070
+    .line 1071
+    .line 1072
+    move-result v4
+
+    .line 1073
+    iput v4, v14, Lvi9;->r:I
+
+    .line 1074
+    .line 1075
+    invoke-virtual {v14}, Lvi9;->a()V
+
+    .line 1076
+    .line 1077
+    .line 1078
+    new-instance v4, Lui9;
+
+    .line 1079
+    .line 1080
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+
+    .line 1081
+    .line 1082
+    .line 1083
+    iput-object v14, v4, Lui9;->a:Lvi9;
+
+    .line 1084
+    .line 1085
+    iput-object v4, v14, Lvi9;->k:Lui9;
+
+    .line 1086
+    .line 1087
+    sget-object v7, Lk7a;->a:Ll7a;
+
+    .line 1088
+    .line 1089
+    const/4 v8, 0x0
+
+    .line 1090
+    invoke-virtual {v7, v4, v9, v8}, Ll7a;->a(Lj7a;Landroid/content/Context;Z)V
+
+    .line 1091
+    .line 1092
+    .line 1093
+    iput-object v14, v2, Lsi9;->u:Lvi9;
+
+    .line 1094
+    .line 1095
+    iput-object v2, v0, Lwx9;->E:Lsi9;
+
+    .line 1096
+    .line 1097
+    invoke-virtual {v3, v2}, Lnc;->b(Lna8;)V
+
+    .line 1098
+    .line 1099
+    .line 1100
+    iget-object v3, v2, Lsi9;->v:Lixg;
+
+    .line 1101
+    .line 1102
+    if-nez v3, :cond_16
+
+    .line 1103
+    .line 1104
+    new-instance v3, Lixg;
+
+    .line 1105
+    .line 1106
+    if-nez v11, :cond_15
+
+    .line 1107
+    .line 1108
+    iget-object v4, v6, Lzlh;->a:Lylh;
+
+    .line 1109
+    .line 1110
+    iget-byte v6, v4, Lylh;->a:B
+
+    .line 1111
+    .line 1112
+    if-eqz v6, :cond_15
+
+    .line 1113
+    .line 1114
+    iget-boolean v4, v4, Lylh;->b:Z
+
+    .line 1115
+    .line 1116
+    if-eqz v4, :cond_15
+
+    .line 1117
+    .line 1118
+    const/4 v4, 0x1
+
+    .line 1119
+    goto :goto_d
+
+    .line 1120
+    :cond_15
+    const/4 v4, 0x2
+
+    .line 1121
+    :goto_d
+    iget-object v6, v5, Lex9;->c:Lp77;
+
+    .line 1122
+    .line 1123
+    invoke-direct {v3, v9, v4, v6}, Lixg;-><init>(Lorg/chromium/chrome/browser/ChromeTabbedActivity;ILp77;)V
+
+    .line 1124
+    .line 1125
+    .line 1126
+    iput-object v3, v2, Lsi9;->v:Lixg;
+
+    .line 1127
+    .line 1128
+    goto :goto_e
+
+    .line 1129
+    :cond_16
+    iget-object v4, v5, Lex9;->c:Lp77;
+
+    .line 1130
+    .line 1131
+    iput-object v4, v3, Lixg;->c:Lp77;
+
+    .line 1132
+    .line 1133
+    :goto_e
+    const/4 v15, 0x1
+
+    .line 1134
+    iput-boolean v15, v3, Lixg;->h:Z
+
+    .line 1135
+    .line 1136
+    iput-object v10, v3, Lixg;->i:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 1137
+    .line 1138
+    new-instance v3, Landroid/os/Handler;
+
+    .line 1139
+    .line 1140
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    .line 1141
+    .line 1142
+    .line 1143
+    move-result-object v4
+
+    .line 1144
+    invoke-direct {v3, v4}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    .line 1145
+    .line 1146
+    .line 1147
+    new-instance v4, Lcuh;
+
+    .line 1148
+    .line 1149
+    invoke-direct {v4, v9, v10, v3}, Lcuh;-><init>(Landroid/app/Activity;Lorg/chromium/chrome/browser/profiles/Profile;Landroid/os/Handler;)V
+
+    .line 1150
+    .line 1151
+    .line 1152
+    iput-object v4, v2, Lsi9;->w:Lcuh;
+
+    .line 1153
+    .line 1154
+    new-instance v3, Lrf3;
+
+    .line 1155
+    .line 1156
+    iget-object v4, v5, Lex9;->a:Lh6f;
+
+    .line 1157
+    .line 1158
+    new-instance v6, Lri9;
+
+    .line 1159
+    .line 1160
+    invoke-direct {v6}, Ljava/lang/Object;-><init>()V
+
+    .line 1161
+    .line 1162
+    .line 1163
+    iput-object v9, v6, Lri9;->r:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 1164
+    .line 1165
+    const-string v8, "Suggestions"
+
+    .line 1166
+    .line 1167
+    move-object/from16 v9, p5
+
+    .line 1168
+    .line 1169
+    invoke-direct {v3, v4, v9, v6, v8}, Lrf3;-><init>(Ler9;Lx9h;Ljava/lang/Runnable;Ljava/lang/String;)V
+
+    .line 1170
+    .line 1171
+    .line 1172
+    iput-object v3, v2, Lsi9;->x:Lrf3;
+
+    .line 1173
+    .line 1174
+    invoke-static {}, Lorg/chromium/base/ThreadUtils;->b()V
+
+    .line 1175
+    .line 1176
+    .line 1177
+    sget-object v3, Lg6f;->a:Lg6f;
+
+    .line 1178
+    .line 1179
+    if-nez v3, :cond_17
+
+    .line 1180
+    .line 1181
+    new-instance v3, Lg6f;
+
+    .line 1182
+    .line 1183
+    invoke-direct {v3}, Ljava/lang/Object;-><init>()V
+
+    .line 1184
+    .line 1185
+    .line 1186
+    sput-object v3, Lg6f;->a:Lg6f;
+
+    .line 1187
+    .line 1188
+    :cond_17
+    invoke-static {v10}, Lorg/chromium/chrome/browser/offlinepages/OfflinePageBridge;->a(Lorg/chromium/chrome/browser/profiles/Profile;)Lorg/chromium/chrome/browser/offlinepages/OfflinePageBridge;
+
+    .line 1189
+    .line 1190
+    .line 1191
+    move-result-object v3
+
+    .line 1192
+    iput-object v3, v2, Lsi9;->y:Lorg/chromium/chrome/browser/offlinepages/OfflinePageBridge;
+
+    .line 1193
+    .line 1194
+    iget-object v4, v2, Lsi9;->w:Lcuh;
+
+    .line 1195
+    .line 1196
+    iget-object v6, v2, Lsi9;->x:Lrf3;
+
+    .line 1197
+    .line 1198
+    iget-object v2, v2, Lsi9;->v:Lixg;
+
+    .line 1199
+    .line 1200
+    iput-object v4, v14, Lvi9;->o:Lcuh;
+
+    .line 1201
+    .line 1202
+    iput-object v2, v14, Lvi9;->m:Lixg;
+
+    .line 1203
+    .line 1204
+    new-instance v4, Ltwg;
+
+    .line 1205
+    .line 1206
+    new-instance v8, Lhwg;
+
+    .line 1207
+    .line 1208
+    invoke-direct {v8}, Ljava/lang/Object;-><init>()V
+
+    .line 1209
+    .line 1210
+    .line 1211
+    new-instance v9, Lg4d;
+
+    .line 1212
+    .line 1213
+    invoke-direct {v9}, Lg4d;-><init>()V
+
+    .line 1214
+    .line 1215
+    .line 1216
+    iput-object v9, v8, Lhwg;->d:Lg4d;
+
+    .line 1217
+    .line 1218
+    iput-object v1, v8, Lhwg;->a:Lorg/chromium/chrome/browser/suggestions/tile/MostVisitedTilesLayout;
+
+    .line 1219
+    .line 1220
+    invoke-virtual {v1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 1221
+    .line 1222
+    .line 1223
+    move-result-object v1
+
+    .line 1224
+    const v9, 0x7f080d56
+
+    .line 1225
+    .line 1226
+    .line 1227
+    invoke-virtual {v1, v9}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 1228
+    .line 1229
+    .line 1230
+    move-result v1
+
+    .line 1231
+    int-to-float v1, v1
+
+    .line 1232
+    iput v1, v8, Lhwg;->b:F
+
+    .line 1233
+    .line 1234
+    const v9, 0x3ecccccd    # 0.4f
+
+    .line 1235
+    .line 1236
+    .line 1237
+    mul-float/2addr v1, v9
+
+    .line 1238
+    mul-float/2addr v1, v1
+
+    .line 1239
+    iput v1, v8, Lhwg;->c:F
+
+    .line 1240
+    .line 1241
+    const/4 v1, 0x0
+
+    .line 1242
+    iput-byte v1, v8, Lhwg;->e:B
+
+    .line 1243
+    .line 1244
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+
+    .line 1245
+    .line 1246
+    .line 1247
+    new-instance v1, Ljava/util/ArrayList;
+
+    .line 1248
+    .line 1249
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 1250
+    .line 1251
+    .line 1252
+    iput-object v1, v4, Ltwg;->h:Ljava/util/ArrayList;
+
+    .line 1253
+    .line 1254
+    new-instance v9, Landroid/util/SparseArray;
+
+    .line 1255
+    .line 1256
+    invoke-direct {v9}, Landroid/util/SparseArray;-><init>()V
+
+    .line 1257
+    .line 1258
+    .line 1259
+    new-instance v11, Ljava/util/ArrayList;
+
+    .line 1260
+    .line 1261
+    invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
+
+    .line 1262
+    .line 1263
+    .line 1264
+    const/4 v15, 0x1
+
+    .line 1265
+    invoke-virtual {v9, v15, v11}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    .line 1266
+    .line 1267
+    .line 1268
+    iput-object v9, v4, Ltwg;->j:Landroid/util/SparseArray;
+
+    .line 1269
+    .line 1270
+    new-instance v9, Lswg;
+
+    .line 1271
+    .line 1272
+    invoke-direct {v9}, Ljava/lang/Object;-><init>()V
+
+    .line 1273
+    .line 1274
+    .line 1275
+    new-instance v11, Ljava/util/ArrayList;
+
+    .line 1276
+    .line 1277
+    invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
+
+    .line 1278
+    .line 1279
+    .line 1280
+    iput-object v11, v9, Lswg;->b:Ljava/util/ArrayList;
+
+    .line 1281
+    .line 1282
+    iput-object v9, v4, Ltwg;->k:Lswg;
+
+    .line 1283
+    .line 1284
+    new-instance v9, Llwg;
+
+    .line 1285
+    .line 1286
+    invoke-direct {v9}, Ljava/lang/Object;-><init>()V
+
+    .line 1287
+    .line 1288
+    .line 1289
+    iput-object v4, v9, Llwg;->a:Ltwg;
+
+    .line 1290
+    .line 1291
+    iput-object v9, v4, Ltwg;->o:Llwg;
+
+    .line 1292
+    .line 1293
+    iput-object v5, v4, Ltwg;->a:Lex9;
+
+    .line 1294
+    .line 1295
+    iput-object v6, v4, Ltwg;->b:Lrf3;
+
+    .line 1296
+    .line 1297
+    move-object/from16 v5, p1
+
+    .line 1298
+    .line 1299
+    iput-object v5, v4, Ltwg;->c:Lfx9;
+
+    .line 1300
+    .line 1301
+    iput-object v8, v4, Ltwg;->d:Lhwg;
+
+    .line 1302
+    .line 1303
+    iput-object v14, v4, Ltwg;->e:Lvi9;
+
+    .line 1304
+    .line 1305
+    iput-object v2, v4, Ltwg;->f:Lixg;
+
+    .line 1306
+    .line 1307
+    new-instance v2, Lrwg;
+
+    .line 1308
+    .line 1309
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 1310
+    .line 1311
+    .line 1312
+    iput-object v4, v2, Lrwg;->b:Ltwg;
+
+    .line 1313
+    .line 1314
+    iput-object v3, v2, Lrwg;->a:Lorg/chromium/chrome/browser/offlinepages/OfflinePageBridge;
+
+    .line 1315
+    .line 1316
+    iget-object v3, v3, Lorg/chromium/chrome/browser/offlinepages/OfflinePageBridge;->c:Lfca;
+
+    .line 1317
+    .line 1318
+    invoke-virtual {v3, v2}, Lfca;->a(Ljava/lang/Object;)Z
+
+    .line 1319
+    .line 1320
+    .line 1321
+    iput-object v2, v4, Ltwg;->i:Lrwg;
+
+    .line 1322
+    .line 1323
+    new-instance v2, Llwg;
+
+    .line 1324
+    .line 1325
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 1326
+    .line 1327
+    .line 1328
+    iput-object v4, v2, Llwg;->a:Ltwg;
+
+    .line 1329
+    .line 1330
+    iput-object v2, v4, Ltwg;->g:Llwg;
+
+    .line 1331
+    .line 1332
+    iput-object v4, v14, Lvi9;->n:Ltwg;
+
+    .line 1333
+    .line 1334
+    const/16 v16, 0x1
+
+    .line 1335
+    .line 1336
+    invoke-static/range {v16 .. v16}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 1337
+    .line 1338
+    .line 1339
+    move-result-object v2
+
+    .line 1340
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 1341
+    .line 1342
+    .line 1343
+    iget-boolean v1, v5, Lfx9;->h:Z
+
+    .line 1344
+    .line 1345
+    if-nez v1, :cond_28
+
+    .line 1346
+    .line 1347
+    iget-boolean v1, v5, Lfx9;->f:Z
+
+    .line 1348
+    .line 1349
+    if-eqz v1, :cond_18
+
+    .line 1350
+    .line 1351
+    iget-object v1, v5, Lfx9;->m:Lwwg;
+
+    .line 1352
+    .line 1353
+    if-nez v1, :cond_18
+
+    .line 1354
+    .line 1355
+    new-instance v1, Lwwg;
+
+    .line 1356
+    .line 1357
+    const/4 v14, 0x0
+
+    .line 1358
+    invoke-direct {v1, v14}, Lwwg;-><init>(B)V
+
+    .line 1359
+    .line 1360
+    .line 1361
+    iput-object v5, v1, Lwwg;->s:Lfx9;
+
+    .line 1362
+    .line 1363
+    iput-object v4, v1, Lwwg;->t:Ltwg;
+
+    .line 1364
+    .line 1365
+    iput-object v1, v5, Lfx9;->m:Lwwg;
+
+    .line 1366
+    .line 1367
+    new-instance v2, Lwwg;
+
+    .line 1368
+    .line 1369
+    const/4 v15, 0x1
+
+    .line 1370
+    invoke-direct {v2, v15}, Lwwg;-><init>(B)V
+
+    .line 1371
+    .line 1372
+    .line 1373
+    iput-object v5, v2, Lwwg;->s:Lfx9;
+
+    .line 1374
+    .line 1375
+    iput-object v4, v2, Lwwg;->t:Ltwg;
+
+    .line 1376
+    .line 1377
+    iput-object v2, v5, Lfx9;->n:Lwwg;
+
+    .line 1378
+    .line 1379
+    iget-object v2, v5, Lfx9;->k:Laca;
+
+    .line 1380
+    .line 1381
+    invoke-virtual {v2, v1, v14}, Laca;->e(Lorg/chromium/base/Callback;I)Ljava/lang/Object;
+
+    .line 1382
+    .line 1383
+    .line 1384
+    iget-object v1, v5, Lfx9;->l:Laca;
+
+    .line 1385
+    .line 1386
+    iget-object v2, v5, Lfx9;->n:Lwwg;
+
+    .line 1387
+    .line 1388
+    invoke-virtual {v1, v2, v14}, Laca;->e(Lorg/chromium/base/Callback;I)Ljava/lang/Object;
+
+    .line 1389
+    .line 1390
+    .line 1391
+    :cond_18
+    iget-object v1, v5, Lfx9;->e:Lorg/chromium/chrome/browser/suggestions/mostvisited/MostVisitedSitesBridge;
+
+    .line 1392
+    .line 1393
+    iput-object v4, v1, Lorg/chromium/chrome/browser/suggestions/mostvisited/MostVisitedSitesBridge;->b:Ltwg;
+
+    .line 1394
+    .line 1395
+    iget-object v2, v1, Lorg/chromium/chrome/browser/suggestions/mostvisited/MostVisitedSitesBridge;->a:Lorg/jni_zero/JniUniquePtr;
+
+    .line 1396
+    .line 1397
+    if-eqz v2, :cond_27
+
+    .line 1398
+    .line 1399
+    invoke-static {v2}, Ldx7;->a(Lorg/jni_zero/JniPtr;)J
+
+    .line 1400
+    .line 1401
+    .line 1402
+    move-result-wide v2
+
+    .line 1403
+    const/16 v4, 0xe
+
+    .line 1404
+    .line 1405
+    const/16 v5, 0x8
+
+    .line 1406
+    .line 1407
+    invoke-static {v4, v5, v2, v3, v1}, LJ/N;->VIJO(IIJLjava/lang/Object;)V
+
+    .line 1408
+    .line 1409
+    .line 1410
+    iget-object v1, v0, Lwx9;->E:Lsi9;
+
+    .line 1411
+    .line 1412
+    iget-object v1, v1, Lsi9;->u:Lvi9;
+
+    .line 1413
+    .line 1414
+    iget-object v1, v1, Lvi9;->e:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 1415
+    .line 1416
+    sget-object v2, Lcj9;->a:Lp8c;
+
+    .line 1417
+    .line 1418
+    iget-boolean v3, v7, Ll7a;->k:Z
+
+    .line 1419
+    .line 1420
+    invoke-virtual {v1, v2, v3}, Lorg/chromium/ui/modelutil/PropertyModel;->r(Lp8c;Z)V
+
+    .line 1421
+    .line 1422
+    .line 1423
+    new-instance v1, Ljx9;
+
+    .line 1424
+    .line 1425
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    .line 1426
+    .line 1427
+    .line 1428
+    iput-object v0, v1, Ljx9;->r:Lwx9;
+
+    .line 1429
+    .line 1430
+    iput-object v1, v0, Lwx9;->J:Ljx9;
+
+    .line 1431
+    .line 1432
+    move-object/from16 v2, v20
+
+    .line 1433
+    .line 1434
+    iget-object v3, v2, Lorg/chromium/chrome/browser/omnibox/SearchEngineService;->y:Lfca;
+
+    .line 1435
+    .line 1436
+    invoke-virtual {v3, v1}, Lfca;->a(Ljava/lang/Object;)Z
+
+    .line 1437
+    .line 1438
+    .line 1439
+    iget-object v3, v2, Lorg/chromium/chrome/browser/omnibox/SearchEngineService;->E:Lsye;
+
+    .line 1440
+    .line 1441
+    invoke-virtual {v1, v3}, Ljx9;->a(Lsye;)V
+
+    .line 1442
+    .line 1443
+    .line 1444
+    iget-object v1, v0, Lwx9;->D:Ln8a;
+
+    .line 1445
+    .line 1446
+    if-eqz v1, :cond_1b
+
+    .line 1447
+    .line 1448
+    invoke-static {}, Lj8a;->z()Z
+
+    .line 1449
+    .line 1450
+    .line 1451
+    move-result v1
+
+    .line 1452
+    if-nez v1, :cond_19
+
+    .line 1453
+    .line 1454
+    invoke-static {}, Lorg/chromium/base/DeviceInfo;->d()Z
+
+    .line 1455
+    .line 1456
+    .line 1457
+    move-result v1
+
+    .line 1458
+    if-nez v1, :cond_19
+
+    .line 1459
+    .line 1460
+    const/4 v1, 0x0
+
+    .line 1461
+    goto :goto_f
+
+    .line 1462
+    :cond_19
+    const/4 v1, 0x1
+
+    .line 1463
+    :goto_f
+    iget-object v3, v0, Lwx9;->D:Ln8a;
+
+    .line 1464
+    .line 1465
+    if-eqz v1, :cond_1a
+
+    .line 1466
+    .line 1467
+    const v1, 0x7f150365
+
+    .line 1468
+    .line 1469
+    .line 1470
+    invoke-interface {v3, v1}, Ln8a;->o(I)V
+
+    .line 1471
+    .line 1472
+    .line 1473
+    goto :goto_10
+
+    .line 1474
+    :cond_1a
+    const v1, 0x7f150364
+
+    .line 1475
+    .line 1476
+    .line 1477
+    invoke-interface {v3, v1}, Ln8a;->o(I)V
+
+    .line 1478
+    .line 1479
+    .line 1480
+    :cond_1b
+    :goto_10
+    const-string v1, "NewTabPageLayout.initializeSearchBoxTextView()"
+
+    .line 1481
+    .line 1482
+    const/4 v15, 0x0
+
+    .line 1483
+    invoke-static {v1, v15}, Lorg/chromium/base/TraceEvent;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 1484
+    .line 1485
+    .line 1486
+    iget-object v3, v0, Lwx9;->D:Ln8a;
+
+    .line 1487
+    .line 1488
+    new-instance v4, Lqx9;
+
+    .line 1489
+    .line 1490
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+
+    .line 1491
+    .line 1492
+    .line 1493
+    iput-object v0, v4, Lqx9;->r:Lwx9;
+
+    .line 1494
+    .line 1495
+    invoke-interface {v3, v4}, Ln8a;->s(Landroid/view/View$OnDragListener;)V
+
+    .line 1496
+    .line 1497
+    .line 1498
+    iget-object v3, v0, Lwx9;->D:Ln8a;
+
+    .line 1499
+    .line 1500
+    new-instance v4, Ltx9;
+
+    .line 1501
+    .line 1502
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+
+    .line 1503
+    .line 1504
+    .line 1505
+    iput-object v0, v4, Ltx9;->r:Lwx9;
+
+    .line 1506
+    .line 1507
+    invoke-interface {v3, v4}, Ln8a;->y(Ltx9;)V
+
+    .line 1508
+    .line 1509
+    .line 1510
+    invoke-static {v1}, Lorg/chromium/base/TraceEvent;->c(Ljava/lang/String;)V
+
+    .line 1511
+    .line 1512
+    .line 1513
+    iget-boolean v1, v0, Lwx9;->z:Z
+
+    .line 1514
+    .line 1515
+    if-eqz v1, :cond_1c
+
+    .line 1516
+    .line 1517
+    iget-object v1, v2, Lorg/chromium/chrome/browser/omnibox/SearchEngineService;->z:Laca;
+
+    .line 1518
+    .line 1519
+    iput-object v1, v0, Lwx9;->L:Laca;
+
+    .line 1520
+    .line 1521
+    new-instance v3, Lkx9;
+
+    .line 1522
+    .line 1523
+    const/4 v14, 0x0
+
+    .line 1524
+    invoke-direct {v3, v14}, Lkx9;-><init>(B)V
+
+    .line 1525
+    .line 1526
+    .line 1527
+    iput-object v0, v3, Lkx9;->s:Lwx9;
+
+    .line 1528
+    .line 1529
+    iput-object v3, v0, Lwx9;->M:Lkx9;
+
+    .line 1530
+    .line 1531
+    const/4 v14, 0x1
+
+    .line 1532
+    invoke-virtual {v1, v3, v14}, Laca;->e(Lorg/chromium/base/Callback;I)Ljava/lang/Object;
+
+    .line 1533
+    .line 1534
+    .line 1535
+    iget-object v1, v2, Lorg/chromium/chrome/browser/omnibox/SearchEngineService;->A:Laca;
+
+    .line 1536
+    .line 1537
+    iput-object v1, v0, Lwx9;->N:Laca;
+
+    .line 1538
+    .line 1539
+    new-instance v3, Lkx9;
+
+    .line 1540
+    .line 1541
+    invoke-direct {v3, v14}, Lkx9;-><init>(B)V
+
+    .line 1542
+    .line 1543
+    .line 1544
+    iput-object v0, v3, Lkx9;->s:Lwx9;
+
+    .line 1545
+    .line 1546
+    iput-object v3, v0, Lwx9;->O:Lkx9;
+
+    .line 1547
+    .line 1548
+    invoke-virtual {v1, v3, v14}, Laca;->e(Lorg/chromium/base/Callback;I)Ljava/lang/Object;
+
+    .line 1549
+    .line 1550
+    .line 1551
+    :cond_1c
+    invoke-virtual {v0, v10}, Lwx9;->e(Lorg/chromium/chrome/browser/profiles/Profile;)V
+
+    .line 1552
+    .line 1553
+    .line 1554
+    iget-byte v1, v0, Lwx9;->g0:B
+
+    .line 1555
+    .line 1556
+    const/4 v14, 0x2
+
+    .line 1557
+    if-ne v1, v14, :cond_1d
+
+    .line 1558
+    .line 1559
+    invoke-virtual {v0}, Lwx9;->d()V
+
+    .line 1560
+    .line 1561
+    .line 1562
+    :cond_1d
+    iget-object v1, v0, Lwx9;->e:Lorg/chromium/chrome/browser/tab/TabImpl;
+
+    .line 1563
+    .line 1564
+    iget-object v3, v0, Lwx9;->h:Lbx6;
+
+    .line 1565
+    .line 1566
+    if-eqz v3, :cond_1e
+
+    .line 1567
+    .line 1568
+    if-eqz v1, :cond_1e
+
+    .line 1569
+    .line 1570
+    iget-object v4, v3, Lbx6;->a:Lorg/chromium/chrome/browser/tab/Tab;
+
+    .line 1571
+    .line 1572
+    if-eqz v4, :cond_1e
+
+    .line 1573
+    .line 1574
+    if-ne v4, v1, :cond_1e
+
+    .line 1575
+    .line 1576
+    const/4 v4, 0x1
+
+    .line 1577
+    goto :goto_11
+
+    .line 1578
+    :cond_1e
+    const/4 v4, 0x0
+
+    .line 1579
+    :goto_11
+    if-eqz v4, :cond_22
+
+    .line 1580
+    .line 1581
+    iget-object v1, v3, Lbx6;->b:Lorg/chromium/chrome/browser/tab/Tab;
+
+    .line 1582
+    .line 1583
+    if-nez v1, :cond_1f
+
+    .line 1584
+    .line 1585
+    const/4 v1, 0x0
+
+    .line 1586
+    goto :goto_12
+
+    .line 1587
+    :cond_1f
+    invoke-interface {v1}, Lorg/chromium/chrome/browser/tab/Tab;->isDestroyed()Z
+
+    .line 1588
+    .line 1589
+    .line 1590
+    move-result v1
+
+    .line 1591
+    if-nez v1, :cond_20
+
+    .line 1592
+    .line 1593
+    iget-object v1, v3, Lbx6;->b:Lorg/chromium/chrome/browser/tab/Tab;
+
+    .line 1594
+    .line 1595
+    invoke-interface {v1}, Lorg/chromium/chrome/browser/tab/Tab;->isClosing()Z
+
+    .line 1596
+    .line 1597
+    .line 1598
+    move-result v1
+
+    .line 1599
+    if-eqz v1, :cond_21
+
+    .line 1600
+    .line 1601
+    :cond_20
+    const/4 v15, 0x0
+
+    .line 1602
+    iput-object v15, v3, Lbx6;->b:Lorg/chromium/chrome/browser/tab/Tab;
+
+    .line 1603
+    .line 1604
+    :cond_21
+    iget-object v1, v3, Lbx6;->b:Lorg/chromium/chrome/browser/tab/Tab;
+
+    .line 1605
+    .line 1606
+    :goto_12
+    invoke-virtual {v0, v1}, Lwx9;->n(Lorg/chromium/chrome/browser/tab/Tab;)V
+
+    .line 1607
+    .line 1608
+    .line 1609
+    goto :goto_13
+
+    .line 1610
+    :cond_22
+    const/4 v15, 0x0
+
+    .line 1611
+    iget v1, v1, Lorg/chromium/chrome/browser/tab/TabImpl;->y:I
+
+    .line 1612
+    .line 1613
+    const/16 v3, 0xb
+
+    .line 1614
+    .line 1615
+    if-eq v1, v3, :cond_23
+
+    .line 1616
+    .line 1617
+    invoke-virtual {v0, v15}, Lwx9;->n(Lorg/chromium/chrome/browser/tab/Tab;)V
+
+    .line 1618
+    .line 1619
+    .line 1620
+    :cond_23
+    :goto_13
+    if-eqz v4, :cond_24
+
+    .line 1621
+    .line 1622
+    const-string v1, "NewTabPage.AsHomeSurface"
+
+    .line 1623
+    .line 1624
+    const/4 v14, 0x1
+
+    .line 1625
+    invoke-static {v1, v14}, Lumc;->c(Ljava/lang/String;Z)V
+
+    .line 1626
+    .line 1627
+    .line 1628
+    :cond_24
+    invoke-virtual {v0}, Lwx9;->h()V
+
+    .line 1629
+    .line 1630
+    .line 1631
+    invoke-virtual {v0}, Lwx9;->l()V
+
+    .line 1632
+    .line 1633
+    .line 1634
+    invoke-virtual {v0}, Lwx9;->o()V
+
+    .line 1635
+    .line 1636
+    .line 1637
+    const-string v1, "NewTabPageLayout.initializeLayoutChangeListener()"
+
+    .line 1638
+    .line 1639
+    const/4 v15, 0x0
+
+    .line 1640
+    invoke-static {v1, v15}, Lorg/chromium/base/TraceEvent;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 1641
+    .line 1642
+    .line 1643
+    new-instance v3, Lnx9;
+
+    .line 1644
+    .line 1645
+    invoke-direct {v3}, Ljava/lang/Object;-><init>()V
+
+    .line 1646
+    .line 1647
+    .line 1648
+    iput-object v0, v3, Lnx9;->r:Lwx9;
+
+    .line 1649
+    .line 1650
+    sget-object v4, Lcy9;->b:Lt8c;
+
+    .line 1651
+    .line 1652
+    move-object/from16 v5, v22
+
+    .line 1653
+    .line 1654
+    invoke-virtual {v5, v4, v3}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 1655
+    .line 1656
+    .line 1657
+    invoke-static {v1}, Lorg/chromium/base/TraceEvent;->c(Ljava/lang/String;)V
+
+    .line 1658
+    .line 1659
+    .line 1660
+    invoke-static {}, Lorg/chromium/base/DeviceInfo;->d()Z
+
+    .line 1661
+    .line 1662
+    .line 1663
+    move-result v1
+
+    .line 1664
+    if-nez v1, :cond_26
+
+    .line 1665
+    .line 1666
+    const v1, 0x7f010bab
+
+    .line 1667
+    .line 1668
+    .line 1669
+    move-object/from16 v13, v21
+
+    .line 1670
+    .line 1671
+    invoke-virtual {v13, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 1672
+    .line 1673
+    .line 1674
+    move-result-object v1
+
+    .line 1675
+    check-cast v1, Landroid/view/ViewStub;
+
+    .line 1676
+    .line 1677
+    new-instance v3, Lp8a;
+
+    .line 1678
+    .line 1679
+    iget-object v5, v0, Lwx9;->j:Lorg/chromium/ui/base/WindowAndroid;
+
+    .line 1680
+    .line 1681
+    iget-object v6, v0, Lwx9;->b:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 1682
+    .line 1683
+    iget-object v7, v0, Lwx9;->k:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 1684
+    .line 1685
+    iget-object v8, v0, Lwx9;->l:Lqd;
+
+    .line 1686
+    .line 1687
+    invoke-static {}, Lpce;->c()Lpce;
+
+    .line 1688
+    .line 1689
+    .line 1690
+    move-result-object v9
+
+    .line 1691
+    iget-object v4, v0, Lwx9;->m:Lfr1;
+
+    .line 1692
+    .line 1693
+    iget-object v11, v0, Lwx9;->n:Lwf9;
+
+    .line 1694
+    .line 1695
+    iget-object v12, v0, Lwx9;->o:Lfme;
+
+    .line 1696
+    .line 1697
+    invoke-static {}, Lkd4;->a()Lkd4;
+
+    .line 1698
+    .line 1699
+    .line 1700
+    move-result-object v13
+
+    .line 1701
+    invoke-direct {v3}, Ljava/lang/Object;-><init>()V
+
+    .line 1702
+    .line 1703
+    .line 1704
+    move-object v10, v4
+
+    .line 1705
+    new-instance v4, Ldee;
+
+    .line 1706
+    .line 1707
+    invoke-static {v10}, Ly6f;->b(Ljava/lang/Object;)Ljava/util/function/Supplier;
+
+    .line 1708
+    .line 1709
+    .line 1710
+    move-result-object v10
+
+    .line 1711
+    new-instance v14, Lq8a;
+
+    .line 1712
+    .line 1713
+    new-instance v15, Lo8a;
+
+    .line 1714
+    .line 1715
+    invoke-direct {v15}, Ljava/lang/Object;-><init>()V
+
+    .line 1716
+    .line 1717
+    .line 1718
+    iput-object v3, v15, Lo8a;->r:Lp8a;
+
+    .line 1719
+    .line 1720
+    invoke-direct {v14, v6, v7, v9, v15}, Leee;-><init>(Landroid/content/Context;Lorg/chromium/chrome/browser/profiles/Profile;Lpce;Ljava/lang/Runnable;)V
+
+    .line 1721
+    .line 1722
+    .line 1723
+    const/4 v15, 0x0
+
+    .line 1724
+    iput-boolean v15, v14, Lq8a;->f:Z
+
+    .line 1725
+    .line 1726
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 1727
+    .line 1728
+    .line 1729
+    move-result-wide v20
+
+    .line 1730
+    invoke-static {}, Lorg/chromium/chrome/browser/preferences/ChromeSharedPreferences;->getInstance()Lorg/chromium/base/shared_preferences/SharedPreferencesManager;
+
+    .line 1731
+    .line 1732
+    .line 1733
+    move-result-object v15
+
+    .line 1734
+    move-object/from16 p1, v4
+
+    .line 1735
+    .line 1736
+    move-object/from16 v17, v5
+
+    .line 1737
+    .line 1738
+    const-wide/16 v4, 0x0
+
+    .line 1739
+    .line 1740
+    move-object/from16 v22, v6
+
+    .line 1741
+    .line 1742
+    const-string v6, "Chrome.SigninPromoNTP.LastShownTime"
+
+    .line 1743
+    .line 1744
+    invoke-virtual {v15, v4, v5, v6}, Lorg/chromium/base/shared_preferences/SharedPreferencesManager;->h(JLjava/lang/String;)J
+
+    .line 1745
+    .line 1746
+    .line 1747
+    move-result-wide v23
+
+    .line 1748
+    cmp-long v4, v23, v4
+
+    .line 1749
+    .line 1750
+    if-lez v4, :cond_25
+
+    .line 1751
+    .line 1752
+    sub-long v20, v20, v23
+
+    .line 1753
+    .line 1754
+    const-wide v4, 0x9a7ec800L
+
+    .line 1755
+    .line 1756
+    .line 1757
+    .line 1758
+    .line 1759
+    cmp-long v4, v20, v4
+
+    .line 1760
+    .line 1761
+    if-ltz v4, :cond_25
+
+    .line 1762
+    .line 1763
+    invoke-static {}, Lorg/chromium/chrome/browser/preferences/ChromeSharedPreferences;->getInstance()Lorg/chromium/base/shared_preferences/SharedPreferencesManager;
+
+    .line 1764
+    .line 1765
+    .line 1766
+    move-result-object v4
+
+    .line 1767
+    sget-object v5, Lom2;->q:Lgz7;
+
+    .line 1768
+    .line 1769
+    const-string v15, "Ntp"
+
+    .line 1770
+    .line 1771
+    invoke-virtual {v5, v15}, Lgz7;->b(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 1772
+    .line 1773
+    .line 1774
+    move-result-object v5
+
+    .line 1775
+    const/4 v15, 0x0
+
+    .line 1776
+    invoke-virtual {v4, v15, v5}, Lorg/chromium/base/shared_preferences/SharedPreferencesManager;->n(ILjava/lang/String;)V
+
+    .line 1777
+    .line 1778
+    .line 1779
+    invoke-static {}, Lorg/chromium/chrome/browser/preferences/ChromeSharedPreferences;->getInstance()Lorg/chromium/base/shared_preferences/SharedPreferencesManager;
+
+    .line 1780
+    .line 1781
+    .line 1782
+    move-result-object v4
+
+    .line 1783
+    const-string v5, "Chrome.SigninPromoNTP.FirstShownTime"
+
+    .line 1784
+    .line 1785
+    invoke-virtual {v4, v5}, Lorg/chromium/base/shared_preferences/SharedPreferencesManager;->removeKey(Ljava/lang/String;)V
+
+    .line 1786
+    .line 1787
+    .line 1788
+    invoke-static {}, Lorg/chromium/chrome/browser/preferences/ChromeSharedPreferences;->getInstance()Lorg/chromium/base/shared_preferences/SharedPreferencesManager;
+
+    .line 1789
+    .line 1790
+    .line 1791
+    move-result-object v4
+
+    .line 1792
+    invoke-virtual {v4, v6}, Lorg/chromium/base/shared_preferences/SharedPreferencesManager;->removeKey(Ljava/lang/String;)V
+
+    .line 1793
+    .line 1794
+    .line 1795
+    :cond_25
+    move-object/from16 v4, p1
+
+    .line 1796
+    .line 1797
+    move-object/from16 v5, v17
+
+    .line 1798
+    .line 1799
+    move-object/from16 v6, v22
+
+    .line 1800
+    .line 1801
+    invoke-direct/range {v4 .. v14}, Ldee;-><init>(Lorg/chromium/ui/base/WindowAndroid;Landroid/app/Activity;Lorg/chromium/chrome/browser/profiles/Profile;Lqd;Lpce;Ljava/util/function/Supplier;Lwf9;Lfme;Lkd4;Leee;)V
+
+    .line 1802
+    .line 1803
+    .line 1804
+    iput-object v4, v3, Lp8a;->a:Ldee;
+
+    .line 1805
+    .line 1806
+    iput-object v1, v3, Lp8a;->b:Landroid/view/ViewStub;
+
+    .line 1807
+    .line 1808
+    invoke-virtual {v3}, Lp8a;->a()V
+
+    .line 1809
+    .line 1810
+    .line 1811
+    iput-object v3, v0, Lwx9;->p0:Lp8a;
+
+    .line 1812
+    .line 1813
+    :cond_26
+    new-instance v1, Llx9;
+
+    .line 1814
+    .line 1815
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    .line 1816
+    .line 1817
+    .line 1818
+    iput-object v0, v1, Llx9;->a:Lwx9;
+
+    .line 1819
+    .line 1820
+    iput-object v1, v0, Lwx9;->K:Llx9;
+
+    .line 1821
+    .line 1822
+    iget-object v2, v2, Lorg/chromium/chrome/browser/omnibox/SearchEngineService;->x:Lfca;
+
+    .line 1823
+    .line 1824
+    invoke-virtual {v2, v1}, Lfca;->a(Ljava/lang/Object;)Z
+
+    .line 1825
+    .line 1826
+    .line 1827
+    invoke-virtual {v1}, Llx9;->a()V
+
+    .line 1828
+    .line 1829
+    .line 1830
+    const/4 v14, 0x1
+
+    .line 1831
+    iput-boolean v14, v0, Lwx9;->W:Z
+
+    .line 1832
+    .line 1833
+    invoke-static/range {v19 .. v19}, Lorg/chromium/base/TraceEvent;->c(Ljava/lang/String;)V
+
+    .line 1834
+    .line 1835
+    .line 1836
+    goto :goto_14
+
+    .line 1837
+    :cond_27
+    invoke-static {}, Lvja;->y()V
+
+    .line 1838
+    .line 1839
+    .line 1840
+    goto :goto_14
+
+    .line 1841
+    :cond_28
+    invoke-static {}, Lvja;->y()V
+
+    .line 1842
+    .line 1843
+    .line 1844
+    goto :goto_14
+
+    .line 1845
+    :cond_29
+    invoke-static {}, Lvja;->y()V
+
+    .line 1846
+    .line 1847
+    .line 1848
+    goto :goto_14
+
+    .line 1849
+    :cond_2a
+    const-string v0, "Attempting to initialize LogoMediator twice"
+
+    .line 1850
+    .line 1851
+    invoke-static {v0}, Lgc;->q(Ljava/lang/Object;)V
+
+    .line 1852
+    .line 1853
+    .line 1854
+    :goto_14
+    return-void
+.end method
+
+.method public final d()V
+    .locals 11
+
+    .line 1
+    iget-object v0, p0, Lwx9;->b:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+
+    .line 4
+    .line 5
+    iget-boolean v2, p0, Lwx9;->i0:Z
+
+    .line 6
+    .line 7
+    if-nez v2, :cond_11
+
+    .line 8
+    .line 9
+    const/4 v2, 0x1
+
+    .line 10
+    iput-boolean v2, p0, Lwx9;->i0:Z
+
+    .line 11
+    .line 12
+    iget-boolean v3, p0, Lwx9;->B:Z
+
+    .line 13
+    .line 14
+    const v4, 0x7f010300
+
+    .line 15
+    .line 16
+    .line 17
+    if-eqz v3, :cond_0
+
+    .line 18
+    .line 19
+    invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v3
+
+    .line 23
+    check-cast v3, Landroid/view/ViewGroup;
+
+    .line 24
+    .line 25
+    const v5, 0x7f010809
+
+    .line 26
+    .line 27
+    .line 28
+    invoke-virtual {v1, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v1
+
+    .line 32
+    const v5, 0x7f0102fd
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {v3, v5}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v5
+
+    .line 39
+    if-eqz v1, :cond_1
+
+    .line 40
+    .line 41
+    if-eqz v5, :cond_1
+
+    .line 42
+    .line 43
+    invoke-virtual {v5}, Landroid/view/View;->getPaddingStart()I
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v6
+
+    .line 47
+    invoke-virtual {v5}, Landroid/view/View;->getPaddingTop()I
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v7
+
+    .line 51
+    invoke-virtual {v1}, Landroid/view/View;->getPaddingTop()I
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v8
+
+    .line 55
+    add-int/2addr v8, v7
+
+    .line 56
+    invoke-virtual {v5}, Landroid/view/View;->getPaddingEnd()I
+
+    .line 57
+    .line 58
+    .line 59
+    move-result v7
+
+    .line 60
+    invoke-virtual {v1}, Landroid/view/View;->getPaddingBottom()I
+
+    .line 61
+    .line 62
+    .line 63
+    move-result v1
+
+    .line 64
+    invoke-virtual {v5, v6, v8, v7, v1}, Landroid/view/View;->setPaddingRelative(IIII)V
+
+    .line 65
+    .line 66
+    .line 67
+    goto :goto_0
+
+    .line 68
+    :cond_0
+    const v3, 0x7f010301
+
+    .line 69
+    .line 70
+    .line 71
+    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object v1
+
+    .line 75
+    check-cast v1, Landroid/view/ViewStub;
+
+    .line 76
+    .line 77
+    invoke-virtual {v1}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+
+    .line 78
+    .line 79
+    .line 80
+    move-result-object v1
+
+    .line 81
+    move-object v3, v1
+
+    .line 82
+    check-cast v3, Landroid/view/ViewGroup;
+
+    .line 83
+    .line 84
+    :cond_1
+    :goto_0
+    new-instance v1, Lo43;
+
+    .line 85
+    .line 86
+    iget-boolean v5, p0, Lwx9;->p:Z
+
+    .line 87
+    .line 88
+    iget-object v6, p0, Lwx9;->G:Lzlh;
+
+    .line 89
+    .line 90
+    invoke-static {v6}, Loba;->a(Ljava/lang/Object;)V
+
+    .line 91
+    .line 92
+    .line 93
+    iget v6, v6, Lzlh;->b:I
+
+    .line 94
+    .line 95
+    invoke-direct {v1}, Ljava/lang/Object;-><init>()V
+
+    .line 96
+    .line 97
+    .line 98
+    iput-boolean v5, v1, Lo43;->c:Z
+
+    .line 99
+    .line 100
+    sget-object v5, Lq43;->t:[Ln8c;
+
+    .line 101
+    .line 102
+    invoke-static {v5}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-object v5
+
+    .line 106
+    invoke-static {v5}, Lorg/chromium/ui/modelutil/PropertyModel;->b(Ljava/util/List;)Ljava/util/Map;
+
+    .line 107
+    .line 108
+    .line 109
+    move-result-object v5
+
+    .line 110
+    new-instance v7, Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 111
+    .line 112
+    invoke-direct {v7, v5}, Lorg/chromium/ui/modelutil/PropertyModel;-><init>(Ljava/util/Map;)V
+
+    .line 113
+    .line 114
+    .line 115
+    iput-object v7, v1, Lo43;->a:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 116
+    .line 117
+    invoke-virtual {v3, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 118
+    .line 119
+    .line 120
+    move-result-object v3
+
+    .line 121
+    check-cast v3, Lorg/chromium/chrome/browser/composeplate/ComposeplateView;
+
+    .line 122
+    .line 123
+    iput-object v3, v1, Lo43;->b:Lorg/chromium/chrome/browser/composeplate/ComposeplateView;
+
+    .line 124
+    .line 125
+    invoke-virtual {v3}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 126
+    .line 127
+    .line 128
+    move-result-object v4
+
+    .line 129
+    const v5, 0x7f08020a
+
+    .line 130
+    .line 131
+    .line 132
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 133
+    .line 134
+    .line 135
+    move-result v5
+
+    .line 136
+    iput v5, v1, Lo43;->d:I
+
+    .line 137
+    .line 138
+    const v5, 0x7f080215
+
+    .line 139
+    .line 140
+    .line 141
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 142
+    .line 143
+    .line 144
+    move-result v5
+
+    .line 145
+    iput v5, v1, Lo43;->e:I
+
+    .line 146
+    .line 147
+    const v5, 0x7f080213
+
+    .line 148
+    .line 149
+    .line 150
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 151
+    .line 152
+    .line 153
+    move-result v5
+
+    .line 154
+    iput v5, v1, Lo43;->f:I
+
+    .line 155
+    .line 156
+    const v5, 0x7f080ba4
+
+    .line 157
+    .line 158
+    .line 159
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 160
+    .line 161
+    .line 162
+    move-result v5
+
+    .line 163
+    iput v5, v1, Lo43;->g:I
+
+    .line 164
+    .line 165
+    const v5, 0x7f080210
+
+    .line 166
+    .line 167
+    .line 168
+    invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getDimension(I)F
+
+    .line 169
+    .line 170
+    .line 171
+    move-result v5
+
+    .line 172
+    invoke-virtual {v4}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 173
+    .line 174
+    .line 175
+    move-result-object v4
+
+    .line 176
+    iget v4, v4, Landroid/util/DisplayMetrics;->density:F
+
+    .line 177
+    .line 178
+    div-float/2addr v5, v4
+
+    .line 179
+    invoke-static {v5}, Ljava/lang/Math;->round(F)I
+
+    .line 180
+    .line 181
+    .line 182
+    move-result v4
+
+    .line 183
+    iput v4, v1, Lo43;->h:I
+
+    .line 184
+    .line 185
+    new-instance v4, Ln43;
+
+    .line 186
+    .line 187
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+
+    .line 188
+    .line 189
+    .line 190
+    invoke-static {v7, v3, v4, v2}, Ly8c;->a(Lorg/chromium/ui/modelutil/PropertyModel;Ljava/lang/Object;Lx8c;Z)Ly8c;
+
+    .line 191
+    .line 192
+    .line 193
+    invoke-static {}, Liy9;->c()Z
+
+    .line 194
+    .line 195
+    .line 196
+    move-result v4
+
+    .line 197
+    if-nez v4, :cond_4
+
+    .line 198
+    .line 199
+    invoke-static {}, Liy9;->b()Z
+
+    .line 200
+    .line 201
+    .line 202
+    move-result v4
+
+    .line 203
+    if-nez v4, :cond_4
+
+    .line 204
+    .line 205
+    invoke-virtual {v3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 206
+    .line 207
+    .line 208
+    move-result-object v4
+
+    .line 209
+    check-cast v4, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    .line 210
+    .line 211
+    if-eqz v4, :cond_4
+
+    .line 212
+    .line 213
+    invoke-virtual {v3}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 214
+    .line 215
+    .line 216
+    move-result-object v5
+
+    .line 217
+    const v8, 0x7f08020f
+
+    .line 218
+    .line 219
+    .line 220
+    invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 221
+    .line 222
+    .line 223
+    move-result v8
+
+    .line 224
+    iput v8, v4, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    .line 225
+    .line 226
+    const v8, 0x7f0809cb
+
+    .line 227
+    .line 228
+    .line 229
+    invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 230
+    .line 231
+    .line 232
+    move-result v8
+
+    .line 233
+    iput v8, v4, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
+
+    .line 234
+    .line 235
+    const v8, 0x7f08020e
+
+    .line 236
+    .line 237
+    .line 238
+    invoke-virtual {v5, v8}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 239
+    .line 240
+    .line 241
+    move-result v5
+
+    .line 242
+    iput v5, v4, Landroid/view/ViewGroup$MarginLayoutParams;->height:I
+
+    .line 243
+    .line 244
+    invoke-virtual {v3, v4}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 245
+    .line 246
+    .line 247
+    iget-object v4, v3, Lorg/chromium/chrome/browser/composeplate/ComposeplateView;->r:Landroid/view/View;
+
+    .line 248
+    .line 249
+    const v5, 0x7f150347
+
+    .line 250
+    .line 251
+    .line 252
+    if-eqz v4, :cond_2
+
+    .line 253
+    .line 254
+    const v8, 0x7f0102ff
+
+    .line 255
+    .line 256
+    .line 257
+    invoke-virtual {v4, v8}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 258
+    .line 259
+    .line 260
+    move-result-object v4
+
+    .line 261
+    check-cast v4, Landroid/widget/TextView;
+
+    .line 262
+    .line 263
+    if-eqz v4, :cond_2
+
+    .line 264
+    .line 265
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setTextAppearance(I)V
+
+    .line 266
+    .line 267
+    .line 268
+    :cond_2
+    iget-object v4, v3, Lorg/chromium/chrome/browser/composeplate/ComposeplateView;->x:Landroid/widget/TextView;
+
+    .line 269
+    .line 270
+    if-eqz v4, :cond_3
+
+    .line 271
+    .line 272
+    invoke-virtual {v4, v5}, Landroid/widget/TextView;->setTextAppearance(I)V
+
+    .line 273
+    .line 274
+    .line 275
+    :cond_3
+    iget-object v3, v3, Lorg/chromium/chrome/browser/composeplate/ComposeplateView;->w:Landroid/widget/TextView;
+
+    .line 276
+    .line 277
+    if-eqz v3, :cond_4
+
+    .line 278
+    .line 279
+    invoke-virtual {v3, v5}, Landroid/widget/TextView;->setTextAppearance(I)V
+
+    .line 280
+    .line 281
+    .line 282
+    :cond_4
+    invoke-virtual {v1, v6}, Lo43;->d(I)V
+
+    .line 283
+    .line 284
+    .line 285
+    iput-object v1, p0, Lwx9;->j0:Lo43;
+
+    .line 286
+    .line 287
+    new-instance v1, Lux9;
+
+    .line 288
+    .line 289
+    const/4 v3, 0x0
+
+    .line 290
+    invoke-direct {v1, v3}, Lux9;-><init>(B)V
+
+    .line 291
+    .line 292
+    .line 293
+    iput-object p0, v1, Lux9;->s:Lwx9;
+
+    .line 294
+    .line 295
+    new-instance v4, Lm43;
+
+    .line 296
+    .line 297
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+
+    .line 298
+    .line 299
+    .line 300
+    iput-object v1, v4, Lm43;->r:Landroid/view/View$OnClickListener;
+
+    .line 301
+    .line 302
+    const/16 v1, 0xb
+
+    .line 303
+    .line 304
+    iput-byte v1, v4, Lm43;->s:B
+
+    .line 305
+    .line 306
+    sget-object v1, Lq43;->b:Lt8c;
+
+    .line 307
+    .line 308
+    invoke-virtual {v7, v1, v4}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 309
+    .line 310
+    .line 311
+    iget-object v1, p0, Lwx9;->j0:Lo43;
+
+    .line 312
+    .line 313
+    new-instance v4, Lux9;
+
+    .line 314
+    .line 315
+    invoke-direct {v4, v2}, Lux9;-><init>(B)V
+
+    .line 316
+    .line 317
+    .line 318
+    iput-object p0, v4, Lux9;->s:Lwx9;
+
+    .line 319
+    .line 320
+    iget-object v1, v1, Lo43;->a:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 321
+    .line 322
+    new-instance v5, Lm43;
+
+    .line 323
+    .line 324
+    invoke-direct {v5}, Ljava/lang/Object;-><init>()V
+
+    .line 325
+    .line 326
+    .line 327
+    iput-object v4, v5, Lm43;->r:Landroid/view/View$OnClickListener;
+
+    .line 328
+    .line 329
+    const/16 v4, 0xa
+
+    .line 330
+    .line 331
+    iput-byte v4, v5, Lm43;->s:B
+
+    .line 332
+    .line 333
+    sget-object v4, Lq43;->c:Lt8c;
+
+    .line 334
+    .line 335
+    invoke-virtual {v1, v4, v5}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 336
+    .line 337
+    .line 338
+    invoke-static {}, Lzj2;->a()Z
+
+    .line 339
+    .line 340
+    .line 341
+    move-result v1
+
+    .line 342
+    if-eqz v1, :cond_5
+
+    .line 343
+    .line 344
+    sget-object v1, Lyj2;->b:Lyj2;
+
+    .line 345
+    .line 346
+    const-string v4, "NtpAuroraV2"
+
+    .line 347
+    .line 348
+    invoke-virtual {v1, v4}, Llj5;->j(Ljava/lang/String;)Z
+
+    .line 349
+    .line 350
+    .line 351
+    move-result v1
+
+    .line 352
+    if-eqz v1, :cond_5
+
+    .line 353
+    .line 354
+    const-string v1, "action_chips"
+
+    .line 355
+    .line 356
+    invoke-static {v4, v1}, Lxj2;->b(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 357
+    .line 358
+    .line 359
+    move-result v1
+
+    .line 360
+    goto :goto_1
+
+    .line 361
+    :cond_5
+    move v1, v3
+
+    .line 362
+    :goto_1
+    const/4 v4, 0x3
+
+    .line 363
+    const/4 v5, 0x2
+
+    .line 364
+    const/4 v6, 0x0
+
+    .line 365
+    if-eq v1, v5, :cond_6
+
+    .line 366
+    .line 367
+    if-ne v1, v4, :cond_9
+
+    .line 368
+    .line 369
+    :cond_6
+    iget-object v1, p0, Lwx9;->k:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 370
+    .line 371
+    invoke-static {v1, v6}, Lorg/chromium/chrome/browser/omnibox/fusebox/ComposeboxQueryControllerBridge;->b(Lorg/chromium/chrome/browser/profiles/Profile;Lorg/chromium/content_public/browser/WebContents;)Lorg/chromium/chrome/browser/omnibox/fusebox/ComposeboxQueryControllerBridge;
+
+    .line 372
+    .line 373
+    .line 374
+    move-result-object v1
+
+    .line 375
+    if-nez v1, :cond_7
+
+    .line 376
+    .line 377
+    move-object v7, v6
+
+    .line 378
+    goto :goto_2
+
+    .line 379
+    :cond_7
+    :try_start_0
+    iget-object v7, v1, Lorg/chromium/chrome/browser/omnibox/fusebox/ComposeboxQueryControllerBridge;->a:Laca;
+
+    .line 380
+    .line 381
+    invoke-virtual {v7}, Laca;->get()Ljava/lang/Object;
+
+    .line 382
+    .line 383
+    .line 384
+    move-result-object v7
+
+    .line 385
+    check-cast v7, Lorg/chromium/components/contextual_search/InputState;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 386
+    .line 387
+    iget-object v8, v1, Lorg/chromium/chrome/browser/omnibox/fusebox/ComposeboxQueryControllerBridge;->c:Lorg/jni_zero/JniUniquePtr;
+
+    .line 388
+    .line 389
+    if-eqz v8, :cond_8
+
+    .line 390
+    .line 391
+    invoke-interface {v8}, Lorg/jni_zero/JniUniquePtr;->destroy()V
+
+    .line 392
+    .line 393
+    .line 394
+    iput-object v6, v1, Lorg/chromium/chrome/browser/omnibox/fusebox/ComposeboxQueryControllerBridge;->c:Lorg/jni_zero/JniUniquePtr;
+
+    .line 395
+    .line 396
+    :cond_8
+    iput-object v6, v1, Lorg/chromium/chrome/browser/omnibox/fusebox/ComposeboxQueryControllerBridge;->d:Lw96;
+
+    .line 397
+    .line 398
+    :goto_2
+    iput-object v7, p0, Lwx9;->k0:Lorg/chromium/components/contextual_search/InputState;
+
+    .line 399
+    .line 400
+    :cond_9
+    iget-object v1, p0, Lwx9;->k0:Lorg/chromium/components/contextual_search/InputState;
+
+    .line 401
+    .line 402
+    invoke-static {v1}, Lwx9;->a(Lorg/chromium/components/contextual_search/InputState;)I
+
+    .line 403
+    .line 404
+    .line 405
+    move-result v1
+
+    .line 406
+    sget-object v7, Lq43;->j:Lr8c;
+
+    .line 407
+    .line 408
+    if-ne v1, v5, :cond_e
+
+    .line 409
+    .line 410
+    iget-object v3, p0, Lwx9;->j0:Lo43;
+
+    .line 411
+    .line 412
+    new-instance v4, Lux9;
+
+    .line 413
+    .line 414
+    invoke-direct {v4, v5}, Lux9;-><init>(B)V
+
+    .line 415
+    .line 416
+    .line 417
+    iput-object p0, v4, Lux9;->s:Lwx9;
+
+    .line 418
+    .line 419
+    invoke-virtual {v3, v4, v1}, Lo43;->a(Landroid/view/View$OnClickListener;I)V
+
+    .line 420
+    .line 421
+    .line 422
+    iget-object v1, p0, Lwx9;->j0:Lo43;
+
+    .line 423
+    .line 424
+    iget-object v3, p0, Lwx9;->k0:Lorg/chromium/components/contextual_search/InputState;
+
+    .line 425
+    .line 426
+    const v4, 0x7f0904b7
+
+    .line 427
+    .line 428
+    .line 429
+    if-eqz v3, :cond_d
+
+    .line 430
+    .line 431
+    invoke-virtual {v3}, Lorg/chromium/components/contextual_search/InputState;->d()Ljava/util/List;
+
+    .line 432
+    .line 433
+    .line 434
+    move-result-object v3
+
+    .line 435
+    invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 436
+    .line 437
+    .line 438
+    move-result-object v3
+
+    .line 439
+    :goto_3
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 440
+    .line 441
+    .line 442
+    move-result v8
+
+    .line 443
+    if-eqz v8, :cond_a
+
+    .line 444
+    .line 445
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 446
+    .line 447
+    .line 448
+    move-result-object v8
+
+    .line 449
+    check-cast v8, Lz0h;
+
+    .line 450
+    .line 451
+    iget v9, v8, Lz0h;->f:I
+
+    .line 452
+    .line 453
+    const/4 v10, 0x4
+
+    .line 454
+    if-eq v9, v10, :cond_b
+
+    .line 455
+    .line 456
+    goto :goto_3
+
+    .line 457
+    :cond_a
+    move-object v8, v6
+
+    .line 458
+    :cond_b
+    if-eqz v8, :cond_c
+
+    .line 459
+    .line 460
+    iget v3, v8, Lz0h;->e:I
+
+    .line 461
+    .line 462
+    and-int/2addr v3, v5
+
+    .line 463
+    if-eqz v3, :cond_c
+
+    .line 464
+    .line 465
+    invoke-virtual {v8}, Lz0h;->s()Lk67;
+
+    .line 466
+    .line 467
+    .line 468
+    move-result-object v6
+
+    .line 469
+    :cond_c
+    if-eqz v6, :cond_d
+
+    .line 470
+    .line 471
+    iget v3, v6, Lk67;->e:I
+
+    .line 472
+    .line 473
+    and-int/2addr v3, v2
+
+    .line 474
+    if-eqz v3, :cond_d
+
+    .line 475
+    .line 476
+    iget v2, v6, Lk67;->f:I
+
+    .line 477
+    .line 478
+    invoke-static {v2}, Lma6;->a(I)I
+
+    .line 479
+    .line 480
+    .line 481
+    move-result v2
+
+    .line 482
+    if-eqz v2, :cond_d
+
+    .line 483
+    .line 484
+    move v4, v2
+
+    .line 485
+    :cond_d
+    iget-object v1, v1, Lo43;->a:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 486
+    .line 487
+    invoke-virtual {v1, v7, v4}, Lorg/chromium/ui/modelutil/PropertyModel;->t(Lr8c;I)V
+
+    .line 488
+    .line 489
+    .line 490
+    iget-object v1, p0, Lwx9;->j0:Lo43;
+
+    .line 491
+    .line 492
+    const v2, 0x7f140d4a
+
+    .line 493
+    .line 494
+    .line 495
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 496
+    .line 497
+    .line 498
+    move-result-object v2
+
+    .line 499
+    iget-object v1, v1, Lo43;->a:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 500
+    .line 501
+    sget-object v3, Lq43;->l:Lt8c;
+
+    .line 502
+    .line 503
+    invoke-virtual {v1, v3, v2}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 504
+    .line 505
+    .line 506
+    iget-object v1, p0, Lwx9;->j0:Lo43;
+
+    .line 507
+    .line 508
+    const v2, 0x7f140d4b
+
+    .line 509
+    .line 510
+    .line 511
+    invoke-virtual {v0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+
+    .line 512
+    .line 513
+    .line 514
+    move-result-object v0
+
+    .line 515
+    iget-object v1, v1, Lo43;->a:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 516
+    .line 517
+    sget-object v2, Lq43;->m:Lt8c;
+
+    .line 518
+    .line 519
+    invoke-virtual {v1, v2, v0}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 520
+    .line 521
+    .line 522
+    goto :goto_4
+
+    .line 523
+    :cond_e
+    if-ne v1, v4, :cond_f
+
+    .line 524
+    .line 525
+    iget-object v0, p0, Lwx9;->j0:Lo43;
+
+    .line 526
+    .line 527
+    new-instance v5, Lux9;
+
+    .line 528
+    .line 529
+    invoke-direct {v5, v4}, Lux9;-><init>(B)V
+
+    .line 530
+    .line 531
+    .line 532
+    iput-object p0, v5, Lux9;->s:Lwx9;
+
+    .line 533
+    .line 534
+    invoke-virtual {v0, v5, v1}, Lo43;->a(Landroid/view/View$OnClickListener;I)V
+
+    .line 535
+    .line 536
+    .line 537
+    iget-object v0, p0, Lwx9;->j0:Lo43;
+
+    .line 538
+    .line 539
+    iget-object v1, p0, Lwx9;->k0:Lorg/chromium/components/contextual_search/InputState;
+
+    .line 540
+    .line 541
+    const v4, 0x7f090120
+
+    .line 542
+    .line 543
+    .line 544
+    invoke-static {v1, v2, v4, v3}, Lpm7;->a(Lorg/chromium/components/contextual_search/InputState;IIZ)I
+
+    .line 545
+    .line 546
+    .line 547
+    move-result v1
+
+    .line 548
+    iget-object v0, v0, Lo43;->a:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 549
+    .line 550
+    invoke-virtual {v0, v7, v1}, Lorg/chromium/ui/modelutil/PropertyModel;->t(Lr8c;I)V
+
+    .line 551
+    .line 552
+    .line 553
+    :cond_f
+    :goto_4
+    invoke-virtual {p0}, Lwx9;->p()V
+
+    .line 554
+    .line 555
+    .line 556
+    invoke-virtual {p0}, Lwx9;->f()V
+
+    .line 557
+    .line 558
+    .line 559
+    iget-object v0, p0, Lwx9;->N:Laca;
+
+    .line 560
+    .line 561
+    if-eqz v0, :cond_10
+
+    .line 562
+    .line 563
+    invoke-virtual {v0}, Laca;->get()Ljava/lang/Object;
+
+    .line 564
+    .line 565
+    .line 566
+    move-result-object v0
+
+    .line 567
+    check-cast v0, Lsye;
+
+    .line 568
+    .line 569
+    invoke-virtual {p0, v0}, Lwx9;->g(Lsye;)V
+
+    .line 570
+    .line 571
+    .line 572
+    :cond_10
+    invoke-virtual {p0}, Lwx9;->q()V
+
+    .line 573
+    .line 574
+    .line 575
+    :cond_11
+    return-void
+
+    .line 576
+    :catchall_0
+    move-exception p0
+
+    .line 577
+    iget-object v0, v1, Lorg/chromium/chrome/browser/omnibox/fusebox/ComposeboxQueryControllerBridge;->c:Lorg/jni_zero/JniUniquePtr;
+
+    .line 578
+    .line 579
+    if-eqz v0, :cond_12
+
+    .line 580
+    .line 581
+    invoke-interface {v0}, Lorg/jni_zero/JniUniquePtr;->destroy()V
+
+    .line 582
+    .line 583
+    .line 584
+    iput-object v6, v1, Lorg/chromium/chrome/browser/omnibox/fusebox/ComposeboxQueryControllerBridge;->c:Lorg/jni_zero/JniUniquePtr;
+
+    .line 585
+    .line 586
+    :cond_12
+    iput-object v6, v1, Lorg/chromium/chrome/browser/omnibox/fusebox/ComposeboxQueryControllerBridge;->d:Lw96;
+
+    .line 587
+    .line 588
+    throw p0
+.end method
+
+.method public final e(Lorg/chromium/chrome/browser/profiles/Profile;)V
+    .locals 6
+
+    .line 1
+    invoke-static {}, Lzj2;->a()Z
+
+    .line 2
+    .line 3
+    .line 4
+    move-result v0
+
+    .line 5
+    const/4 v1, 0x0
+
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    sget-object v0, Lyj2;->b:Lyj2;
+
+    .line 9
+    .line 10
+    const-string v2, "NtpAuroraV2"
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, v2}, Llj5;->j(Ljava/lang/String;)Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    if-eqz v0, :cond_0
+
+    .line 17
+    .line 18
+    const-string v0, "layout_type"
+
+    .line 19
+    .line 20
+    invoke-static {v2, v0}, Lxj2;->b(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v0
+
+    .line 24
+    goto :goto_0
+
+    .line 25
+    :cond_0
+    move v0, v1
+
+    .line 26
+    :goto_0
+    const/4 v2, 0x3
+
+    .line 27
+    const-string v3, "Parameter \"profile\" was null. Add @Nullable to it?"
+
+    .line 28
+    .line 29
+    const/4 v4, 0x2
+
+    .line 30
+    const/4 v5, 0x1
+
+    .line 31
+    if-eq v0, v2, :cond_4
+
+    .line 32
+    .line 33
+    if-eq v0, v4, :cond_4
+
+    .line 34
+    .line 35
+    iget-boolean v0, p0, Lwx9;->B:Z
+
+    .line 36
+    .line 37
+    if-nez v0, :cond_1
+
+    .line 38
+    .line 39
+    iget-boolean v0, p0, Lwx9;->u:Z
+
+    .line 40
+    .line 41
+    if-eqz v0, :cond_4
+
+    .line 42
+    .line 43
+    :cond_1
+    iget-boolean v0, p0, Lwx9;->z:Z
+
+    .line 44
+    .line 45
+    iget-object v2, p0, Lwx9;->t:Ljld;
+
+    .line 46
+    .line 47
+    if-nez v0, :cond_3
+
+    .line 48
+    .line 49
+    iget-boolean v0, v2, Ljld;->d:Z
+
+    .line 50
+    .line 51
+    if-eqz v0, :cond_4
+
+    .line 52
+    .line 53
+    iget-object v0, p0, Lwx9;->k:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 54
+    .line 55
+    invoke-static {}, Lorg/chromium/base/DeviceInfo;->d()Z
+
+    .line 56
+    .line 57
+    .line 58
+    move-result v2
+
+    .line 59
+    if-nez v2, :cond_4
+
+    .line 60
+    .line 61
+    if-eqz v0, :cond_2
+
+    .line 62
+    .line 63
+    const/4 v2, 0x7
+
+    .line 64
+    invoke-static {v2, v0}, LJ/N;->ZO(ILjava/lang/Object;)Z
+
+    .line 65
+    .line 66
+    .line 67
+    move-result v0
+
+    .line 68
+    if-eqz v0, :cond_4
+
+    .line 69
+    .line 70
+    goto :goto_1
+
+    .line 71
+    :cond_2
+    invoke-static {v3}, Lgc;->q(Ljava/lang/Object;)V
+
+    .line 72
+    .line 73
+    .line 74
+    goto :goto_4
+
+    .line 75
+    :cond_3
+    iget-object v0, v2, Ljld;->f:Lorg/chromium/components/search_engines/AiModeButtonUiConfig;
+
+    .line 76
+    .line 77
+    if-eqz v0, :cond_4
+
+    .line 78
+    .line 79
+    invoke-static {}, Lorg/chromium/base/DeviceInfo;->d()Z
+
+    .line 80
+    .line 81
+    .line 82
+    move-result v0
+
+    .line 83
+    if-nez v0, :cond_4
+
+    .line 84
+    .line 85
+    :goto_1
+    move v0, v5
+
+    .line 86
+    goto :goto_2
+
+    .line 87
+    :cond_4
+    move v0, v1
+
+    .line 88
+    :goto_2
+    shl-int v0, v5, v0
+
+    .line 89
+    .line 90
+    iput-byte v0, p0, Lwx9;->g0:B
+
+    .line 91
+    .line 92
+    if-ne v0, v4, :cond_6
+
+    .line 93
+    .line 94
+    if-eqz p1, :cond_5
+
+    .line 95
+    .line 96
+    const/16 v0, 0x8
+
+    .line 97
+    .line 98
+    invoke-static {v0, p1}, LJ/N;->ZO(ILjava/lang/Object;)Z
+
+    .line 99
+    .line 100
+    .line 101
+    move-result p1
+
+    .line 102
+    if-eqz p1, :cond_6
+
+    .line 103
+    .line 104
+    move v1, v5
+
+    .line 105
+    goto :goto_3
+
+    .line 106
+    :cond_5
+    invoke-static {v3}, Lgc;->q(Ljava/lang/Object;)V
+
+    .line 107
+    .line 108
+    .line 109
+    goto :goto_4
+
+    .line 110
+    :cond_6
+    :goto_3
+    iput-boolean v1, p0, Lwx9;->h0:Z
+
+    .line 111
+    .line 112
+    :goto_4
+    return-void
+.end method
+
+.method public final f()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lwx9;->t:Ljld;
+
+    .line 2
+    .line 3
+    iget-boolean v1, p0, Lwx9;->z:Z
+
+    .line 4
+    .line 5
+    if-eqz v1, :cond_0
+
+    .line 6
+    .line 7
+    iget-object v1, p0, Lwx9;->j0:Lo43;
+
+    .line 8
+    .line 9
+    if-eqz v1, :cond_0
+
+    .line 10
+    .line 11
+    iget-byte p0, p0, Lwx9;->g0:B
+
+    .line 12
+    .line 13
+    const/4 v2, 0x2
+
+    .line 14
+    if-ne p0, v2, :cond_0
+
+    .line 15
+    .line 16
+    iget-object p0, v0, Ljld;->f:Lorg/chromium/components/search_engines/AiModeButtonUiConfig;
+
+    .line 17
+    .line 18
+    if-eqz p0, :cond_0
+
+    .line 19
+    .line 20
+    iget-object v0, v1, Lo43;->a:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 21
+    .line 22
+    sget-object v1, Lq43;->g:Lt8c;
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1, p0}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 25
+    .line 26
+    .line 27
+    :cond_0
+    return-void
+.end method
+
+.method public final g(Lsye;)V
+    .locals 2
+
+    .line 1
+    iget-boolean v0, p0, Lwx9;->z:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_2
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lwx9;->j0:Lo43;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_2
+
+    .line 8
+    .line 9
+    if-eqz p1, :cond_2
+
+    .line 10
+    .line 11
+    iget-object p0, p0, Lwx9;->b:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 12
+    .line 13
+    invoke-virtual {p1, p0}, Lsye;->a(Landroid/content/Context;)Landroid/graphics/drawable/Drawable;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    iget-object p1, p1, Lsye;->a:Ljava/lang/Integer;
+
+    .line 18
+    .line 19
+    const/4 v1, 0x0
+
+    .line 20
+    if-nez p1, :cond_0
+
+    .line 21
+    .line 22
+    move p1, v1
+
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_0
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result p1
+
+    .line 28
+    :goto_0
+    if-eqz p1, :cond_1
+
+    .line 29
+    .line 30
+    const/4 v1, 0x1
+
+    .line 31
+    :cond_1
+    iget-object p1, v0, Lo43;->a:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 32
+    .line 33
+    new-instance v0, Lp43;
+
+    .line 34
+    .line 35
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    .line 36
+    .line 37
+    .line 38
+    iput-object p0, v0, Lp43;->a:Landroid/graphics/drawable/Drawable;
+
+    .line 39
+    .line 40
+    iput-boolean v1, v0, Lp43;->b:Z
+
+    .line 41
+    .line 42
+    sget-object p0, Lq43;->h:Lt8c;
+
+    .line 43
+    .line 44
+    invoke-virtual {p1, p0, v0}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 45
+    .line 46
+    .line 47
+    :cond_2
+    return-void
+.end method
+
+.method public final h()V
+    .locals 4
+
+    .line 1
+    iget-byte v0, p0, Lwx9;->g0:B
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_4
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lwx9;->D:Ln8a;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_4
+
+    .line 8
+    .line 9
+    invoke-static {}, Lj8a;->z()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    const/4 v1, 0x1
+
+    .line 14
+    if-nez v0, :cond_0
+
+    .line 15
+    .line 16
+    invoke-static {}, Lorg/chromium/base/DeviceInfo;->d()Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v0
+
+    .line 20
+    if-nez v0, :cond_0
+
+    .line 21
+    .line 22
+    const/4 v0, 0x0
+
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :cond_0
+    move v0, v1
+
+    .line 25
+    :goto_0
+    iget-byte v2, p0, Lwx9;->q0:B
+
+    .line 26
+    .line 27
+    if-nez v2, :cond_1
+
+    .line 28
+    .line 29
+    if-nez v0, :cond_2
+
+    .line 30
+    .line 31
+    invoke-static {}, Lzj2;->a()Z
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v2
+
+    .line 35
+    if-eqz v2, :cond_3
+
+    .line 36
+    .line 37
+    goto :goto_1
+
+    .line 38
+    :cond_1
+    shl-int v3, v1, v0
+
+    .line 39
+    .line 40
+    if-eq v3, v2, :cond_3
+
+    .line 41
+    .line 42
+    :cond_2
+    :goto_1
+    shl-int/2addr v1, v0
+
+    .line 43
+    iput-byte v1, p0, Lwx9;->q0:B
+
+    .line 44
+    .line 45
+    iget-object v1, p0, Lwx9;->D:Ln8a;
+
+    .line 46
+    .line 47
+    invoke-static {v1}, Loba;->a(Ljava/lang/Object;)V
+
+    .line 48
+    .line 49
+    .line 50
+    iget-object v1, p0, Lwx9;->D:Ln8a;
+
+    .line 51
+    .line 52
+    invoke-interface {v1, v0}, Ln8a;->n(Z)V
+
+    .line 53
+    .line 54
+    .line 55
+    :cond_3
+    invoke-virtual {p0}, Lwx9;->p()V
+
+    .line 56
+    .line 57
+    .line 58
+    :cond_4
+    return-void
+.end method
+
+.method public final i()V
+    .locals 8
+
+    .line 1
+    iget-boolean v0, p0, Lwx9;->V:Z
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_4
+
+    .line 4
+    .line 5
+    iget-boolean v0, p0, Lwx9;->U:Z
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_4
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lwx9;->a:Lex9;
+
+    .line 10
+    .line 11
+    iget-object v1, v0, Lex9;->g:Lhx9;
+
+    .line 12
+    .line 13
+    iget-boolean v2, v1, Lhx9;->P:Z
+
+    .line 14
+    .line 15
+    iget-object v3, v1, Lhx9;->r:Lorg/chromium/chrome/browser/tab/TabImpl;
+
+    .line 16
+    .line 17
+    const/4 v4, 0x1
+
+    .line 18
+    if-nez v2, :cond_2
+
+    .line 19
+    .line 20
+    iput-boolean v4, v1, Lhx9;->O:Z
+
+    .line 21
+    .line 22
+    const-string v2, "Android.NTP.Impression"
+
+    .line 23
+    .line 24
+    const/4 v5, 0x0
+
+    .line 25
+    const/4 v6, 0x2
+
+    .line 26
+    invoke-static {v5, v6, v2}, Lumc;->j(IILjava/lang/String;)V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-static {v3}, Lxx9;->a(Lorg/chromium/chrome/browser/tab/Tab;)Lxx9;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v2
+
+    .line 33
+    if-eqz v2, :cond_0
+
+    .line 34
+    .line 35
+    iput-boolean v4, v2, Lxx9;->s:Z
+
+    .line 36
+    .line 37
+    iput-object v0, v2, Lxx9;->t:Lex9;
+
+    .line 38
+    .line 39
+    iget-boolean v7, v2, Lxx9;->r:Z
+
+    .line 40
+    .line 41
+    if-eqz v7, :cond_0
+
+    .line 42
+    .line 43
+    iput-boolean v5, v2, Lxx9;->r:Z
+
+    .line 44
+    .line 45
+    const/4 v2, 0x0
+
+    .line 46
+    invoke-virtual {v0, v2, v5, v5, v6}, Lex9;->a(Ljava/lang/String;ZII)V
+
+    .line 47
+    .line 48
+    .line 49
+    :cond_0
+    iget-boolean v0, v3, Lorg/chromium/chrome/browser/tab/TabImpl;->D:Z
+
+    .line 50
+    .line 51
+    if-nez v0, :cond_1
+
+    .line 52
+    .line 53
+    invoke-virtual {v1}, Lhx9;->K()V
+
+    .line 54
+    .line 55
+    .line 56
+    :cond_1
+    invoke-virtual {v1}, Lhx9;->b()V
+
+    .line 57
+    .line 58
+    .line 59
+    :cond_2
+    iget-object p0, p0, Lwx9;->C:Lwm8;
+
+    .line 60
+    .line 61
+    if-eqz p0, :cond_4
+
+    .line 62
+    .line 63
+    iget-object p0, p0, Lwm8;->d:Lcn8;
+
+    .line 64
+    .line 65
+    invoke-virtual {p0}, Lcn8;->c()V
+
+    .line 66
+    .line 67
+    .line 68
+    iget-boolean v0, p0, Lcn8;->z:Z
+
+    .line 69
+    .line 70
+    if-eqz v0, :cond_4
+
+    .line 71
+    .line 72
+    iget-object v0, p0, Lcn8;->t:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 73
+    .line 74
+    if-eqz v0, :cond_3
+
+    .line 75
+    .line 76
+    invoke-virtual {p0, v4}, Lcn8;->a(Z)V
+
+    .line 77
+    .line 78
+    .line 79
+    goto :goto_0
+
+    .line 80
+    :cond_3
+    iput-boolean v4, p0, Lcn8;->B:Z
+
+    .line 81
+    .line 82
+    :cond_4
+    :goto_0
+    return-void
+.end method
+
+.method public final j()V
+    .locals 3
+
+    .line 1
+    iget-boolean v0, p0, Lwx9;->Y:Z
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    iget-boolean v0, p0, Lwx9;->p:Z
+
+    .line 6
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lwx9;->D:Ln8a;
+
+    .line 10
+    .line 11
+    if-eqz v0, :cond_0
+
+    .line 12
+    .line 13
+    iget-object v0, p0, Lwx9;->e0:Lol5;
+
+    .line 14
+    .line 15
+    if-eqz v0, :cond_0
+
+    .line 16
+    .line 17
+    invoke-virtual {v0}, Lol5;->d()I
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v0
+
+    .line 21
+    iget-object v1, p0, Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+
+    .line 22
+    .line 23
+    invoke-virtual {v1}, Landroid/view/View;->getPaddingTop()I
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v1
+
+    .line 27
+    add-int/2addr v1, v0
+
+    .line 28
+    iget-object v0, p0, Lwx9;->D:Ln8a;
+
+    .line 29
+    .line 30
+    invoke-interface {v0}, Ln8a;->a()Landroid/view/View;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v0
+
+    .line 34
+    invoke-virtual {v0}, Landroid/view/View;->getBottom()I
+
+    .line 35
+    .line 36
+    .line 37
+    move-result v0
+
+    .line 38
+    iget-object v2, p0, Lwx9;->D:Ln8a;
+
+    .line 39
+    .line 40
+    invoke-interface {v2}, Ln8a;->a()Landroid/view/View;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v2
+
+    .line 44
+    invoke-virtual {v2}, Landroid/view/View;->getPaddingBottom()I
+
+    .line 45
+    .line 46
+    .line 47
+    move-result v2
+
+    .line 48
+    sub-int/2addr v0, v2
+
+    .line 49
+    iget v2, p0, Lwx9;->d0:I
+
+    .line 50
+    .line 51
+    sub-int/2addr v0, v2
+
+    .line 52
+    invoke-static {v1, v0}, Ljava/lang/Math;->max(II)I
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v0
+
+    .line 56
+    iget v2, p0, Lwx9;->X:F
+
+    .line 57
+    .line 58
+    sub-int/2addr v1, v0
+
+    .line 59
+    int-to-float v0, v1
+
+    .line 60
+    mul-float/2addr v2, v0
+
+    .line 61
+    iget-object p0, p0, Lwx9;->d:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 62
+    .line 63
+    sget-object v0, Lcy9;->e:Ln8c;
+
+    .line 64
+    .line 65
+    invoke-virtual {p0, v0, v2}, Lorg/chromium/ui/modelutil/PropertyModel;->q(Ln8c;F)V
+
+    .line 66
+    .line 67
+    .line 68
+    :cond_0
+    return-void
+.end method
+
+.method public final k()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lwx9;->C:Lwm8;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_1
+
+    .line 4
+    .line 5
+    iget-object v1, p0, Lwx9;->b:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 6
+    .line 7
+    invoke-virtual {v1}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 8
+    .line 9
+    .line 10
+    move-result-object v1
+
+    .line 11
+    iget-object p0, p0, Lwx9;->t:Ljld;
+
+    .line 12
+    .line 13
+    iget-boolean v2, p0, Ljld;->e:Z
+
+    .line 14
+    .line 15
+    if-eqz v2, :cond_0
+
+    .line 16
+    .line 17
+    iget-boolean p0, p0, Ljld;->c:Z
+
+    .line 18
+    .line 19
+    if-eqz p0, :cond_0
+
+    .line 20
+    .line 21
+    invoke-static {v1}, Len8;->b(Landroid/content/res/Resources;)I
+
+    .line 22
+    .line 23
+    .line 24
+    move-result p0
+
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :cond_0
+    invoke-static {v1}, Len8;->c(Landroid/content/res/Resources;)I
+
+    .line 27
+    .line 28
+    .line 29
+    move-result p0
+
+    .line 30
+    :goto_0
+    iget-object v0, v0, Lwm8;->b:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 31
+    .line 32
+    sget-object v1, Ldn8;->b:Lr8c;
+
+    .line 33
+    .line 34
+    invoke-virtual {v0, v1, p0}, Lorg/chromium/ui/modelutil/PropertyModel;->t(Lr8c;I)V
+
+    .line 35
+    .line 36
+    .line 37
+    :cond_1
+    return-void
+.end method
+
+.method public final l()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lwx9;->b:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    iget-byte v1, p0, Lwx9;->g0:B
+
+    .line 8
+    .line 9
+    const/4 v2, 0x2
+
+    .line 10
+    if-eq v1, v2, :cond_0
+
+    .line 11
+    .line 12
+    invoke-static {}, Lzj2;->a()Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v1
+
+    .line 16
+    if-eqz v1, :cond_1
+
+    .line 17
+    .line 18
+    :cond_0
+    const v1, 0x7f0809c4
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 22
+    .line 23
+    .line 24
+    move-result v1
+
+    .line 25
+    goto :goto_0
+
+    .line 26
+    :cond_1
+    const v1, 0x7f0809c3
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v1
+
+    .line 33
+    :goto_0
+    iget-object v2, p0, Lwx9;->D:Ln8a;
+
+    .line 34
+    .line 35
+    if-eqz v2, :cond_2
+
+    .line 36
+    .line 37
+    invoke-interface {v2, v1}, Ln8a;->m(I)V
+
+    .line 38
+    .line 39
+    .line 40
+    :cond_2
+    const v2, 0x7f080d72
+
+    .line 41
+    .line 42
+    .line 43
+    invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v0
+
+    .line 47
+    sub-int/2addr v1, v0
+
+    .line 48
+    int-to-float v0, v1
+
+    .line 49
+    const/high16 v1, 0x40000000    # 2.0f
+
+    .line 50
+    .line 51
+    div-float/2addr v0, v1
+
+    .line 52
+    invoke-static {v0}, Ljava/lang/Math;->round(F)I
+
+    .line 53
+    .line 54
+    .line 55
+    move-result v0
+
+    .line 56
+    iput v0, p0, Lwx9;->d0:I
+
+    .line 57
+    .line 58
+    return-void
+.end method
+
+.method public final m(ZZ)V
+    .locals 7
+
+    .line 1
+    iget-boolean v0, p0, Lwx9;->p:Z
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lwx9;->t:Ljld;
+
+    .line 4
+    .line 5
+    iget-boolean v2, v1, Ljld;->d:Z
+
+    .line 6
+    .line 7
+    const/4 v3, 0x0
+
+    .line 8
+    const/4 v4, 0x1
+
+    .line 9
+    if-eq v2, p2, :cond_0
+
+    .line 10
+    .line 11
+    move v5, v4
+
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :cond_0
+    move v5, v3
+
+    .line 14
+    :goto_0
+    iget-boolean v6, v1, Ljld;->c:Z
+
+    .line 15
+    .line 16
+    if-ne v6, p1, :cond_1
+
+    .line 17
+    .line 18
+    if-ne v2, p2, :cond_1
+
+    .line 19
+    .line 20
+    iget-boolean p1, p0, Lwx9;->W:Z
+
+    .line 21
+    .line 22
+    if-nez p1, :cond_12
+
+    .line 23
+    .line 24
+    move p1, v6
+
+    .line 25
+    goto :goto_1
+
+    .line 26
+    :cond_1
+    iput-boolean p1, v1, Ljld;->c:Z
+
+    .line 27
+    .line 28
+    iput-boolean p2, v1, Ljld;->d:Z
+
+    .line 29
+    .line 30
+    if-nez p2, :cond_2
+
+    .line 31
+    .line 32
+    iput-boolean v3, v1, Ljld;->e:Z
+
+    .line 33
+    .line 34
+    :cond_2
+    :goto_1
+    if-eqz v0, :cond_3
+
+    .line 35
+    .line 36
+    if-nez p1, :cond_3
+
+    .line 37
+    .line 38
+    move p2, v3
+
+    .line 39
+    goto :goto_2
+
+    .line 40
+    :cond_3
+    iget p2, p0, Lwx9;->v:I
+
+    .line 41
+    .line 42
+    :goto_2
+    iput p2, p0, Lwx9;->n0:I
+
+    .line 43
+    .line 44
+    iget-object p2, p0, Lwx9;->D:Ln8a;
+
+    .line 45
+    .line 46
+    if-eqz p2, :cond_5
+
+    .line 47
+    .line 48
+    if-nez p1, :cond_4
+
+    .line 49
+    .line 50
+    iget p1, p0, Lwx9;->w:I
+
+    .line 51
+    .line 52
+    goto :goto_3
+
+    .line 53
+    :cond_4
+    move p1, v3
+
+    .line 54
+    :goto_3
+    invoke-interface {p2, p1}, Ln8a;->p(I)V
+
+    .line 55
+    .line 56
+    .line 57
+    :cond_5
+    invoke-virtual {p0}, Lwx9;->k()V
+
+    .line 58
+    .line 59
+    .line 60
+    iget-object p1, p0, Lwx9;->C:Lwm8;
+
+    .line 61
+    .line 62
+    if-eqz p1, :cond_6
+
+    .line 63
+    .line 64
+    iget-object p1, p0, Lwx9;->b:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 65
+    .line 66
+    invoke-virtual {p1}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object p1
+
+    .line 70
+    const p2, 0x7f0809bb
+
+    .line 71
+    .line 72
+    .line 73
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 74
+    .line 75
+    .line 76
+    move-result p1
+
+    .line 77
+    iget-object p2, p0, Lwx9;->C:Lwm8;
+
+    .line 78
+    .line 79
+    iget-object p2, p2, Lwm8;->b:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 80
+    .line 81
+    sget-object v2, Ldn8;->d:Lr8c;
+
+    .line 82
+    .line 83
+    invoke-virtual {p2, v2, p1}, Lorg/chromium/ui/modelutil/PropertyModel;->t(Lr8c;I)V
+
+    .line 84
+    .line 85
+    .line 86
+    :cond_6
+    iget-object p1, p0, Lwx9;->E:Lsi9;
+
+    .line 87
+    .line 88
+    if-eqz p1, :cond_a
+
+    .line 89
+    .line 90
+    iget-boolean p2, v1, Ljld;->c:Z
+
+    .line 91
+    .line 92
+    invoke-static {}, Liy9;->a()I
+
+    .line 93
+    .line 94
+    .line 95
+    move-result v1
+
+    .line 96
+    if-eqz v1, :cond_7
+
+    .line 97
+    .line 98
+    invoke-virtual {p1, v1}, Lsi9;->a(I)V
+
+    .line 99
+    .line 100
+    .line 101
+    goto :goto_5
+
+    .line 102
+    :cond_7
+    iget-object p1, p1, Lsi9;->u:Lvi9;
+
+    .line 103
+    .line 104
+    iget-object p1, p1, Lvi9;->c:Landroid/view/View;
+
+    .line 105
+    .line 106
+    invoke-static {}, Liy9;->b()Z
+
+    .line 107
+    .line 108
+    .line 109
+    move-result v1
+
+    .line 110
+    if-eqz v1, :cond_8
+
+    .line 111
+    .line 112
+    invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+
+    .line 113
+    .line 114
+    .line 115
+    move-result-object v1
+
+    .line 116
+    instance-of v2, v1, Landroid/view/View;
+
+    .line 117
+    .line 118
+    if-eqz v2, :cond_8
+
+    .line 119
+    .line 120
+    check-cast v1, Landroid/view/View;
+
+    .line 121
+    .line 122
+    invoke-virtual {v1}, Landroid/view/View;->getId()I
+
+    .line 123
+    .line 124
+    .line 125
+    move-result v2
+
+    .line 126
+    const v6, 0x7f0102fb
+
+    .line 127
+    .line 128
+    .line 129
+    if-ne v2, v6, :cond_8
+
+    .line 130
+    .line 131
+    move-object p1, v1
+
+    .line 132
+    :cond_8
+    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 133
+    .line 134
+    .line 135
+    move-result-object v1
+
+    .line 136
+    check-cast v1, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    .line 137
+    .line 138
+    invoke-virtual {p1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
+
+    .line 139
+    .line 140
+    .line 141
+    move-result-object v2
+
+    .line 142
+    if-nez p2, :cond_9
+
+    .line 143
+    .line 144
+    if-nez v0, :cond_9
+
+    .line 145
+    .line 146
+    const p2, 0x7f080d3e
+
+    .line 147
+    .line 148
+    .line 149
+    goto :goto_4
+
+    .line 150
+    :cond_9
+    const p2, 0x7f0809cc
+
+    .line 151
+    .line 152
+    .line 153
+    :goto_4
+    invoke-virtual {v2, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 154
+    .line 155
+    .line 156
+    move-result p2
+
+    .line 157
+    iput p2, v1, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    .line 158
+    .line 159
+    invoke-virtual {p1, v1}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 160
+    .line 161
+    .line 162
+    :cond_a
+    :goto_5
+    iget-object p1, p0, Lwx9;->D:Ln8a;
+
+    .line 163
+    .line 164
+    if-eqz p1, :cond_e
+
+    .line 165
+    .line 166
+    invoke-static {}, Lj8a;->z()Z
+
+    .line 167
+    .line 168
+    .line 169
+    move-result p1
+
+    .line 170
+    if-nez p1, :cond_b
+
+    .line 171
+    .line 172
+    invoke-static {}, Lorg/chromium/base/DeviceInfo;->d()Z
+
+    .line 173
+    .line 174
+    .line 175
+    move-result p1
+
+    .line 176
+    if-eqz p1, :cond_c
+
+    .line 177
+    .line 178
+    :cond_b
+    move v3, v4
+
+    .line 179
+    :cond_c
+    iget-object p1, p0, Lwx9;->D:Ln8a;
+
+    .line 180
+    .line 181
+    if-eqz v3, :cond_d
+
+    .line 182
+    .line 183
+    const p2, 0x7f150365
+
+    .line 184
+    .line 185
+    .line 186
+    invoke-interface {p1, p2}, Ln8a;->o(I)V
+
+    .line 187
+    .line 188
+    .line 189
+    goto :goto_6
+
+    .line 190
+    :cond_d
+    const p2, 0x7f150364
+
+    .line 191
+    .line 192
+    .line 193
+    invoke-interface {p1, p2}, Ln8a;->o(I)V
+
+    .line 194
+    .line 195
+    .line 196
+    :cond_e
+    :goto_6
+    iget-boolean p1, p0, Lwx9;->z:Z
+
+    .line 197
+    .line 198
+    if-nez p1, :cond_10
+
+    .line 199
+    .line 200
+    iget-byte p1, p0, Lwx9;->g0:B
+
+    .line 201
+    .line 202
+    if-eqz p1, :cond_10
+
+    .line 203
+    .line 204
+    if-eqz v5, :cond_10
+
+    .line 205
+    .line 206
+    iget-object p2, p0, Lwx9;->k:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 207
+    .line 208
+    invoke-virtual {p0, p2}, Lwx9;->e(Lorg/chromium/chrome/browser/profiles/Profile;)V
+
+    .line 209
+    .line 210
+    .line 211
+    const/4 p2, 0x2
+
+    .line 212
+    if-eq p1, p2, :cond_f
+
+    .line 213
+    .line 214
+    iget-byte v0, p0, Lwx9;->g0:B
+
+    .line 215
+    .line 216
+    if-ne v0, p2, :cond_f
+
+    .line 217
+    .line 218
+    iget-object p2, p0, Lwx9;->j0:Lo43;
+
+    .line 219
+    .line 220
+    if-nez p2, :cond_f
+
+    .line 221
+    .line 222
+    invoke-virtual {p0}, Lwx9;->d()V
+
+    .line 223
+    .line 224
+    .line 225
+    :cond_f
+    invoke-virtual {p0}, Lwx9;->f()V
+
+    .line 226
+    .line 227
+    .line 228
+    iget-byte p2, p0, Lwx9;->g0:B
+
+    .line 229
+    .line 230
+    if-eq p1, p2, :cond_10
+
+    .line 231
+    .line 232
+    invoke-virtual {p0}, Lwx9;->l()V
+
+    .line 233
+    .line 234
+    .line 235
+    invoke-virtual {p0}, Lwx9;->o()V
+
+    .line 236
+    .line 237
+    .line 238
+    :cond_10
+    if-eqz v5, :cond_11
+
+    .line 239
+    .line 240
+    invoke-virtual {p0}, Lwx9;->q()V
+
+    .line 241
+    .line 242
+    .line 243
+    :cond_11
+    invoke-virtual {p0}, Lwx9;->j()V
+
+    .line 244
+    .line 245
+    .line 246
+    iput-boolean v4, p0, Lwx9;->a0:Z
+
+    .line 247
+    .line 248
+    :cond_12
+    return-void
+.end method
+
+.method public final n(Lorg/chromium/chrome/browser/tab/Tab;)V
+    .locals 16
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    move-object/from16 v1, p1
+
+    .line 4
+    .line 5
+    iget-object v2, v0, Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+
+    .line 6
+    .line 7
+    iget-object v3, v0, Lwx9;->k:Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 8
+    .line 9
+    iget-object v4, v0, Lwx9;->g:Lxia;
+
+    .line 10
+    .line 11
+    invoke-virtual {v4}, Lxia;->get()Ljava/lang/Object;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v5
+
+    .line 15
+    if-eqz v5, :cond_e
+
+    .line 16
+    .line 17
+    if-eqz v1, :cond_0
+
+    .line 18
+    .line 19
+    invoke-interface {v1}, Lorg/chromium/chrome/browser/tab/Tab;->getUrl()Lorg/chromium/url/GURL;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v5
+
+    .line 23
+    invoke-static {v5}, Leth;->m(Lorg/chromium/url/GURL;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v5
+
+    .line 27
+    if-nez v5, :cond_0
+
+    .line 28
+    .line 29
+    iget-object v5, v0, Lwx9;->i:Laca;
+
+    .line 30
+    .line 31
+    invoke-virtual {v5, v1}, Laca;->set(Ljava/lang/Object;)V
+
+    .line 32
+    .line 33
+    .line 34
+    :cond_0
+    if-eqz v3, :cond_1
+
+    .line 35
+    .line 36
+    sget-object v1, Le2e;->D:Ljava/util/List;
+
+    .line 37
+    .line 38
+    sget-object v1, Ld2e;->a:Le2e;
+
+    .line 39
+    .line 40
+    invoke-virtual {v3}, Lorg/chromium/chrome/browser/profiles/Profile;->f()Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v5
+
+    .line 44
+    invoke-virtual {v1, v5}, Le2e;->b(Lorg/chromium/chrome/browser/profiles/Profile;)V
+
+    .line 45
+    .line 46
+    .line 47
+    :cond_1
+    invoke-static {}, Lorg/chromium/base/DeviceInfo;->d()Z
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v1
+
+    .line 51
+    const/4 v5, 0x3
+
+    .line 52
+    const/4 v6, 0x0
+
+    .line 53
+    if-nez v1, :cond_c
+
+    .line 54
+    .line 55
+    iget-object v1, v0, Lwx9;->P:Lsw6;
+
+    .line 56
+    .line 57
+    if-nez v1, :cond_c
+
+    .line 58
+    .line 59
+    const v1, 0x7f010618
+
+    .line 60
+    .line 61
+    .line 62
+    invoke-virtual {v2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v1
+
+    .line 66
+    check-cast v1, Landroid/view/ViewStub;
+
+    .line 67
+    .line 68
+    invoke-virtual {v1}, Landroid/view/ViewStub;->inflate()Landroid/view/View;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object v1
+
+    .line 72
+    check-cast v1, Landroid/view/ViewGroup;
+
+    .line 73
+    .line 74
+    iput-object v1, v0, Lwx9;->Q:Landroid/view/ViewGroup;
+
+    .line 75
+    .line 76
+    new-instance v1, Laca;
+
+    .line 77
+    .line 78
+    invoke-direct {v1, v3, v6}, Laca;-><init>(Ljava/lang/Object;Z)V
+
+    .line 79
+    .line 80
+    .line 81
+    new-instance v3, Lsw6;
+
+    .line 82
+    .line 83
+    iget-object v7, v0, Lwx9;->b:Lorg/chromium/chrome/browser/ChromeTabbedActivity;
+
+    .line 84
+    .line 85
+    sget-object v8, Lcw6;->a:Ldw6;
+
+    .line 86
+    .line 87
+    invoke-virtual {v4}, Lxia;->get()Ljava/lang/Object;
+
+    .line 88
+    .line 89
+    .line 90
+    move-result-object v4
+
+    .line 91
+    check-cast v4, Lrh9;
+
+    .line 92
+    .line 93
+    invoke-direct {v3}, Ljava/lang/Object;-><init>()V
+
+    .line 94
+    .line 95
+    .line 96
+    iput-object v0, v3, Lsw6;->a:Lwx9;
+
+    .line 97
+    .line 98
+    iput-object v8, v3, Lsw6;->m:Ldw6;
+
+    .line 99
+    .line 100
+    new-instance v9, Lkw6;
+
+    .line 101
+    .line 102
+    invoke-direct {v9}, Ljava/lang/Object;-><init>()V
+
+    .line 103
+    .line 104
+    .line 105
+    iput-object v3, v9, Lkw6;->a:Lsw6;
+
+    .line 106
+    .line 107
+    iput-object v9, v3, Lsw6;->n:Lkw6;
+
+    .line 108
+    .line 109
+    iget-object v8, v8, Ldw6;->b:Lfca;
+
+    .line 110
+    .line 111
+    invoke-virtual {v8, v9}, Lfca;->a(Ljava/lang/Object;)Z
+
+    .line 112
+    .line 113
+    .line 114
+    iput-object v4, v3, Lsw6;->e:Lrh9;
+
+    .line 115
+    .line 116
+    if-eqz v4, :cond_b
+
+    .line 117
+    .line 118
+    new-instance v8, Lj22;
+
+    .line 119
+    .line 120
+    invoke-direct {v8}, Lj22;-><init>()V
+
+    .line 121
+    .line 122
+    .line 123
+    iput-object v8, v3, Lsw6;->t:Lj22;
+
+    .line 124
+    .line 125
+    new-instance v8, Liw6;
+
+    .line 126
+    .line 127
+    invoke-direct {v8}, Ljava/lang/Object;-><init>()V
+
+    .line 128
+    .line 129
+    .line 130
+    iput-object v3, v8, Liw6;->a:Lsw6;
+
+    .line 131
+    .line 132
+    iput-object v8, v3, Lsw6;->g:Liw6;
+
+    .line 133
+    .line 134
+    iput-object v1, v3, Lsw6;->d:Laca;
+
+    .line 135
+    .line 136
+    new-instance v8, Loq8;
+
+    .line 137
+    .line 138
+    invoke-direct {v8}, Lqf8;-><init>()V
+
+    .line 139
+    .line 140
+    .line 141
+    iput-object v8, v3, Lsw6;->f:Loq8;
+
+    .line 142
+    .line 143
+    const v9, 0x7f010617
+
+    .line 144
+    .line 145
+    .line 146
+    invoke-virtual {v2, v9}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    .line 147
+    .line 148
+    .line 149
+    move-result-object v2
+
+    .line 150
+    check-cast v2, Lorg/chromium/chrome/browser/magic_stack/HomeModulesRecyclerView;
+
+    .line 151
+    .line 152
+    iput-object v2, v3, Lsw6;->c:Lorg/chromium/chrome/browser/magic_stack/HomeModulesRecyclerView;
+
+    .line 153
+    .line 154
+    new-instance v9, Landroidx/recyclerview/widget/LinearLayoutManager;
+
+    .line 155
+    .line 156
+    invoke-direct {v9, v7, v6, v6}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(Landroid/content/Context;IZ)V
+
+    .line 157
+    .line 158
+    .line 159
+    invoke-virtual {v2, v9}, Landroidx/recyclerview/widget/RecyclerView;->A0(Lfoc;)V
+
+    .line 160
+    .line 161
+    .line 162
+    invoke-virtual {v3}, Lsw6;->a()V
+
+    .line 163
+    .line 164
+    .line 165
+    invoke-static {v7}, Lorg/chromium/ui/base/DeviceFormFactor;->b(Landroid/content/Context;)Z
+
+    .line 166
+    .line 167
+    .line 168
+    move-result v9
+
+    .line 169
+    invoke-virtual {v0}, Lwx9;->b()I
+
+    .line 170
+    .line 171
+    .line 172
+    move-result v10
+
+    .line 173
+    const/4 v11, 0x0
+
+    .line 174
+    if-eqz v9, :cond_2
+
+    .line 175
+    .line 176
+    iget-boolean v12, v0, Lwx9;->p:Z
+
+    .line 177
+    .line 178
+    if-eqz v12, :cond_2
+
+    .line 179
+    .line 180
+    iget-object v11, v0, Lwx9;->G:Lzlh;
+
+    .line 181
+    .line 182
+    :cond_2
+    iput-object v11, v3, Lsw6;->o:Lzlh;
+
+    .line 183
+    .line 184
+    const/4 v12, 0x2
+
+    .line 185
+    const/4 v13, 0x1
+
+    .line 186
+    if-nez v11, :cond_3
+
+    .line 187
+    .line 188
+    move v11, v13
+
+    .line 189
+    goto :goto_1
+
+    .line 190
+    :cond_3
+    iget-object v11, v11, Lzlh;->a:Lylh;
+
+    .line 191
+    .line 192
+    iget-byte v11, v11, Lylh;->a:B
+
+    .line 193
+    .line 194
+    if-ne v11, v12, :cond_4
+
+    .line 195
+    .line 196
+    move v11, v13
+
+    .line 197
+    goto :goto_0
+
+    .line 198
+    :cond_4
+    move v11, v6
+
+    .line 199
+    :goto_0
+    shl-int v11, v13, v11
+
+    .line 200
+    .line 201
+    :goto_1
+    iput-byte v11, v3, Lsw6;->l:B
+
+    .line 202
+    .line 203
+    iput-boolean v9, v2, Lorg/chromium/chrome/browser/magic_stack/HomeModulesRecyclerView;->f1:Z
+
+    .line 204
+    .line 205
+    iput v10, v2, Lorg/chromium/chrome/browser/magic_stack/HomeModulesRecyclerView;->h1:I
+
+    .line 206
+    .line 207
+    iput-byte v11, v2, Lorg/chromium/chrome/browser/magic_stack/HomeModulesRecyclerView;->g1:B
+
+    .line 208
+    .line 209
+    invoke-virtual {v2}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 210
+    .line 211
+    .line 212
+    move-result-object v11
+
+    .line 213
+    invoke-virtual {v11}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    .line 214
+    .line 215
+    .line 216
+    move-result-object v11
+
+    .line 217
+    const v14, 0x7f080871
+
+    .line 218
+    .line 219
+    .line 220
+    invoke-virtual {v11, v14}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 221
+    .line 222
+    .line 223
+    move-result v14
+
+    .line 224
+    iput v14, v2, Lorg/chromium/chrome/browser/magic_stack/HomeModulesRecyclerView;->i1:I
+
+    .line 225
+    .line 226
+    const v14, 0x7f080450
+
+    .line 227
+    .line 228
+    .line 229
+    invoke-virtual {v11, v14}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 230
+    .line 231
+    .line 232
+    move-result v11
+
+    .line 233
+    iput v11, v2, Lorg/chromium/chrome/browser/magic_stack/HomeModulesRecyclerView;->j1:I
+
+    .line 234
+    .line 235
+    invoke-static {}, Liy9;->a()I
+
+    .line 236
+    .line 237
+    .line 238
+    move-result v11
+
+    .line 239
+    if-eqz v11, :cond_6
+
+    .line 240
+    .line 241
+    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    .line 242
+    .line 243
+    .line 244
+    move-result-object v11
+
+    .line 245
+    check-cast v11, Landroid/view/ViewGroup$MarginLayoutParams;
+
+    .line 246
+    .line 247
+    if-eqz v11, :cond_6
+
+    .line 248
+    .line 249
+    invoke-virtual {v7}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 250
+    .line 251
+    .line 252
+    move-result-object v14
+
+    .line 253
+    invoke-static {}, Liy9;->a()I
+
+    .line 254
+    .line 255
+    .line 256
+    move-result v15
+
+    .line 257
+    if-nez v15, :cond_5
+
+    .line 258
+    .line 259
+    const v15, 0x7f0809cc
+
+    .line 260
+    .line 261
+    .line 262
+    invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 263
+    .line 264
+    .line 265
+    move-result v14
+
+    .line 266
+    goto :goto_2
+
+    .line 267
+    :cond_5
+    const v15, 0x7f0809cd
+
+    .line 268
+    .line 269
+    .line 270
+    invoke-virtual {v14, v15}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 271
+    .line 272
+    .line 273
+    move-result v14
+
+    .line 274
+    :goto_2
+    iput v14, v11, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+
+    .line 275
+    .line 276
+    invoke-virtual {v2, v11}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 277
+    .line 278
+    .line 279
+    :cond_6
+    new-instance v11, Ljq2;
+
+    .line 280
+    .line 281
+    const v14, 0x7f05016f
+
+    .line 282
+    .line 283
+    .line 284
+    const-string v15, "SemanticColorUtils"
+
+    .line 285
+    .line 286
+    invoke-static {v7, v14, v15}, Ltu8;->e(Landroid/content/Context;ILjava/lang/String;)Landroid/util/TypedValue;
+
+    .line 287
+    .line 288
+    .line 289
+    move-result-object v14
+
+    .line 290
+    invoke-static {v7, v14}, Lyv8;->f(Landroid/content/Context;Landroid/util/TypedValue;)I
+
+    .line 291
+    .line 292
+    .line 293
+    move-result v14
+
+    .line 294
+    const v15, 0x7f070103
+
+    .line 295
+    .line 296
+    .line 297
+    invoke-virtual {v7, v15}, Landroid/content/Context;->getColor(I)I
+
+    .line 298
+    .line 299
+    .line 300
+    move-result v15
+
+    .line 301
+    invoke-direct {v11}, Ljava/lang/Object;-><init>()V
+
+    .line 302
+    .line 303
+    .line 304
+    new-instance v6, Landroid/graphics/Paint;
+
+    .line 305
+    .line 306
+    invoke-direct {v6}, Landroid/graphics/Paint;-><init>()V
+
+    .line 307
+    .line 308
+    .line 309
+    iput-object v6, v11, Ljq2;->g:Landroid/graphics/Paint;
+
+    .line 310
+    .line 311
+    iput v10, v11, Ljq2;->j:I
+
+    .line 312
+    .line 313
+    iput v14, v11, Ljq2;->a:I
+
+    .line 314
+    .line 315
+    iput v15, v11, Ljq2;->b:I
+
+    .line 316
+    .line 317
+    iput-boolean v9, v11, Ljq2;->h:Z
+
+    .line 318
+    .line 319
+    invoke-virtual {v7}, Lhg2;->getResources()Landroid/content/res/Resources;
+
+    .line 320
+    .line 321
+    .line 322
+    move-result-object v7
+
+    .line 323
+    const v14, 0x7f080a2c
+
+    .line 324
+    .line 325
+    .line 326
+    invoke-virtual {v7, v14}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 327
+    .line 328
+    .line 329
+    move-result v14
+
+    .line 330
+    int-to-float v14, v14
+
+    .line 331
+    invoke-virtual {v6, v14}, Landroid/graphics/Paint;->setStrokeWidth(F)V
+
+    .line 332
+    .line 333
+    .line 334
+    sget-object v15, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
+
+    .line 335
+    .line 336
+    invoke-virtual {v6, v15}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
+    .line 337
+    .line 338
+    .line 339
+    invoke-virtual {v6, v13}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+
+    .line 340
+    .line 341
+    .line 342
+    iput-byte v13, v11, Ljq2;->k:B
+
+    .line 343
+    .line 344
+    const v6, 0x7f080a2d
+
+    .line 345
+    .line 346
+    .line 347
+    invoke-virtual {v7, v6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 348
+    .line 349
+    .line 350
+    move-result v6
+
+    .line 351
+    int-to-float v6, v6
+
+    .line 352
+    iput v6, v11, Ljq2;->f:F
+
+    .line 353
+    .line 354
+    iput v14, v11, Ljq2;->d:F
+
+    .line 355
+    .line 356
+    const/high16 v6, 0x40000000    # 2.0f
+
+    .line 357
+    .line 358
+    div-float v6, v14, v6
+
+    .line 359
+    .line 360
+    iput v6, v11, Ljq2;->e:F
+
+    .line 361
+    .line 362
+    float-to-int v6, v14
+
+    .line 363
+    const v14, 0x7f080a31
+
+    .line 364
+    .line 365
+    .line 366
+    invoke-virtual {v7, v14}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
+
+    .line 367
+    .line 368
+    .line 369
+    move-result v7
+
+    .line 370
+    add-int/2addr v7, v6
+
+    .line 371
+    iput v7, v11, Ljq2;->c:I
+
+    .line 372
+    .line 373
+    invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
+
+    .line 374
+    .line 375
+    .line 376
+    move-result-object v6
+
+    .line 377
+    invoke-static {v6}, Landroid/text/TextUtils;->getLayoutDirectionFromLocale(Ljava/util/Locale;)I
+
+    .line 378
+    .line 379
+    .line 380
+    move-result v6
+
+    .line 381
+    if-nez v6, :cond_7
+
+    .line 382
+    .line 383
+    move v6, v13
+
+    .line 384
+    goto :goto_3
+
+    .line 385
+    :cond_7
+    const/4 v6, 0x0
+
+    .line 386
+    :goto_3
+    iput-boolean v6, v11, Ljq2;->i:Z
+
+    .line 387
+    .line 388
+    iput-object v11, v3, Lsw6;->i:Ljq2;
+
+    .line 389
+    .line 390
+    invoke-virtual {v2, v11}, Landroidx/recyclerview/widget/RecyclerView;->h(Lcoc;)V
+
+    .line 391
+    .line 392
+    .line 393
+    new-instance v6, Lnw6;
+
+    .line 394
+    .line 395
+    invoke-direct {v6, v3}, Lnw6;-><init>(Lsw6;)V
+
+    .line 396
+    .line 397
+    .line 398
+    iput-object v6, v3, Lsw6;->j:Lnw6;
+
+    .line 399
+    .line 400
+    if-nez v9, :cond_8
+
+    .line 401
+    .line 402
+    invoke-virtual {v6, v2}, Lnw6;->a(Landroidx/recyclerview/widget/RecyclerView;)V
+
+    .line 403
+    .line 404
+    .line 405
+    goto :goto_5
+
+    .line 406
+    :cond_8
+    iget-object v7, v3, Lsw6;->o:Lzlh;
+
+    .line 407
+    .line 408
+    iget-object v7, v7, Lzlh;->a:Lylh;
+
+    .line 409
+    .line 410
+    iget-byte v7, v7, Lylh;->a:B
+
+    .line 411
+    .line 412
+    if-ne v7, v12, :cond_9
+
+    .line 413
+    .line 414
+    move v7, v13
+
+    .line 415
+    goto :goto_4
+
+    .line 416
+    :cond_9
+    const/4 v7, 0x0
+
+    .line 417
+    :goto_4
+    shl-int v7, v13, v7
+
+    .line 418
+    .line 419
+    iput-byte v7, v3, Lsw6;->l:B
+
+    .line 420
+    .line 421
+    if-ne v7, v13, :cond_a
+
+    .line 422
+    .line 423
+    invoke-virtual {v6, v2}, Lnw6;->a(Landroidx/recyclerview/widget/RecyclerView;)V
+
+    .line 424
+    .line 425
+    .line 426
+    :cond_a
+    new-instance v6, Low6;
+
+    .line 427
+    .line 428
+    invoke-direct {v6}, Ljava/lang/Object;-><init>()V
+
+    .line 429
+    .line 430
+    .line 431
+    iput-object v3, v6, Low6;->r:Lsw6;
+
+    .line 432
+    .line 433
+    iput-object v6, v3, Lsw6;->p:Low6;
+
+    .line 434
+    .line 435
+    iget-object v7, v3, Lsw6;->o:Lzlh;
+
+    .line 436
+    .line 437
+    invoke-virtual {v7, v6}, Lzlh;->a(Lsk4;)V
+
+    .line 438
+    .line 439
+    .line 440
+    iget-object v6, v3, Lsw6;->i:Ljq2;
+
+    .line 441
+    .line 442
+    iget-byte v7, v3, Lsw6;->l:B
+
+    .line 443
+    .line 444
+    iput v10, v6, Ljq2;->j:I
+
+    .line 445
+    .line 446
+    iput-byte v7, v6, Ljq2;->k:B
+
+    .line 447
+    .line 448
+    iput v10, v2, Lorg/chromium/chrome/browser/magic_stack/HomeModulesRecyclerView;->h1:I
+
+    .line 449
+    .line 450
+    iput-byte v7, v2, Lorg/chromium/chrome/browser/magic_stack/HomeModulesRecyclerView;->g1:B
+
+    .line 451
+    .line 452
+    :goto_5
+    new-instance v2, Llw6;
+
+    .line 453
+    .line 454
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 455
+    .line 456
+    .line 457
+    iput-object v3, v2, Llw6;->a:Lsw6;
+
+    .line 458
+    .line 459
+    iput-object v2, v3, Lsw6;->s:Llw6;
+
+    .line 460
+    .line 461
+    new-instance v2, Lww6;
+
+    .line 462
+    .line 463
+    iget-object v6, v3, Lsw6;->m:Ldw6;
+
+    .line 464
+    .line 465
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 466
+    .line 467
+    .line 468
+    new-instance v7, Ljava/util/HashMap;
+
+    .line 469
+    .line 470
+    invoke-direct {v7}, Ljava/util/HashMap;-><init>()V
+
+    .line 471
+    .line 472
+    .line 473
+    iput-object v7, v2, Lww6;->f:Ljava/util/HashMap;
+
+    .line 474
+    .line 475
+    new-instance v7, Ljava/util/HashMap;
+
+    .line 476
+    .line 477
+    invoke-direct {v7}, Ljava/util/HashMap;-><init>()V
+
+    .line 478
+    .line 479
+    .line 480
+    iput-object v7, v2, Lww6;->g:Ljava/util/HashMap;
+
+    .line 481
+    .line 482
+    new-instance v7, Landroid/os/Handler;
+
+    .line 483
+    .line 484
+    invoke-direct {v7}, Landroid/os/Handler;-><init>()V
+
+    .line 485
+    .line 486
+    .line 487
+    iput-object v7, v2, Lww6;->h:Landroid/os/Handler;
+
+    .line 488
+    .line 489
+    iput-object v1, v2, Lww6;->a:Laca;
+
+    .line 490
+    .line 491
+    iput-object v8, v2, Lww6;->b:Loq8;
+
+    .line 492
+    .line 493
+    iput-object v4, v2, Lww6;->c:Lrh9;
+
+    .line 494
+    .line 495
+    iput-object v0, v2, Lww6;->d:Lwx9;
+
+    .line 496
+    .line 497
+    iput-object v6, v2, Lww6;->e:Ldw6;
+
+    .line 498
+    .line 499
+    iput-object v2, v3, Lsw6;->b:Lww6;
+
+    .line 500
+    .line 501
+    iput-object v3, v0, Lwx9;->P:Lsw6;
+
+    .line 502
+    .line 503
+    sget-object v1, Le2e;->D:Ljava/util/List;
+
+    .line 504
+    .line 505
+    sget-object v1, Ld2e;->a:Le2e;
+
+    .line 506
+    .line 507
+    iget-byte v2, v1, Le2e;->B:B
+
+    .line 508
+    .line 509
+    if-eq v2, v5, :cond_c
+
+    .line 510
+    .line 511
+    new-instance v2, Lrx9;
+
+    .line 512
+    .line 513
+    invoke-direct {v2}, Ljava/lang/Object;-><init>()V
+
+    .line 514
+    .line 515
+    .line 516
+    iput-object v0, v2, Lrx9;->a:Lwx9;
+
+    .line 517
+    .line 518
+    iput-object v2, v0, Lwx9;->R:Lrx9;
+
+    .line 519
+    .line 520
+    iget-object v1, v1, Le2e;->A:Lfca;
+
+    .line 521
+    .line 522
+    invoke-virtual {v1, v2}, Lfca;->a(Ljava/lang/Object;)Z
+
+    .line 523
+    .line 524
+    .line 525
+    goto :goto_6
+
+    .line 526
+    :cond_b
+    invoke-static {}, Lvja;->y()V
+
+    .line 527
+    .line 528
+    .line 529
+    goto :goto_7
+
+    .line 530
+    :cond_c
+    :goto_6
+    iget-object v1, v0, Lwx9;->P:Lsw6;
+
+    .line 531
+    .line 532
+    if-eqz v1, :cond_e
+
+    .line 533
+    .line 534
+    new-instance v2, Lkx9;
+
+    .line 535
+    .line 536
+    const/4 v3, 0x5
+
+    .line 537
+    invoke-direct {v2, v3}, Lkx9;-><init>(B)V
+
+    .line 538
+    .line 539
+    .line 540
+    iput-object v0, v2, Lkx9;->s:Lwx9;
+
+    .line 541
+    .line 542
+    iget-object v0, v1, Lsw6;->d:Laca;
+
+    .line 543
+    .line 544
+    iget-object v3, v1, Lsw6;->t:Lj22;
+
+    .line 545
+    .line 546
+    new-instance v4, Lrw6;
+
+    .line 547
+    .line 548
+    invoke-direct {v4}, Ljava/lang/Object;-><init>()V
+
+    .line 549
+    .line 550
+    .line 551
+    iput-object v1, v4, Lrw6;->r:Lsw6;
+
+    .line 552
+    .line 553
+    iput-object v2, v4, Lrw6;->s:Lkx9;
+
+    .line 554
+    .line 555
+    invoke-virtual {v3, v4}, Lj22;->c(Ljava/lang/Runnable;)Li22;
+
+    .line 556
+    .line 557
+    .line 558
+    move-result-object v2
+
+    .line 559
+    iget-object v3, v1, Lsw6;->q:Ljw6;
+
+    .line 560
+    .line 561
+    if-nez v3, :cond_e
+
+    .line 562
+    .line 563
+    invoke-virtual {v0}, Laca;->get()Ljava/lang/Object;
+
+    .line 564
+    .line 565
+    .line 566
+    move-result-object v3
+
+    .line 567
+    check-cast v3, Lorg/chromium/chrome/browser/profiles/Profile;
+
+    .line 568
+    .line 569
+    if-eqz v3, :cond_d
+
+    .line 570
+    .line 571
+    iget-object v0, v1, Lsw6;->b:Lww6;
+
+    .line 572
+    .line 573
+    const/4 v3, 0x0
+
+    .line 574
+    invoke-virtual {v0, v2, v1, v3}, Lww6;->l(Li22;Lsw6;Z)V
+
+    .line 575
+    .line 576
+    .line 577
+    goto :goto_7
+
+    .line 578
+    :cond_d
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    .line 579
+    .line 580
+    .line 581
+    move-result-wide v3
+
+    .line 582
+    new-instance v6, Ljw6;
+
+    .line 583
+    .line 584
+    invoke-direct {v6}, Ljava/lang/Object;-><init>()V
+
+    .line 585
+    .line 586
+    .line 587
+    iput-object v1, v6, Ljw6;->r:Lsw6;
+
+    .line 588
+    .line 589
+    iput-object v2, v6, Ljw6;->s:Li22;
+
+    .line 590
+    .line 591
+    iput-wide v3, v6, Ljw6;->t:J
+
+    .line 592
+    .line 593
+    iput-object v6, v1, Lsw6;->q:Ljw6;
+
+    .line 594
+    .line 595
+    invoke-virtual {v0, v6, v5}, Laca;->e(Lorg/chromium/base/Callback;I)Ljava/lang/Object;
+
+    .line 596
+    .line 597
+    .line 598
+    :cond_e
+    :goto_7
+    return-void
+.end method
+
+.method public final o()V
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lwx9;->a:Lex9;
+
+    .line 2
+    .line 3
+    iget-object v1, p0, Lwx9;->D:Ln8a;
+
+    .line 4
+    .line 5
+    if-eqz v1, :cond_5
+
+    .line 6
+    .line 7
+    iget-object v1, v0, Lex9;->g:Lhx9;
+
+    .line 8
+    .line 9
+    iget-object v1, v1, Lhx9;->M:Ld7i;
+
+    .line 10
+    .line 11
+    const/4 v2, 0x0
+
+    .line 12
+    const/4 v3, 0x1
+
+    .line 13
+    if-eqz v1, :cond_0
+
+    .line 14
+    .line 15
+    invoke-virtual {v1}, Ld7i;->a()Z
+
+    .line 16
+    .line 17
+    .line 18
+    move-result v1
+
+    .line 19
+    if-eqz v1, :cond_0
+
+    .line 20
+    .line 21
+    move v1, v3
+
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :cond_0
+    move v1, v2
+
+    .line 24
+    :goto_0
+    iget-object v4, p0, Lwx9;->D:Ln8a;
+
+    .line 25
+    .line 26
+    invoke-interface {v4}, Ln8a;->i()V
+
+    .line 27
+    .line 28
+    .line 29
+    iget-byte v4, p0, Lwx9;->g0:B
+
+    .line 30
+    .line 31
+    if-eqz v4, :cond_5
+
+    .line 32
+    .line 33
+    iget-object v4, p0, Lwx9;->D:Ln8a;
+
+    .line 34
+    .line 35
+    invoke-interface {v4, v1}, Ln8a;->f(Z)V
+
+    .line 36
+    .line 37
+    .line 38
+    iget-object v4, p0, Lwx9;->D:Ln8a;
+
+    .line 39
+    .line 40
+    invoke-interface {v4, v2}, Ln8a;->d(Z)V
+
+    .line 41
+    .line 42
+    .line 43
+    iget-object v4, p0, Lwx9;->j0:Lo43;
+
+    .line 44
+    .line 45
+    if-eqz v4, :cond_3
+
+    .line 46
+    .line 47
+    iget-byte v5, p0, Lwx9;->g0:B
+
+    .line 48
+    .line 49
+    const/4 v6, 0x2
+
+    .line 50
+    if-ne v5, v6, :cond_1
+
+    .line 51
+    .line 52
+    move v2, v3
+
+    .line 53
+    :cond_1
+    invoke-virtual {v0}, Lex9;->b()Z
+
+    .line 54
+    .line 55
+    .line 56
+    move-result v5
+
+    .line 57
+    iget-object v4, v4, Lo43;->a:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 58
+    .line 59
+    sget-object v6, Lq43;->a:Lp8c;
+
+    .line 60
+    .line 61
+    if-eqz v5, :cond_2
+
+    .line 62
+    .line 63
+    invoke-virtual {v4, v6}, Lorg/chromium/ui/modelutil/PropertyModel;->k(Ln8c;)Z
+
+    .line 64
+    .line 65
+    .line 66
+    move-result v5
+
+    .line 67
+    if-eq v2, v5, :cond_2
+
+    .line 68
+    .line 69
+    const-string v5, "NewTabPage.Composeplate.Impression"
+
+    .line 70
+    .line 71
+    invoke-static {v5, v2}, Lumc;->c(Ljava/lang/String;Z)V
+
+    .line 72
+    .line 73
+    .line 74
+    :cond_2
+    invoke-virtual {v4, v6, v2}, Lorg/chromium/ui/modelutil/PropertyModel;->r(Lp8c;Z)V
+
+    .line 75
+    .line 76
+    .line 77
+    :cond_3
+    shl-int v1, v3, v1
+
+    .line 78
+    .line 79
+    invoke-virtual {v0}, Lex9;->b()Z
+
+    .line 80
+    .line 81
+    .line 82
+    move-result v0
+
+    .line 83
+    if-eqz v0, :cond_5
+
+    .line 84
+    .line 85
+    iget-byte v0, p0, Lwx9;->l0:B
+
+    .line 86
+    .line 87
+    if-ne v0, v1, :cond_4
+
+    .line 88
+    .line 89
+    iget-byte v0, p0, Lwx9;->m0:B
+
+    .line 90
+    .line 91
+    if-eq v0, v3, :cond_5
+
+    .line 92
+    .line 93
+    :cond_4
+    const-string v0, "NewTabPage.FakeSearchBox.Impression2"
+
+    .line 94
+    .line 95
+    invoke-static {v0, v3}, Lumc;->c(Ljava/lang/String;Z)V
+
+    .line 96
+    .line 97
+    .line 98
+    iput-byte v1, p0, Lwx9;->l0:B
+
+    .line 99
+    .line 100
+    iput-byte v3, p0, Lwx9;->m0:B
+
+    .line 101
+    .line 102
+    :cond_5
+    return-void
+.end method
+
+.method public final p()V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lwx9;->j0:Lo43;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_3
+
+    .line 4
+    .line 5
+    iget-boolean v0, p0, Lwx9;->B:Z
+
+    .line 6
+    .line 7
+    if-nez v0, :cond_3
+
+    .line 8
+    .line 9
+    invoke-static {}, Lj8a;->z()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v0
+
+    .line 13
+    iget-byte v1, p0, Lwx9;->r0:B
+
+    .line 14
+    .line 15
+    const/4 v2, 0x1
+
+    .line 16
+    if-nez v1, :cond_0
+
+    .line 17
+    .line 18
+    if-nez v0, :cond_1
+
+    .line 19
+    .line 20
+    invoke-static {}, Lzj2;->a()Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v1
+
+    .line 24
+    if-eqz v1, :cond_3
+
+    .line 25
+    .line 26
+    goto :goto_0
+
+    .line 27
+    :cond_0
+    shl-int v3, v2, v0
+
+    .line 28
+    .line 29
+    if-eq v3, v1, :cond_3
+
+    .line 30
+    .line 31
+    :cond_1
+    :goto_0
+    shl-int v1, v2, v0
+
+    .line 32
+    .line 33
+    iput-byte v1, p0, Lwx9;->r0:B
+
+    .line 34
+    .line 35
+    iget-object p0, p0, Lwx9;->j0:Lo43;
+
+    .line 36
+    .line 37
+    iget-object v1, p0, Lo43;->a:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 38
+    .line 39
+    sget-object v3, Lq43;->d:Lp8c;
+
+    .line 40
+    .line 41
+    invoke-virtual {v1, v3, v0}, Lorg/chromium/ui/modelutil/PropertyModel;->r(Lp8c;Z)V
+
+    .line 42
+    .line 43
+    .line 44
+    iget-object p0, p0, Lo43;->b:Lorg/chromium/chrome/browser/composeplate/ComposeplateView;
+
+    .line 45
+    .line 46
+    invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object p0
+
+    .line 50
+    if-eqz v0, :cond_2
+
+    .line 51
+    .line 52
+    const v0, 0x7f070155
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {p0, v0}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object p0
+
+    .line 59
+    const v0, 0x7f150348
+
+    .line 60
+    .line 61
+    .line 62
+    goto :goto_1
+
+    .line 63
+    :cond_2
+    const/4 v0, 0x3
+
+    .line 64
+    invoke-static {p0, v0, v2}, Lbtg;->c(Landroid/content/Context;IZ)Landroid/content/res/ColorStateList;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object p0
+
+    .line 68
+    const v0, 0x7f150347
+
+    .line 69
+    .line 70
+    .line 71
+    :goto_1
+    sget-object v2, Lq43;->e:Lt8c;
+
+    .line 72
+    .line 73
+    invoke-virtual {v1, v2, p0}, Lorg/chromium/ui/modelutil/PropertyModel;->v(Lt8c;Ljava/lang/Object;)V
+
+    .line 74
+    .line 75
+    .line 76
+    sget-object p0, Lq43;->f:Lr8c;
+
+    .line 77
+    .line 78
+    invoke-virtual {v1, p0, v0}, Lorg/chromium/ui/modelutil/PropertyModel;->t(Lr8c;I)V
+
+    .line 79
+    .line 80
+    .line 81
+    :cond_3
+    return-void
+.end method
+
+.method public final q()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lwx9;->j0:Lo43;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_2
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lwx9;->k0:Lorg/chromium/components/contextual_search/InputState;
+
+    .line 6
+    .line 7
+    invoke-static {v0}, Lwx9;->a(Lorg/chromium/components/contextual_search/InputState;)I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
+
+    .line 11
+    iget-object v1, p0, Lwx9;->t:Ljld;
+
+    .line 12
+    .line 13
+    iget-boolean v1, v1, Ljld;->d:Z
+
+    .line 14
+    .line 15
+    if-eqz v1, :cond_1
+
+    .line 16
+    .line 17
+    const/4 v1, 0x2
+
+    .line 18
+    if-eq v0, v1, :cond_0
+
+    .line 19
+    .line 20
+    const/4 v1, 0x3
+
+    .line 21
+    if-ne v0, v1, :cond_1
+
+    .line 22
+    .line 23
+    :cond_0
+    const/4 v0, 0x1
+
+    .line 24
+    goto :goto_0
+
+    .line 25
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 26
+    :goto_0
+    iget-object p0, p0, Lwx9;->j0:Lo43;
+
+    .line 27
+    .line 28
+    iget-object v1, p0, Lo43;->a:Lorg/chromium/ui/modelutil/PropertyModel;
+
+    .line 29
+    .line 30
+    sget-object v2, Lq43;->i:Lp8c;
+
+    .line 31
+    .line 32
+    invoke-virtual {v1, v2, v0}, Lorg/chromium/ui/modelutil/PropertyModel;->r(Lp8c;Z)V
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {p0}, Lo43;->b()V
+
+    .line 36
+    .line 37
+    .line 38
+    invoke-virtual {p0, v0}, Lo43;->c(Z)V
+
+    .line 39
+    .line 40
+    .line 41
+    :cond_2
+    return-void
+.end method
+
+.method public final r()V
+    .locals 4
+
+    .line 1
+    iget-boolean v0, p0, Lwx9;->Y:Z
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_1
+
+    .line 4
+    .line 5
+    iget-object v0, p0, Lwx9;->D:Ln8a;
+
+    .line 6
+    .line 7
+    if-eqz v0, :cond_1
+
+    .line 8
+    .line 9
+    iget-object v0, p0, Lwx9;->a:Lex9;
+
+    .line 10
+    .line 11
+    invoke-virtual {v0}, Lex9;->b()Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-eqz v0, :cond_1
+
+    .line 16
+    .line 17
+    iget-object v0, p0, Lwx9;->F:Li5h;
+
+    .line 18
+    .line 19
+    if-eqz v0, :cond_1
+
+    .line 20
+    .line 21
+    iget-object v1, p0, Lwx9;->D:Ln8a;
+
+    .line 22
+    .line 23
+    if-eqz v1, :cond_0
+
+    .line 24
+    .line 25
+    iget-object v2, p0, Lwx9;->e0:Lol5;
+
+    .line 26
+    .line 27
+    if-eqz v2, :cond_0
+
+    .line 28
+    .line 29
+    iget-object v3, p0, Lwx9;->q:Laca;
+
+    .line 30
+    .line 31
+    iget p0, p0, Lwx9;->n0:I
+
+    .line 32
+    .line 33
+    invoke-interface {v1, v2, v3, p0}, Ln8a;->l(Lol5;Ljava/util/function/Supplier;I)F
+
+    .line 34
+    .line 35
+    .line 36
+    move-result p0
+
+    .line 37
+    goto :goto_0
+
+    .line 38
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 39
+    :goto_0
+    iget-object v1, v0, Li5h;->a:Lj5h;
+
+    .line 40
+    .line 41
+    iget-object v0, v0, Li5h;->b:Lorg/chromium/base/Callback;
+
+    .line 42
+    .line 43
+    iget-object v1, v1, Lj5h;->c:Ll5h;
+
+    .line 44
+    .line 45
+    iget-object v1, v1, Ll5h;->s2:Laca;
+
+    .line 46
+    .line 47
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v2
+
+    .line 51
+    invoke-virtual {v1, v2}, Laca;->set(Ljava/lang/Object;)V
+
+    .line 52
+    .line 53
+    .line 54
+    invoke-static {p0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object p0
+
+    .line 58
+    invoke-interface {v0, p0}, Lorg/chromium/base/Callback;->onResult(Ljava/lang/Object;)V
+
+    .line 59
+    .line 60
+    .line 61
+    :cond_1
+    return-void
+.end method
+PS C:\Users\Admin>
+PS C:\Users\Admin> "`n===== REFERENCIAS AO CONTAINER NTP ====="
+
+===== REFERENCIAS AO CONTAINER NTP =====
+PS C:\Users\Admin>
+PS C:\Users\Admin> $dirs = Get-ChildItem $root -Directory |
+>>     Where-Object { $_.Name -like "smali*" }
+PS C:\Users\Admin>
+PS C:\Users\Admin> foreach ($dir in $dirs) {
+>>     Get-ChildItem $dir.FullName -Recurse -File -Filter "*.smali" |
+>>         Select-String -SimpleMatch -Pattern "Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;" |
+>>         Select-Object -First 20 |
+>>         ForEach-Object {
+>>             "{0}:{1}: {2}" -f $_.Path, $_.LineNumber, $_.Line.Trim()
+>>         }
+>> }
+C:\Users\Admin\Downloads\DVNex-Feed-Decode\smali\br9.smali:1331: iput-object v3, v2, Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+C:\Users\Admin\Downloads\DVNex-Feed-Decode\smali\j5h.smali:40: iget-object p0, p0, Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+C:\Users\Admin\Downloads\DVNex-Feed-Decode\smali\vx9.smali:265: iget-object p0, p0, Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+C:\Users\Admin\Downloads\DVNex-Feed-Decode\smali\wx9.smali:398: iget-object v8, v0, Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+C:\Users\Admin\Downloads\DVNex-Feed-Decode\smali\wx9.smali:4074: iget-object v1, p0, Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+C:\Users\Admin\Downloads\DVNex-Feed-Decode\smali\wx9.smali:6016: iget-object v1, p0, Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+C:\Users\Admin\Downloads\DVNex-Feed-Decode\smali\wx9.smali:6863: iget-object v2, v0, Lwx9;->c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout;
+PS C:\Users\Admin>
