@@ -1,0 +1,2136 @@
+===== INSTRUÇÕES DO FUNDO =====
+PS C:\Users\Admin> Select-String -Path $out -Pattern "setBackgroundColor|f6f5f4|090a0c" -Context 5,5
+
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344444:      locals        :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344445:        0x0000 - 0x0004 reg=0 this
+Lcom/google/android/material/button/MaterialButton;
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344446:        0x0000 - 0x0004 reg=1 (null)
+Landroid/graphics/drawable/Drawable;
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344447:
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344448:    #40              : (in
+Lcom/google/android/material/button/MaterialButton;)
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344449:      name          : 'setBackgroundColor'
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344450:      type          : '(I)V'
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344451:      access        : 0x0011 (PUBLIC FINAL)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344452:      code          -
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344453:      registers     : 4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344454:      ins           : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344455:      outs          : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344456:      insns size    : 27 16-bit code units
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344457:663010:                                        |[663010]
+com.google.android.material.button.MaterialButton.setBackgroundColor:(I)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344458:663020: 6e10 7738 0200                         |0000:
+invoke-virtual {v2}, Lcom/google/android/material/button/MaterialButton;.t:()Z // method@3877
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344459:663026: 0a00                                   |0003:
+move-result v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344460:663028: 3800 1300                              |0004:
+if-eqz v0, 0017 // +0013
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344461:66302c: 5422 6c1e                              |0006:
+iget-object v2, v2, Lcom/google/android/material/button/MaterialButton;.v:Lgv8; // field@1e6c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344462:663030: 1200                                   |0008:
+const/4 v0, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344465:66303a: 3801 0d00                              |000d:
+if-eqz v1, 001a // +000d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344466:66303e: 6e20 1958 0200                         |000f:
+invoke-virtual {v2, v0}, Lgv8;.a:(Z)Lyw8; // method@5819
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344467:663044: 0c02                                   |0012:
+move-result-object v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344468:663046: 6e20 a4f7 3200                         |0013:
+invoke-virtual {v2, v3}, Lyw8;.setTint:(I)V // method@f7a4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344469:66304c: 2804                                   |0016:
+goto 001a // +0004
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344470:66304e: 6f20 4816 3200                         |0017:
+invoke-super {v2, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344471:663054: 0e00                                   |001a:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344472:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344473:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344474:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:344475:        0x0003 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478447:5fc1b2: 1f00 8705                              |0019:
+check-cast v0, Landroid/widget/TextView; // type@0587
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478448:5fc1b6: 6e20 4f1b 8000                         |001b:
+invoke-virtual {v0, v8}, Landroid/widget/TextView;.setError:(Ljava/lang/CharSequence;)V // method@1b4f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478449:5fc1bc: 1400 5700 077f                         |001e:
+const v0, #float 1.79448e+38 // #7f070057
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478450:5fc1c2: 6e20 2509 0700                         |0021:
+invoke-virtual {v7, v0}, Landroid/content/Context;.getColor:(I)I // method@0925
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478451:5fc1c8: 0a07                                   |0024:
+move-result v7
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478452:5fc1ca: 6e20 4816 7200                         |0025:
+invoke-virtual {v2, v7}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478453:5fc1d0: 6e20 751b 8300                         |0028:
+invoke-virtual {v3, v8}, Landroid/widget/TextView;.setText:(Ljava/lang/CharSequence;)V // method@1b75
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478454:5fc1d6: 1307 0800                              |002b:
+const/16 v7, #int 8 // #8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478455:5fc1da: 6e20 b316 7300                         |002d:
+invoke-virtual {v3, v7}, Landroid/view/View;.setVisibility:(I)V // method@16b3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478456:5fc1e0: 2837                                   |0030:
+goto 0067 // +0037
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478457:5fc1e2: 6e10 3909 0700                         |0031:
+invoke-virtual {v7}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0939
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478473:5fc224: 1f00 8705                              |0052:
+check-cast v0, Landroid/widget/TextView; // type@0587
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478474:5fc228: 6e30 501b 8001                         |0054:
+invoke-virtual {v0, v8, v1},
+Landroid/widget/TextView;.setError:(Ljava/lang/CharSequence;Landroid/graphics/drawable/Drawable;)V // method@1b50
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478475:5fc22e: 1400 8101 077f                         |0057:
+const v0, #float 1.79454e+38 // #7f070181
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478476:5fc234: 6e20 2509 0700                         |005a:
+invoke-virtual {v7, v0}, Landroid/content/Context;.getColor:(I)I // method@0925
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478477:5fc23a: 0a07                                   |005d:
+move-result v7
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478478:5fc23c: 6e20 4816 7200                         |005e:
+invoke-virtual {v2, v7}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478479:5fc242: 6e20 751b 8300                         |0061:
+invoke-virtual {v3, v8}, Landroid/widget/TextView;.setText:(Ljava/lang/CharSequence;)V // method@1b75
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478480:5fc248: 6e20 b316 6300                         |0064:
+invoke-virtual {v3, v6}, Landroid/view/View;.setVisibility:(I)V // method@16b3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478481:5fc24e: 0e00                                   |0067:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478482:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:478483:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:503756:601afc: 3904 6100                              |00e0:
+if-nez v4, 0141 // +0061
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:503757:601b00: 6e10 6715 0500                         |00e2:
+invoke-virtual {v5}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:503758:601b06: 0c04                                   |00e5:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:503759:601b08: 7120 4863 3400                         |00e6:
+invoke-static {v4, v3}, Lifg;.b:(Landroid/content/Context;Z)I // method@6348
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:503760:601b0e: 0a06                                   |00e9:
+move-result v6
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:503761:601b10: 6e20 4816 6500                         |00ea:
+invoke-virtual {v5, v6}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:503762:601b16: 1a06 1281                              |00ed:
+const-string v6, "SemanticColorUtils" // string@8112
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:503763:601b1a: 1400 6d01 057f                         |00ef:
+const v0, #float 1.76795e+38 // #7f05016d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:503764:601b20: 3803 0a00                              |00f2:
+if-eqz v3, 00fc // +000a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:503765:601b24: 1401 7b02 077f                         |00f4:
+const v1, #float 1.79459e+38 // #7f07027b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:503766:601b2a: 6e20 2609 1400                         |00f7:
+invoke-virtual {v4, v1}, Landroid/content/Context;.getColorStateList:(I)Landroid/content/res/ColorStateList; //
+method@0926
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:544444:60bc28: 0120                                   |0010:
+move v0, v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:544445:60bc2a: 3800 0500                              |0011:
+if-eqz v0, 0016 // +0005
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:544446:60bc2e: 5294 1710                              |0013:
+iget v4, v9, Lb8b;.y:I // field@1017
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:544447:60bc32: 2803                                   |0015:
+goto 0018 // +0003
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:544448:60bc34: 5294 1610                              |0016:
+iget v4, v9, Lb8b;.x:I // field@1016
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:544449:60bc38: 6e20 4816 4900                         |0018:
+invoke-virtual {v9, v4}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:544450:60bc3e: 1304 0800                              |001b:
+const/16 v4, #int 8 // #8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:544451:60bc42: 5495 0810                              |001d:
+iget-object v5, v9, Lb8b;.A:Landroid/widget/ImageView; // field@1008
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:544452:60bc46: 3805 1000                              |001f:
+if-eqz v5, 002f // +0010
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:544453:60bc4a: 5496 0e10                              |0021:
+iget-object v6, v9, Lb8b;.G:Landroid/graphics/drawable/Drawable; // field@100e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:544454:60bc4e: 3806 0800                              |0023:
+if-eqz v6, 002b // +0008
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:605097:61b3c2: 0e00                                   |003f:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:605098:61b3c4: 6201 dc4a                              |0040:
+sget-object v1, Lim4;.d:Lr8c; // field@4adc
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:605099:61b3c8: 3315 0a00                              |0042:
+if-ne v5, v1, 004c // +000a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:605100:61b3cc: 6e20 d7ae 1300                         |0044:
+invoke-virtual {v3, v1}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:605101:61b3d2: 0a02                                   |0047:
+move-result v2
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:605102:61b3d4: 6e20 4816 2400                         |0048:
+invoke-virtual {v4, v2}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:605103:61b3da: 0e00                                   |004b:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:605104:61b3dc: 6201 dd4a                              |004c:
+sget-object v1, Lim4;.e:Lt8c; // field@4add
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:605105:61b3e0: 3315 1300                              |004e:
+if-ne v5, v1, 0061 // +0013
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:605106:61b3e4: 6e20 daae 1300                         |0050:
+invoke-virtual {v3, v1}, Lorg/chromium/ui/modelutil/PropertyModel;.j:(Ln8c;)Ljava/lang/Object; // method@aeda
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:605107:61b3ea: 0c02                                   |0053:
+move-result-object v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:639630:6235ac: 6e10 6715 0100                         |0066:
+invoke-virtual {v1}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:639631:6235b2: 0c02                                   |0069:
+move-result-object v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:639632:6235b4: 7110 fccb 0200                         |006a:
+invoke-static {v2}, Lssd;.f:(Landroid/content/Context;)I // method@cbfc
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:639633:6235ba: 0a02                                   |006d:
+move-result v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:639634:6235bc: 5912 a413                              |006e:
+iput v2, v1, Lbqd;.I0:I // field@13a4
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:639635:6235c0: 6f20 4816 2100                         |0070:
+invoke-super {v1, v2}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:639636:6235c6: 6e10 6715 0100                         |0073:
+invoke-virtual {v1}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:639637:6235cc: 0c02                                   |0076:
+move-result-object v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:639638:6235ce: 1403 6c01 077f                         |0077:
+const v3, #float 1.79453e+38 // #7f07016c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:639639:6235d4: 6e20 2609 3200                         |007a:
+invoke-virtual {v2, v3}, Landroid/content/Context;.getColorStateList:(I)Landroid/content/res/ColorStateList; //
+method@0926
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:639640:6235da: 0c02                                   |007d:
+move-result-object v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:640562:623a1a: 1230                                   |0029:
+const/4 v0, #int 3 // #3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:640563:623a1c: 6e20 c22e 0400                         |002a:
+invoke-virtual {v4, v0}, Lbqd;.W:(I)V // method@2ec2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:640564:623a22: 2804                                   |002d:
+goto 0031 // +0004
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:640565:623a24: 6e20 c22e 2400                         |002e:
+invoke-virtual {v4, v2}, Lbqd;.W:(I)V // method@2ec2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:640566:623a2a: 5240 a413                              |0031:
+iget v0, v4, Lbqd;.I0:I // field@13a4
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:640567:623a2e: 6f20 4816 0400                         |0033:
+invoke-super {v4, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:640568:623a34: 5240 9f13                              |0036:
+iget v0, v4, Lbqd;.D0:I // field@139f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:640569:623a38: 3800 0d00                              |0038:
+if-eqz v0, 0045 // +000d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:640570:623a3c: 6e10 6715 0400                         |003a:
+invoke-virtual {v4}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:640571:623a42: 0c03                                   |003d:
+move-result-object v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:640572:623a44: 6e20 3f09 0300                         |003e:
+invoke-virtual {v3, v0}, Landroid/content/Context;.getText:(I)Ljava/lang/CharSequence; // method@093f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:641078:623cc0: 1301 0800                              |0028:
+const/16 v1, #int 8 // #8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:641079:623cc4: 6e20 b316 1000                         |002a:
+invoke-virtual {v0, v1}, Landroid/view/View;.setVisibility:(I)V // method@16b3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:641080:623cca: 1220                                   |002d:
+const/4 v0, #int 2 // #2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:641081:623ccc: 6e20 c22e 0500                         |002e:
+invoke-virtual {v5, v0}, Lbqd;.W:(I)V // method@2ec2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:641082:623cd2: 5250 a413                              |0031:
+iget v0, v5, Lbqd;.I0:I // field@13a4
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:641083:623cd6: 6f20 4816 0500                         |0033:
+invoke-super {v5, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:641084:623cdc: 1200                                   |0036:
+const/4 v0, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:641085:623cde: 6e20 b62e 0500                         |0037:
+invoke-virtual {v5, v0}, Lbqd;.H:(Ljava/lang/CharSequence;)V // method@2eb6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:641086:623ce4: 5450 9c13                              |003a:
+iget-object v0, v5, Lbqd;.A0:Lorg/chromium/components/browser_ui/widget/NumberRollView; // field@139c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:641087:623ce8: 6e20 b316 2000                         |003c:
+invoke-virtual {v0, v2}, Landroid/view/View;.setVisibility:(I)V // method@16b3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:641088:623cee: 3907 0700                              |003f:
+if-nez v7, 0046 // +0007
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:646146:62562e: 7130 39d4 a106                         |0419:
+invoke-static {v1, v10, v6}, Ltu8;.e:(Landroid/content/Context;ILjava/lang/String;)Landroid/util/TypedValue; //
+method@d439
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:646147:625634: 0c0a                                   |041c:
+move-result-object v10
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:646148:625636: 7120 4bf7 a100                         |041d:
+invoke-static {v1, v10}, Lyv8;.f:(Landroid/content/Context;Landroid/util/TypedValue;)I // method@f74b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:646149:62563c: 0a0a                                   |0420:
+move-result v10
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:646150:62563e: 54bc 9917                              |0421:
+iget-object v12, v11, Lcbf;.z:Liq2; // field@1799
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:646151:625642: 6e20 e264 ac00                         |0423:
+invoke-virtual {v12, v10}, Liq2;.setBackgroundColor:(I)V // method@64e2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:646152:625648: 081f 0f00                              |0426:
+move-object/from16 v31, v15
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:646153:62564c: 54bf 9017                              |0428:
+iget-object v15, v11, Lcbf;.D:Lsw8; // field@1790
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:646154:625650: 0820 0700                              |042a:
+move-object/from16 v32, v7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:646155:625654: 54f7 c3a4                              |042c:
+iget-object v7, v15, Lsw8;.s:Lrw8; // field@a4c3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:646156:625658: 597a 4f9d                              |042e:
+iput v10, v7, Lrw8;.w:I // field@9d4f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:658291:627f7c: 6e10 9f06 0200                         |0014:
+invoke-virtual {v2}, Landroid/animation/ValueAnimator;.getAnimatedValue:()Ljava/lang/Object; // method@069f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:658292:627f82: 0c01                                   |0017:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:658293:627f84: 1f01 b61f                              |0018:
+check-cast v1, Ljava/lang/Integer; // type@1fb6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:658294:627f88: 6e10 a76a 0100                         |001a:
+invoke-virtual {v1}, Ljava/lang/Integer;.intValue:()I // method@6aa7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:658295:627f8e: 0a01                                   |001d:
+move-result v1
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:658296:627f90: 6e20 4816 1000                         |001e:
+invoke-virtual {v0, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:658297:627f96: 0e00                                   |0021:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:658298:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:658299:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:658300:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:658301:        0x0002 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667223:62a516: 1404 8101 057f                         |0025:
+const v4, #float 1.76795e+38 // #7f050181
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667224:62a51c: 7130 39d4 4102                         |0028:
+invoke-static {v1, v4, v2}, Ltu8;.e:(Landroid/content/Context;ILjava/lang/String;)Landroid/util/TypedValue; //
+method@d439
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667225:62a522: 0c04                                   |002b:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667226:62a524: 7120 4bf7 4100                         |002c:
+invoke-static {v1, v4}, Lyv8;.f:(Landroid/content/Context;Landroid/util/TypedValue;)I // method@f74b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667227:62a52a: 0a04                                   |002f:
+move-result v4
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667228:62a52c: 6e20 49aa 4000                         |0030:
+invoke-virtual {v0, v4}, Lorg/chromium/chrome/browser/toolbar/ToolbarProgressBar;.setBackgroundColor:(I)V //
+method@aa49
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667229:62a532: 280b                                   |0033:
+goto 003e // +000b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667230:62a534: 1404 8006 077f                         |0034:
+const v4, #float 1.7948e+38 // #7f070680
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667231:62a53a: 6e20 2509 4100                         |0037:
+invoke-virtual {v1, v4}, Landroid/content/Context;.getColor:(I)I // method@0925
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667232:62a540: 0a04                                   |003a:
+move-result v4
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667233:62a542: 6e20 49aa 4000                         |003b:
+invoke-virtual {v0, v4}, Lorg/chromium/chrome/browser/toolbar/ToolbarProgressBar;.setBackgroundColor:(I)V //
+method@aa49
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667234:62a548: 1404 7601 057f                         |003e:
+const v4, #float 1.76795e+38 // #7f050176
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667235:62a54e: 7130 39d4 4102                         |0041:
+invoke-static {v1, v4, v2}, Ltu8;.e:(Landroid/content/Context;ILjava/lang/String;)Landroid/util/TypedValue; //
+method@d439
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667236:62a554: 0c04                                   |0044:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667237:62a556: 7120 4bf7 4100                         |0045:
+invoke-static {v1, v4}, Lyv8;.f:(Landroid/content/Context;Landroid/util/TypedValue;)I // method@f74b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:667238:62a55c: 0a04                                   |0048:
+move-result v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:687148:62f38e: 6201 29ad                              |0097:
+sget-object v1, Ltye;.e:Lr8c; // field@ad29
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:687149:62f392: 3316 0c00                              |0099:
+if-ne v6, v1, 00a5 // +000c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:687150:62f396: 6e20 d7ae 1400                         |009b:
+invoke-virtual {v4, v1}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:687151:62f39c: 0a03                                   |009e:
+move-result v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:687152:62f39e: 5454 0f7e                              |009f:
+iget-object v4, v5, Lorg/chromium/chrome/browser/omnibox/status/StatusView;.w:Landroid/view/View; // field@7e0f
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:687153:62f3a2: 6e20 4816 3400                         |00a1:
+invoke-virtual {v4, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:687154:62f3a8: 0e00                                   |00a4:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:687155:62f3aa: 6201 2aad                              |00a5:
+sget-object v1, Ltye;.f:Lp8c; // field@ad2a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:687156:62f3ae: 3316 0d00                              |00a7:
+if-ne v6, v1, 00b4 // +000d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:687157:62f3b2: 6e20 dbae 1400                         |00a9:
+invoke-virtual {v4, v1}, Lorg/chromium/ui/modelutil/PropertyModel;.k:(Ln8c;)Z // method@aedb
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:687158:62f3b8: 0a04                                   |00ac:
+move-result v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:759060:64461c: 6e10 9f06 0100                         |0004:
+invoke-virtual {v1}, Landroid/animation/ValueAnimator;.getAnimatedValue:()Ljava/lang/Object; // method@069f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:759061:644622: 0c01                                   |0007:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:759062:644624: 1f01 b61f                              |0008:
+check-cast v1, Ljava/lang/Integer; // type@1fb6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:759063:644628: 6e10 a76a 0100                         |000a:
+invoke-virtual {v1}, Ljava/lang/Integer;.intValue:()I // method@6aa7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:759064:64462e: 0a01                                   |000d:
+move-result v1
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:759065:644630: 6e20 4816 1000                         |000e:
+invoke-virtual {v0, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:759066:644636: 0e00                                   |0011:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:759067:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:759068:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:759069:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:759070:        0x0002 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872677:      locals        :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872678:        0x0000 - 0x0064 reg=5 this
+Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872679:        0x0000 - 0x0064 reg=6 (null)
+Landroid/view/MotionEvent;
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872680:
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872681:    #17              : (in
+Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872682:      name          : 'setBackgroundColor'
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872683:      type          : '(I)V'
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872684:      access        : 0x0011 (PUBLIC FINAL)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872685:      code          -
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872686:      registers     : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872687:      ins           : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872688:      outs          : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872689:      insns size    : 8 16-bit code units
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872690:665b74:                                        |[665b74]
+com.google.android.material.floatingactionbutton.FloatingActionButton.setBackgroundColor:(I)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872691:665b84: 1a00 541b                              |0000:
+const-string v0, "FloatingActionButton" // string@1b54
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872692:665b88: 1a01 5981                              |0002:
+const-string v1, "Setting a custom background is not supported." // string@8159
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872693:665b8c: 7120 3b13 1000                         |0004:
+invoke-static {v0, v1}, Landroid/util/Log;.i:(Ljava/lang/String;Ljava/lang/String;)I // method@133b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872694:665b92: 0e00                                   |0007:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:872695:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:946952:67ad70: 3283 0e00                              |0016:
+if-eq v3, v8, 0024 // +000e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:946953:67ad74: 6205 99ab                              |0018:
+sget-object v5, Ltqb;.c:Lr8c; // field@ab99
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:946954:67ad78: 3385 aa01                              |001a:
+if-ne v5, v8, 01c4 // +01aa
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:946955:67ad7c: 6e20 d7ae 5600                         |001c:
+invoke-virtual {v6, v5}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:946956:67ad82: 0a05                                   |001f:
+move-result v5
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:946957:67ad84: 6e20 4816 5700                         |0020:
+invoke-virtual {v7, v5}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:946958:67ad8a: 0e00                                   |0023:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:946959:67ad8c: 6e20 d7ae 3600                         |0024:
+invoke-virtual {v6, v3}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:946960:67ad92: 0a08                                   |0027:
+move-result v8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:946961:67ad94: 12f3                                   |0028:
+const/4 v3, #int -1 // #ff
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:946962:67ad96: 3238 9b01                              |0029:
+if-eq v8, v3, 01c4 // +019b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073090:69cc74: 5522 7f5c                              |0022:
+iget-boolean v2, v2, Ll8i;.l:Z // field@5c7f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073091:69cc78: 1203                                   |0024:
+const/4 v3, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073092:69cc7a: 3802 4700                              |0025:
+if-eqz v2, 006c // +0047
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073093:69cc7e: 2202 6705                              |0027:
+new-instance v2, Landroid/widget/ImageView; // type@0567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073094:69cc82: 7020 1a1a 0200                         |0029:
+invoke-direct {v2, v0}, Landroid/widget/ImageView;.<init>:(Landroid/content/Context;)V // method@1a1a
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073095:69cc88: 6e20 4816 1200                         |002c:
+invoke-virtual {v2, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073096:69cc8e: 5451 d825                              |002f:
+iget-object v1, v5, Ldfi;.c:Llei; // field@25d8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073097:69cc92: 6e10 a27d 0100                         |0031:
+invoke-virtual {v1}, Llei;.d:()Ll8i; // method@7da2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073098:69cc98: 0c01                                   |0034:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073099:69cc9a: 5411 775c                              |0035:
+iget-object v1, v1, Ll8i;.a:Ljava/lang/String; // field@5c77
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073100:69cc9e: 3801 3100                              |0037:
+if-eqz v1, 0068 // +0031
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073121:69ccfe: 285a                                   |0067:
+goto 00c1 // +005a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073122:69cd00: 7100 e1df 0000                         |0068:
+invoke-static {}, Lvja;.y:()V // method@dfe1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073123:69cd06: 2857                                   |006b:
+goto 00c2 // +0057
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073124:69cd08: 2202 6105                              |006c:
+new-instance v2, Landroid/widget/FrameLayout; // type@0561
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073125:69cd0c: 7020 f819 0200                         |006e:
+invoke-direct {v2, v0}, Landroid/widget/FrameLayout;.<init>:(Landroid/content/Context;)V // method@19f8
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073126:69cd12: 6e20 4816 1200                         |0071:
+invoke-virtual {v2, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073127:69cd18: 6e20 ee3f 2500                         |0074:
+invoke-virtual {v5, v2}, Ldfi;.g:(Landroid/view/View;)V // method@3fee
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073128:69cd1e: 5450 d825                              |0077:
+iget-object v0, v5, Ldfi;.c:Llei; // field@25d8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073129:69cd22: 6e10 a47d 0000                         |0079:
+invoke-virtual {v0}, Llei;.h:()Z // method@7da4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073130:69cd28: 0a00                                   |007c:
+move-result v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1073131:69cd2a: 3800 1a00                              |007d:
+if-eqz v0, 0097 // +001a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105503:      ins           : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105504:      outs          : 3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105505:      insns size    : 52 16-bit code units
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105506:6a5e64:
+|[6a5e64] dl5.d:(I)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105507:6a5e74: 5440 4f27                              |0000:
+iget-object v0, v4, Ldl5;.v:Landroidx/recyclerview/widget/RecyclerView; // field@274f
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105508:6a5e78: 6e20 4816 5000                         |0002:
+invoke-virtual {v0, v5}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105509:6a5e7e: 5440 3527                              |0005:
+iget-object v0, v4, Ldl5;.H:Ll6a; // field@2735
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105510:6a5e82: 3800 1c00                              |0007:
+if-eqz v0, 0023 // +001c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105511:6a5e86: 5401 255c                              |0009:
+iget-object v1, v0, Ll6a;.b:Lorg/chromium/ui/modelutil/PropertyModel; // field@5c25
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105512:6a5e8a: 6202 2163                              |000b:
+sget-object v2, Lm6a;.a:Lt8c; // field@6321
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105513:6a5e8e: 1203                                   |000d:
+const/4 v3, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105523:6a5eba: 5440 3c27                              |0023:
+iget-object v0, v4, Ldl5;.c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout; // field@273c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105524:6a5ebe: 3800 0e00                              |0025:
+if-eqz v0, 0033 // +000e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105525:6a5ec2: 5244 4427                              |0027:
+iget v4, v4, Ldl5;.k:I // field@2744
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105526:6a5ec6: 3245 0700                              |0029:
+if-eq v5, v4, 0030 // +0007
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105527:6a5eca: 1204                                   |002b:
+const/4 v4, #int 0 // #0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105528:6a5ecc: 6e20 4816 4000                         |002c:
+invoke-virtual {v0, v4}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105529:6a5ed2: 2804                                   |002f:
+goto 0033 // +0004
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105530:6a5ed4: 6e20 4816 4000                         |0030:
+invoke-virtual {v0, v4}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105531:6a5eda: 0e00                                   |0033:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105532:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105533:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105534:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105535:        0x0002 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105623:6a5f48: 1a07 011b                              |002e:
+const-string v7, "FeedContainment" // string@1b01
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105624:6a5f4c: 6e20 a57e 7600                         |0030:
+invoke-virtual {v6, v7}, Llj5;.j:(Ljava/lang/String;)Z // method@7ea5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105625:6a5f52: 0a06                                   |0033:
+move-result v6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105626:6a5f54: 3906 0700                              |0034:
+if-nez v6, 003b // +0007
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105627:6a5f58: 52a6 4427                              |0036:
+iget v6, v10, Ldl5;.k:I // field@2744
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105628:6a5f5c: 6e20 4816 6000                         |0038:
+invoke-virtual {v0, v6}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105629:6a5f62: 0136                                   |003b:
+move v6, v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105630:6a5f64: 2207 b640                              |003c:
+new-instance v7, Ltj5; // type@40b6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105631:6a5f68: 6e10 0a6b 0500                         |003e:
+invoke-virtual {v5}, Ljava/lang/Object;.hashCode:()I // method@6b0a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105632:6a5f6e: 0a08                                   |0041:
+move-result v8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1105633:6a5f70: 1a09 ef1c                              |0042:
+const-string v9, "Header" // string@1cef
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1249128:6c9926: 2803                                   |0119:
+goto 011c // +0003
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1249129:6c9928: 0209 1000                              |011a:
+move/from16 v9, v16
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1249130:6c992c: 7120 39f6 9400                         |011c:
+invoke-static {v4, v9}, Lyp1;.b:(Landroid/content/Context;I)I // method@f639
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1249131:6c9932: 0a04                                   |011f:
+move-result v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1249132:6c9934: 5409 592c                              |0120:
+iget-object v9, v0, Leae;.m:Landroid/view/View; // field@2c59
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1249133:6c9938: 6e20 4816 4900                         |0122:
+invoke-virtual {v9, v4}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1249134:6c993e: 5404 592c                              |0125:
+iget-object v4, v0, Leae;.m:Landroid/view/View; // field@2c59
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1249135:6c9942: 6e20 e816 4300                         |0127:
+invoke-virtual {v3, v4}, Landroid/view/ViewGroup;.addView:(Landroid/view/View;)V // method@16e8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1249136:6c9948: 3815 0700                              |012a:
+if-eqz v21, 0131 // +0007
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1249137:6c994c: 1503 803f                              |012c:
+const/high16 v3, #int 1065353216 // #3f80
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1249138:6c9950: 1311 0000                              |012e:
+const/16 v17, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1250747:6c9f34: 281e                                   |0068:
+goto 0086 // +001e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1250748:6c9f36: 6203 df48                              |0069:
+sget-object v3, Lib4;.f:Lr8c; // field@48df
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1250749:6c9f3a: 3336 0a00                              |006b:
+if-ne v6, v3, 0075 // +000a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1250750:6c9f3e: 6e20 d7ae 3400                         |006d:
+invoke-virtual {v4, v3}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1250751:6c9f44: 0a03                                   |0070:
+move-result v3
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1250752:6c9f46: 6e20 4816 3500                         |0071:
+invoke-virtual {v5, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1250753:6c9f4c: 2812                                   |0074:
+goto 0086 // +0012
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1250754:6c9f4e: 6203 e048                              |0075:
+sget-object v3, Lib4;.g:Lr8c; // field@48e0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1250755:6c9f52: 3336 0f00                              |0077:
+if-ne v6, v3, 0086 // +000f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1250756:6c9f56: 6e10 7e15 0500                         |0079:
+invoke-virtual {v5}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@157e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1250757:6c9f5c: 0c06                                   |007c:
+move-result-object v6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448295:      locals        :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448296:        0x0000 - 0x00b5 reg=8 this
+Lorg/chromium/components/browser_ui/widget/RoundedCornerImageView;
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448297:        0x0000 - 0x00b5 reg=9 (null)
+Landroid/graphics/Canvas;
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448298:
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448299:    #4              : (in
+Lorg/chromium/components/browser_ui/widget/RoundedCornerImageView;)
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448300:      name          : 'setBackgroundColor'
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448301:      type          : '(I)V'
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448302:      access        : 0x0011 (PUBLIC FINAL)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448303:      code          -
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448304:      registers     : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448305:      ins           : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448306:      outs          : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448307:      insns size    : 11 16-bit code units
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448308:97eb10:
+|[97eb10] org.chromium.components.browser_ui.widget.RoundedCornerImageView.setBackgroundColor:(I)V
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448309:97eb20: 6f20 4816 1000                         |0000:
+invoke-super {v0, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448310:97eb26: 2200 9c1f                              |0003:
+new-instance v0, Ljava/lang/AssertionError; // type@1f9c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448311:97eb2a: 1a01 5c81                              |0005:
+const-string v1, "Setting background color on a RoundedCornerImageView results in no rounding of corners, use
+setRoundedFillColor instead." // string@815c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448312:97eb2e: 7020 116a 1000                         |0007:
+invoke-direct {v0, v1}, Ljava/lang/AssertionError;.<init>:(Ljava/lang/Object;)V // method@6a11
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448313:97eb34: 2700                                   |000a:
+throw v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1448314:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1458759:89986e: 5b4f 8791                              |0383:
+iput-object v15, v4, Lqdg;.s:Ljava/lang/Object; // field@9187
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1458760:899872: 1235                                   |0385:
+const/4 v5, #int 3 // #3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1458761:899874: 6e30 f903 4105                         |0386:
+invoke-virtual {v1, v4, v5}, Laca;.e:(Lorg/chromium/base/Callback;I)Ljava/lang/Object; // method@03f9
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1458762:89987a: 1204                                   |0389:
+const/4 v4, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1458763:89987c: 6e20 b316 4900                         |038a:
+invoke-virtual {v9, v4}, Landroid/view/View;.setVisibility:(I)V // method@16b3
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1458764:899882: 6e20 4816 4900                         |038d:
+invoke-virtual {v9, v4}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1458765:899888: 6e20 0324 0900                         |0390:
+invoke-virtual {v9, v0}, Landroidx/recyclerview/widget/RecyclerView;.k:(Ljoc;)V // method@2403
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1458766:89988e: 2200 541d                              |0393:
+new-instance v0, Lii4; // type@1d54
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1458767:899892: 2201 0e3b                              |0395:
+new-instance v1, Lrdg; // type@3b0e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1458768:899896: 7020 20c1 d100                         |0397:
+invoke-direct {v1, v13}, Lrdg;.<init>:(B)V // method@c120
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1458769:89989c: 5b1f 5a99                              |039a:
+iput-object v15, v1, Lrdg;.s:Ljava/lang/Object; // field@995a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480298:7049d0: 3323 1700                              |0084:
+if-ne v3, v2, 009b // +0017
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480299:7049d4: 5412 008c                              |0086:
+iget-object v2, v1, Lpkf;.a:Lorg/chromium/chrome/browser/tasks/tab_management/TabGridDialogToolbarView; // field@8c00
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480300:7049d8: 6e20 d7ae 3000                         |0088:
+invoke-virtual {v0, v3}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480301:7049de: 0a04                                   |008b:
+move-result v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480302:7049e0: 5422 ee81                              |008c:
+iget-object v2, v2,
+Lorg/chromium/chrome/browser/tasks/tab_management/TabGridDialogToolbarView;.v:Landroid/widget/LinearLayout; //
+field@81ee
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480303:7049e4: 6e20 4816 4200                         |008e:
+invoke-virtual {v2, v4}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480304:7049ea: 5411 018c                              |0091:
+iget-object v1, v1, Lpkf;.b:Lorg/chromium/chrome/browser/tasks/tab_management/TabListRecyclerView; // field@8c01
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480305:7049ee: 6e20 d7ae 3000                         |0093:
+invoke-virtual {v0, v3}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480306:7049f4: 0a00                                   |0096:
+move-result v0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480307:7049f6: 6e20 4816 0100                         |0097:
+invoke-virtual {v1, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480308:7049fc: 0e00                                   |009a:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480309:7049fe: 6203 1143                              |009b:
+sget-object v3, Lhkf;.k:Lt8c; // field@4311
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480310:704a02: 3323 2900                              |009d:
+if-ne v3, v2, 00c6 // +0029
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480311:704a06: 6e20 daae 3000                         |009f:
+invoke-virtual {v0, v3}, Lorg/chromium/ui/modelutil/PropertyModel;.j:(Ln8c;)Ljava/lang/Object; // method@aeda
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1480312:704a0c: 0c02                                   |00a2:
+move-result-object v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546891:719eb2: 0e00                                   |01ad:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546892:719eb4: 6203 5f4d                              |01ae:
+sget-object v3, Lixf;.g:Lr8c; // field@4d5f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546893:719eb8: 3363 0a00                              |01b0:
+if-ne v3, v6, 01ba // +000a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546894:719ebc: 6e20 d7ae 3400                         |01b2:
+invoke-virtual {v4, v3}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546895:719ec2: 0a03                                   |01b5:
+move-result v3
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546896:719ec4: 6e20 4816 3500                         |01b6:
+invoke-virtual {v5, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546897:719eca: 287f                                   |01b9:
+goto 0238 // +007f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546898:719ecc: 6203 604d                              |01ba:
+sget-object v3, Lixf;.h:Lr8c; // field@4d60
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546899:719ed0: 3363 0e00                              |01bc:
+if-ne v3, v6, 01ca // +000e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546900:719ed4: 5455 6982                              |01be:
+iget-object v5, v5, Lorg/chromium/chrome/browser/tasks/tab_management/TabListEditorLayout;.L:Lorg/chromium/chrome/brows
+er/tasks/tab_management/TabListEditorToolbar; // field@8269
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546901:719ed8: 6e20 d7ae 3400                         |01c0:
+invoke-virtual {v4, v3}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546902:719ede: 0a03                                   |01c3:
+move-result v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546903:719ee0: 5953 7782                              |01c4:
+iput v3, v5, Lorg/chromium/chrome/browser/tasks/tab_management/TabListEditorToolbar;.Y0:I // field@8277
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546904:719ee4: 6e20 4816 3500                         |01c6:
+invoke-virtual {v5, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546905:719eea: 286f                                   |01c9:
+goto 0238 // +006f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546906:719eec: 6203 614d                              |01ca:
+sget-object v3, Lixf;.i:Lt8c; // field@4d61
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546907:719ef0: 3363 1700                              |01cc:
+if-ne v3, v6, 01e3 // +0017
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546908:719ef4: 5455 6982                              |01ce:
+iget-object v5, v5, Lorg/chromium/chrome/browser/tasks/tab_management/TabListEditorLayout;.L:Lorg/chromium/chrome/brows
+er/tasks/tab_management/TabListEditorToolbar; // field@8269
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1546909:719ef8: 6e20 daae 3400                         |01d0:
+invoke-virtual {v4, v3}, Lorg/chromium/ui/modelutil/PropertyModel;.j:(Ln8c;)Ljava/lang/Object; // method@aeda
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1717814:7480dc:
+|[7480dc] gr3.onResult:(Ljava/lang/Object;)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1717815:7480ec: 5420 393d                              |0000:
+iget-object v0, v2, Lgr3;.r:Ljr3; // field@3d39
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1717816:7480f0: 5421 3a3d                              |0002:
+iget-object v1, v2, Lgr3;.s:Lorg/chromium/chrome/browser/tab/Tab; // field@3d3a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1717817:7480f4: 5222 3b3d                              |0004:
+iget v2, v2, Lgr3;.t:I // field@3d3b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1717818:7480f8: 1f03 d504                              |0006:
+check-cast v3, Landroid/view/View; // type@04d5
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1717819:7480fc: 6e20 4816 2300                         |0008:
+invoke-virtual {v3, v2}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1717820:748102: 2202 6713                              |000b:
+new-instance v2, Ler3; // type@1367
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1717821:748106: 7010 056b 0200                         |000d:
+invoke-direct {v2}, Ljava/lang/Object;.<init>:()V // method@6b05
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1717822:74810c: 5b23 822f                              |0010:
+iput-object v3, v2, Ler3;.r:Landroid/view/View; // field@2f82
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1717823:748110: 5b20 832f                              |0012:
+iput-object v0, v2, Ler3;.s:Ljr3; // field@2f83
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1717824:748114: 7220 8fa7 2100                         |0014:
+invoke-interface {v1, v2}, Lorg/chromium/chrome/browser/tab/Tab;.Z:(Lm3g;)V // method@a78f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1852264:76deea: 3800 1300                              |0039:
+if-eqz v0, 004c // +0013
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1852265:76deee: 5501 b178                              |003b:
+iget-boolean v1, v0, Lorg/chromium/chrome/browser/compositor/CompositorViewHolder;.s0:Z // field@78b1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1852266:76def2: 3901 0f00                              |003d:
+if-nez v1, 004c // +000f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1852267:76def6: 5401 be78                              |003f:
+iget-object v1, v0, Lorg/chromium/chrome/browser/compositor/CompositorViewHolder;.z:Lorg/chromium/chrome/browser/compos
+itor/CompositorView; // field@78be
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1852268:76defa: 12f2                                   |0041:
+const/4 v2, #int -1 // #ff
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1852269:76defc: 6e20 4816 2100                         |0042:
+invoke-virtual {v1, v2}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1852270:76df02: 6e10 b49b 0000                         |0045:
+invoke-virtual {v0}, Lorg/chromium/chrome/browser/compositor/CompositorViewHolder;.K:()V // method@9bb4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1852271:76df08: 2804                                   |0048:
+goto 004c // +0004
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1852272:76df0a: d804 0401                              |0049:
+add-int/lit8 v4, v4, #int 1 // #01
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1852273:76df0e: 28bf                                   |004b:
+goto 000a // -0041
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:1852274:76df10: 6f10 dc7d 0700                         |004c:
+invoke-super {v7}, Llf0;.onStart:()V // method@7ddc
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2022491:7fc90c: 5b17 c756                              |0014:
+iput-object v7, v1, Lkef;.w:Luef; // field@56c7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2022492:7fc910: 1401 6509 017f                         |0016:
+const v1, #float 1.71519e+38 // #7f010965
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2022493:7fc916: 6e20 5015 1200                         |0019:
+invoke-virtual {v2, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2022494:7fc91c: 0c01                                   |001c:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2022495:7fc91e: 7110 6193 0100                         |001d:
+invoke-static {v1}, Loba;.a:(Ljava/lang/Object;)V // method@9361
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2022496:7fc924: 6e20 4816 5100                         |0020:
+invoke-virtual {v1, v5}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2022497:7fc92a: 0e00                                   |0023:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2022498:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2022499:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2022500:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2022501:        0x0003 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066073:        0x0000 - 0x001b reg=1 this Liq2;
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066074:        0x0000 - 0x001b reg=2 (null) I
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066075:        0x0000 - 0x001b reg=3 (null) I
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066076:
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066077:    #3              : (in Liq2;)
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066078:      name          : 'setBackgroundColor'
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066079:      type          : '(I)V'
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066080:      access        : 0x0011 (PUBLIC FINAL)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066081:      code          -
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066082:      registers     : 3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066083:      ins           : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066084:      outs          : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066085:      insns size    : 22 16-bit code units
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066086:7aca84:
+|[7aca84] iq2.setBackgroundColor:(I)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066087:7aca94: 6e10 5d15 0100                         |0000:
+invoke-virtual {v1}, Landroid/view/View;.getBackground:()Landroid/graphics/drawable/Drawable; // method@155d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066088:7aca9a: 0c00                                   |0003:
+move-result-object v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066089:7aca9c: 2000 fe02                              |0004:
+instance-of v0, v0, Landroid/graphics/drawable/ShapeDrawable; // type@02fe
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066090:7acaa0: 3800 0f00                              |0006:
+if-eqz v0, 0015 // +000f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2066091:7acaa4: 6e10 5d15 0100                         |0008:
+invoke-virtual {v1}, Landroid/view/View;.getBackground:()Landroid/graphics/drawable/Drawable; // method@155d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2126435:      ins           : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2126436:      outs          : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2126437:      insns size    : 6 16-bit code units
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2126438:7be494:
+|[7be494] j17.b:(I)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2126439:7be4a4: 5400 224e                              |0000:
+iget-object v0, v0, Lj17;.r:Landroid/widget/FrameLayout; // field@4e22
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2126440:7be4a8: 6e20 4816 1000                         |0002:
+invoke-virtual {v0, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2126441:7be4ae: 0e00                                   |0005:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2126442:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2126443:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2126444:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2126445:        0x0002 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2150618:7c62ec: 2821                                   |0042:
+goto 0063 // +0021
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2150619:7c62ee: 6200 2463                              |0043:
+sget-object v0, Lm6a;.d:Lr8c; // field@6324
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2150620:7c62f2: 3303 0a00                              |0045:
+if-ne v3, v0, 004f // +000a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2150621:7c62f6: 6e20 d7ae 0100                         |0047:
+invoke-virtual {v1, v0}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2150622:7c62fc: 0a00                                   |004a:
+move-result v0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2150623:7c62fe: 6e20 4816 0200                         |004b:
+invoke-virtual {v2, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2150624:7c6304: 2815                                   |004e:
+goto 0063 // +0015
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2150625:7c6306: 6200 2563                              |004f:
+sget-object v0, Lm6a;.e:Lr8c; // field@6325
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2150626:7c630a: 3303 1200                              |0051:
+if-ne v3, v0, 0063 // +0012
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2150627:7c630e: 6e20 d7ae 0100                         |0053:
+invoke-virtual {v1, v0}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2150628:7c6314: 0a00                                   |0056:
+move-result v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163603:b8ca2a: 1404 8901 057f                         |0067:
+const v4, #float 1.76795e+38 // #7f050189
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163604:b8ca30: 1a05 1281                              |006a:
+const-string v5, "SemanticColorUtils" // string@8112
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163605:b8ca34: 3803 0900                              |006c:
+if-eqz v3, 0075 // +0009
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163606:b8ca38: 7130 48f7 4b05                         |006e:
+invoke-static {v11, v4, v5}, Lyv8;.c:(Landroid/content/Context;ILjava/lang/String;)I // method@f748
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163607:b8ca3e: 0a03                                   |0071:
+move-result v3
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163608:b8ca40: 6e20 4816 3a00                         |0072:
+invoke-virtual {v10, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163609:b8ca46: 6e20 2b86 a900                         |0075:
+invoke-virtual {v9, v10}, Lmj2;.setContentView:(Landroid/view/View;)V // method@862b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163610:b8ca4c: 1403 1c03 017f                         |0078:
+const v3, #float 1.71487e+38 // #7f01031c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163611:b8ca52: 6e20 5015 3a00                         |007b:
+invoke-virtual {v10, v3}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163612:b8ca58: 0c03                                   |007e:
+move-result-object v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163613:b8ca5a: 1f03 da04                              |007f:
+check-cast v3, Landroid/view/ViewGroup; // type@04da
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163619:b8ca74: 6e20 a57e 1000                         |008c:
+invoke-virtual {v0, v1}, Llj5;.j:(Ljava/lang/String;)Z // method@7ea5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163620:b8ca7a: 0a06                                   |008f:
+move-result v6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163621:b8ca7c: 3806 0a00                              |0090:
+if-eqz v6, 009a // +000a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163622:b8ca80: 7130 48f7 4b05                         |0092:
+invoke-static {v11, v4, v5}, Lyv8;.c:(Landroid/content/Context;ILjava/lang/String;)I // method@f748
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163623:b8ca86: 0a06                                   |0095:
+move-result v6
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163624:b8ca88: 6e20 4816 6300                         |0096:
+invoke-virtual {v3, v6}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163625:b8ca8e: 280b                                   |0099:
+goto 00a4 // +000b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163626:b8ca90: 1406 8601 057f                         |009a:
+const v6, #float 1.76795e+38 // #7f050186
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163627:b8ca96: 7130 48f7 6b05                         |009d:
+invoke-static {v11, v6, v5}, Lyv8;.c:(Landroid/content/Context;ILjava/lang/String;)I // method@f748
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163628:b8ca9c: 0a06                                   |00a0:
+move-result v6
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163629:b8ca9e: 6e20 4816 6300                         |00a1:
+invoke-virtual {v3, v6}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163630:b8caa4: 6e10 6715 0300                         |00a4:
+invoke-virtual {v3}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163631:b8caaa: 0c06                                   |00a7:
+move-result-object v6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163632:b8caac: 1407 6f03 157f                         |00a8:
+const v7, #float 1.98073e+38 // #7f15036f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163633:b8cab2: 5937 8c07                              |00ab:
+iput v7, v3, Landroidx/appcompat/widget/Toolbar;.C:I // field@078c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163634:b8cab6: 5438 b007                              |00ad:
+iget-object v8, v3, Landroidx/appcompat/widget/Toolbar;.s:Landroidx/appcompat/widget/AppCompatTextView; // field@07b0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163684:b8cb9c: 6e20 a57e 1000                         |0120:
+invoke-virtual {v0, v1}, Llj5;.j:(Ljava/lang/String;)Z // method@7ea5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163685:b8cba2: 0a00                                   |0123:
+move-result v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163686:b8cba4: 3800 0900                              |0124:
+if-eqz v0, 012d // +0009
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163687:b8cba8: 7130 48f7 4b05                         |0126:
+invoke-static {v11, v4, v5}, Lyv8;.c:(Landroid/content/Context;ILjava/lang/String;)I // method@f748
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163688:b8cbae: 0a0b                                   |0129:
+move-result v11
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163689:b8cbb0: 6e20 4816 ba00                         |012a:
+invoke-virtual {v10, v11}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163690:b8cbb6: 140b 3902 017f                         |012d:
+const v11, #float 1.71482e+38 // #7f010239
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163691:b8cbbc: 6e20 5015 ba00                         |0130:
+invoke-virtual {v10, v11}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163692:b8cbc2: 0c0b                                   |0133:
+move-result-object v11
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163693:b8cbc4: 1400 7b04 017f                         |0134:
+const v0, #float 1.71494e+38 // #7f01047b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2163694:b8cbca: 6e20 6616 0b00                         |0137:
+invoke-virtual {v11, v0}, Landroid/view/View;.setId:(I)V // method@1666
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2170741:7cb2d4: 0a07                                   |0270:
+move-result v7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2170742:7cb2d6: 3807 0c00                              |0271:
+if-eqz v7, 027d // +000c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2170743:7cb2da: 7210 096e 0500                         |0273:
+invoke-interface {v5}, Ljava/util/Iterator;.next:()Ljava/lang/Object; // method@6e09
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2170744:7cb2e0: 0c07                                   |0276:
+move-result-object v7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2170745:7cb2e2: 1f07 d504                              |0277:
+check-cast v7, Landroid/view/View; // type@04d5
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2170746:7cb2e6: 6e20 4816 3700                         |0279:
+invoke-virtual {v7, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2170747:7cb2ec: 28f1                                   |027c:
+goto 026d // -000f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2170748:7cb2ee: 6e10 9e33 0400                         |027d:
+invoke-virtual {v4}, Lcga;.o:()Z // method@339e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2170749:7cb2f4: 0a03                                   |0280:
+move-result v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2170750:7cb2f6: 3803 0a00                              |0281:
+if-eqz v3, 028b // +000a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2170751:7cb2fa: 1403 3602 077f                         |0283:
+const v3, #float 1.79457e+38 // #7f070236
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2283869:7eb632: 0a00                                   |002f:
+move-result v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2283870:7eb634: 6e10 6715 0200                         |0030:
+invoke-virtual {v2}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2283871:7eb63a: 0c01                                   |0033:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2283872:7eb63c: 7120 75f8 0100                         |0034:
+invoke-static {v1, v0}, Lyz6;.b:(Landroid/content/Context;I)I // method@f875
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2283873:7eb642: 0a00                                   |0037:
+move-result v0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2283874:7eb644: 6e20 4816 0200                         |0038:
+invoke-virtual {v2, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2283875:7eb64a: 0e00                                   |003b:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2283876:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2283877:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2283878:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2283879:        0x0002 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2750762:879eae: 0c00                                   |0009:
+move-result-object v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2750763:879eb0: 5501 b178                              |000a:
+iget-boolean v1, v0, Lorg/chromium/chrome/browser/compositor/CompositorViewHolder;.s0:Z // field@78b1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2750764:879eb4: 3901 0b00                              |000c:
+if-nez v1, 0017 // +000b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2750765:879eb8: 5401 be78                              |000e:
+iget-object v1, v0, Lorg/chromium/chrome/browser/compositor/CompositorViewHolder;.z:Lorg/chromium/chrome/browser/compos
+itor/CompositorView; // field@78be
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2750766:879ebc: 12f2                                   |0010:
+const/4 v2, #int -1 // #ff
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2750767:879ebe: 6e20 4816 2100                         |0011:
+invoke-virtual {v1, v2}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2750768:879ec4: 6e10 b49b 0000                         |0014:
+invoke-virtual {v0}, Lorg/chromium/chrome/browser/compositor/CompositorViewHolder;.K:()V // method@9bb4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2750769:879eca: 7210 c280 0400                         |0017:
+invoke-interface {v4}, Lluc;.s:()Lorg/chromium/ui/base/WindowAndroid; // method@80c2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2750770:879ed0: 0c00                                   |001a:
+move-result-object v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2750771:879ed2: 7210 c480 0400                         |001b:
+invoke-interface {v4}, Lluc;.u:()Ljif; // method@80c4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2750772:879ed8: 0c04                                   |001e:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2858712:89eec2: 3909 0d00                              |01f3:
+if-nez v9, 0200 // +000d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2858713:89eec6: 6e10 be2e 0e00                         |01f5:
+invoke-virtual {v14}, Lbqd;.S:()Z // method@2ebe
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2858714:89eecc: 0a09                                   |01f8:
+move-result v9
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2858715:89eece: 3909 0700                              |01f9:
+if-nez v9, 0200 // +0007
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2858716:89eed2: 52e9 a413                              |01fb:
+iget v9, v14, Lbqd;.I0:I // field@13a4
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2858717:89eed6: 6e20 4816 9e00                         |01fd:
+invoke-virtual {v14, v9}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2858718:89eedc: 7100 51e0 0000                         |0200:
+invoke-static {}, Lvm1;.m:()Z // method@e051
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2858719:89eee2: 0a09                                   |0203:
+move-result v9
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2858720:89eee4: 3809 1500                              |0204:
+if-eqz v9, 0219 // +0015
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2858721:89eee8: 6e10 3909 0200                         |0206:
+invoke-virtual {v2}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0939
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2858722:89eeee: 0c09                                   |0209:
+move-result-object v9
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948475:8b833c: 1507 00de                              |01b0:
+const/high16 v7, #int -570425344 // #de00
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948476:8b8340: 3375 0500                              |01b2:
+if-ne v5, v7, 01b7 // +0005
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948477:8b8344: 12f5                                   |01b4:
+const/4 v5, #int -1 // #ff
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948478:8b8346: 0136                                   |01b5:
+move v6, v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948479:8b8348: 0153                                   |01b6:
+move v3, v5
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948480:8b834a: 6e20 4816 3b00                         |01b7:
+invoke-virtual {v11, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948481:8b8350: 6e20 4816 6100                         |01ba:
+invoke-virtual {v1, v6}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948482:8b8356: 7110 b56a 0300                         |01bd:
+invoke-static {v3}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@6ab5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948483:8b835c: 0c03                                   |01c0:
+move-result-object v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948484:8b835e: 6e20 a516 3b00                         |01c1:
+invoke-virtual {v11, v3}, Landroid/view/View;.setTag:(Ljava/lang/Object;)V // method@16a5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948485:8b8364: 7110 b56a 0600                         |01c4:
+invoke-static {v6}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@6ab5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2948486:8b836a: 0c0b                                   |01c7:
+move-result-object v11
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2949680:8b87cc: 54c3 5e6f                              |005e:
+iget-object v3, v12, Lo29;.M:Landroid/widget/ImageView; // field@6f5e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2949681:8b87d0: 54c6 7e6f                              |0060:
+iget-object v6, v12, Lo29;.s0:Landroid/graphics/Bitmap; // field@6f7e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2949682:8b87d4: 6e20 2c1a 6300                         |0062:
+invoke-virtual {v3, v6}, Landroid/widget/ImageView;.setImageBitmap:(Landroid/graphics/Bitmap;)V // method@1a2c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2949683:8b87da: 54c3 5e6f                              |0065:
+iget-object v3, v12, Lo29;.M:Landroid/widget/ImageView; // field@6f5e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2949684:8b87de: 52c6 7f6f                              |0067:
+iget v6, v12, Lo29;.t0:I // field@6f7f
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2949685:8b87e2: 6e20 4816 6300                         |0069:
+invoke-virtual {v3, v6}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2949686:8b87e8: 5cc1 7d6f                              |006c:
+iput-boolean v1, v12, Lo29;.r0:Z // field@6f7d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2949687:8b87ec: 5bc4 7e6f                              |006e:
+iput-object v4, v12, Lo29;.s0:Landroid/graphics/Bitmap; // field@6f7e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2949688:8b87f0: 59c1 7f6f                              |0070:
+iput v1, v12, Lo29;.t0:I // field@6f7f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2949689:8b87f4: 55c3 636f                              |0072:
+iget-boolean v3, v12, Lo29;.R:Z // field@6f63
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:2949690:8b87f8: 3903 2300                              |0074:
+if-nez v3, 0097 // +0023
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3158317:8fb334: 6e20 5015 5600                         |007a:
+invoke-virtual {v6, v5}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3158318:8fb33a: 0c05                                   |007d:
+move-result-object v5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3158319:8fb33c: 5444 8e76                              |007e:
+iget-object v4, v4, Lorg/chromium/chrome/browser/autofill/AutofillEditorBase;.v0:Landroid/content/Context; //
+field@768e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3158320:8fb340: 7110 00cc 0400                         |0080:
+invoke-static {v4}, Lssd;.j:(Landroid/content/Context;)I // method@cc00
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3158321:8fb346: 0a04                                   |0083:
+move-result v4
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3158322:8fb348: 6e20 4816 4500                         |0084:
+invoke-virtual {v5, v4}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3158323:8fb34e: 1106                                   |0087:
+return-object v6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3158324:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3158325:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3158326:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3158327:        0x0001 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3176137:900bd0: 5b35 1e77                              |0142:
+iput-object v5, v3, Lorg/chromium/chrome/browser/autofill/settings/AutofillLocalCardEditor;.Q0:Landroid/widget/Button;
+// field@771e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3176138:900bd4: 6e10 6715 0500                         |0144:
+invoke-virtual {v5}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3176139:900bda: 0c00                                   |0147:
+move-result-object v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3176140:900bdc: 7110 f9cb 0000                         |0148:
+invoke-static {v0}, Lssd;.c:(Landroid/content/Context;)I // method@cbf9
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3176141:900be2: 0a00                                   |014b:
+move-result v0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3176142:900be4: 6e20 4816 0500                         |014c:
+invoke-virtual {v5, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3176143:900bea: 5435 1e77                              |014f:
+iget-object v5, v3, Lorg/chromium/chrome/browser/autofill/settings/AutofillLocalCardEditor;.Q0:Landroid/widget/Button;
+// field@771e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3176144:900bee: 6e20 b316 6500                         |0151:
+invoke-virtual {v5, v6}, Landroid/view/View;.setVisibility:(I)V // method@16b3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3176145:900bf4: 5435 0d77                              |0154:
+iget-object v5, v3, Lorg/chromium/chrome/browser/autofill/settings/AutofillCreditCardEditor;.z0:Lorg/chromium/chrome/br
+owser/autofill/PersonalDataManager$CreditCard; // field@770d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3176146:900bf8: 3905 1500                              |0156:
+if-nez v5, 016b // +0015
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3176147:900bfc: 7100 95ae 0000                         |0158:
+invoke-static {}, Lorg/chromium/ui/accessibility/AccessibilityState;.j:()Z // method@ae95
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3198651:907a60: 1401 020b 017f                         |0058:
+const v1, #float 1.71528e+38 // #7f010b02
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3198652:907a66: 6e20 5015 1500                         |005b:
+invoke-virtual {v5, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3198653:907a6c: 0c01                                   |005e:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3198654:907a6e: 1f01 da04                              |005f:
+check-cast v1, Landroid/view/ViewGroup; // type@04da
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3198655:907a72: 5b51 b277                              |0061:
+iput-object v1, v5, Lorg/chromium/chrome/browser/bookmarks/ImprovedBookmarkFolderView;.w:Landroid/view/ViewGroup; //
+field@77b2
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3198656:907a76: 6e20 4816 2100                         |0063:
+invoke-virtual {v1, v2}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3198657:907a7c: 1401 a102 017f                         |0066:
+const v1, #float 1.71484e+38 // #7f0102a1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3198658:907a82: 6e20 5015 1500                         |0069:
+invoke-virtual {v5, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3198659:907a88: 0c01                                   |006c:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3198660:907a8a: 5b51 b477                              |006d:
+iput-object v1, v5, Lorg/chromium/chrome/browser/bookmarks/ImprovedBookmarkFolderView;.y:Landroid/view/View; //
+field@77b4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3198661:907a8e: 1401 a302 017f                         |006f:
+const v1, #float 1.71484e+38 // #7f0102a3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3220314:90dda8: 5b20 7b78                              |001c:
+iput-object v0, v2, Lorg/chromium/chrome/browser/compositor/CompositorView;.U:Ls63; // field@787b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3220315:90ddac: 6e10 6715 0200                         |001e:
+invoke-virtual {v2}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3220316:90ddb2: 0c00                                   |0021:
+move-result-object v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3220317:90ddb4: 7110 fccb 0000                         |0022:
+invoke-static {v0}, Lssd;.f:(Landroid/content/Context;)I // method@cbfc
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3220318:90ddba: 0a00                                   |0025:
+move-result v0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3220319:90ddbc: 6e20 4816 0200                         |0026:
+invoke-virtual {v2, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3220320:90ddc2: 1200                                   |0029:
+const/4 v0, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3220321:90ddc4: 6f20 b316 0200                         |002a:
+invoke-super {v2, v0}, Landroid/view/View;.setVisibility:(I)V // method@16b3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3220322:90ddca: 5422 7f78                              |002d:
+iget-object v2, v2, Lorg/chromium/chrome/browser/compositor/CompositorView;.t:Ln63; // field@787f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3220323:90ddce: 12f0                                   |002f:
+const/4 v0, #int -1 // #ff
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3220324:90ddd0: 6e20 888a 0200                         |0030:
+invoke-virtual {v2, v0}, Ln63;.f:(I)V // method@8a88
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3264031:917e3a: 6e20 6616 a900                         |00b1:
+invoke-virtual {v9, v10}, Landroid/view/View;.setId:(I)V // method@1666
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3264032:917e40: 6e10 d7db 0300                         |00b4:
+invoke-virtual {v3}, Luv1;.u:()Lyw2; // method@dbd7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3264033:917e46: 0c0a                                   |00b7:
+move-result-object v10
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3264034:917e48: 7210 72f7 0a00                         |00b8:
+invoke-interface {v10}, Lyw2;.c:()I // method@f772
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3264035:917e4e: 0a0a                                   |00bb:
+move-result v10
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3264036:917e50: 6e20 4816 a900                         |00bc:
+invoke-virtual {v9, v10}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3264037:917e56: 7210 2d6e 0600                         |00bf:
+invoke-interface {v6}, Ljava/util/List;.iterator:()Ljava/util/Iterator; // method@6e2d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3264038:917e5c: 0c06                                   |00c2:
+move-result-object v6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3264039:917e5e: 7210 086e 0600                         |00c3:
+invoke-interface {v6}, Ljava/util/Iterator;.hasNext:()Z // method@6e08
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3264040:917e64: 0a0a                                   |00c6:
+move-result v10
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3264041:917e66: 380a 9700                              |00c7:
+if-eqz v10, 015e // +0097
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308275:9287e4:
+|[9287e4] org.chromium.chrome.browser.findinpage.FindToolbarPhone.y:(Z)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308276:9287f4: 6e10 6715 0300                         |0000:
+invoke-virtual {v3}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308277:9287fa: 0c00                                   |0003:
+move-result-object v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308278:9287fc: 7120 b5ed 4000                         |0004:
+invoke-static {v0, v4}, Lxi2;.a:(Landroid/content/Context;Z)I // method@edb5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308279:928802: 0a00                                   |0007:
+move-result v0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308280:928804: 6e20 4816 0300                         |0008:
+invoke-virtual {v3, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308281:92880a: 6e10 6715 0300                         |000b:
+invoke-virtual {v3}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308282:928810: 0c00                                   |000e:
+move-result-object v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308283:928812: 3804 0600                              |000f:
+if-eqz v4, 0015 // +0006
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308284:928816: 1401 6001 077f                         |0011:
+const v1, #float 1.79453e+38 // #7f070160
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308285:92881c: 2804                                   |0014:
+goto 0018 // +0004
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308302:92886c: 6e10 6715 0300                         |003c:
+invoke-virtual {v3}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308303:928872: 0c04                                   |003f:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308304:928874: 1401 e601 077f                         |0040:
+const v1, #float 1.79456e+38 // #7f0701e6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308305:92887a: 6e20 2509 1400                         |0043:
+invoke-virtual {v4, v1}, Landroid/content/Context;.getColor:(I)I // method@0925
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308306:928880: 0a04                                   |0046:
+move-result v4
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308307:928882: 6e20 4816 4000                         |0047:
+invoke-virtual {v0, v4}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308308:928888: 1404 8e01 077f                         |004a:
+const v4, #float 1.79454e+38 // #7f07018e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308309:92888e: 1400 1202 077f                         |004d:
+const v0, #float 1.79457e+38 // #7f070212
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308310:928894: 5431 e14b                              |0050:
+iget-object v1, v3, Lir5;.w:Lorg/chromium/chrome/browser/findinpage/FindToolbar$FindQuery; // field@4be1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308311:928898: 6e10 6715 0300                         |0052:
+invoke-virtual {v3}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3308312:92889e: 0c02                                   |0055:
+move-result-object v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3364237:939820: 1407 1a03 147f                         |02f2:
+const v7, #float 1.96742e+38 // #7f14031a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3364238:939826: 6e20 3b09 7a00                         |02f5:
+invoke-virtual {v10, v7}, Landroid/content/Context;.getString:(I)Ljava/lang/String; // method@093b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3364239:93982c: 0c07                                   |02f8:
+move-result-object v7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3364240:93982e: 6e20 5116 7600                         |02f9:
+invoke-virtual {v6, v7}, Landroid/view/View;.setContentDescription:(Ljava/lang/CharSequence;)V // method@1651
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3364241:939834: 120d                                   |02fc:
+const/4 v13, #int 0 // #0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3364242:939836: 6e20 4816 d600                         |02fd:
+invoke-virtual {v6, v13}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3364243:93983c: 5427 14cc                              |0300:
+iget-object v7, v2, Lya7;.j:Lva7; // field@cc14
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3364244:939840: 6e20 3e16 7600                         |0302:
+invoke-virtual {v6, v7}, Landroid/view/View;.setAccessibilityDelegate:(Landroid/view/View$AccessibilityDelegate;)V //
+method@163e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3364245:939846: 5466 fa4e                              |0305:
+iget-object v6, v6, Lj73;.r:Laqi; // field@4efa
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3364246:93984a: 5b26 17cc                              |0307:
+iput-object v6, v2, Lya7;.m:Laqi; // field@cc17
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3364247:93984e: 5466 5028                              |0309:
+iget-object v6, v6, Ldqi;.e:Lwoi; // field@2850
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378298:93d8cc: 1401 7e08 017f                         |000e:
+const v1, #float 1.71515e+38 // #7f01087e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378299:93d8d2: 6e20 5015 1300                         |0011:
+invoke-virtual {v3, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378300:93d8d8: 0c01                                   |0014:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378301:93d8da: 1f01 4e31                              |0015:
+check-cast v1, Lorg/chromium/chrome/browser/ntp/NewTabPageScrollView; // type@314e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378302:93d8de: 5b31 dc7c                              |0017:
+iput-object v1, v3,
+Lorg/chromium/chrome/browser/ntp/IncognitoNewTabPageView;.u:Lorg/chromium/chrome/browser/ntp/NewTabPageScrollView; //
+field@7cdc
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378303:93d8e2: 6e20 4816 0100                         |0019:
+invoke-virtual {v1, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378304:93d8e8: 6e10 9a15 0300                         |001c:
+invoke-virtual {v3}, Landroid/view/View;.getResources:()Landroid/content/res/Resources; // method@159a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378305:93d8ee: 0c01                                   |001f:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378306:93d8f0: 1402 4502 147f                         |0020:
+const v2, #float 1.96738e+38 // #7f140245
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378307:93d8f6: 6e20 700a 2100                         |0023:
+invoke-virtual {v1, v2}, Landroid/content/res/Resources;.getText:(I)Ljava/lang/CharSequence; // method@0a70
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378308:93d8fc: 0c01                                   |0026:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378813:93db2c: 6f10 ff15 0300                         |0000:
+invoke-super {v3}, Landroid/view/View;.onFinishInflate:()V // method@15ff
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378814:93db32: 6e10 6715 0300                         |0003:
+invoke-virtual {v3}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378815:93db38: 0c00                                   |0006:
+move-result-object v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378816:93db3a: 7110 8b34 0000                         |0007:
+invoke-static {v0}, Lcn2;.a:(Landroid/content/Context;)I // method@348b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378817:93db40: 0a00                                   |000a:
+move-result v0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378818:93db42: 1400 0c0a 09ff                         |000b:
+const v0, #float -1.82156e+38 // #ff090a0c
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378819:93db48: 6e20 4816 0300                         |000e:
+invoke-virtual {v3, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378820:93db4e: 1a00 299e                              |0011:
+const-string v0, "cr_NewTabPageLayout" // string@9e29
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378821:93db52: 1a01 3079                              |0013:
+const-string v1, "NewTabPageLayout.onFinishInflate before insertSiteSectionView" // string@7930
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378822:93db56: 7120 3b13 1000                         |0015:
+invoke-static {v0, v1}, Landroid/util/Log;.i:(Ljava/lang/String;Ljava/lang/String;)I // method@133b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378823:93db5c: 7100 9366 0000                         |0018:
+invoke-static {}, Liy9;.b:()Z // method@6693
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3378824:93db62: 0a01                                   |001b:
+move-result v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382868:93ebe0: 6e20 5016 3200                         |002a:
+invoke-virtual {v2, v3}, Landroid/view/View;.setClipToOutline:(Z)V // method@1650
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382869:93ebe6: 1402 020b 017f                         |002d:
+const v2, #float 1.71528e+38 // #7f010b02
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382870:93ebec: 6e20 5015 2500                         |0030:
+invoke-virtual {v5, v2}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382871:93ebf2: 0c02                                   |0033:
+move-result-object v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382872:93ebf4: 1f02 da04                              |0034:
+check-cast v2, Landroid/view/ViewGroup; // type@04da
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382873:93ebf8: 6e20 4816 1200                         |0036:
+invoke-virtual {v2, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382874:93ebfe: 1402 010b 017f                         |0039:
+const v2, #float 1.71528e+38 // #7f010b01
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382875:93ec04: 6e20 5015 2500                         |003c:
+invoke-virtual {v5, v2}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382876:93ec0a: 0c02                                   |003f:
+move-result-object v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382877:93ec0c: 1f02 6705                              |0040:
+check-cast v2, Landroid/widget/ImageView; // type@0567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382878:93ec10: 5b52 037d                              |0042:
+iput-object v2, v5, Lorg/chromium/chrome/browser/ntp_customization/theme/NtpThemeListThemeCollectionItemIconView;.v:Lan
+droid/widget/ImageView; // field@7d03
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382881:93ec1e: 5452 037d                              |0049:
+iget-object v2, v5, Lorg/chromium/chrome/browser/ntp_customization/theme/NtpThemeListThemeCollectionItemIconView;.v:Lan
+droid/widget/ImageView; // field@7d03
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382882:93ec22: 6e20 5016 3200                         |004b:
+invoke-virtual {v2, v3}, Landroid/view/View;.setClipToOutline:(Z)V // method@1650
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382883:93ec28: 1402 0802 017f                         |004e:
+const v2, #float 1.71481e+38 // #7f010208
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382884:93ec2e: 6e20 5015 2500                         |0051:
+invoke-virtual {v5, v2}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382885:93ec34: 0c02                                   |0054:
+move-result-object v2
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382886:93ec36: 6e20 4816 1200                         |0055:
+invoke-virtual {v2, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382887:93ec3c: 1401 0702 017f                         |0058:
+const v1, #float 1.71481e+38 // #7f010207
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382888:93ec42: 6e20 5015 1500                         |005b:
+invoke-virtual {v5, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382889:93ec48: 0c01                                   |005e:
+move-result-object v1
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382890:93ec4a: 6e20 4816 0100                         |005f:
+invoke-virtual {v1, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382891:93ec50: 5450 017d                              |0062:
+iget-object v0, v5,
+Lorg/chromium/chrome/browser/ntp_customization/theme/NtpThemeListThemeCollectionItemIconView;.t:Lu2d; // field@7d01
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382892:93ec54: 6e20 8516 0100                         |0064:
+invoke-virtual {v1, v0}, Landroid/view/View;.setOutlineProvider:(Landroid/view/ViewOutlineProvider;)V // method@1685
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382893:93ec5a: 6e20 5016 3100                         |0067:
+invoke-virtual {v1, v3}, Landroid/view/View;.setClipToOutline:(Z)V // method@1650
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382894:93ec60: 1200                                   |006a:
+const/4 v0, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3382895:93ec62: 6e30 5ea1 0500                         |006b:
+invoke-virtual {v5, v0, v0}, Lorg/chromium/chrome/browser/ntp_customization/theme/NtpThemeListThemeCollectionItemIconVi
+ew;.a:(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V // method@a15e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468626:95855a: 5453 560a                              |0011:
+iget-object v3, v5, Landroidx/preference/Preference;.r:Landroid/content/Context; // field@0a56
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468627:95855e: 3321 0d00                              |0013:
+if-ne v1, v2, 0020 // +000d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468628:958562: 1401 6d06 077f                         |0015:
+const v1, #float 1.79479e+38 // #7f07066d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468629:958568: 6e20 2509 1300                         |0018:
+invoke-virtual {v3, v1}, Landroid/content/Context;.getColor:(I)I // method@0925
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468630:95856e: 0a01                                   |001b:
+move-result v1
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468631:958570: 6e20 4816 1000                         |001c:
+invoke-virtual {v0, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468632:958576: 282b                                   |001f:
+goto 004a // +002b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468633:958578: 1260                                   |0020:
+const/4 v0, #int 6 // #6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468634:95857a: 3301 2900                              |0021:
+if-ne v1, v0, 004a // +0029
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468635:95857e: 7110 00cc 0300                         |0023:
+invoke-static {v3}, Lssd;.j:(Landroid/content/Context;)I // method@cc00
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468636:958584: 0a00                                   |0026:
+move-result v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468637:958586: 1401 8601 057f                         |0027:
+const v1, #float 1.76795e+38 // #7f050186
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468638:95858c: 1a02 1281                              |002a:
+const-string v2, "SemanticColorUtils" // string@8112
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468639:958590: 7130 48f7 1302                         |002c:
+invoke-static {v3, v1, v2}, Lyv8;.c:(Landroid/content/Context;ILjava/lang/String;)I // method@f748
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468640:958596: 0a01                                   |002f:
+move-result v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468641:958598: 5452 657f                              |0030:
+iget-object v2, v5, Lorg/chromium/chrome/browser/safe_browsing/settings/RadioButtonGroupSafeBrowsingPreference;.g0:Lorg
+/chromium/components/browser_ui/widget/RadioButtonWithDescriptionAndAuxButton; // field@7f65
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468642:95859c: 6e20 4816 0200                         |0032:
+invoke-virtual {v2, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468643:9585a2: 2202 a903                              |0035:
+new-instance v2, Landroid/os/Handler; // type@03a9
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468644:9585a6: 7010 7410 0200                         |0037:
+invoke-direct {v2}, Landroid/os/Handler;.<init>:()V // method@1074
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468645:9585ac: 2204 1b09                              |003a:
+new-instance v4, Lbfc; // type@091b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468646:9585b0: 7010 056b 0400                         |003c:
+invoke-direct {v4}, Ljava/lang/Object;.<init>:()V // method@6b05
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3468647:9585b6: 5b45 9611                              |003f:
+iput-object v5, v4,
+Lbfc;.r:Lorg/chromium/chrome/browser/safe_browsing/settings/RadioButtonGroupSafeBrowsingPreference; // field@1196
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492240:95febc: 7120 4bf7 0100                         |0314:
+invoke-static {v1, v0}, Lyv8;.f:(Landroid/content/Context;Landroid/util/TypedValue;)I // method@f74b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492241:95fec2: 0a00                                   |0317:
+move-result v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492242:95fec4: 1402 520b 017f                         |0318:
+const v2, #float 1.71529e+38 // #7f010b52
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492243:95feca: 6e20 e6cd 2100                         |031b:
+invoke-virtual {v1, v2}, Lt20;.findViewById:(I)Landroid/view/View; // method@cde6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492244:95fed0: 0c02                                   |031e:
+move-result-object v2
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492245:95fed2: 6e20 4816 0200                         |031f:
+invoke-virtual {v2, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492246:95fed8: 6e20 e6cd c100                         |0322:
+invoke-virtual {v1, v12}, Lt20;.findViewById:(I)Landroid/view/View; // method@cde6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492247:95fede: 0c02                                   |0325:
+move-result-object v2
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492248:95fee0: 6e20 4816 0200                         |0326:
+invoke-virtual {v2, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492249:95fee6: 6e20 e6cd c100                         |0329:
+invoke-virtual {v1, v12}, Lt20;.findViewById:(I)Landroid/view/View; // method@cde6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492250:95feec: 0c00                                   |032c:
+move-result-object v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492251:95feee: 1f00 630d                              |032d:
+check-cast v0, Lcom/google/android/material/appbar/AppBarLayout; // type@0d63
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492252:95fef2: 1202                                   |032f:
+const/4 v2, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3492253:95fef4: 6e20 2e38 2000                         |0330:
+invoke-virtual {v0, v2}, Lcom/google/android/material/appbar/AppBarLayout;.setElevation:(F)V // method@382e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3506154:964010: 2203 6105                              |00e4:
+new-instance v3, Landroid/widget/FrameLayout; // type@0561
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3506155:964014: 7020 f819 0300                         |00e6:
+invoke-direct {v3, v0}, Landroid/widget/FrameLayout;.<init>:(Landroid/content/Context;)V // method@19f8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3506156:96401a: 5b43 c70f                              |00e9:
+iput-object v3, v4, Lb76;.D:Landroid/widget/FrameLayout; // field@0fc7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3506157:96401e: 7130 48f7 9008                         |00eb:
+invoke-static {v0, v9, v8}, Lyv8;.c:(Landroid/content/Context;ILjava/lang/String;)I // method@f748
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3506158:964024: 0a08                                   |00ee:
+move-result v8
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3506159:964026: 6e20 4816 8300                         |00ef:
+invoke-virtual {v3, v8}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3506160:96402c: 5b45 cf0f                              |00f2:
+iput-object v5, v4, Lb76;.t:Lwf9; // field@0fcf
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3506161:964030: 5b4c d00f                              |00f4:
+iput-object v12, v4, Lb76;.u:Lwia; // field@0fd0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3506162:964034: 5b4d d10f                              |00f6:
+iput-object v13, v4, Lb76;.v:Ly4c; // field@0fd1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3506163:964038: 5b41 d20f                              |00f8:
+iput-object v1, v4, Lb76;.w:Lz66; // field@0fd2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3506164:96403c: 5942 d30f                              |00fa:
+iput v2, v4, Lb76;.x:I // field@0fd3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3568757:      insns size    : 11 16-bit code units
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3568758:976844:
+|[976844] org.chromium.chrome.browser.tasks.tab_management.TabListEditorToolbar.b0:(Ljava/util/List;Z)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3568759:976854: 6f30 c82e 1002                         |0000:
+invoke-super {v0, v1, v2}, Lbqd;.b0:(Ljava/util/List;Z)V // method@2ec8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3568760:97685a: 5201 7782                              |0003:
+iget v1, v0, Lorg/chromium/chrome/browser/tasks/tab_management/TabListEditorToolbar;.Y0:I // field@8277
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3568761:97685e: 3801 0500                              |0005:
+if-eqz v1, 000a // +0005
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3568762:976862: 6e20 4816 1000                         |0007:
+invoke-virtual {v0, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3568763:976868: 0e00                                   |000a:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3568764:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3568765:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3568766:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3568767:        0x0003 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598291:        0x0000 - 0x0065 reg=4 this
+Lorg/chromium/components/browser_ui/widget/chips/ChipView;
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598292:        0x0000 - 0x0065 reg=5 (null) I
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598293:        0x0000 - 0x0065 reg=6 (null) I
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598294:
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598295:    #6              : (in
+Lorg/chromium/components/browser_ui/widget/chips/ChipView;)
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598296:      name          : 'setBackgroundColor'
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598297:      type          : '(I)V'
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598298:      access        : 0x0011 (PUBLIC FINAL)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598299:      code          -
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598300:      registers     : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598301:      ins           : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598302:      outs          : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598303:      insns size    : 8 16-bit code units
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598304:97fb20:
+|[97fb20] org.chromium.components.browser_ui.widget.chips.ChipView.setBackgroundColor:(I)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598305:97fb30: 5400 2984                              |0000:
+iget-object v0, v0, Lorg/chromium/components/browser_ui/widget/chips/ChipView;.r:Lg0d; // field@8429
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598306:97fb34: 5400 c837                              |0002:
+iget-object v0, v0, Lg0d;.e:Landroid/graphics/drawable/GradientDrawable; // field@37c8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598307:97fb38: 6e20 5e0d 1000                         |0004:
+invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;.setColor:(I)V // method@0d5e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598308:97fb3e: 0e00                                   |0007:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3598309:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3622183:9876b4: 5b4e a16a                              |0128:
+iput-object v14, v4, Lnbb;.d:Landroid/widget/ProgressBar; // field@6aa1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3622184:9876b8: 6e10 24a4 0500                         |012a:
+invoke-virtual {v5}, Lorg/chromium/chrome/browser/profiles/Profile;.m:()Z // method@a424
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3622185:9876be: 0a05                                   |012d:
+move-result v5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3622186:9876c0: 7120 b6ed 5600                         |012e:
+invoke-static {v6, v5}, Lxi2;.b:(Landroid/content/Context;Z)I // method@edb6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3622187:9876c6: 0a05                                   |0131:
+move-result v5
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3622188:9876c8: 6e20 4816 5000                         |0132:
+invoke-virtual {v0, v5}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3622189:9876ce: 2205 7c3d                              |0135:
+new-instance v5, Lsab; // type@3d7c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3622190:9876d2: 7010 056b 0500                         |0137:
+invoke-direct {v5}, Ljava/lang/Object;.<init>:()V // method@6b05
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3622191:9876d8: 5b54 3ba0                              |013a:
+iput-object v4, v5, Lsab;.r:Lnbb; // field@a03b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3622192:9876dc: 6e20 2615 5000                         |013c:
+invoke-virtual {v0, v5},
+Landroid/view/View;.addOnAttachStateChangeListener:(Landroid/view/View$OnAttachStateChangeListener;)V // method@1526
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3622193:9876e2: 6205 5cc5                              |013f:
+sget-object v5, Lxj2;.K1:Lw02; // field@c55c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3649457:      outs          : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3649458:      insns size    : 8 16-bit code units
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3649459:9905dc:
+|[9905dc] oz6.b:(I)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3649460:9905ec: 5400 d087                              |0000:
+iget-object v0, v0, Loz6;.r:Ljava/lang/Object; // field@87d0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3649461:9905f0: 1f00 e030                              |0002:
+check-cast v0, Lorg/chromium/chrome/browser/hub/HubBottomToolbarView; // type@30e0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3649462:9905f4: 6e20 4816 1000                         |0004:
+invoke-virtual {v0, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3649463:9905fa: 0e00                                   |0007:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3649464:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3649465:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3649466:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3649467:        0x0002 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3760262:9b3cd6: 3360 2000                              |0079:
+if-ne v0, v6, 0099 // +0020
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3760263:9b3cda: 5453 676d                              |007b:
+iget-object v3, v5, Lnrf;.a:Lorg/chromium/chrome/browser/tasks/tab_management/TabGroupUiToolbarView; // field@6d67
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3760264:9b3cde: 6e20 d7ae 0400                         |007d:
+invoke-virtual {v4, v0}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3760265:9b3ce4: 0a04                                   |0080:
+move-result v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3760266:9b3ce6: 5435 4c82                              |0081:
+iget-object v5, v3,
+Lorg/chromium/chrome/browser/tasks/tab_management/TabGroupUiToolbarView;.w:Landroid/view/ViewGroup; // field@824c
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3760267:9b3cea: 6e20 4816 4500                         |0083:
+invoke-virtual {v5, v4}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3760268:9b3cf0: 5435 4982                              |0086:
+iget-object v5, v3,
+Lorg/chromium/chrome/browser/tasks/tab_management/TabGroupUiToolbarView;.t:Landroid/widget/ImageView; // field@8249
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3760269:9b3cf4: 3805 8900                              |0088:
+if-eqz v5, 0111 // +0089
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3760270:9b3cf8: 5436 4a82                              |008a:
+iget-object v6, v3,
+Lorg/chromium/chrome/browser/tasks/tab_management/TabGroupUiToolbarView;.u:Landroid/widget/ImageView; // field@824a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3760271:9b3cfc: 3806 8500                              |008c:
+if-eqz v6, 0111 // +0085
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3760272:9b3d00: 6206 6805                              |008e:
+sget-object v6, Landroid/graphics/PorterDuff$Mode;.SRC_IN:Landroid/graphics/PorterDuff$Mode; // field@0568
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3885534:9db428: 6e10 6715 0000                         |0002:
+invoke-virtual {v0}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3885535:9db42e: 0c01                                   |0005:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3885536:9db430: 1402 e405 077f                         |0006:
+const v2, #float 1.79476e+38 // #7f0705e4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3885537:9db436: 6e20 2509 2100                         |0009:
+invoke-virtual {v1, v2}, Landroid/content/Context;.getColor:(I)I // method@0925
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3885538:9db43c: 0a01                                   |000c:
+move-result v1
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3885539:9db43e: 6e20 4816 1000                         |000d:
+invoke-virtual {v0, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3885540:9db444: 5433 ae92                              |0010:
+iget-object v3, v3, Lqh4;.a:Lnn; // field@92ae
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3885541:9db448: 5430 5b65                              |0012:
+iget-object v0, v3, Lmj2;.y:Lyy4; // field@655b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3885542:9db44c: 1202                                   |0014:
+const/4 v2, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3885543:9db44e: 3800 0600                              |0015:
+if-eqz v0, 001b // +0006
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3885544:9db452: 6e30 6061 1002                         |0017:
+invoke-virtual {v0, v1, v2}, Li61;.j:(IZ)V // method@6160
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3997373:9fc310: 6e10 a092 0400                         |0064:
+invoke-virtual {v4}, Lo88;.b:()Ljava/lang/Object; // method@92a0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3997374:9fc316: 0c04                                   |0067:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3997375:9fc318: 1f04 da04                              |0068:
+check-cast v4, Landroid/view/ViewGroup; // type@04da
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3997376:9fc31c: 5b24 ca5a                              |006a:
+iput-object v4, v2, Ll07;.G:Landroid/view/ViewGroup; // field@5aca
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3997377:9fc320: 1205                                   |006c:
+const/4 v5, #int 0 // #0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3997378:9fc322: 6e20 4816 5400                         |006d:
+invoke-virtual {v4, v5}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3997379:9fc328: 5414 7bad                              |0070:
+iget-object v4, v1, Lu07;.a:Ln88; // field@ad7b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3997380:9fc32c: 6e10 a092 0400                         |0072:
+invoke-virtual {v4}, Lo88;.b:()Ljava/lang/Object; // method@92a0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3997381:9fc332: 0c04                                   |0075:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3997382:9fc334: 1f04 0d08                              |0076:
+check-cast v4, Lb17; // type@080d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:3997383:9fc338: 5b24 cb5a                              |0078:
+iput-object v4, v2, Ll07;.H:Lb17; // field@5acb
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4140543:a27ebe: 1f02 7147                              |0011:
+check-cast v2, Lw1h; // type@4771
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4140544:a27ec2: 6e10 6715 0300                         |0013:
+invoke-virtual {v3}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4140545:a27ec8: 0c04                                   |0016:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4140546:a27eca: 5220 24bb                              |0017:
+iget v0, v2, Lw1h;.a:I // field@bb24
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4140547:a27ece: 5222 25bb                              |0019:
+iget v2, v2, Lw1h;.b:I // field@bb25
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4140548:a27ed2: 6e20 4816 0300                         |001b:
+invoke-virtual {v3, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4140549:a27ed8: 6e20 5015 1300                         |001e:
+invoke-virtual {v3, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4140550:a27ede: 0c01                                   |0021:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4140551:a27ee0: 1f01 6705                              |0022:
+check-cast v1, Landroid/widget/ImageView; // type@0567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4140552:a27ee4: 1210                                   |0024:
+const/4 v0, #int 1 // #1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4140553:a27ee6: 7130 532f 2400                         |0025:
+invoke-static {v4, v2, v0}, Lbtg;.c:(Landroid/content/Context;IZ)Landroid/content/res/ColorStateList; // method@2f53
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207693:a3b908: 5bc6 e55a                              |01cc:
+iput-object v6, v12, Ll0e;.A:Ljava/lang/String; // field@5ae5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207694:a3b90c: 2206 6105                              |01ce:
+new-instance v6, Landroid/widget/FrameLayout; // type@0561
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207695:a3b910: 7020 f819 1600                         |01d0:
+invoke-direct {v6, v1}, Landroid/widget/FrameLayout;.<init>:(Landroid/content/Context;)V // method@19f8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207696:a3b916: 6e10 227b 0c00                         |01d3:
+invoke-virtual {v12}, Ll0e;.c:()I // method@7b22
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207697:a3b91c: 0a0b                                   |01d6:
+move-result v11
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207698:a3b91e: 6e20 4816 b600                         |01d7:
+invoke-virtual {v6, v11}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207699:a3b924: 5bc2 e65a                              |01da:
+iput-object v2, v12, Ll0e;.B:Lx0e; // field@5ae6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207700:a3b928: 220b 4451                              |01dc:
+new-instance v11, Lzq4; // type@5144
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207701:a3b92c: 7010 056b 0b00                         |01de:
+invoke-direct {v11}, Ljava/lang/Object;.<init>:()V // method@6b05
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207702:a3b932: 5bbd 3bd6                              |01e1:
+iput-object v13, v11, Lzq4;.a:Lcr9; // field@d63b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207703:a3b936: 6e10 991e 0100                         |01e3:
+invoke-virtual {v1}, Landroidx/fragment/app/FragmentActivity;.B0:()Li46; // method@1e99
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207766:a3ba58: 1f0b b005                              |0274:
+check-cast v11, Landroidx/appcompat/widget/Toolbar; // type@05b0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207767:a3ba5c: 5b2b fec1                              |0276:
+iput-object v11, v2, Lx0e;.E:Landroidx/appcompat/widget/Toolbar; // field@c1fe
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207768:a3ba60: 140b 8901 057f                         |0278:
+const v11, #float 1.76795e+38 // #7f050189
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207769:a3ba66: 7130 48f7 b10f                         |027b:
+invoke-static {v1, v11, v15}, Lyv8;.c:(Landroid/content/Context;ILjava/lang/String;)I // method@f748
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207770:a3ba6c: 0a0b                                   |027e:
+move-result v11
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207771:a3ba6e: 6e20 4816 b900                         |027f:
+invoke-virtual {v9, v11}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207772:a3ba74: 140f 0e01 017f                         |0282:
+const v15, #float 1.71476e+38 // #7f01010e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207773:a3ba7a: 6e20 5015 f300                         |0285:
+invoke-virtual {v3, v15}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207774:a3ba80: 0c03                                   |0288:
+move-result-object v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207775:a3ba82: 1f03 630d                              |0289:
+check-cast v3, Lcom/google/android/material/appbar/AppBarLayout; // type@0d63
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207776:a3ba86: 6e20 4816 b300                         |028b:
+invoke-virtual {v3, v11}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207777:a3ba8c: 120b                                   |028e:
+const/4 v11, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207778:a3ba8e: 6e20 2e38 b300                         |028f:
+invoke-virtual {v3, v11}, Lcom/google/android/material/appbar/AppBarLayout;.setElevation:(F)V // method@382e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207779:a3ba94: 120b                                   |0292:
+const/4 v11, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207780:a3ba96: 6e20 a116 b300                         |0293:
+invoke-virtual {v3, v11}, Landroid/view/View;.setStateListAnimator:(Landroid/animation/StateListAnimator;)V //
+method@16a1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4207781:a3ba9c: 6e10 fa5b 0100                         |0296:
+invoke-virtual {v1}, Lhg2;.getResources:()Landroid/content/res/Resources; // method@5bfa
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208158:a3c0f0: 0c04                                   |05c0:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208159:a3c0f2: 5b14 8dbb                              |05c1:
+iput-object v4, v1, Lw33;.x:Landroidx/compose/runtime/ParcelableSnapshotMutableState; // field@bb8d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208160:a3c0f6: 1405 8601 057f                         |05c3:
+const v5, #float 1.76795e+38 // #7f050186
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208161:a3c0fc: 7130 48f7 530f                         |05c6:
+invoke-static {v3, v5, v15}, Lyv8;.c:(Landroid/content/Context;ILjava/lang/String;)I // method@f748
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208162:a3c102: 0a03                                   |05c9:
+move-result v3
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208163:a3c104: 6e20 4816 3100                         |05ca:
+invoke-virtual {v1, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208164:a3c10a: 2203 a027                              |05cd:
+new-instance v3, Llu1; // type@27a0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208165:a3c10e: 1227                                   |05cf:
+const/4 v7, #int 2 // #2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208166:a3c110: 7020 9b80 7300                         |05d0:
+invoke-direct {v3, v7}, Llu1;.<init>:(B)V // method@809b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208167:a3c116: 5b30 5660                              |05d3:
+iput-object v0, v3, Llu1;.s:Lnu1; // field@6056
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208168:a3c11a: 2205 2242                              |05d5:
+new-instance v5, Lu23; // type@4222
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208313:a3c376: 5b39 a16a                              |0703:
+iput-object v9, v3, Lnbb;.d:Landroid/widget/ProgressBar; // field@6aa1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208314:a3c37a: 7401 24a4 1000                         |0705:
+invoke-virtual/range {v16}, Lorg/chromium/chrome/browser/profiles/Profile;.m:()Z // method@a424
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208315:a3c380: 0a0b                                   |0708:
+move-result v11
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208316:a3c382: 7120 b6ed b000                         |0709:
+invoke-static {v0, v11}, Lxi2;.b:(Landroid/content/Context;Z)I // method@edb6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208317:a3c388: 0a0b                                   |070c:
+move-result v11
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208318:a3c38a: 6e20 4816 b100                         |070d:
+invoke-virtual {v1, v11}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208319:a3c390: 220b 7c3d                              |0710:
+new-instance v11, Lsab; // type@3d7c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208320:a3c394: 7010 056b 0b00                         |0712:
+invoke-direct {v11}, Ljava/lang/Object;.<init>:()V // method@6b05
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208321:a3c39a: 5bb3 3ba0                              |0715:
+iput-object v3, v11, Lsab;.r:Lnbb; // field@a03b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208322:a3c39e: 6e20 2615 b100                         |0717:
+invoke-virtual {v1, v11},
+Landroid/view/View;.addOnAttachStateChangeListener:(Landroid/view/View$OnAttachStateChangeListener;)V // method@1526
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4208323:a3c3a4: 620b 5cc5                              |071a:
+sget-object v11, Lxj2;.K1:Lw02; // field@c55c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345643:a653d0: 1212                                   |000e:
+const/4 v2, #int 1 // #1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345644:a653d2: 6e30 9833 0102                         |000f:
+invoke-virtual {v1, v0, v2}, Lcga;.i:(IZ)I // method@3398
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345645:a653d8: 0a01                                   |0012:
+move-result v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345646:a653da: 5442 249f                              |0013:
+iget-object v2, v4, Ls5f;.b:Lorg/chromium/chrome/browser/omnibox/suggestions/OmniboxSuggestionsDropdown; // field@9f24
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345647:a653de: 5444 239f                              |0015:
+iget-object v4, v4, Ls5f;.a:Lorg/chromium/chrome/browser/omnibox/suggestions/OmniboxSuggestionsContainer; // field@9f23
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345648:a653e2: 6e20 4816 1200                         |0017:
+invoke-virtual {v2, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345649:a653e8: 6202 0990                              |001a:
+sget-object v2, Lq5f;.h0:Lp8c; // field@9009
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345650:a653ec: 6e20 dbae 2300                         |001c:
+invoke-virtual {v3, v2}, Lorg/chromium/ui/modelutil/PropertyModel;.k:(Ln8c;)Z // method@aedb
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345651:a653f2: 0a03                                   |001f:
+move-result v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345652:a653f4: 3803 0a00                              |0020:
+if-eqz v3, 002a // +000a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345653:a653f8: 1223                                   |0022:
+const/4 v3, #int 2 // #2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345654:a653fa: 3230 0700                              |0023:
+if-eq v0, v3, 002a // +0007
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345655:a653fe: 1203                                   |0025:
+const/4 v3, #int 0 // #0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345656:a65400: 6e20 4816 3400                         |0026:
+invoke-virtual {v4, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345657:a65406: 2804                                   |0029:
+goto 002d // +0004
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345658:a65408: 6e20 4816 1400                         |002a:
+invoke-virtual {v4, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345659:a6540e: 0e00                                   |002d:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345660:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345661:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345662:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4345663:        0x0002 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4369555:a6c462: 6e40 eb16 8046                         |01d3:
+invoke-virtual {v0, v8, v6, v4},
+Landroid/view/ViewGroup;.addView:(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V // method@16eb
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4369556:a6c468: 1404 5b04 017f                         |01d6:
+const v4, #float 1.71493e+38 // #7f01045b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4369557:a6c46e: 6e20 5015 4000                         |01d9:
+invoke-virtual {v0, v4}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4369558:a6c474: 0c04                                   |01dc:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4369559:a6c476: 5b34 c6cf                              |01dd:
+iput-object v4, v3, Lyt4;.A:Landroid/view/View; // field@cfc6
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4369560:a6c47a: 6e20 4816 9400                         |01df:
+invoke-virtual {v4, v9}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4369561:a6c480: 1404 5c04 017f                         |01e2:
+const v4, #float 1.71493e+38 // #7f01045c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4369562:a6c486: 6e20 5015 4000                         |01e5:
+invoke-virtual {v0, v4}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4369563:a6c48c: 0c04                                   |01e8:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4369564:a6c48e: 1f04 0e34                              |01e9:
+check-cast v4, Lorg/chromium/ui/widget/LoadingView; // type@340e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4369565:a6c492: 1215                                   |01eb:
+const/4 v5, #int 1 // #1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4394002:a73ba8: 1405 d701 017f                         |007a:
+const v5, #float 1.7148e+38 // #7f0101d7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4394003:a73bae: 6e20 5015 5400                         |007d:
+invoke-virtual {v4, v5}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4394004:a73bb4: 0c04                                   |0080:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4394005:a73bb6: 6e20 d7ae 2300                         |0081:
+invoke-virtual {v3, v2}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4394006:a73bbc: 0a02                                   |0084:
+move-result v2
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4394007:a73bbe: 6e20 4816 2400                         |0085:
+invoke-virtual {v4, v2}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4394008:a73bc4: 0e00                                   |0088:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4394009:a73bc6: 6202 f9b6                              |0089:
+sget-object v2, Lvg1;.g:Lr8c; // field@b6f9
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4394010:a73bca: 3325 1701                              |008b:
+if-ne v5, v2, 01a2 // +0117
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4394011:a73bce: 1405 d801 017f                         |008d:
+const v5, #float 1.7148e+38 // #7f0101d8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4394012:a73bd4: 6e20 5015 5400                         |0090:
+invoke-virtual {v4, v5}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4479828:a8e7ae: 56b7 d378                              |034f:
+iget-byte v7, v11, Lorg/chromium/chrome/browser/compositor/layouts/phone/NewBackgroundTabAnimationHostView;.u:B //
+field@78d3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4479829:a8e7b2: 54b9 d178                              |0351:
+iget-object v9, v11, Lorg/chromium/chrome/browser/compositor/layouts/phone/NewBackgroundTabAnimationHostView;.s:Lorg/ch
+romium/chrome/browser/compositor/layouts/phone/NewBackgroundTabFakeTabSwitcherButton; // field@78d1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4479830:a8e7b6: 121d                                   |0353:
+const/4 v13, #int 1 // #1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4479831:a8e7b8: 33d7 0f00                              |0354:
+if-ne v7, v13, 0363 // +000f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4479832:a8e7bc: 5491 d978                              |0356:
+iget-object v1, v9, Lorg/chromium/chrome/browser/compositor/layouts/phone/NewBackgroundTabFakeTabSwitcherButton;.s:Land
+roid/widget/FrameLayout; // field@78d9
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4479833:a8e7c0: 6e20 4816 8100                         |0358:
+invoke-virtual {v1, v8}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4479834:a8e7c6: 54b1 d178                              |035b:
+iget-object v1, v11, Lorg/chromium/chrome/browser/compositor/layouts/phone/NewBackgroundTabAnimationHostView;.s:Lorg/ch
+romium/chrome/browser/compositor/layouts/phone/NewBackgroundTabFakeTabSwitcherButton; // field@78d1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4479835:a8e7ca: 5411 db78                              |035d:
+iget-object v1, v1,
+Lorg/chromium/chrome/browser/compositor/layouts/phone/NewBackgroundTabFakeTabSwitcherButton;.u:Lgcg; // field@78db
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4479836:a8e7ce: 6e20 2d54 4100                         |035f:
+invoke-virtual {v1, v4}, Lgcg;.e:(Z)V // method@542d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4479837:a8e7d4: 2871                                   |0362:
+goto 03d3 // +0071
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4479838:a8e7d6: 5294 dc78                              |0363:
+iget v4, v9, Lorg/chromium/chrome/browser/compositor/layouts/phone/NewBackgroundTabFakeTabSwitcherButton;.v:I //
+field@78dc
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4480235:a8edde: 6e10 6715 0100                         |0667:
+invoke-virtual {v1}, Landroid/view/View;.getContext:()Landroid/content/Context; // method@1567
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4480236:a8ede4: 0c03                                   |066a:
+move-result-object v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4480237:a8ede6: 1405 0d00 0601                         |066b:
+const v5, #float 2.46119e-38 // #0106000d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4480238:a8edec: 6e20 2509 5300                         |066e:
+invoke-virtual {v3, v5}, Landroid/content/Context;.getColor:(I)I // method@0925
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4480239:a8edf2: 0a03                                   |0671:
+move-result v3
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4480240:a8edf4: 6e20 4816 3100                         |0672:
+invoke-virtual {v1, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4480241:a8edfa: 2203 5208                              |0675:
+new-instance v3, Lb4d; // type@0852
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4480242:a8edfe: 7020 762a 1300                         |0677:
+invoke-direct {v3, v1}, Lb4d;.<init>:(Landroid/view/View;)V // method@2a76
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4480243:a8ee04: 5b13 f04c                              |067a:
+iput-object v3, v1, Liw9;.r:Lb4d; // field@4cf0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4480244:a8ee08: 5b1d f14c                              |067c:
+iput-object v13, v1, Liw9;.s:[I // field@4cf1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4480245:a8ee0c: 2203 d902                              |067e:
+new-instance v3, Landroid/graphics/Rect; // type@02d9
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4507916:a99b0a: 7020 f1d5 0700                         |005d:
+invoke-direct {v7, v0}, Lu2d;.<init>:(I)V // method@d5f1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4507917:a99b10: 2804                                   |0060:
+goto 0064 // +0004
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4507918:a99b12: 1207                                   |0061:
+const/4 v7, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4507919:a99b14: 0114                                   |0062:
+move v4, v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4507920:a99b16: 0145                                   |0063:
+move v5, v4
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4507921:a99b18: 6e20 4816 5600                         |0064:
+invoke-virtual {v6, v5}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4507922:a99b1e: 6e10 7e15 0600                         |0067:
+invoke-virtual {v6}, Landroid/view/View;.getLayoutParams:()Landroid/view/ViewGroup$LayoutParams; // method@157e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4507923:a99b24: 0c05                                   |006a:
+move-result-object v5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4507924:a99b26: 2050 d804                              |006b:
+instance-of v0, v5, Landroid/view/ViewGroup$MarginLayoutParams; // type@04d8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4507925:a99b2a: 3800 0b00                              |006d:
+if-eqz v0, 0078 // +000b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4507926:a99b2e: 0750                                   |006f:
+move-object v0, v5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4645729:ac6fb6: 6e20 5616 0600                         |0083:
+invoke-virtual {v6, v0}, Landroid/view/View;.setElevation:(F)V // method@1656
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4645730:ac6fbc: 5456 9fb3                              |0086:
+iget-object v6, v5, Luya;.b0:Landroid/widget/ImageView; // field@b39f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4645731:ac6fc0: 1400 4308 077f                         |0088:
+const v0, #float 1.79489e+38 // #7f070843
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4645732:ac6fc6: 6e20 2509 0100                         |008b:
+invoke-virtual {v1, v0}, Landroid/content/Context;.getColor:(I)I // method@0925
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4645733:ac6fcc: 0a00                                   |008e:
+move-result v0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4645734:ac6fce: 6e20 4816 0600                         |008f:
+invoke-virtual {v6, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4645735:ac6fd4: 2206 d804                              |0092:
+new-instance v6, Landroid/view/ViewGroup$MarginLayoutParams; // type@04d8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4645736:ac6fd8: 12f0                                   |0094:
+const/4 v0, #int -1 // #ff
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4645737:ac6fda: 7030 d716 0607                         |0095:
+invoke-direct {v6, v0, v7}, Landroid/view/ViewGroup$MarginLayoutParams;.<init>:(II)V // method@16d7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4645738:ac6fe0: 5450 245a                              |0098:
+iget-object v0, v5, Lkya;.H:Lorg/chromium/chrome/browser/customtabs/features/toolbar/CustomTabToolbar; // field@5a24
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4645739:ac6fe4: 6e10 7615 0000                         |009a:
+invoke-virtual {v0}, Landroid/view/View;.getHeight:()I // method@1576
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4646363:ac7326: 5c46 aab3                              |009d:
+iput-boolean v6, v4, Luya;.m0:Z // field@b3aa
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4646364:ac732a: 3806 1600                              |009f:
+if-eqz v6, 00b5 // +0016
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4646365:ac732e: 1405 a803 017f                         |00a1:
+const v5, #float 1.71489e+38 // #7f0103a8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4646366:ac7334: 6e20 e6cd 5300                         |00a4:
+invoke-virtual {v3, v5}, Lt20;.findViewById:(I)Landroid/view/View; // method@cde6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4646367:ac733a: 0c05                                   |00a7:
+move-result-object v5
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4646368:ac733c: 6e20 4816 0500                         |00a8:
+invoke-virtual {v5, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4646369:ac7342: 2205 a634                              |00ab:
+new-instance v5, Loya; // type@34a6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4646370:ac7346: 7010 056b 0500                         |00ad:
+invoke-direct {v5}, Ljava/lang/Object;.<init>:()V // method@6b05
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4646371:ac734c: 5b54 ab87                              |00b0:
+iput-object v4, v5, Loya;.a:Luya; // field@87ab
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4646372:ac7350: 7120 9fa2 1500                         |00b2:
+invoke-static {v5, v1}, Lorg/chromium/chrome/browser/page_load_metrics/PageLoadMetrics;.a:(Lsta;Z)V // method@a29f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4646373:ac7356: 0e00                                   |00b5:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4753910:ae8e12: 5b42 a90c                              |08b9:
+iput-object v2, v4, Laq4;.i:Landroid/widget/FrameLayout; // field@0ca9
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4753911:ae8e16: 1406 8601 057f                         |08bb:
+const v6, #float 1.76795e+38 // #7f050186
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4753912:ae8e1c: 1a0a 1281                              |08be:
+const-string v10, "SemanticColorUtils" // string@8112
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4753913:ae8e20: 7130 48f7 600a                         |08c0:
+invoke-static {v0, v6, v10}, Lyv8;.c:(Landroid/content/Context;ILjava/lang/String;)I // method@f748
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4753914:ae8e26: 0a06                                   |08c3:
+move-result v6
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4753915:ae8e28: 6e20 4816 6200                         |08c4:
+invoke-virtual {v2, v6}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4753916:ae8e2e: 2202 6005                              |08c7:
+new-instance v2, Landroid/widget/FrameLayout$LayoutParams; // type@0560
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4753917:ae8e32: 7030 f319 8208                         |08c9:
+invoke-direct {v2, v8, v8}, Landroid/widget/FrameLayout$LayoutParams;.<init>:(II)V // method@19f3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4753918:ae8e38: 6e10 3909 0000                         |08cc:
+invoke-virtual {v0}, Landroid/content/Context;.getResources:()Landroid/content/res/Resources; // method@0939
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4753919:ae8e3e: 0c00                                   |08cf:
+move-result-object v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4753920:ae8e40: 1406 b60b 087f                         |08d0:
+const v6, #float 1.80836e+38 // #7f080bb6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4811205:af99c8: 6e20 460d 3000                         |006a:
+invoke-virtual {v0, v3}, Landroid/graphics/drawable/Drawable;.setTintList:(Landroid/content/res/ColorStateList;)V //
+method@0d46
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4811206:af99ce: 1203                                   |006d:
+const/4 v3, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4811207:af99d0: 6e20 c739 3200                         |006e:
+invoke-virtual {v2, v3}, Lcom/google/android/material/tabs/TabLayout;.r:(Z)V // method@39c7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4811208:af99d6: 281b                                   |0071:
+goto 008c // +001b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4811209:af99d8: 5422 37bb                              |0072:
+iget-object v2, v2, Lw27;.s:Lorg/chromium/chrome/browser/hub/HubToolbarView; // field@bb37
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4811210:af99dc: 6e20 4816 3200                         |0074:
+invoke-virtual {v2, v3}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4811211:af99e2: 2815                                   |0077:
+goto 008c // +0015
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4811212:af99e4: 5422 37bb                              |0078:
+iget-object v2, v2, Lw27;.s:Lorg/chromium/chrome/browser/hub/HubToolbarView; // field@bb37
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4811213:af99e8: 6300 837b                              |007a:
+sget-boolean v0, Lorg/chromium/chrome/browser/hub/HubToolbarView;.U:Z // field@7b83
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4811214:af99ec: 2200 d502                              |007c:
+new-instance v0, Landroid/graphics/PorterDuffColorFilter; // type@02d5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4811215:af99f0: 6201 6605                              |007e:
+sget-object v1, Landroid/graphics/PorterDuff$Mode;.SRC:Landroid/graphics/PorterDuff$Mode; // field@0566
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4868950:b0b5d0: 1a00 a295                              |0034:
+const-string v0, "androidx.browser.trusted.trusted.KEY_SPLASH_SCREEN_BACKGROUND_COLOR" // string@95a2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4868951:b0b5d4: 7130 4357 4005                         |0036:
+invoke-static {v0, v4, v5}, Lgr7;.n:(Ljava/lang/String;ILandroid/os/Bundle;)I // method@5743
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4868952:b0b5da: 0a00                                   |0039:
+move-result v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4868953:b0b5dc: 1501 00ff                              |003a:
+const/high16 v1, #int -16777216 // #ff00
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4868954:b0b5e0: b610                                   |003c:
+or-int/2addr v0, v1
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4868955:b0b5e2: 6e20 4816 0300                         |003d:
+invoke-virtual {v3, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4868956:b0b5e8: 1a00 8995                              |0040:
+const-string v0, "androidx.browser.trusted.KEY_SPLASH_SCREEN_SCALE_TYPE" // string@9589
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4868957:b0b5ec: 7130 4357 4005                         |0042:
+invoke-static {v0, v4, v5}, Lgr7;.n:(Ljava/lang/String;ILandroid/os/Bundle;)I // method@5743
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4868958:b0b5f2: 0a00                                   |0045:
+move-result v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4868959:b0b5f4: 7100 191a 0000                         |0046:
+invoke-static {}, Landroid/widget/ImageView$ScaleType;.values:()[Landroid/widget/ImageView$ScaleType; // method@1a19
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4868960:b0b5fa: 0c01                                   |0049:
+move-result-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869959:b0ba28:
+|[b0ba28] wk5.b:(Landroid/graphics/Bitmap;Lq01;ZII)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869960:b0ba38: 5422 3ebe                              |0000:
+iget-object v2, v2, Lwk5;.a:Ldl5; // field@be3e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869961:b0ba3c: 5425 3c27                              |0002:
+iget-object v5, v2, Ldl5;.c:Lorg/chromium/chrome/browser/ntp/NewTabPageLayout; // field@273c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869962:b0ba40: 1206                                   |0004:
+const/4 v6, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869963:b0ba42: 3805 0500                              |0005:
+if-eqz v5, 000a // +0005
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869964:b0ba46: 6e20 4816 6500                         |0007:
+invoke-virtual {v5, v6}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869965:b0ba4c: 5425 4f27                              |000a:
+iget-object v5, v2, Ldl5;.v:Landroidx/recyclerview/widget/RecyclerView; // field@274f
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869966:b0ba50: 6e20 4816 6500                         |000c:
+invoke-virtual {v5, v6}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869967:b0ba56: 5422 3527                              |000f:
+iget-object v2, v2, Ldl5;.H:Ll6a; // field@2735
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869968:b0ba5a: 5425 255c                              |0011:
+iget-object v5, v2, Ll6a;.b:Lorg/chromium/ui/modelutil/PropertyModel; // field@5c25
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869969:b0ba5e: 5b23 275c                              |0013:
+iput-object v3, v2, Ll6a;.d:Landroid/graphics/Bitmap; // field@5c27
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869970:b0ba62: 5927 265c                              |0015:
+iput v7, v2, Ll6a;.c:I // field@5c26
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4869971:b0ba66: 5b24 285c                              |0017:
+iput-object v4, v2, Ll6a;.e:Lq01; // field@5c28
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4877267:b0e178: 3801 0800                              |003e:
+if-eqz v1, 0046 // +0008
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4877268:b0e17c: 1f00 f602                              |0040:
+check-cast v0, Landroid/graphics/drawable/GradientDrawable; // type@02f6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4877269:b0e180: 6e20 5e0d 4000                         |0042:
+invoke-virtual {v0, v4}, Landroid/graphics/drawable/GradientDrawable;.setColor:(I)V // method@0d5e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4877270:b0e186: 2806                                   |0045:
+goto 004b // +0006
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4877271:b0e188: 5430 77be                              |0046:
+iget-object v0, v3, Lwld;.b:Landroid/view/View; // field@be77
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4877272:b0e18c: 6e20 4816 4000                         |0048:
+invoke-virtual {v0, v4}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4877273:b0e192: 5434 79be                              |004b:
+iget-object v4, v3, Lwld;.d:Landroid/view/View; // field@be79
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4877274:b0e196: 7110 6193 0400                         |004d:
+invoke-static {v4}, Loba;.a:(Ljava/lang/Object;)V // method@9361
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4877275:b0e19c: 6e10 5d15 0400                         |0050:
+invoke-virtual {v4}, Landroid/view/View;.getBackground:()Landroid/graphics/drawable/Drawable; // method@155d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4877276:b0e1a2: 0c04                                   |0053:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4877277:b0e1a4: 2040 f602                              |0054:
+instance-of v0, v4, Landroid/graphics/drawable/GradientDrawable; // type@02f6
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4963884:      outs          : 2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4963885:      insns size    : 8 16-bit code units
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4963886:b28e04:
+|[b28e04] x07.b:(I)V
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4963887:b28e14: 5400 f0c1                              |0000:
+iget-object v0, v0, Lx07;.r:Ljava/lang/Object; // field@c1f0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4963888:b28e18: 1f00 f051                              |0002:
+check-cast v0, Lzz6; // type@51f0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4963889:b28e1c: 6e20 4816 1000                         |0004:
+invoke-virtual {v0, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4963890:b28e22: 0e00                                   |0007:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4963891:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4963892:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4963893:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:4963894:        0x0002 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5055931:b451cc: 1206                                   |0074:
+const/4 v6, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5055932:b451ce: 7030 f919 0506                         |0075:
+invoke-direct {v5, v0, v6},
+Landroid/widget/FrameLayout;.<init>:(Landroid/content/Context;Landroid/util/AttributeSet;)V // method@19f9
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5055933:b451d4: 1407 e405 077f                         |0078:
+const v7, #float 1.79476e+38 // #7f0705e4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5055934:b451da: 6e20 2509 7000                         |007b:
+invoke-virtual {v0, v7}, Landroid/content/Context;.getColor:(I)I // method@0925
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5055935:b451e0: 0a00                                   |007e:
+move-result v0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5055936:b451e2: 6e20 4816 0500                         |007f:
+invoke-virtual {v5, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5055937:b451e8: 6e20 4e16 2500                         |0082:
+invoke-virtual {v5, v2}, Landroid/view/View;.setClickable:(Z)V // method@164e
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5055938:b451ee: 6e20 5c16 2500                         |0085:
+invoke-virtual {v5, v2}, Landroid/view/View;.setFocusable:(Z)V // method@165c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5055939:b451f4: 6e20 5d16 2500                         |0088:
+invoke-virtual {v5, v2}, Landroid/view/View;.setFocusableInTouchMode:(Z)V // method@165d
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5055940:b451fa: 1200                                   |008b:
+const/4 v0, #int 0 // #0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5055941:b451fc: 6e20 4516 0500                         |008c:
+invoke-virtual {v5, v0}, Landroid/view/View;.setAlpha:(F)V // method@1645
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5114643:b57be6: 6200 1854                              |0057:
+sget-object v0, Ljye;.e:Lr8c; // field@5418
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5114644:b57bea: 3340 0c00                              |0059:
+if-ne v0, v4, 0065 // +000c
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5114645:b57bee: 5431 8761                              |005b:
+iget-object v1, v3, Llye;.a:Lorg/chromium/components/browser_ui/widget/ViewResourceFrameLayout; // field@6187
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5114646:b57bf2: 6e20 d7ae 0200                         |005d:
+invoke-virtual {v2, v0}, Lorg/chromium/ui/modelutil/PropertyModel;.g:(Ln8c;)I // method@aed7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5114647:b57bf8: 0a02                                   |0060:
+move-result v2
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5114648:b57bfa: 6e20 4816 2100                         |0061:
+invoke-virtual {v1, v2}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5114649:b57c00: 2873                                   |0064:
+goto 00d7 // +0073
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5114650:b57c02: 6200 1954                              |0065:
+sget-object v0, Ljye;.f:Ln8c; // field@5419
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5114651:b57c06: 3340 1000                              |0067:
+if-ne v0, v4, 0077 // +0010
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5114652:b57c0a: 5433 8761                              |0069:
+iget-object v3, v3, Llye;.a:Lorg/chromium/components/browser_ui/widget/ViewResourceFrameLayout; // field@6187
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5114653:b57c0e: 6e20 5015 1300                         |006b:
+invoke-virtual {v3, v1}, Landroid/view/View;.findViewById:(I)Landroid/view/View; // method@1550
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5134156:b5e852: 0c03                                   |001f:
+move-result-object v3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5134157:b5e854: 6e20 d8ae 0100                         |0020:
+invoke-virtual {v1, v0}, Lorg/chromium/ui/modelutil/PropertyModel;.h:(Lo8c;)I // method@aed8
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5134158:b5e85a: 0a00                                   |0023:
+move-result v0
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5134159:b5e85c: 7120 74f8 0300                         |0024:
+invoke-static {v3, v0}, Lyz6;.a:(Landroid/content/Context;I)I // method@f874
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5134160:b5e862: 0a00                                   |0027:
+move-result v0
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5134161:b5e864: 6e20 4816 0200                         |0028:
+invoke-virtual {v2, v0}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5134162:b5e86a: 0e00                                   |002b:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5134163:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5134164:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5134165:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5134166:        0x0002 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5170411:b6b2e4: 0c04                                   |0054:
+move-result-object v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5170412:b6b2e6: 7120 4bf7 4800                         |0055:
+invoke-static {v8, v4}, Lyv8;.f:(Landroid/content/Context;Landroid/util/TypedValue;)I // method@f74b
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5170413:b6b2ec: 0a04                                   |0058:
+move-result v4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5170414:b6b2ee: 5475 38cc                              |0059:
+iget-object v5, v7, Lyaf;.u:Lcbf; // field@cc38
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5170415:b6b2f2: 5456 9917                              |005b:
+iget-object v6, v5, Lcbf;.z:Liq2; // field@1799
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5170416:b6b2f6: 6e20 e264 4600                         |005d:
+invoke-virtual {v6, v4}, Liq2;.setBackgroundColor:(I)V // method@64e2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5170417:b6b2fc: 5455 9017                              |0060:
+iget-object v5, v5, Lcbf;.D:Lsw8; // field@1790
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5170418:b6b300: 5455 c3a4                              |0062:
+iget-object v5, v5, Lsw8;.s:Lrw8; // field@a4c3
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5170419:b6b304: 5954 4f9d                              |0064:
+iput v4, v5, Lrw8;.w:I // field@9d4f
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5170420:b6b308: 3809 0a00                              |0066:
+if-eqz v9, 0070 // +000a
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5170421:b6b30c: 1409 5401 077f                         |0068:
+const v9, #float 1.79453e+38 // #7f070154
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326712:b9ed66: 7210 c5a7 0e00                         |0007:
+invoke-interface {v14}, Lorg/chromium/chrome/browser/tab/Tab;.p:()I // method@a7c5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326713:b9ed6c: 0a02                                   |000a:
+move-result v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326714:b9ed6e: 6e30 5184 e102                         |000b:
+invoke-virtual {v1, v14, v2}, Lm9h;.n:(Lorg/chromium/chrome/browser/tab/Tab;I)I // method@8451
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326715:b9ed74: 0a01                                   |000e:
+move-result v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326716:b9ed76: 54d2 1dd4                              |000f:
+iget-object v2, v13, Lze1;.y:Lorg/chromium/chrome/browser/bookmarks/bar/BookmarkBar; // field@d41d
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326717:b9ed7a: 6e20 4816 1200                         |0011:
+invoke-virtual {v2, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326718:b9ed80: 54d2 05d4                              |0014:
+iget-object v2, v13, Lze1;.H:Lorg/chromium/components/browser_ui/widget/ViewResourceFrameLayout; // field@d405
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326719:b9ed84: 6e20 4816 1200                         |0016:
+invoke-virtual {v2, v1}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326720:b9ed8a: 54d2 09d4                              |0019:
+iget-object v2, v13, Lze1;.L:Lorg/chromium/ui/modelutil/PropertyModel; // field@d409
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326721:b9ed8e: 6203 adc4                              |001b:
+sget-object v3, Lxg1;.g:Lr8c; // field@c4ad
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326722:b9ed92: 6e30 e2ae 3201                         |001d:
+invoke-virtual {v2, v3, v1}, Lorg/chromium/ui/modelutil/PropertyModel;.t:(Lr8c;I)V // method@aee2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326723:b9ed98: 7210 b4a7 0e00                         |0020:
+invoke-interface {v14}, Lorg/chromium/chrome/browser/tab/Tab;.isIncognito:()Z // method@a7b4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5326724:b9ed9e: 0a0e                                   |0023:
+move-result v14
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5327566:b9f1cc: 2204 6005                              |003e:
+new-instance v4, Landroid/widget/FrameLayout$LayoutParams; // type@0560
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5327567:b9f1d0: 12e2                                   |0040:
+const/4 v2, #int -2 // #fe
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5327568:b9f1d2: 1303 1100                              |0041:
+const/16 v3, #int 17 // #11
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5327569:b9f1d6: 7040 f419 2432                         |0043:
+invoke-direct {v4, v2, v2, v3}, Landroid/widget/FrameLayout$LayoutParams;.<init>:(III)V // method@19f4
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5327570:b9f1dc: 6e30 ec16 0104                         |0046:
+invoke-virtual {v1, v0, v4},
+Landroid/view/ViewGroup;.addView:(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V // method@16ec
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5327571:b9f1e2: 6e20 4816 5100                         |0049:
+invoke-virtual {v1, v5}, Landroid/view/View;.setBackgroundColor:(I)V // method@1648
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5327572:b9f1e8: 1101                                   |004c:
+return-object v1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5327573:      catches       : (none)
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5327574:      positions     :
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5327575:        0x0000 line=1
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5327576:        0x0002 line=2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5398699:bb60a0: 7110 b56a 0c00                         |0100:
+invoke-static {v12}, Ljava/lang/Integer;.valueOf:(I)Ljava/lang/Integer; // method@6ab5
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5398700:bb60a6: 0c02                                   |0103:
+move-result-object v2
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5398701:bb60a8: 3802 0900                              |0104:
+if-eqz v2, 010d // +0009
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5398702:bb60ac: 6e10 a76a 0200                         |0106:
+invoke-virtual {v2}, Ljava/lang/Integer;.intValue:()I // method@6aa7
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5398703:bb60b2: 0a0c                                   |0109:
+move-result v12
+> AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5398704:bb60b4: 6e20 4218 c000                         |010a:
+invoke-virtual {v0, v12}, Landroid/view/accessibility/AccessibilityNodeInfo$ExtraRenderingInfo$Builder;.setBackgroundCo
+lor:(I)Landroid/view/accessibility/AccessibilityNodeInfo$ExtraRenderingInfo$Builder; // method@1842
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5398705:bb60ba: 6e10 4118 0000                         |010d:
+invoke-virtual {v0}, Landroid/view/accessibility/AccessibilityNodeInfo$ExtraRenderingInfo$Builder;.build:()Landroid/vie
+w/accessibility/AccessibilityNodeInfo$ExtraRenderingInfo; // method@1841
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5398706:bb60c0: 0c0c                                   |0110:
+move-result-object v12
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5398707:bb60c2: 6e20 9318 cd00                         |0111:
+invoke-virtual {v13, v12}, Landroid/view/accessibility/AccessibilityNodeInfo;.setExtraRenderingInfo:(Landroid/view/acce
+ssibility/AccessibilityNodeInfo$ExtraRenderingInfo;)V // method@1893
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5398708:bb60c8: 0e00                                   |0114:
+return-void
+  AppData\Local\Temp\DVNex-DexAtual\classes-disasm.txt:5398709:      catches       : (none)
+
