@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "417591769031",
+    "project_id": "dvnex-eef32",
+    "storage_bucket": "dvnex-eef32.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417591769031:android:82e432ca53d3bb29158be2",
+        "android_client_info": {
+          "package_name": "com.browser.dvnex0"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417591769031-0b4uhi7h4ua6jano60k4jo43ft5k34u4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.browser.dvnex0",
+            "certificate_hash": "7a810b552746f3fdd8099f5631f387e8ea950643"
+          }
+        },
+        {
+          "client_id": "417591769031-jruk4g63je4hss7rdcb7qhtcmcs61k2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCQAkjvY9snw368xSIPE-k3ThfZ2YEvz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417591769031-jruk4g63je4hss7rdcb7qhtcmcs61k2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
