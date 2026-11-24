@@ -1,0 +1,1787 @@
+  11-23 21:39:09.043 I/AppsFilter(  843): interaction: PackageSetting{9d0fbf5 com.cefrium.browser.debug/10064} ->
+PackageSetting{d752d7b com.browser.dvnex0/10065} BLOCKED
+  --------- beginning of main
+  11-23 21:39:09.044 D/CarrierSvcBindHelper( 1210): onHandleForceStop: [com.browser.dvnex0]
+  11-23 21:39:09.045 D/CarrierSvcBindHelper( 1210): No carrier app for: 0
+> 11-23 21:39:09.128 D/AndroidRuntime(13358): >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+> 11-23 21:39:09.130 I/AndroidRuntime(13358): Using default boot image
+> 11-23 21:39:09.130 I/AndroidRuntime(13358): Leaving lock profiling enabled
+  11-23 21:39:09.132 W/app_process(13358): ART APEX data files are untrusted.
+  11-23 21:39:09.132 I/app_process(13358): Using CollectorTypeCMC GC.
+  11-23 21:39:09.142 W/m.android.phone( 1210): Reducing the number of considered missed Gc histogram windows from 208
+to 100
+  11-23 21:39:09.144 W/System  ( 1210): A resource failed to call AbstractCursor.close.
+  11-23 21:39:09.144 W/System  ( 1210): A resource failed to call AbstractCursor.close.
+  11-23 21:39:09.144 W/System  ( 1210): A resource failed to call AbstractCursor.close.
+  11-23 21:39:09.144 W/System  ( 1210): A resource failed to call AbstractCursor.close.
+  11-23 21:39:09.193 D/nativeloader(13358): InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libami
+di.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:
+libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libO
+penMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so:lib
+callhost.so
+  11-23 21:39:09.200 D/nativeloader(13358): Load libicu_jni.so using APEX ns com_android_art for caller
+/apex/com.android.art/javalib/core-oj.jar: ok
+  11-23 21:39:09.200 D/app_process(13358):
+u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/8/icu") succeeded.
+  11-23 21:39:09.200 D/app_process(13358): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt75l.dat
+  11-23 21:39:09.201 D/nativeloader(13358): Load libjavacore.so using APEX ns com_android_art for caller
+/apex/com.android.art/javalib/core-oj.jar: ok
+  11-23 21:39:09.201 I/main    (13358): type=1400 audit(0.0:2742): avc:  denied  { mounton } for  path="/proc/cpuinfo"
+dev="proc" ino=4026532022 scontext=u:r:shell:s0 tcontext=u:object_r:proc_cpuinfo:s0 tclass=file permissive=1
+  11-23 21:39:09.211 E/libnb   (13358): get_callbacks native_handle 0xa6b39d33226fece5: 1
+libnb:/system/lib64/libhoudini.so
+  11-23 21:39:09.211 I/libnb   (13358): Found /system/lib64/libhoudini.so version 7
+  11-23 21:39:09.226 D/nativeloader(13358): Load libframework-connectivity-tiramisu-jni.so using APEX ns
+com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+> 11-23 21:39:09.226 D/AndroidRuntime(13358): Calling main entry com.android.commands.monkey.Monkey
+  11-23 21:39:09.226 D/nativeloader(13358): Load /system/lib64/libmonkey_jni.so using ns default for caller
+/system/framework/monkey.jar in same partition (is_bridged=0): ok
+  11-23 21:39:09.227 W/Monkey  (13358): args: [-p, com.browser.dvnex0, 1]
+  11-23 21:39:09.225 I/commands.monkey(13358): type=1400 audit(0.0:2743): avc:  denied  { read } for
+name="u:object_r:qemu_sf_lcd_density_prop:s0" dev="tmpfs" ino=518 scontext=u:r:shell:s0
+tcontext=u:object_r:qemu_sf_lcd_density_prop:s0 tclass=file permissive=1
+  11-23 21:39:09.235 D/EventHub(  843): configureBatteryLocked rawBatteryId 1 name battery
+  11-23 21:39:09.235 D/EventHub(  843): No input device configuration file found for device 'Monkey touch'.
+  11-23 21:39:09.235 I/EventHub(  843): usingClockIoctl=true
+  11-23 21:39:09.235 I/EventHub(  843): New device: id=14, fd=579, path='/dev/input/event8', name='Monkey touch',
+classes=TOUCH | TOUCH_MT | BATTERY, configuration='', keyLayout='', keyCharacterMap='', builtinKeyboard=false,
+  11-23 21:39:09.235 W/InputReader(  843): Input device Monkey touch should be associated with display id: 1 but the
+corresponding viewport cannot be found
+  11-23 21:39:09.235 I/InputReader(  843): Device reconfigured: id=15, name='Monkey touch', size 900x1600, orientation
+Rotation0, mode DIRECT, display id 0
+  11-23 21:39:09.235 W/InputReader(  843): Input device Monkey touch should be associated with display id: 1 but the
+corresponding viewport cannot be found
+  11-23 21:39:09.235 I/InputReader(  843): Device added: id=15, eventHubId=14, name='Monkey touch',
+descriptor='e1fe28b90f915c7d1febbd52c1ef84b3c4cbed9f',sources=TOUCHSCREEN
+  11-23 21:39:09.238 E/WindowManager(  843): Display reconfigured outside of a transition: Display{#0 state=ON
+size=1600x900 ROTATION_90}
+  11-23 21:39:09.273 D/BackgroundInstallControlService(  843): Package event received: 0
+  11-23 21:39:09.274 I/ActivityManager(  843): Start proc 13369:com.browser.dvnex0/u0a65 for next-top-activity
+{com.browser.dvnex0/com.google.android.apps.chrome.Main}
+  11-23 21:39:09.276 I/Monkey  (13358): ## Network stats: elapsed time=18ms (0ms mobile, 0ms wifi, 18ms not connected)
+  11-23 21:39:09.277 I/app_process(13358): System.exit called, status: 0
+> 11-23 21:39:09.277 I/AndroidRuntime(13358): VM exiting with result code 0.
+  11-23 21:39:09.277 I/BpBinder(  698): onLastStrongRef automatically unlinking death recipients:
+  11-23 21:39:09.279 W/OptProp (  843): Cannot read opt property
+android.window.PROPERTY_COMPAT_ALLOW_ORIENTATION_OVERRIDE
+  11-23 21:39:09.280 D/gralloc_kona( 1135): gralloc_alloc: Creating ashmem region of size 5763072
+  11-23 21:39:09.283 I/EventHub(  843): Removing device Monkey touch due to epoll hang-up event.
+  11-23 21:39:09.283 I/EventHub(  843): Removed device: path=/dev/input/event8 name=Monkey touch id=14 fd=579
+classes=TOUCH | TOUCH_MT | BATTERY
+  11-23 21:39:09.283 D/HWUI    ( 1135): HOOK FAILED! Expected 3 got = 2
+  11-23 21:39:09.286 D/gralloc_kona( 1135): gralloc_alloc: Creating ashmem region of size 5763072
+  11-23 21:39:09.290 V/WindowManagerShell( 1135): onTransitionReady(transaction=3620657437344)
+  11-23 21:39:09.290 V/WindowManagerShell( 1135): onTransitionReady (#114) android.os.BinderProxy@e7f2fef: {id=114
+t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+  11-23 21:39:09.290 V/WindowManagerShell( 1135):         {m=OPEN f=NONE leash=Surface(name=Task=178)/@0x9684032
+sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0 taskParent=-1},
+  11-23 21:39:09.290 V/WindowManagerShell( 1135):         {m=TO_BACK f=SHOW_WALLPAPER
+leash=Surface(name=Task=1)/@0xd9ec183 sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0
+taskParent=-1}
+  11-23 21:39:09.290 V/WindowManagerShell( 1135):     ]}
+  11-23 21:39:09.290 V/WindowManagerShell( 1135): Playing animation for (#114) android.os.BinderProxy@e7f2fef@0
+  11-23 21:39:09.290 V/WindowManager(  843): Sent Transition (#114) createdAt=11-23 21:39:09.254 via
+request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=178 effectiveUid=10065 displayId=0
+isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER]
+flg=0x10200000 cmp=com.browser.dvnex0/com.google.android.apps.chrome.Main }
+baseActivity=ComponentInfo{com.browser.dvnex0/org.chromium.chrome.browser.ChromeTabbedActivity}
+topActivity=ComponentInfo{com.browser.dvnex0/org.chromium.chrome.browser.ChromeTabbedActivity}
+origActivity=ComponentInfo{com.browser.dvnex0/com.google.android.apps.chrome.Main}
+realActivity=ComponentInfo{com.browser.dvnex0/org.chromium.chrome.browser.ChromeTabbedActivity} numActivities=1
+lastActiveTime=5682740 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1
+defaultMinSize=220 token=WCT{RemoteToken{b3a57ae Task{b1631b0 #178 type=standard A=10065:com.browser.dvnex0}}}
+topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1
+lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{241262d
+com.google.android.apps.chrome.Main} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=false
+isVisible=false isVisibleRequested=false isTopActivityNoDisplay=false isSleeping=false locusId=null
+displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false
+lastNonFullscreenBounds=Rect(590, 77 - 1011, 859) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9
+topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo {
+topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false
+isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false
+isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1
+topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1
+topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false
+hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo {
+freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null,
+displayChange = null, flags = 0, debugId = 114 }
+> 11-23 21:39:09.290 V/WindowManager(  843):     startWCT=WindowContainerTransaction { changes= {} hops= []
+errorCallbackToken=null taskFragmentOrganizer=null }
+  11-23 21:39:09.290 V/WindowManager(  843):     info={id=114 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+  11-23 21:39:09.290 V/WindowManager(  843):         {WCT{RemoteToken{b3a57ae Task{b1631b0 #178 type=standard
+A=10065:com.browser.dvnex0}}} m=OPEN f=NONE leash=Surface(name=Task=178)/@0xc42085e sb=Rect(0, 0 - 1600, 900)
+eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0 taskParent=-1},
+  11-23 21:39:09.290 V/WindowManager(  843):         {WCT{RemoteToken{8136107 Task{8b29f9 #1 type=home}}} m=TO_BACK
+f=SHOW_WALLPAPER leash=Surface(name=Task=1)/@0x6e2bfa1 sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900)
+epz=Point(1600, 900) d=0 taskParent=-1}
+  11-23 21:39:09.290 V/WindowManager(  843):     ]}
+  11-23 21:39:09.291 V/ShellRecents( 1135): RecentsTransitionHandler.startAnimation: no controller found
+  11-23 21:39:09.291 V/WindowManagerShell( 1135): Transition doesn't have explicit remote, search filters for match
+for {id=114 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=178)/@0x9684032 sb=Rect(0,
+0 - 1600, 900) eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0 taskParent=-1},{m=TO_BACK f=SHOW_WALLPAPER
+leash=Surface(name=Task=1)/@0xd9ec183 sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0
+taskParent=-1}]}
+  11-23 21:39:09.291 V/WindowManagerShell( 1135):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100
+checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP
+topActivity=ComponentInfo{app.lawnchair/app.lawnchair.LawnchairLauncher} launchCookie=null
+windowingMode=undefined},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY
+topActivity=null launchCookie=null windowingMode=undefined},{NOT atype=undefined independent=true modes=[] flags=NONE
+mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined}]} RemoteTransition {
+remoteTransition = android.window.IRemoteTransition$Stub$Proxy@225dc8b, appThread =
+android.app.IApplicationThread$Stub$Proxy@1d37168, debugName = QuickstepLaunchHome }}
+  11-23 21:39:09.291 V/WindowManagerShell( 1135):  Delegate animation for (#114) to null
+  11-23 21:39:09.291 V/WindowManagerShell( 1135): start default transition animation, info = {id=114 t=OPEN f=0x0
+trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=NONE leash=Surface(name=Task=178)/@0x9684032 sb=Rect(0, 0 - 1600, 900) eb=Rect(0,
+0 - 1600, 900) epz=Point(1600, 900) d=0 taskParent=-1},{m=TO_BACK f=SHOW_WALLPAPER
+leash=Surface(name=Task=1)/@0xd9ec183 sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0
+taskParent=-1}]}
+  11-23 21:39:09.291 V/WindowManagerShell( 1135): loadAnimation: anim=android.view.animation.AnimationSet@b562d7e
+animAttr=0x13 type=OPEN isEntrance=false
+  11-23 21:39:09.291 V/WindowManagerShell( 1135): loadAnimation: anim=android.view.animation.AnimationSet@ca3a38a
+animAttr=0x12 type=OPEN isEntrance=true
+  11-23 21:39:09.292 W/UserManagerService(  843): Requested status bar icon for non-badged user 0
+  11-23 21:39:09.360 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:09.360 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:09.361 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:09.361 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@210c536
+> 11-23 21:39:09.361 E/JobScheduler.Concurrency(  843): Error executing JobStatus{a876204 #u0a61/112
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m37s37ms:-1h34m37s37ms PERSISTED READY}
+  11-23 21:39:09.362 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:09.362 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@e9bfec2
+> 11-23 21:39:09.362 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e9a23ed #u0a61/107
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m37s37ms:-1h34m37s37ms NET PERSISTED READY}
+  11-23 21:39:09.362 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:09.362 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@6af450e
+> 11-23 21:39:09.362 E/JobScheduler.Concurrency(  843): Error executing JobStatus{4e1b222 #u0a61/54
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m37s38ms:-1h34m37s38ms PERSISTED READY}
+  11-23 21:39:09.362 W/ActivityManager(  843): Unable to launch app com.google.android.syncadapters.calendar/10030 for
+service Intent { cmp=com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService
+}: user 0 is stopped
+  11-23 21:39:09.363 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@8a7fb4b
+> 11-23 21:39:09.363 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f7572cc #u0a30/6
+com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10030
+TIME=-1h33m19s573ms:none NET READY}
+  11-23 21:39:09.363 W/ActivityManager(  843): Unable to launch app com.google.android.play.games/10033 for service
+Intent { cmp=com.google.android.play.games/androidx.work.impl.background.systemjob.SystemJobService }: user 0 is
+stopped
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843): setPresentationRotation 1 for com.browser.dvnex0:178
+> 11-23 21:39:09.363 E/[MUMU]TaskTab(  843): java.lang.Exception
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843):    at
+com.android.server.mumu.tab.TaskTab.setPresentationRotation(TaskTab.java:52)
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843):    at
+com.android.server.wm.TaskUtils.getTopTaskOnDisplay(TaskUtils.java:638)
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843):    at
+com.android.server.wm.TaskUtils.updateTaskTabRotation(TaskUtils.java:1957)
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843):    at com.android.server.wm.TaskUtils.notifyOpen(TaskUtils.java:222)
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843):    at com.android.server.wm.WmBridge.notifyOpen(WmBridge.java:496)
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843):    at
+com.android.server.mumu.wm.TaskHandler.handleMessage(TaskHandler.java:32)
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843):    at android.os.Handler.dispatchMessage(Handler.java:109)
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843):    at android.os.Looper.loopOnce(Looper.java:232)
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843):    at android.os.Looper.loop(Looper.java:317)
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843):    at android.os.HandlerThread.run(HandlerThread.java:85)
+  11-23 21:39:09.363 E/[MUMU]TaskTab(  843):    at com.android.server.ServiceThread.run(ServiceThread.java:49)
+  11-23 21:39:09.363 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@cf90127
+> 11-23 21:39:09.363 E/JobScheduler.Concurrency(  843): Error executing JobStatus{d475c1c
+androidx.work.systemjobscheduler:u0a33/12 @androidx.work.systemjobscheduler@com.google.android.play.games/androidx.work
+.impl.background.systemjob.SystemJobService u=0 s=10033 READY}
+  11-23 21:39:09.364 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:09.364 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@36a88c3
+> 11-23 21:39:09.364 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3a7ef3e #u0a24/9217
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024 READY}
+  11-23 21:39:09.365 E/ActivityManager(  843): Sending non-protected broadcast nemu.intent.action.NEW_TASK from system
+843:system/1000 pkg android
+  11-23 21:39:09.365 E/ActivityManager(  843): java.lang.Throwable
+  11-23 21:39:09.365 E/ActivityManager(  843):  at
+com.android.server.am.BroadcastController.checkBroadcastFromSystem(BroadcastController.java:2118)
+  11-23 21:39:09.365 E/ActivityManager(  843):  at
+com.android.server.am.BroadcastController.broadcastIntentLockedTraced(BroadcastController.java:1635)
+  11-23 21:39:09.365 E/ActivityManager(  843):  at
+com.android.server.am.BroadcastController.broadcastIntentLocked(BroadcastController.java:807)
+  11-23 21:39:09.365 E/ActivityManager(  843):  at
+com.android.server.am.BroadcastController.broadcastIntentWithFeature(BroadcastController.java:740)
+  11-23 21:39:09.365 E/ActivityManager(  843):  at
+com.android.server.am.ActivityManagerService.broadcastIntentWithFeature(ActivityManagerService.java:14410)
+  11-23 21:39:09.365 E/ActivityManager(  843):  at android.app.ContextImpl.sendBroadcastAsUser(ContextImpl.java:1509)
+  11-23 21:39:09.365 E/ActivityManager(  843):  at
+android.content.ContextWrapper.sendBroadcastAsUser(ContextWrapper.java:603)
+  11-23 21:39:09.365 E/ActivityManager(  843):  at
+com.android.server.wm.TaskUtils.$r8$lambda$JRBio5N1z1PXvDB9E_DBrd2vjYw(TaskUtils.java:2179)
+  11-23 21:39:09.365 E/ActivityManager(  843):  at
+com.android.server.wm.TaskUtils$$ExternalSyntheticLambda2.run(R8$$SyntheticClass:0)
+  11-23 21:39:09.365 E/ActivityManager(  843):  at android.os.Handler.handleCallback(Handler.java:991)
+  11-23 21:39:09.365 E/ActivityManager(  843):  at android.os.HandlerThread.run(HandlerThread.java:85)
+  11-23 21:39:09.365 E/ActivityManager(  843):  at com.android.server.ServiceThread.run(ServiceThread.java:49)
+  11-23 21:39:09.366 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService }: user 0 is stopped
+  11-23 21:39:09.366 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@827056c
+> 11-23 21:39:09.366 E/JobScheduler.Concurrency(  843): Error executing JobStatus{35b6afb #u0a24/174406261
+com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService u=0 s=10024 TIME=none:-34m29s108ms
+READY}
+  11-23 21:39:09.366 E/JobServiceContext(  843): Binding died for com.google.android.syncadapters.calendar but no
+running job on this context
+  11-23 21:39:09.368 D/ApplicationLoaders(13369): Returning zygote-cached class loader:
+/system_ext/framework/androidx.window.extensions.jar
+  11-23 21:39:09.368 D/ApplicationLoaders(13369): Returning zygote-cached class loader:
+/system_ext/framework/androidx.window.sidecar.jar
+  11-23 21:39:09.371 D/nativeloader(13369): Configuring clns-7 for other apk
+/data/app/~~-TsEzsWcXmjyXNQSivq2YQ==/com.browser.dvnex0-doFVpl29k65QSLWPdRFuiQ==/base.apk. target_sdk_version=37,
+uses_libraries=, library_path=/data/app/~~-TsEzsWcXmjyXNQSivq2YQ==/com.browser.dvnex0-doFVpl29k65QSLWPdRFuiQ==/lib/arm6
+4:/data/app/~~-TsEzsWcXmjyXNQSivq2YQ==/com.browser.dvnex0-doFVpl29k65QSLWPdRFuiQ==/base.apk!/lib/arm64-v8a,
+permitted_path=/data:/mnt/expand:/data/user/0/com.browser.dvnex0
+  11-23 21:39:09.374 I/.browser.dvnex0(13369): AssetManager2(0x7ae2b3741ed8) locale list changing from [] to [pt-PT]
+  11-23 21:39:09.378 W/ActivityTaskManager(  843): takeTaskSnapshot: taskId=131 not found or not visible
+  11-23 21:39:09.379 V/GraphicsEnvironment(13369): Currently set values for:
+  11-23 21:39:09.379 V/GraphicsEnvironment(13369):   angle_gl_driver_selection_pkgs=[]
+  11-23 21:39:09.379 V/GraphicsEnvironment(13369):   angle_gl_driver_selection_values=[]
+  11-23 21:39:09.379 V/GraphicsEnvironment(13369): com.browser.dvnex0 is not listed in per-application setting
+  11-23 21:39:09.379 V/GraphicsEnvironment(13369): Neither updatable production driver nor prerelease driver is
+supported.
+  11-23 21:39:09.382 I/cr_SplitCompatApp(13369): version=159.0.8144.0 (814400004) minSdkVersion=29
+processName=com.browser.dvnex0 isIsolatedProcess=false splits=<none>
+  11-23 21:39:09.555 I/cr_LibraryLoader(13369): Loading chrome from within
+/data/app/~~-TsEzsWcXmjyXNQSivq2YQ==/com.browser.dvnex0-doFVpl29k65QSLWPdRFuiQ==/base.apk
+  11-23 21:39:09.555 I/cr_Linker(13369): loadLibraryImplLocked: chrome, relroMode=2
+> 11-23 21:39:09.717 E/aconfig_cpp_codegen(13369): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:09.717 E/aconfig_cpp_codegen(13369): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:09.718 E/aconfig_cpp_codegen(13369): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:09.718 E/aconfig_cpp_codegen(13369): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:09.719 E/aconfig_cpp_codegen(13369): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+  11-23 21:39:09.803 I/cr_LibraryLoader(13369): Successfully loaded native library
+  11-23 21:39:09.806 I/cr_CachingUmaRecorder(13369): Flushed 2 samples from 2 histograms, 0 samples were dropped.
+  11-23 21:39:09.830 I/cr_CombinedPProvider(13369): #linkNativeInternal() 0
+  11-23 21:39:09.830 I/cr_PolicyProvider(13369): #setManagerAndSource() 0
+  11-23 21:39:09.830 I/cr_PolicyCacheProvider(13369): #refresh() true
+  11-23 21:39:09.867 W/AccMsgReceiver( 1810): AccMsgReceiver: onReceive action = nemu.intent.action.NEW_TASK
+  11-23 21:39:09.876 W/ActivityManager(  843): Foreground service started from background can not have
+location/camera/microphone access: service com.mumu.acc/.AccService
+  11-23 21:39:09.876 W/AccServiceManager( 1810): onAppLaunch: packageName = com.browser.dvnex0
+  11-23 21:39:09.876 W/TranslateGameManager( 1810): onAppLaunch: packageName = com.browser.dvnex0,
+hasPackageLaunchedBefore = false, supportTranslateReally = false, isLocalTranslateEnabled = false
+  11-23 21:39:09.937 D/BackgroundInstallControlService(  843): Package event received: 0
+  11-23 21:39:09.938 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:09.938 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:09.938 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:09.938 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:09.938 I/FontLog ( 1844): (REDACTED) Received query %s, URI %s
+  11-23 21:39:09.938 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@1ef28b3
+> 11-23 21:39:09.938 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3b9d39f #u0a24/9206
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m29s613ms NET CHARGING READY}
+  11-23 21:39:09.938 I/FontLog ( 1844): (REDACTED) Query [%s] resolved to %s
+  11-23 21:39:09.938 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:09.938 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@aa99d0f
+> 11-23 21:39:09.938 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f76391c #u0a24/9207
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m29s596ms IDLE READY}
+  11-23 21:39:09.939 I/FontLog ( 1844): (REDACTED) Font PFD returned from cache for %s
+  11-23 21:39:09.939 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:09.939 I/FontLog ( 1844): (REDACTED) Fetch %s end status %s
+  11-23 21:39:09.939 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@ecfb2b
+> 11-23 21:39:09.939 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e83e611 #u0a24/9208
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:+5d17h43m3s896ms NET READY}
+  11-23 21:39:09.939 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground }:
+user 0 is stopped
+  11-23 21:39:09.939 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@3be1f07
+> 11-23 21:39:09.939 E/JobScheduler.Concurrency(  843): Error executing JobStatus{91ae4b3 #u0a24/10175
+com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground u=0
+s=10024 TIME=none:-34m28s924ms NET IDLE READY}
+  11-23 21:39:09.939 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:09.939 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@393a4a3
+> 11-23 21:39:09.939 E/JobScheduler.Concurrency(  843): Error executing JobStatus{9b0a816 #u0a24/9218
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m28s642ms NET READY}
+  11-23 21:39:09.939 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:09.939 I/FontLog ( 1844): (REDACTED) Pulling font file for id = %d, cache size = %d
+  11-23 21:39:09.939 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@7b1e7ff
+> 11-23 21:39:09.939 E/JobScheduler.Concurrency(  843): Error executing JobStatus{2c7e8be #u0a61/115
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=none:-34m17s143ms READY}
+  11-23 21:39:09.939 E/JobServiceContext(  843): Binding died for com.android.vending but no running job on this
+context
+  11-23 21:39:09.942 I/FontLog ( 1844): (REDACTED) Received query %s, URI %s
+  11-23 21:39:09.942 I/FontLog ( 1844): (REDACTED) Query [%s] resolved to %s
+  11-23 21:39:09.943 I/FontLog ( 1844): (REDACTED) Font PFD returned from cache for %s
+  11-23 21:39:09.943 I/FontLog ( 1844): (REDACTED) Fetch %s end status %s
+  11-23 21:39:09.943 I/FontLog ( 1844): (REDACTED) Pulling font file for id = %d, cache size = %d
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843): setPresentationRotation 1 for com.browser.dvnex0:178
+> 11-23 21:39:09.945 E/[MUMU]TaskTab(  843): java.lang.Exception
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843):    at
+com.android.server.mumu.tab.TaskTab.setPresentationRotation(TaskTab.java:52)
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843):    at
+com.android.server.wm.TaskUtils.getTopTaskOnDisplay(TaskUtils.java:638)
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843):    at
+com.android.server.wm.TaskUtils.updateTaskTabRotation(TaskUtils.java:1957)
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843):    at com.android.server.wm.TaskUtils.notifyOpen(TaskUtils.java:222)
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843):    at com.android.server.wm.WmBridge.notifyOpen(WmBridge.java:496)
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843):    at
+com.android.server.mumu.wm.TaskHandler.handleMessage(TaskHandler.java:32)
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843):    at android.os.Handler.dispatchMessage(Handler.java:109)
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843):    at android.os.Looper.loopOnce(Looper.java:232)
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843):    at android.os.Looper.loop(Looper.java:317)
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843):    at android.os.HandlerThread.run(HandlerThread.java:85)
+  11-23 21:39:09.945 E/[MUMU]TaskTab(  843):    at com.android.server.ServiceThread.run(ServiceThread.java:49)
+  11-23 21:39:09.946 D/BackgroundInstallControlService(  843): Package event received: 0
+  11-23 21:39:10.079 I/cr_TopControlsStacker(13369): [TopControlsPositioning] [PROGRESS_BAR] yOffset=-3 height=3
+scrollType=0 visibility=1
+  11-23 21:39:10.080 D/CoreBackPreview(  843): Window{5352cfb u0
+com.browser.dvnex0/com.google.android.apps.chrome.Main}: Setting back callback
+OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@2ceab30, mPriority=-1,
+mIsAnimationCallback=false, mOverrideBehavior=0}
+  11-23 21:39:10.082 I/cr_AppHeader(13369): Recording desktop windowing heuristic result: 4
+  11-23 21:39:10.083 D/Zygote  (  663): Forked child process 13419
+> 11-23 21:39:10.085 W/ZygoteProcess(  843): Got error connecting to zygote, retrying. msg= Connection refused
+  11-23 21:39:10.091 E/.browser.dvnex0(13369): No package ID ff found for resource ID 0xffffffff.
+  11-23 21:39:10.091 I/cr_ToolbarCtrlContainer(13369): [TopControlsPositioning] onMeasure control_container height=146
+top=0 bottom=0 left=0 right=0 translationY=0.0 visibility=0
+  11-23 21:39:10.091 I/cr_ToolbarCtrlContainer(13369):   [toolbar_container h=86 visibility=0 marginT=60 marginB=0]
+  11-23 21:39:10.091 I/cr_ToolbarCtrlContainer(13369):   [find_toolbar_tablet_stub h=0 visibility=8 marginT=0
+marginB=0]
+  11-23 21:39:10.091 I/cr_ToolbarCtrlContainer(13369):   [id:-1 h=0 visibility=8 marginT=0 marginB=0]
+  11-23 21:39:10.091 I/cr_ToolbarCtrlContainer(13369):   [mToolbar tabStripHeight=60]
+  11-23 21:39:10.091 I/cr_ToolbarCtrlContainer(13369):   [mToolbarLayoutHeight=84]
+  11-23 21:39:10.094 W/nativebridge(13419): Application private directory isn't available.
+  11-23 21:39:10.094 W/nativebridge(13419): Failed to bind-mount /system/etc/cpuinfo.arm64.txt as /proc/cpuinfo: No
+such file or directory
+  11-23 21:39:10.094 I/Zygote  (13419): seccomp disabled by setenforce 0
+  11-23 21:39:10.094 E/libEGL  (13369): intercept_property_get () for (persist.graphics.egl)
+  11-23 21:39:10.098 I/r.dvnex0_zygote(13419): Using CollectorTypeCMC GC.
+  11-23 21:39:10.436 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:10.436 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:10.437 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:10.437 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@fed028d
+> 11-23 21:39:10.437 E/JobScheduler.Concurrency(  843): Error executing JobStatus{a876204 #u0a61/112
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m38s112ms:-1h34m38s112ms PERSISTED READY}
+  11-23 21:39:10.437 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:10.437 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@eb43a89
+> 11-23 21:39:10.437 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e9a23ed #u0a61/107
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m38s113ms:-1h34m38s113ms NET PERSISTED READY}
+  11-23 21:39:10.437 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:10.437 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@69cf645
+> 11-23 21:39:10.437 E/JobScheduler.Concurrency(  843): Error executing JobStatus{4e1b222 #u0a61/54
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m38s113ms:-1h34m38s113ms PERSISTED READY}
+  11-23 21:39:10.437 W/ActivityManager(  843): Unable to launch app com.google.android.syncadapters.calendar/10030 for
+service Intent { cmp=com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService
+}: user 0 is stopped
+  11-23 21:39:10.437 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@9bb1c1
+> 11-23 21:39:10.437 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f7572cc #u0a30/6
+com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10030
+TIME=-1h33m20s648ms:none NET READY}
+  11-23 21:39:10.438 W/ActivityManager(  843): Unable to launch app com.google.android.play.games/10033 for service
+Intent { cmp=com.google.android.play.games/androidx.work.impl.background.systemjob.SystemJobService }: user 0 is
+stopped
+  11-23 21:39:10.438 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@670a8fd
+> 11-23 21:39:10.438 E/JobScheduler.Concurrency(  843): Error executing JobStatus{d475c1c
+androidx.work.systemjobscheduler:u0a33/12 @androidx.work.systemjobscheduler@com.google.android.play.games/androidx.work
+.impl.background.systemjob.SystemJobService u=0 s=10033 READY}
+  11-23 21:39:10.438 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:10.438 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@3a3d7f9
+> 11-23 21:39:10.438 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3a7ef3e #u0a24/9217
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024 READY}
+  11-23 21:39:10.438 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService }: user 0 is stopped
+  11-23 21:39:10.438 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@10bb6ec
+> 11-23 21:39:10.438 E/JobScheduler.Concurrency(  843): Error executing JobStatus{35b6afb #u0a24/174406261
+com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService u=0 s=10024 TIME=none:-34m30s180ms
+READY}
+  11-23 21:39:10.438 E/JobServiceContext(  843): Binding died for com.chrome.dev but no running job on this context
+> 11-23 21:39:10.466 E/aconfig_cpp_codegen(13419): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:10.467 E/aconfig_cpp_codegen(13419): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:10.468 E/aconfig_cpp_codegen(13419): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:10.468 E/aconfig_cpp_codegen(13419): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:10.469 E/aconfig_cpp_codegen(13419): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+  11-23 21:39:10.482 I/AppZygoteInit(13419): Application preload done
+  11-23 21:39:10.482 I/AppZygote(  843): Application preload done.
+  11-23 21:39:10.486 W/r.dvnex0_zygote(13419): Reducing the number of considered missed Gc histogram windows from 568
+to 100
+  11-23 21:39:10.486 I/houdini (13419): [13419] nbitf: preZygoteFork() finish
+  11-23 21:39:10.486 I/Zygote  (13419): Entering forkRepeatedly native zygote loop
+  11-23 21:39:10.490 D/Zygote  (13419): Forked child process 13440
+  11-23 21:39:10.492 E/Zygote  (13440): pkg name is isolate => com.browser.dvnex0, data dir is
+/data/user/0/com.browser.dvnex0
+  11-23 21:39:10.492 I/Zygote  (13440): seccomp disabled by setenforce 0
+  11-23 21:39:10.494 I/ocessService0:0(13440): Using CollectorTypeCMC GC.
+  11-23 21:39:10.495 W/ocessService0:0(13440): Unexpected CPU variant for x86: x86_64.
+  11-23 21:39:10.495 W/ocessService0:0(13440): Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus,
+goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+  11-23 21:39:10.497 I/adbd    (  723): jdwp connection from 13440
+  11-23 21:39:10.525 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:10.525 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:10.525 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:10.525 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@7b1833
+> 11-23 21:39:10.526 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3b9d39f #u0a24/9206
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m30s200ms NET CHARGING READY}
+  11-23 21:39:10.526 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:10.526 I/cr_ChildProcessService(13440): Creating new ChildProcessService pid=13440
+  11-23 21:39:10.526 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@ac5048f
+> 11-23 21:39:10.526 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f76391c #u0a24/9207
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m30s184ms IDLE READY}
+  11-23 21:39:10.527 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:10.527 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@8175aab
+> 11-23 21:39:10.527 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e83e611 #u0a24/9208
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:+5d17h43m3s307ms NET READY}
+  11-23 21:39:10.528 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground }:
+user 0 is stopped
+  11-23 21:39:10.528 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@feef687
+> 11-23 21:39:10.528 E/JobScheduler.Concurrency(  843): Error executing JobStatus{91ae4b3 #u0a24/10175
+com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground u=0
+s=10024 TIME=none:-34m29s513ms NET IDLE READY}
+  11-23 21:39:10.528 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:10.528 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@aba7423
+> 11-23 21:39:10.528 E/JobScheduler.Concurrency(  843): Error executing JobStatus{9b0a816 #u0a24/9218
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m29s231ms NET READY}
+  11-23 21:39:10.529 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:10.529 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@f362f7f
+> 11-23 21:39:10.529 E/JobScheduler.Concurrency(  843): Error executing JobStatus{2c7e8be #u0a61/115
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=none:-34m17s732ms READY}
+  11-23 21:39:10.530 E/JobServiceContext(  843): Binding died for com.android.vending but no running job on this
+context
+  11-23 21:39:10.573 V/GrammaticalInflectionUtils(  843): AttributionSource:
+android.content.AttributionSource@7db2efb6 does not have READ_SYSTEM_GRAMMATICAL_GENDER permission.
+  11-23 21:39:10.575 I/Zygote  (  663): Entering forkRepeatedly native zygote loop
+  11-23 21:39:10.579 D/Zygote  (  663): Forked child process 13464
+  11-23 21:39:10.581 I/ActivityManager(  843): Start proc 13464:com.browser.dvnex0:privileged_process0/u0a65 for
+service {com.browser.dvnex0/org.chromium.content.app.PrivilegedProcessService0}
+  11-23 21:39:10.598 W/nativebridge(13464): Failed to bind-mount /system/etc/cpuinfo.arm64.txt as /proc/cpuinfo: No
+such file or directory
+  11-23 21:39:10.598 E/Zygote  (13464): pkg name is 0 => com.browser.dvnex0, data dir is
+/data/user/0/com.browser.dvnex0
+  11-23 21:39:10.599 W/zygote64(13464): Thread Pool max thread count is 0. Cannot cache binder as linkToDeath cannot
+be implemented. serviceName: nemuhotd
+  11-23 21:39:10.609 I/chromium(13369):
+[INFO:components/enterprise/browser/controller/chrome_browser_cloud_management_controller.cc:341] Deferring CBCM
+Controller Initialization until it is unblocked.
+  11-23 21:39:10.633 I/Zygote  (13464): seccomp disabled by setenforce 0
+  11-23 21:39:10.637 I/ileged_process0(13464): Using CollectorTypeCMC GC.
+  11-23 21:39:10.637 W/ileged_process0(13464): Unexpected CPU variant for x86: x86_64.
+  11-23 21:39:11.498 D/SntpClient(  843): round trip: 63ms, clock offset: 106ms
+  11-23 21:39:11.538 I/cr_policy(13369): registerReceiver succeeded after 1ms
+  11-23 21:39:11.610 I/cr_ChromeTabbedActivity(13369): #initializeState
+  11-23 21:39:11.616 W/cr_tabmodel(13369): Failed to restore TabState and not reparenting; creating Tab with last
+known URL.
+> 11-23 21:39:11.619 E/aconfig_cpp_codegen(13464): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:11.619 E/aconfig_cpp_codegen(13464): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:11.620 E/aconfig_cpp_codegen(13464): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:11.620 E/aconfig_cpp_codegen(13464): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+> 11-23 21:39:11.621 E/aconfig_cpp_codegen(13464): error: failed to get package map file: failed to open
+/metadata/aconfig/maps/system.package.map: No such file or directory
+  11-23 21:39:11.659 I/.browser.dvnex0(13369): AssetManager2(0x7ae2b374f038) locale list changing from [] to [pt-PT]
+  11-23 21:39:11.722 I/cr_LibraryLoader(13464): Successfully loaded native library
+  11-23 21:39:11.726 I/cr_CachingUmaRecorder(13464): Flushed 2 samples from 2 histograms, 0 samples were dropped.
+  11-23 21:39:11.729 W/chromium(13464): [WARNING:content/app/android/content_main_android.cc:82] android_setCpu
+already initialized
+  11-23 21:39:11.760 D/BiometricService(  843): canAuthenticate: User=0, Caller=0, Authenticators=65536
+  11-23 21:39:11.761 D/BiometricService/PreAuthInfo(  843): getCanAuthenticateInternal Modality: 0
+AuthenticatorStatus: 13
+  11-23 21:39:11.761 D/AuthService(  843): canAuthenticate, userId: 0, callingUserId: 0, authenticators: 65536,
+result: 20
+  11-23 21:39:11.761 D/BiometricService(  843): canAuthenticate: User=0, Caller=0, Authenticators=255
+  11-23 21:39:11.761 D/BiometricService/PreAuthInfo(  843): getCanAuthenticateInternal Modality: 0
+AuthenticatorStatus: 2
+  11-23 21:39:11.761 D/AuthService(  843): canAuthenticate, userId: 0, callingUserId: 0, authenticators: 255, result:
+12
+  11-23 21:39:11.780 I/cr_A11yState(13369): Enabled accessibility services list updated. []
+  11-23 21:39:11.786 I/cr_A11yState(13369): New AccessibilityState:
+State{isComplexUserInteractionServiceEnabled=false, isTouchExplorationEnabled=false, isPerformGesturesEnabled=false,
+isAnyAccessibilityServiceEnabled=false, isAccessibilityToolPresent=false, isTextShowPasswordEnabled=true,
+isOnlyAutofillRunning=false, isOnlyPasswordManagersEnabled=false, isKnownScreenReaderEnabled=false,
+isSamsungTalkBackEnabled=false}
+  11-23 21:39:12.095 D/gralloc_kona(13464): gralloc_alloc: Creating ashmem region of size 4096
+  11-23 21:39:12.095 D/gralloc_kona(13464): gralloc_alloc: Creating ashmem region of size 4096
+  11-23 21:39:12.096 E/gralloc_kona(13464): gralloc_alloc: Unknown format 56
+  11-23 21:39:12.096 E/GraphicBufferAllocator(13464): Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+> 11-23 21:39:12.096 E/AHardwareBuffer(13464): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+  11-23 21:39:12.096 E/gralloc_kona(13464): gralloc_alloc: Unknown format 59
+  11-23 21:39:12.096 E/GraphicBufferAllocator(13464): Failed to allocate (4 x 4) layerCount 1 format 59 usage b00: 3
+> 11-23 21:39:12.096 E/AHardwareBuffer(13464): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+  11-23 21:39:12.096 D/gralloc_kona(13464): gralloc_alloc: Creating ashmem region of size 4096
+  11-23 21:39:12.096 D/gralloc_kona(13464): gralloc_alloc: Creating ashmem region of size 4096
+  11-23 21:39:12.096 D/gralloc_kona(13464): gralloc_alloc: Creating ashmem region of size 4096
+  11-23 21:39:12.097 E/gralloc_kona(13464): gralloc_alloc: Unknown format 56
+  11-23 21:39:12.097 E/GraphicBufferAllocator(13464): Failed to allocate (4 x 4) layerCount 1 format 56 usage b00: 3
+> 11-23 21:39:12.097 E/AHardwareBuffer(13464): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+  11-23 21:39:12.097 E/gralloc_kona(13464): gralloc_alloc: Unknown format 59
+  11-23 21:39:12.097 E/GraphicBufferAllocator(13464): Failed to allocate (4 x 4) layerCount 1 format 59 usage b00: 3
+> 11-23 21:39:12.097 E/AHardwareBuffer(13464): GraphicBuffer(w=4, h=4, lc=1) failed (Unknown error -3), handle=0x0
+  11-23 21:39:12.098 I/ANGLE   (13464): Version (2.1.29378 git hash: 0a536a02be2d), Renderer (Vulkan 1.3.0 (Adreno
+(TM) 640 (0x0000A7A8)))
+  11-23 21:39:12.098 I/ANGLE   (13464): GL performance: HIGH: EGL blobcache multifile is not enabled.
+  11-23 21:39:12.114 W/chromium(13369): [WARNING:net/cert/ev_root_ca_metadata.cc:99] Not implemented
+  11-23 21:39:12.129 I/cr_AppResProvider(13369): #getApplicationRestrictionsFromRestrictionsManager()
+Bundle[EMPTY_PARCEL]
+  11-23 21:39:12.129 I/cr_PolicyProvider(13369): #notifySettingsAvailable() 0
+  11-23 21:39:12.129 I/cr_CombinedPProvider(13369): #onSettingsAvailable() 0
+  11-23 21:39:12.129 I/cr_CombinedPProvider(13369): #flushPolicies()
+  11-23 21:39:12.147 W/HWUI    (13369): Image decoding logging dropped!
+  11-23 21:39:12.301 W/cr_tabmodel(13369): Failed to restore TabState and not reparenting; creating Tab with last
+known URL.
+  11-23 21:39:12.303 I/adbd    (  723): Remote process closed the socket (on MSG_PEEK)
+  11-23 21:39:12.303 I/ActivityManager(  843): Process
+com.browser.dvnex0:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 (pid 13440) has died: fg +1
+BTOP
+  11-23 21:39:12.303 W/ActivityManager(  843): Scheduling restart of crashed service
+com.browser.dvnex0/org.chromium.content.app.SandboxedProcessService0:0 in 1000ms for connection
+  11-23 21:39:12.645 W/ocessService0:3(13554): Unexpected CPU variant for x86: x86_64.
+  11-23 21:39:12.645 W/ocessService0:3(13554): Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus,
+goldmont-without-sha-xsaves, tremont, kabylake, alderlake, default
+  11-23 21:39:12.646 I/adbd    (  723): jdwp connection from 13554
+  11-23 21:39:12.647 D/nativeloader(13554): Load libframework-connectivity-tiramisu-jni.so using APEX ns
+com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+> 11-23 21:39:12.657 E/chromium(13464): [ERROR:gpu/command_buffer/service/dawn_context_provider.cc:755] Validate
+adapter failed.
+> 11-23 21:39:12.659 E/chromium(13464): [ERROR:gpu/ipc/service/gpu_init_2.cc:1140] Failed to create Dawn context
+provider for Graphite
+  11-23 21:39:12.662 I/ActivityManager(  843): Start proc
+13554:com.browser.dvnex0:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:3/u0ai3 for
+{com.browser.dvnex0/org.chromium.content.app.SandboxedProcessService0:3}
+  11-23 21:39:12.681 I/cr_LibraryLoader(13525): Successfully loaded native library
+  11-23 21:39:12.688 I/cr_CachingUmaRecorder(13525): Flushed 3 samples from 3 histograms, 0 samples were dropped.
+  11-23 21:39:12.689 I/cr_TabWebContentsObs(13369): primaryMainFrameRenderProcessGone() for tab id: 84, already needs
+reload: false, termination status: 6
+  11-23 21:39:12.691 W/chromium(13525): [WARNING:content/app/android/content_main_android.cc:82] android_setCpu
+already initialized
+  11-23 21:39:12.715 W/chromium(13369): [WARNING:net/cert/ev_root_ca_metadata.cc:99] Not implemented
+  11-23 21:39:12.748 D/ApplicationLoaders(13554): Returning zygote-cached class loader:
+/system_ext/framework/androidx.window.extensions.jar
+  11-23 21:39:12.748 D/ApplicationLoaders(13554): Returning zygote-cached class loader:
+/system_ext/framework/androidx.window.sidecar.jar
+  11-23 21:39:12.750 I/ocessService0:3(13554): AssetManager2(0x7ae2b3739b98) locale list changing from [] to [pt-PT]
+  11-23 21:39:12.773 I/cr_SplitCompatApp(13554): version= (814400004) minSdkVersion=29
+processName=com.browser.dvnex0:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:3
+isIsolatedProcess=true splits=<none>
+  11-23 21:39:12.774 D/BackgroundInstallControlService(  843): Package event received: 0
+  11-23 21:39:12.778 I/cr_ChildProcessService(13554): Creating new ChildProcessService pid=13554
+  11-23 21:39:13.748 E/cr_CompositorSurfaceMgr(13369): surfaceDestroyed format : 0
+  11-23 21:39:13.751 I/ImeTracker(13369): com.browser.dvnex0:fc08ba0c: onRequestShow at ORIGIN_CLIENT reason
+SHOW_SOFT_INPUT fromUser false
+  11-23 21:39:13.752 I/ImeTracker(13369): com.browser.dvnex0:fc08ba0c: onFailed at PHASE_CLIENT_VIEW_SERVED
+  11-23 21:39:13.752 W/InputMethodManager(13369): Ignoring showSoftInput() as
+view=org.chromium.chrome.browser.omnibox.UrlBarApi26{695877f VFED..CL. .FS..... 96,12-1096,84 #7f010dca
+app:id/url_bar} is not served.
+> 11-23 21:39:13.753 E/cr_RecentSearchQueue(13369): Error restoring recent search from a disk file
+  11-23 21:39:13.753 I/cr_TopControlsStacker(13369): [TopControlsPositioning] *** repositionLayers ***
+initialTopOffset=0 minHeightOffset=0 offsetsAppliedByBrowser=true
+  11-23 21:39:13.753 I/cr_TopControlsStacker(13369): [TopControlsPositioning] [TAB_STRIP] yOffset=0 height=60
+scrollType=0 visibility=0
+  11-23 21:39:13.753 E/cr_TopToolbarCoord(13369): [TopControlsPositioning] toolbarTopOffsetInCapture=0, captureHeight=0
+  11-23 21:39:13.753 E/cr_TopToolbarCoord(13369): [TopControlsPositioning] updateSceneLayerYOffset: mLayerYOffset=60,
+captureHeight=0, tabStripHeightResource=60, tabStripHeightReal=60, diff=0, hairlineAdjustment=0, finalYOffset=60
+  11-23 21:39:13.753 I/cr_TopControlsStacker(13369): [TopControlsPositioning] [TOOLBAR] yOffset=60 height=84
+scrollType=0 visibility=0
+  11-23 21:39:13.753 I/cr_TopControlsStacker(13369): [TopControlsPositioning] [TAB_SHARING_TOOLBAR] yOffset=0 height=0
+scrollType=0 visibility=1
+  11-23 21:39:13.753 I/cr_TopControlsStacker(13369): [TopControlsPositioning] [PROGRESS_BAR] yOffset=-3 height=3
+scrollType=0 visibility=1
+  11-23 21:39:13.773 I/Choreographer(13369): Skipped 41 frames!  The application may be doing too much work on its
+main thread.
+  11-23 21:39:13.784 E/.browser.dvnex0(13369): No package ID ff found for resource ID 0xffffffff.
+  11-23 21:39:13.785 I/cr_ToolbarCtrlContainer(13369): [TopControlsPositioning] onMeasure control_container height=146
+top=0 bottom=158 left=0 right=1600 translationY=0.0 visibility=0
+  11-23 21:39:13.785 I/cr_ToolbarCtrlContainer(13369):   [toolbar_container h=86 visibility=0 marginT=60 marginB=0]
+  11-23 21:39:13.785 I/cr_ToolbarCtrlContainer(13369):   [find_toolbar_tablet_stub h=0 visibility=8 marginT=0
+marginB=0]
+  11-23 21:39:13.999 I/cr_TabWebContentsObs(13369): primaryMainFrameRenderProcessGone() for tab id: 85, already needs
+reload: true, termination status: 6
+  11-23 21:39:14.015 I/ImeTracker(13369): com.browser.dvnex0:1a3926e5: onShown
+  11-23 21:39:14.021 I/cr_ChildProcLH(13369): ScopedServiceBindingBatch.tryActivate: false
+  11-23 21:39:14.021 I/cr_BindingManager(13369): Visible binding enabled
+> 11-23 21:39:14.029 E/chromium(13464): [ERROR:ui/gl/egl_util.cc:92] EGL Driver message (Error)
+eglDupNativeFenceFDANDROID: Bad parameter.
+> 11-23 21:39:14.031 E/chromium(13464): [ERROR:ui/gl/gl_fence_android_native_fence_sync.cc:74]
+eglDupNativeFenceFDANDROID duplication failure. Returned error=-1
+> 11-23 21:39:14.031 E/chromium(13464): [ERROR:ui/gl/android/egl_fence_utils.cc:20] Gpu fence handle is null
+> 11-23 21:39:14.063 E/chromium(13464): [ERROR:ui/gl/egl_util.cc:92] EGL Driver message (Error)
+eglDupNativeFenceFDANDROID: Bad parameter.
+> 11-23 21:39:14.063 E/chromium(13464): [ERROR:ui/gl/gl_fence_android_native_fence_sync.cc:74]
+eglDupNativeFenceFDANDROID duplication failure. Returned error=-1
+> 11-23 21:39:14.063 E/chromium(13464): [ERROR:ui/gl/android/egl_fence_utils.cc:20] Gpu fence handle is null
+  11-23 21:39:14.074 D/ConnectivityService(  843): requestNetwork for uid/pid:10065/13369 activeRequest: null
+callbackRequest: 365 [NetworkRequest [ REQUEST id=366, [ Capabilities:
+INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10065 RequestorUid: 10065 RequestorPkg:
+com.browser.dvnex0 UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+declaredMethods: ALL
+  11-23 21:39:14.075 D/ConnectivityService(  843): NetReassign [366 : null ÔåÆ 100] [c 0] [a 1] [i 0]
+  11-23 21:39:14.075 D/WifiNetworkFactory(  843): got request NetworkRequest [ REQUEST id=366, [ Capabilities:
+INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10065 RequestorUid: 10065 RequestorPkg:
+com.browser.dvnex0 UnderlyingNetworks: Null] ]
+  11-23 21:39:14.075 D/UntrustedWifiNetworkFactory(  843): got request NetworkRequest [ REQUEST id=366, [
+Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10065 RequestorUid: 10065
+RequestorPkg: com.browser.dvnex0 UnderlyingNetworks: Null] ]
+  11-23 21:39:14.075 D/OemPaidWifiNetworkFactory(  843): got request NetworkRequest [ REQUEST id=366, [ Capabilities:
+INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10065 RequestorUid: 10065 RequestorPkg:
+com.browser.dvnex0 UnderlyingNetworks: Null] ]
+  11-23 21:39:14.075 D/MultiInternetWifiNetworkFactory(  843): got request NetworkRequest [ REQUEST id=366, [
+Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10065 RequestorUid: 10065
+RequestorPkg: com.browser.dvnex0 UnderlyingNetworks: Null] ]
+  11-23 21:39:14.076 D/ConnectivityService(  843): NetReassign [no changes] [c 0] [a 1] [i 0]
+  11-23 21:39:14.078 E/.browser.dvnex0(13369): No package ID ff found for resource ID 0xffffffff.
+  11-23 21:39:14.078 I/cr_ToolbarCtrlContainer(13369): [TopControlsPositioning] onMeasure control_container height=146
+top=0 bottom=146 left=0 right=1600 translationY=0.0 visibility=0
+  11-23 21:39:14.078 I/cr_ToolbarCtrlContainer(13369):   [toolbar_container h=86 visibility=0 marginT=60 marginB=0]
+  11-23 21:39:14.078 I/cr_ToolbarCtrlContainer(13369):   [find_toolbar_tablet_stub h=0 visibility=8 marginT=0
+marginB=0]
+  11-23 21:39:14.078 I/cr_ToolbarCtrlContainer(13369):   [id:-1 h=0 visibility=8 marginT=0 marginB=0]
+  11-23 21:39:14.995 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:14.995 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:14.995 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:14.995 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@957ba84
+> 11-23 21:39:14.995 E/JobScheduler.Concurrency(  843): Error executing JobStatus{a876204 #u0a61/112
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m42s671ms:-1h34m42s671ms PERSISTED READY}
+  11-23 21:39:14.996 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:14.996 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@1d7faf0
+> 11-23 21:39:14.996 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e9a23ed #u0a61/107
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m42s671ms:-1h34m42s671ms NET PERSISTED READY}
+  11-23 21:39:14.996 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:14.996 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@cd9d61c
+> 11-23 21:39:14.996 E/JobScheduler.Concurrency(  843): Error executing JobStatus{4e1b222 #u0a61/54
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m42s672ms:-1h34m42s672ms PERSISTED READY}
+  11-23 21:39:14.996 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:14.996 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@ebc3808
+> 11-23 21:39:14.996 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3a7ef3e #u0a24/9217
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024 READY}
+  11-23 21:39:14.997 E/JobServiceContext(  843): Binding died for com.chrome.dev but no running job on this context
+  11-23 21:39:14.997 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:14.998 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:14.998 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:14.998 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:14.998 W/ActivityManager(  843): Unable to launch app com.google.android.syncadapters.calendar/10030 for
+service Intent { cmp=com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService
+}: user 0 is stopped
+  11-23 21:39:14.998 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@d1c5452
+> 11-23 21:39:14.998 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f7572cc #u0a30/6
+com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10030
+TIME=-1h33m25s209ms:none NET READY}
+  11-23 21:39:14.999 W/ActivityManager(  843): Unable to launch app com.google.android.play.games/10033 for service
+Intent { cmp=com.google.android.play.games/androidx.work.impl.background.systemjob.SystemJobService }: user 0 is
+stopped
+  11-23 21:39:14.999 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@fccfe4c
+> 11-23 21:39:14.999 E/JobScheduler.Concurrency(  843): Error executing JobStatus{d475c1c
+androidx.work.systemjobscheduler:u0a33/12 @androidx.work.systemjobscheduler@com.google.android.play.games/androidx.work
+.impl.background.systemjob.SystemJobService u=0 s=10033 READY}
+  11-23 21:39:14.999 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService }: user 0 is stopped
+  11-23 21:39:14.999 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@2f1b338
+> 11-23 21:39:14.999 E/JobScheduler.Concurrency(  843): Error executing JobStatus{35b6afb #u0a24/174406261
+com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService u=0 s=10024 TIME=none:-34m34s741ms
+READY}
+  11-23 21:39:14.999 E/JobServiceContext(  843): Binding died for com.google.android.syncadapters.calendar but no
+running job on this context
+  11-23 21:39:15.027 D/CoreBackPreview(  843): Window{d190b13 u0
+com.browser.dvnex0.authhelper/com.browser.dvnex0.auth.DVNexGoogleAuthActivity}: Setting back callback
+OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@bd10f49, mPriority=0,
+mIsAnimationCallback=false, mOverrideBehavior=0}
+  11-23 21:39:15.032 I/EGL_emulation(12890): EGL display initialized (version 1.4, rendererVersion=0x3, configs=120)
+  11-23 21:39:15.034 W/HWUI    (12890): Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+  11-23 21:39:15.039 D/gralloc_kona(12890): gralloc_alloc: Creating ashmem region of size 5763072
+  11-23 21:39:15.047 D/gralloc_kona(12890): gralloc_alloc: Creating ashmem region of size 5763072
+  11-23 21:39:15.049 D/gralloc_kona(12890): gralloc_alloc: Creating ashmem region of size 5763072
+  11-23 21:39:15.061 I/MESA    (13464): on_vkMapMemoryIntoAddressSpaceGOOGLE: Got new host visible alloc. Sizeof void:
+8 map size: 8388608 Range: [0x7ae19c1e3000 0x7ae19c9e3000]
+  11-23 21:39:15.074 I/EGL_emulation(12890): EGL display initialized (version 1.4, rendererVersion=0x3, configs=120)
+  11-23 21:39:15.074 W/ziparchive(  843): Unable to open
+'/data/app/~~B_B7L8mtHtjzruUdXr97LA==/com.browser.dvnex0.authhelper-YpMMQqKfJWkKVvKBnNtr2Q==/base.dm': No such file or
+directory
+  11-23 21:39:15.075 W/HWUI    (12890): Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+  11-23 21:39:15.075 V/WindowManagerShell( 1135): onTransitionReady(transaction=3620657437423)
+  11-23 21:39:15.075 V/WindowManagerShell( 1135):         {m=TO_BACK f=FILLS_TASK
+leash=Surface(name=ActivityRecord{67490035 u0 com.browser.dvnex0/com.google.android.apps.chrome.Main)/@0x4dd2a65
+sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0 bc=fffafafa
+component=com.browser.dvnex0/org.chromium.chrome.browser.ChromeTabbedActivity opt={t=FROM_STYLE mUserId=0}}
+  11-23 21:39:15.075 V/WindowManagerShell( 1135):     ]}
+  11-23 21:39:15.076 I/ActivityTaskManager(  843): Displayed
+com.browser.dvnex0.authhelper/com.browser.dvnex0.auth.DVNexGoogleAuthActivity for user 0: +110ms
+  11-23 21:39:15.076 V/WindowManager(  843): Sent Transition (#115) createdAt=11-23 21:39:14.964 via
+request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=178 effectiveUid=10065 displayId=0
+isRunning=true baseIntent=Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER]
+flg=0x10200000 cmp=com.browser.dvnex0/com.google.android.apps.chrome.Main }
+baseActivity=ComponentInfo{com.browser.dvnex0/org.chromium.chrome.browser.ChromeTabbedActivity}
+topActivity=ComponentInfo{com.browser.dvnex0.authhelper/com.browser.dvnex0.auth.DVNexGoogleAuthActivity}
+origActivity=ComponentInfo{com.browser.dvnex0/com.google.android.apps.chrome.Main}
+realActivity=ComponentInfo{com.browser.dvnex0/org.chromium.chrome.browser.ChromeTabbedActivity} numActivities=2
+lastActiveTime=5688439 supportsMultiWindow=true resizeMode=2 isResizeable=true minWidth=-1 minHeight=-1
+defaultMinSize=220 token=WCT{RemoteToken{b3a57ae Task{b1631b0 #178 type=standard A=10065:com.browser.dvnex0}}}
+topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1
+lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=Rect(0, 0 - 0, 0) topActivityInfo=ActivityInfo{22619ec
+com.browser.dvnex0.auth.DVNexGoogleAuthActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1
+isFocused=true isVisible=true isVisibleRequested=true isTopActivityNoDisplay=false isSleeping=false locusId=null
+displayAreaFeatureId=1 isTopActivityTransparent=false isActivityStackTransparent=false
+lastNonFullscreenBounds=Rect(590, 77 - 1011, 859) capturedLink=null capturedLinkTimestamp=0 requestedVisibleTypes=-9
+topActivityRequestOpenInBrowserEducationTimestamp=0 appCompatTaskInfo=AppCompatTaskInfo {
+topActivityInSizeCompat=false eligibleForLetterboxEducation= false isLetterboxEducationEnabled= false
+isLetterboxDoubleTapEnabled= false eligibleForUserAspectRatioButton= false topActivityBoundsLetterboxed= false
+isFromLetterboxDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1
+topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 topActivityLetterboxAppWidth=-1
+topActivityLetterboxAppHeight=-1 isUserFullscreenOverrideEnabled=false isSystemFullscreenOverrideEnabled=false
+hasMinAspectRatioOverride=false topActivityLetterboxBounds=null cameraCompatTaskInfo=CameraCompatTaskInfo {
+freeformCameraCompatMode=inactive}} topActivityMainWindowFrame=null}, pipChange = null, remoteTransition = null,
+displayChange = null, flags = 0, debugId = 115 }
+> 11-23 21:39:15.076 V/WindowManager(  843):     startWCT=WindowContainerTransaction { changes= {} hops= []
+errorCallbackToken=null taskFragmentOrganizer=null }
+  11-23 21:39:15.076 V/WindowManager(  843):     info={id=115 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+  11-23 21:39:15.076 V/WindowManager(  843):         {m=OPEN f=FILLS_TASK leash=Surface(name=ActivityRecord{7123018 u0
+com.browser.dvnex0.authhelper/com.browser.dvnex0.auth.DVNexGoogleAuthActivity)/@0xfb2927c sb=Rect(0, 0 - 0, 0)
+eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=-1->0 r=-1->1:-1 bc=fffafafa
+component=com.browser.dvnex0.authhelper/com.browser.dvnex0.auth.DVNexGoogleAuthActivity opt={t=FROM_STYLE mUserId=0}},
+  11-23 21:39:15.076 V/WindowManager(  843):         {m=TO_BACK f=FILLS_TASK
+leash=Surface(name=ActivityRecord{67490035 u0 com.browser.dvnex0/com.google.android.apps.chrome.Main)/@0xef8139
+sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0 bc=fffafafa
+component=com.browser.dvnex0/org.chromium.chrome.browser.ChromeTabbedActivity opt={t=FROM_STYLE mUserId=0}}
+  11-23 21:39:15.076 V/WindowManager(  843):     ]}
+  11-23 21:39:15.076 V/WindowManagerShell( 1135): Playing animation for (#115) android.os.BinderProxy@b636ca9@0
+  11-23 21:39:15.077 V/ShellRecents( 1135): RecentsTransitionHandler.startAnimation: no controller found
+  11-23 21:39:15.077 V/WindowManagerShell( 1135): Transition doesn't have explicit remote, search filters for match
+for {id=115 t=OPEN f=0x0 trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=FILLS_TASK leash=Surface(name=ActivityRecord{7123018 u0
+com.browser.dvnex0.authhelper/com.browser.dvnex0.auth.DVNexGoogleAuthActivity)/@0x6a1175c sb=Rect(0, 0 - 0, 0)
+eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=-1->0 r=-1->1:-1 bc=fffafafa
+component=com.browser.dvnex0.authhelper/com.browser.dvnex0.auth.DVNexGoogleAuthActivity opt={t=FROM_STYLE
+mUserId=0}},{m=TO_BACK f=FILLS_TASK leash=Surface(name=ActivityRecord{67490035 u0
+com.browser.dvnex0/com.google.android.apps.chrome.Main)/@0x4dd2a65 sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900)
+epz=Point(1600, 900) d=0 bc=fffafafa component=com.browser.dvnex0/org.chromium.chrome.browser.ChromeTabbedActivity
+opt={t=FROM_STYLE mUserId=0}}]}
+  11-23 21:39:15.077 V/WindowManagerShell( 1135):  Checking filter Pair{{types=[] flags=0x0] notFlags=0x100
+checks=[{atype=home independent=true modes=[OPEN,TO_FRONT] flags=NONE mustBeTask=false order=TOP
+topActivity=ComponentInfo{app.lawnchair/app.lawnchair.LawnchairLauncher} launchCookie=null
+windowingMode=undefined},{atype=standard independent=true modes=[CLOSE,TO_BACK] flags=NONE mustBeTask=false order=ANY
+topActivity=null launchCookie=null windowingMode=undefined},{NOT atype=undefined independent=true modes=[] flags=NONE
+mustBeTask=true order=ANY topActivity=null launchCookie=null windowingMode=undefined}]} RemoteTransition {
+remoteTransition = android.window.IRemoteTransition$Stub$Proxy@225dc8b, appThread =
+android.app.IApplicationThread$Stub$Proxy@1d37168, debugName = QuickstepLaunchHome }}
+  11-23 21:39:15.077 V/WindowManagerShell( 1135):  Delegate animation for (#115) to null
+  11-23 21:39:15.077 V/WindowManagerShell( 1135): start default transition animation, info = {id=115 t=OPEN f=0x0
+trk=0 r=[0@Point(0, 0)] c=[{m=OPEN f=FILLS_TASK leash=Surface(name=ActivityRecord{7123018 u0
+com.browser.dvnex0.authhelper/com.browser.dvnex0.auth.DVNexGoogleAuthActivity)/@0x6a1175c sb=Rect(0, 0 - 0, 0)
+eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=-1->0 r=-1->1:-1 bc=fffafafa
+component=com.browser.dvnex0.authhelper/com.browser.dvnex0.auth.DVNexGoogleAuthActivity opt={t=FROM_STYLE
+mUserId=0}},{m=TO_BACK f=FILLS_TASK leash=Surface(name=ActivityRecord{67490035 u0
+com.browser.dvnex0/com.google.android.apps.chrome.Main)/@0x4dd2a65 sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900)
+epz=Point(1600, 900) d=0 bc=fffafafa component=com.browser.dvnex0/org.chromium.chrome.browser.ChromeTabbedActivity
+opt={t=FROM_STYLE mUserId=0}}]}
+  11-23 21:39:15.078 V/WindowManagerShell( 1135): loadAnimation: anim=android.view.animation.AnimationSet@acf1906
+animAttr=0x5 type=OPEN isEntrance=false
+  11-23 21:39:15.079 W/UserManagerService(  843): Requested status bar icon for non-badged user 0
+  11-23 21:39:15.094 D/HWUI    ( 1135): HOOK FAILED! Expected 3 got = 2
+  11-23 21:39:15.097 D/gralloc_kona( 1135): gralloc_alloc: Creating ashmem region of size 520192
+  11-23 21:39:15.101 V/WindowManagerShell( 1135): loadAnimation: anim=android.view.animation.AnimationSet@a13d219
+animAttr=0x4 type=OPEN isEntrance=true
+  11-23 21:39:15.107 D/gralloc_kona(12890): gralloc_alloc: Creating ashmem region of size 5763072
+> 11-23 21:39:15.107 E/chromium(13464): [ERROR:ui/gl/egl_util.cc:92] EGL Driver message (Error)
+eglDupNativeFenceFDANDROID: Bad parameter.
+> 11-23 21:39:15.107 E/chromium(13464): [ERROR:ui/gl/gl_fence_android_native_fence_sync.cc:74]
+eglDupNativeFenceFDANDROID duplication failure. Returned error=-1
+> 11-23 21:39:15.108 E/chromium(13464): [ERROR:ui/gl/android/egl_fence_utils.cc:20] Gpu fence handle is null
+  11-23 21:39:15.109 D/gralloc_kona(12890): gralloc_alloc: Creating ashmem region of size 5763072
+  11-23 21:39:15.112 D/gralloc_kona(  698): gralloc_alloc: Creating ashmem region of size 4096
+  11-23 21:39:15.117 D/gralloc_kona( 1135): gralloc_alloc: Creating ashmem region of size 520192
+  11-23 21:39:15.118 D/HWUI    ( 1135): HOOK FAILED! Expected 3 got = 2
+  11-23 21:39:15.120 D/gralloc_kona( 1135): gralloc_alloc: Creating ashmem region of size 520192
+  11-23 21:39:15.121 V/WindowManagerShell( 1135):  animated by
+com.android.wm.shell.transition.DefaultTransitionHandler@7f10580
+  11-23 21:39:15.180 I/ImeTracker(  843): com.browser.dvnex0.authhelper:5a28ab77: onRequestHide at ORIGIN_SERVER
+reason HIDE_UNSPECIFIED_WINDOW fromUser false
+  11-23 21:39:15.180 D/InsetsController(12890): hide(ime(), fromIme=false)
+  11-23 21:39:15.180 I/ImeTracker(12890): com.browser.dvnex0.authhelper:5a28ab77: onCancelled at
+PHASE_CLIENT_ALREADY_HIDDEN
+  11-23 21:39:15.361 V/WindowManagerShell( 1135): Transition animation finished (aborted=false), notifying core (#115)
+android.os.BinderProxy@b636ca9@0
+  11-23 21:39:15.362 V/WindowManager(  843): Finish Transition (#115): created at 11-23 21:39:14.964
+collect-started=0.028ms request-sent=2.671ms started=5.368ms ready=27.147ms sent=110.325ms finished=398.003ms
+  11-23 21:39:15.362 D/VRI[Main](13369): visibilityChanged oldVisibility=true newVisibility=false
+  11-23 21:39:15.364 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.364 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.365 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:15.365 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@2c463b2
+> 11-23 21:39:15.365 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3b9d39f #u0a24/9206
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m35s40ms NET CHARGING READY}
+  11-23 21:39:15.366 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:15.366 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@51108fe
+> 11-23 21:39:15.366 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f76391c #u0a24/9207
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m35s23ms IDLE READY}
+  11-23 21:39:15.366 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:15.366 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@9f0b70a
+> 11-23 21:39:15.366 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e83e611 #u0a24/9208
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:+5d17h42m58s468ms NET READY}
+  11-23 21:39:15.367 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.367 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.367 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.367 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground }:
+user 0 is stopped
+  11-23 21:39:15.367 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@6b39d6
+> 11-23 21:39:15.367 E/JobScheduler.Concurrency(  843): Error executing JobStatus{91ae4b3 #u0a24/10175
+com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground u=0
+s=10024 TIME=none:-34m34s353ms NET IDLE READY}
+  11-23 21:39:15.367 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:15.367 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@e391d62
+> 11-23 21:39:15.367 E/JobScheduler.Concurrency(  843): Error executing JobStatus{9b0a816 #u0a24/9218
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m34s70ms NET READY}
+  11-23 21:39:15.368 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:15.368 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@a0fadae
+> 11-23 21:39:15.368 E/JobScheduler.Concurrency(  843): Error executing JobStatus{2c7e8be #u0a61/115
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=none:-34m22s571ms READY}
+  11-23 21:39:15.368 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.368 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.368 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.368 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:15.368 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@eacf6ba
+> 11-23 21:39:15.368 E/JobScheduler.Concurrency(  843): Error executing JobStatus{a876204 #u0a61/112
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m43s44ms:-1h34m43s44ms PERSISTED READY}
+  11-23 21:39:15.369 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:15.369 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@2a3c486
+> 11-23 21:39:15.369 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e9a23ed #u0a61/107
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m43s45ms:-1h34m43s45ms NET PERSISTED READY}
+  11-23 21:39:15.370 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:15.370 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@e7a312
+> 11-23 21:39:15.370 E/JobScheduler.Concurrency(  843): Error executing JobStatus{4e1b222 #u0a61/54
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m43s45ms:-1h34m43s45ms PERSISTED READY}
+  11-23 21:39:15.370 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:15.370 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@655ab99
+> 11-23 21:39:15.370 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3a7ef3e #u0a24/9217
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024 READY}
+  11-23 21:39:15.371 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.371 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.371 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.371 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:15.371 W/ActivityManager(  843): Unable to launch app com.google.android.syncadapters.calendar/10030 for
+service Intent { cmp=com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService
+}: user 0 is stopped
+  11-23 21:39:15.371 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@5cc6855
+> 11-23 21:39:15.371 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f7572cc #u0a30/6
+com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10030
+TIME=-1h33m25s582ms:none NET READY}
+  11-23 21:39:15.372 W/ActivityManager(  843): Unable to launch app com.google.android.play.games/10033 for service
+Intent { cmp=com.google.android.play.games/androidx.work.impl.background.systemjob.SystemJobService }: user 0 is
+stopped
+  11-23 21:39:15.372 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@8b834d1
+> 11-23 21:39:15.372 E/JobScheduler.Concurrency(  843): Error executing JobStatus{d475c1c
+androidx.work.systemjobscheduler:u0a33/12 @androidx.work.systemjobscheduler@com.google.android.play.games/androidx.work
+.impl.background.systemjob.SystemJobService u=0 s=10033 READY}
+  11-23 21:39:15.372 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService }: user 0 is stopped
+  11-23 21:39:15.372 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@7ba4d0d
+> 11-23 21:39:15.372 E/JobScheduler.Concurrency(  843): Error executing JobStatus{35b6afb #u0a24/174406261
+com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService u=0 s=10024 TIME=none:-34m35s114ms
+READY}
+  11-23 21:39:15.372 E/JobServiceContext(  843): Binding died for com.android.vending but no running job on this
+context
+  11-23 21:39:15.378 D/HWUI    (13369): endAllActiveAnimators on 0x7ae273891460 (RippleDrawable) with handle
+0x7ae233892a40
+  11-23 21:39:15.383 E/cr_CompositorSurfaceMgr(13369): surfaceDestroyed format : -3
+  11-23 21:39:15.425 I/cr_BindingManager(13369): onTrimMemory: level=20, size=0
+  11-23 21:39:15.458 W/cr_BotControlsStacker(13369): Using mTotalHeight before initialization
+  11-23 21:39:15.458 I/cr_TopControlsStacker(13369): [TopControlsPositioning] *** repositionLayers ***
+initialTopOffset=0 minHeightOffset=0 offsetsAppliedByBrowser=true
+  11-23 21:39:15.458 I/cr_TopControlsStacker(13369): [TopControlsPositioning] [TAB_STRIP] yOffset=0 height=60
+scrollType=0 visibility=0
+  11-23 21:39:15.458 E/cr_TopToolbarCoord(13369): [TopControlsPositioning] toolbarTopOffsetInCapture=0, captureHeight=0
+  11-23 21:39:15.458 E/cr_TopToolbarCoord(13369): [TopControlsPositioning] updateSceneLayerYOffset: mLayerYOffset=60,
+captureHeight=0, tabStripHeightResource=60, tabStripHeightReal=60, diff=0, hairlineAdjustment=0, finalYOffset=60
+  11-23 21:39:15.458 I/cr_TopControlsStacker(13369): [TopControlsPositioning] [TOOLBAR] yOffset=60 height=84
+scrollType=0 visibility=0
+  11-23 21:39:15.458 I/cr_TopControlsStacker(13369): [TopControlsPositioning] [TAB_SHARING_TOOLBAR] yOffset=0 height=0
+scrollType=0 visibility=1
+  11-23 21:39:15.458 I/cr_TopControlsStacker(13369): [TopControlsPositioning] [PROGRESS_BAR] yOffset=-3 height=3
+scrollType=0 visibility=1
+  11-23 21:39:16.523 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:16.523 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:16.523 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:16.523 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@45ef441
+> 11-23 21:39:16.523 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3b9d39f #u0a24/9206
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m36s197ms NET CHARGING READY}
+  11-23 21:39:16.523 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:16.523 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@365937d
+> 11-23 21:39:16.523 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f76391c #u0a24/9207
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m36s181ms IDLE READY}
+  11-23 21:39:16.523 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:16.524 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@f3cea79
+> 11-23 21:39:16.524 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e83e611 #u0a24/9208
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:+5d17h42m57s311ms NET READY}
+  11-23 21:39:16.524 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground }:
+user 0 is stopped
+  11-23 21:39:16.524 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@65bcb6c
+> 11-23 21:39:16.524 E/JobScheduler.Concurrency(  843): Error executing JobStatus{91ae4b3 #u0a24/10175
+com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground u=0
+s=10024 TIME=none:-34m35s509ms NET IDLE READY}
+  11-23 21:39:16.524 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:16.524 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@30a4b3b
+> 11-23 21:39:16.524 E/JobScheduler.Concurrency(  843): Error executing JobStatus{9b0a816 #u0a24/9218
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m35s227ms NET READY}
+  11-23 21:39:16.524 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:16.524 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@859ac96
+> 11-23 21:39:16.524 E/JobScheduler.Concurrency(  843): Error executing JobStatus{2c7e8be #u0a61/115
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=none:-34m23s728ms READY}
+  11-23 21:39:16.524 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:16.524 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:16.525 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:16.525 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:16.525 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:16.525 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:16.525 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:16.525 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@7bfc22
+> 11-23 21:39:16.525 E/JobScheduler.Concurrency(  843): Error executing JobStatus{a876204 #u0a61/112
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m44s200ms:-1h34m44s200ms PERSISTED READY}
+  11-23 21:39:16.525 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:16.525 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@581b86e
+> 11-23 21:39:16.525 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e9a23ed #u0a61/107
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m44s201ms:-1h34m44s201ms NET PERSISTED READY}
+  11-23 21:39:16.525 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:16.525 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@514ed7a
+> 11-23 21:39:16.525 E/JobScheduler.Concurrency(  843): Error executing JobStatus{4e1b222 #u0a61/54
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m44s201ms:-1h34m44s201ms PERSISTED READY}
+  11-23 21:39:16.525 W/ActivityManager(  843): Unable to launch app com.google.android.syncadapters.calendar/10030 for
+service Intent { cmp=com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService
+}: user 0 is stopped
+  11-23 21:39:16.525 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@b746746
+> 11-23 21:39:16.525 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f7572cc #u0a30/6
+com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10030
+TIME=-1h33m26s736ms:none NET READY}
+  11-23 21:39:16.526 W/ActivityManager(  843): Unable to launch app com.google.android.play.games/10033 for service
+Intent { cmp=com.google.android.play.games/androidx.work.impl.background.systemjob.SystemJobService }: user 0 is
+stopped
+  11-23 21:39:16.526 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@7ffb1d2
+> 11-23 21:39:16.526 E/JobScheduler.Concurrency(  843): Error executing JobStatus{d475c1c
+androidx.work.systemjobscheduler:u0a33/12 @androidx.work.systemjobscheduler@com.google.android.play.games/androidx.work
+.impl.background.systemjob.SystemJobService u=0 s=10033 READY}
+  11-23 21:39:16.526 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:16.526 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@e83191e
+> 11-23 21:39:16.526 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3a7ef3e #u0a24/9217
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024 READY}
+  11-23 21:39:16.526 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService }: user 0 is stopped
+  11-23 21:39:16.526 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@3ccf215
+> 11-23 21:39:16.526 E/JobScheduler.Concurrency(  843): Error executing JobStatus{35b6afb #u0a24/174406261
+com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService u=0 s=10024 TIME=none:-34m36s268ms
+READY}
+  11-23 21:39:16.526 E/JobServiceContext(  843): Binding died for com.android.vending but no running job on this
+context
+  11-23 21:39:16.527 I/BpBinder(  698): onLastStrongRef automatically unlinking death recipients:
+  11-23 21:39:16.529 D/gralloc_kona(13369): gralloc_alloc: Creating ashmem region of size 1470464
+  11-23 21:39:16.532 D/gralloc_kona(13369): gralloc_alloc: Creating ashmem region of size 1470464
+  11-23 21:39:16.533 D/gralloc_kona(13369): gralloc_alloc: Creating ashmem region of size 1470464
+  11-23 21:39:16.535 D/ViewRootImpl(13369): Skipping stats log for color mode
+  11-23 21:39:16.536 I/cr_SUCFiltersObserver(13369): setting=browser_content_filters_enabled discarding false
+  11-23 21:39:16.536 I/cr_SUCFiltersObserver(13369): setting=search_content_filters_enabled discarding false
+  11-23 21:39:16.537 D/ConnectivityService(  843): requestNetwork for uid/pid:10065/13369 activeRequest: null
+callbackRequest: 368 [NetworkRequest [ REQUEST id=369, [ Capabilities:
+INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10065 RequestorUid: 10065 RequestorPkg:
+com.browser.dvnex0 UnderlyingNetworks: Null] ]] callback flags: 0 order: 2147483647 isUidTracked: false
+declaredMethods: ALL
+  11-23 21:39:16.538 D/WifiNetworkFactory(  843): got request NetworkRequest [ REQUEST id=369, [ Capabilities:
+INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10065 RequestorUid: 10065 RequestorPkg:
+com.browser.dvnex0 UnderlyingNetworks: Null] ]
+  11-23 21:39:16.538 D/UntrustedWifiNetworkFactory(  843): got request NetworkRequest [ REQUEST id=369, [
+Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10065 RequestorUid: 10065
+RequestorPkg: com.browser.dvnex0 UnderlyingNetworks: Null] ]
+  11-23 21:39:16.538 D/OemPaidWifiNetworkFactory(  843): got request NetworkRequest [ REQUEST id=369, [ Capabilities:
+INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VCN_MANAGED&NOT_BANDWIDTH_CONSTRAINED Uid: 10065 RequestorUid: 10065 RequestorPkg:
+com.browser.dvnex0 UnderlyingNetworks: Null] ]
+  11-23 21:39:16.538 D/ConnectivityService(  843): NetReassign [no changes] [c 0] [a 0] [i 0]
+  11-23 21:39:16.543 W/cr_ActivityDispatcher(13369): CustomTabsIntent#shouldAlwaysUseBrowserUI() = false
+  11-23 21:39:16.550 I/cr_PartnerCustUma(13369): Partner customization async init started.
+  11-23 21:39:16.550 W/cr_PartnerCustomize(13369): Partner homepage must be HTTP(S) or NewTabPage. Got invalid URL ""
+> 11-23 21:39:16.551 D/AndroidRuntime(13369): Shutting down VM
+  --------- beginning of crash
+> 11-23 21:39:16.551 E/AndroidRuntime(13369): FATAL EXCEPTION: main
+> 11-23 21:39:16.551 E/AndroidRuntime(13369): Process: com.browser.dvnex0, PID: 13369
+> 11-23 21:39:16.551 E/AndroidRuntime(13369): java.lang.VerifyError: Verifier rejected class
+com.browser.dvnex0.auth.DvnexSessionTokenFetch: void com.browser.dvnex0.auth.DvnexSessionTokenFetch.run() failed to
+verify: void com.browser.dvnex0.auth.DvnexSessionTokenFetch.run(): [0x3F] invalid use of move-exception (declaration
+of 'com.browser.dvnex0.auth.DvnexSessionTokenFetch' appears in
+/data/app/~~-TsEzsWcXmjyXNQSivq2YQ==/com.browser.dvnex0-doFVpl29k65QSLWPdRFuiQ==/base.apk!classes2.dex)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at
+com.browser.dvnex0.auth.DvnexAccountBridge.refreshSessionToken(Unknown Source:6)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at
+com.browser.dvnex0.auth.DvnexAccountBridge.handleActivityResult(Unknown Source:93)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at
+org.chromium.chrome.browser.ChromeTabbedActivity.onActivityResult(chromium-ChromePublic.apk-default-814400004:8)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at android.app.Activity.onActivityResult(Activity.java:7571)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at
+android.app.Activity.internalDispatchActivityResult(Activity.java:9470)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at android.app.Activity.dispatchActivityResult(Activity.java:9447)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at android.app.ActivityThread.deliverResults(ActivityThread.java:6051)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at android.app.ActivityThread.handleSendResult(ActivityThread.java:6101)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at
+android.app.servertransaction.ActivityResultItem.execute(ActivityResultItem.java:78)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at
+android.app.servertransaction.ActivityTransactionItem.execute(ActivityTransactionItem.java:63)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at
+android.app.servertransaction.TransactionExecutor.executeNonLifecycleItem(TransactionExecutor.java:133)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at
+android.app.servertransaction.TransactionExecutor.executeTransactionItems(TransactionExecutor.java:103)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at
+android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:80)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2784)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at android.os.Handler.dispatchMessage(Handler.java:109)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at android.os.Looper.loopOnce(Looper.java:232)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at android.os.Looper.loop(Looper.java:317)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at android.app.ActivityThread.main(ActivityThread.java:8971)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at java.lang.reflect.Method.invoke(Native Method)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at
+com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:597)
+> 11-23 21:39:16.551 E/AndroidRuntime(13369):   at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:919)
+  11-23 21:39:16.629 I/app_process64(13631): type=1400 audit(0.0:2763): avc:  denied  { map } for
+path="/dev/__properties__/u:object_r:userdebug_or_eng_prop:s0" dev="tmpfs" ino=604
+scontext=u:r:untrusted_app:s0:c65,c256,c512,c768 tcontext=u:object_r:userdebug_or_eng_prop:s0 tclass=file permissive=1
+app=com.browser.dvnex0
+> 11-23 21:39:16.639 D/AndroidRuntime(13631): >>>>>> START com.android.internal.os.RuntimeInit uid 10065 <<<<<<
+> 11-23 21:39:16.642 I/AndroidRuntime(13631): Using default boot image
+> 11-23 21:39:16.642 I/AndroidRuntime(13631): Leaving lock profiling enabled
+  11-23 21:39:16.644 W/linker64(13631): ART APEX data files are untrusted.
+  11-23 21:39:16.641 I/app_process64(13631): type=1400 audit(0.0:2764): avc:  denied  { read } for
+name="u:object_r:odsign_prop:s0" dev="tmpfs" ino=482 scontext=u:r:untrusted_app:s0:c65,c256,c512,c768
+tcontext=u:object_r:odsign_prop:s0 tclass=file permissive=1 app=com.browser.dvnex0
+  11-23 21:39:16.641 I/app_process64(13631): type=1400 audit(0.0:2765): avc:  denied  { open } for
+path="/dev/__properties__/u:object_r:odsign_prop:s0" dev="tmpfs" ino=482
+scontext=u:r:untrusted_app:s0:c65,c256,c512,c768 tcontext=u:object_r:odsign_prop:s0 tclass=file permissive=1
+app=com.browser.dvnex0
+  11-23 21:39:16.655 I/linker64(13631): Using CollectorTypeCMC GC.
+  11-23 21:39:16.641 I/app_process64(13631): type=1400 audit(0.0:2766): avc:  denied  { getattr } for
+path="/dev/__properties__/u:object_r:odsign_prop:s0" dev="tmpfs" ino=482
+scontext=u:r:untrusted_app:s0:c65,c256,c512,c768 tcontext=u:object_r:odsign_prop:s0 tclass=file permissive=1
+app=com.browser.dvnex0
+  11-23 21:39:16.641 I/app_process64(13631): type=1400 audit(0.0:2767): avc:  denied  { map } for
+path="/dev/__properties__/u:object_r:odsign_prop:s0" dev="tmpfs" ino=482
+scontext=u:r:untrusted_app:s0:c65,c256,c512,c768 tcontext=u:object_r:odsign_prop:s0 tclass=file permissive=1
+app=com.browser.dvnex0
+  11-23 21:39:16.716 D/nativeloader(13631): InitDefaultPublicLibraries for_preload=1: libandroid.so:libaaudio.so:libami
+di.so:libbinder_ndk.so:libc.so:libcamera2ndk.so:libdl.so:libEGL.so:libGLESv1_CM.so:libGLESv2.so:libGLESv3.so:libicu.so:
+libicui18n.so:libicuuc.so:libjnigraphics.so:liblog.so:libmediandk.so:libm.so:libnativehelper.so:libnativewindow.so:libO
+penMAXAL.so:libOpenSLES.so:libRS.so:libstdc++.so:libsync.so:libvulkan.so:libwebviewchromium_plat_support.so:libz.so:lib
+callhost.so
+  11-23 21:39:16.728 D/nativeloader(13631): Load libicu_jni.so using APEX ns com_android_art for caller
+/apex/com.android.art/javalib/core-oj.jar: ok
+  11-23 21:39:16.728 D/linker64(13631): u_setTimeZoneFilesDirectory("/apex/com.android.tzdata/etc/tz/versioned/8/icu")
+succeeded.
+  11-23 21:39:16.728 D/linker64(13631): I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt75l.dat
+  11-23 21:39:16.730 D/nativeloader(13631): Load libjavacore.so using APEX ns com_android_art for caller
+/apex/com.android.art/javalib/core-oj.jar: ok
+  11-23 21:39:16.731 D/nativeloader(13631): Load libopenjdk.so using APEX ns com_android_art for caller
+/apex/com.android.art/javalib/core-oj.jar: ok
+  11-23 21:39:16.746 I/houdini (13631): [13631] Intel Bridge Technology for NetEase Mumu only, Copyright(C) Intel
+Corp. 2012-now.
+  11-23 21:39:16.746 I/houdini (13631): [13631] Use permitted only under a valid commercial software license agreement
+- all other rights reserved.
+  11-23 21:39:16.746 I/houdini (13631): [13631] Initialize library(version: 15.0.0.Netease_com3.0 RELEASE)...
+successfully.
+  11-23 21:39:16.746 W/HP      (13631): x_initialize private_dir:(null) instruction_set:x86_64
+getMethodShorty:0x7547a2025700 ret:1
+> 11-23 21:39:16.747 E/appproc (13631): ERROR: could not find class
+'/data/app/~~-TsEzsWcXmjyXNQSivq2YQ==/com.browser.dvnex0-doFVpl29k65QSLWPdRFuiQ==/base.apk!/lib/arm64-v8a/libchrome.so'
+> 11-23 21:39:16.747 F/linker64(13631): thread.cc:2602] No pending exception expected:
+java.lang.ClassNotFoundException:
+.data.app.~~-TsEzsWcXmjyXNQSivq2YQ==.com.browser.dvnex0-doFVpl29k65QSLWPdRFuiQ==.base.apk!.lib.arm64-v8a.libchrome.so
+  11-23 21:39:16.747 F/linker64(13631): thread.cc:2602] (Throwable with empty stack trace)
+  11-23 21:39:16.747 F/linker64(13631): thread.cc:2602]
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707] Runtime aborting...
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707] All threads:
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707] DALVIK THREADS (8):
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707] "ReferenceQueueDaemon" prio=10 tid=6 Waiting
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x2006058
+self=0x7547f4606200
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   | sysTid=13636 nice=-8 cgrp=default sched=0/0
+handle=0x7547708b8860
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   | state=S schedstat=( 122231 0 4 ) utm=0 stm=0 core=1 HZ=100
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   | stack=0x7547707b5000-0x7547707b7000 stackSize=1038KB
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   | held mutexes=
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #00 pc 0007c6b6
+/apex/com.android.runtime/lib64/bionic/libc.so (syscall+22) (BuildId: 52bc34193ef6f6311bbb44f2305d1b1d)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #05 pc 0098b73f
+/apex/com.android.art/lib64/libart.so (art::AbortState::Dump const+207) (BuildId: 7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #06 pc 009701ed
+/apex/com.android.art/lib64/libart.so (art::Runtime::Abort+1693) (BuildId: 7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #07 pc 00013ece
+/apex/com.android.art/lib64/libbase.so (android::base::SetAborter::$_0::__invoke+62) (BuildId:
+cde788c716e8bd15b2bf3bc5a87ae200)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #08 pc 000133c5
+/apex/com.android.art/lib64/libbase.so (android::base::LogMessage::~LogMessage+501) (BuildId:
+cde788c716e8bd15b2bf3bc5a87ae200)
+> 11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #09 pc 009cc070
+/apex/com.android.art/lib64/libart.so (art::Thread::AssertNoPendingException const+1584) (BuildId:
+7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #10 pc 00580227
+/apex/com.android.art/lib64/libart.so (art::ClassLinker::FindClass+55) (BuildId: 7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #11 pc 0076c4c4
+/apex/com.android.art/lib64/libart.so (art::JNI<false>::FindClass+1524) (BuildId: 7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #12 pc 0021eded  /system/lib64/libandroid_runtime.so
+(android::register_com_android_internal_os_ApplicationSharedMemory+45) (BuildId: a474bd0505570f142640e8a0ed34f4c9)
+> 11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #13 pc 00115032  /system/lib64/libandroid_runtime.so
+(android::AndroidRuntime::startReg+66) (BuildId: a474bd0505570f142640e8a0ed34f4c9)
+> 11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #14 pc 00114d41  /system/lib64/libandroid_runtime.so
+(android::AndroidRuntime::start+641) (BuildId: a474bd0505570f142640e8a0ed34f4c9)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #15 pc 00002708  /system/bin/app_process64
+(main+1640) (BuildId: 821f5c0b4d50c5a3d0d4aa5111d370d5)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #16 pc 000520d5
+/apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+117) (BuildId: 52bc34193ef6f6311bbb44f2305d1b1d)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   (no managed stack frames)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707] "Jit thread pool worker thread 0" prio=5 tid=2 Native
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   | group="" sCount=1 ucsCount=0 flags=1 obj=0x2008030
+self=0x7547f45f9f50
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   | sysTid=13632 nice=9 cgrp=default sched=0/0
+handle=0x75477103f860
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   | state=S schedstat=( 70466 16607 1 ) utm=0 stm=0 core=3
+HZ=100
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   | stack=0x754770f40000-0x754770f42000 stackSize=1022KB
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   | held mutexes=
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #00 pc 0007c6b6
+/apex/com.android.runtime/lib64/bionic/libc.so (syscall+22) (BuildId: 52bc34193ef6f6311bbb44f2305d1b1d)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #01 pc 00560aff
+/apex/com.android.art/lib64/libart.so (art::ConditionVariable::WaitHoldingLocks+111) (BuildId:
+7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #03 pc 0098bc51
+/apex/com.android.art/lib64/libart.so (art::AbortState::DumpThread const+49) (BuildId:
+7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #04 pc 009701ed
+/apex/com.android.art/lib64/libart.so (art::Runtime::Abort+1693) (BuildId: 7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #05 pc 00013ece
+/apex/com.android.art/lib64/libbase.so (android::base::SetAborter::$_0::__invoke+62) (BuildId:
+cde788c716e8bd15b2bf3bc5a87ae200)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #06 pc 000133c5
+/apex/com.android.art/lib64/libbase.so (android::base::LogMessage::~LogMessage+501) (BuildId:
+cde788c716e8bd15b2bf3bc5a87ae200)
+> 11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #07 pc 009cc070
+/apex/com.android.art/lib64/libart.so (art::Thread::AssertNoPendingException const+1584) (BuildId:
+7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #08 pc 00580227
+/apex/com.android.art/lib64/libart.so (art::ClassLinker::FindClass+55) (BuildId: 7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #09 pc 0076c4c4
+/apex/com.android.art/lib64/libart.so (art::JNI<false>::FindClass+1524) (BuildId: 7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #10 pc 0021eded  /system/lib64/libandroid_runtime.so
+(android::register_com_android_internal_os_ApplicationSharedMemory+45) (BuildId: a474bd0505570f142640e8a0ed34f4c9)
+> 11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #11 pc 00115032  /system/lib64/libandroid_runtime.so
+(android::AndroidRuntime::startReg+66) (BuildId: a474bd0505570f142640e8a0ed34f4c9)
+> 11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #12 pc 00114d41  /system/lib64/libandroid_runtime.so
+(android::AndroidRuntime::start+641) (BuildId: a474bd0505570f142640e8a0ed34f4c9)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #13 pc 00002708  /system/bin/app_process64
+(main+1640) (BuildId: 821f5c0b4d50c5a3d0d4aa5111d370d5)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   native: #14 pc 000520d5
+/apex/com.android.runtime/lib64/bionic/libc.so (__libc_init+117) (BuildId: 52bc34193ef6f6311bbb44f2305d1b1d)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]   (no managed stack frames)
+> 11-23 21:39:16.765 F/linker64(13631): runtime.cc:707] Pending exception java.lang.ClassNotFoundException:
+.data.app.~~-TsEzsWcXmjyXNQSivq2YQ==.com.browser.dvnex0-doFVpl29k65QSLWPdRFuiQ==.base.apk!.lib.arm64-v8a.libchrome.so
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707] (Throwable with empty stack trace)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:707]
+> 11-23 21:39:16.765 F/linker64(13631): runtime.cc:715] No pending exception expected:
+java.lang.ClassNotFoundException:
+.data.app.~~-TsEzsWcXmjyXNQSivq2YQ==.com.browser.dvnex0-doFVpl29k65QSLWPdRFuiQ==.base.apk!.lib.arm64-v8a.libchrome.so
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:715] (Throwable with empty stack trace)
+  11-23 21:39:16.765 F/linker64(13631): runtime.cc:715]
+  11-23 21:39:16.765 F/libc    (13631): Fatal signal 6 (SIGABRT), code -1 (SI_QUEUE) in tid 13631 (main), pid 13631
+(main)
+  11-23 21:39:16.765 I/SIGNAL_LOG(13631): signal pid 13631 uid 10065 signal_num 6 si_code -1 si_errno 0 si_val 0
+  11-23 21:39:16.766 I/SIGNAL_LOG(13631): houdini base 0x75476a683000
+  11-23 21:39:16.766 I/SIGNAL_LOG(13631): houdini arm64 regs base 0x0
+  11-23 21:39:16.767 I/SIGNAL_LOG(13631):   invalid arm reg
+  11-23 21:39:16.777 I/crash_dump64(13641): obtaining output fd from tombstoned, type: kDebuggerdTombstoneProto
+  11-23 21:39:16.778 I/tombstoned(  516): received crash request for pid 13631
+  11-23 21:39:16.778 I/crash_dump64(13641): performing dump of process 13631 (target tid = 13631)
+  11-23 21:39:16.827 F/DEBUG   (13641): *** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+  11-23 21:39:16.827 F/DEBUG   (13641): Build fingerprint: 'Samsung/a52sxq/a52sxq:15/V417IR/248:user/release-keys'
+  11-23 21:39:16.827 F/DEBUG   (13641): Revision: '0'
+  11-23 21:39:16.827 F/DEBUG   (13641): ABI: 'x86_64'
+  11-23 21:39:16.827 F/DEBUG   (13641): Timestamp: 2026-11-23 21:39:16.780263437-0300
+  11-23 21:39:16.827 F/DEBUG   (13641): Process uptime: 1s
+> 11-23 21:39:16.827 F/DEBUG   (13641): Cmdline: /system/bin/linker64 /data/app/~~-TsEzsWcXmjyXNQSivq2YQ==/com.browser.
+dvnex0-doFVpl29k65QSLWPdRFuiQ==/base.apk!/lib/arm64-v8a/libcrashpad_handler_trampoline.so
+/data/app/~~-TsEzsWcXmjyXNQSivq2YQ==/com.browser.dvnex0-doFVpl29k65QSLWPdRFuiQ==/base.apk!/lib/arm64-v8a/libchrome.so
+--user-stream-region=131,65568 --database=/data/user/0/com.browser.dvnex0/cache/Crashpad --annotation=abi_name=x86_64,
+arm64-v8a, x86 --annotation=android_build_fp=Samsung/a52sxq/a52sxq:15/V417IR/248:user/release-keys
+--annotation=android_build_id=V417IR --annotation=board=SM-A528B --annotation=brand=Samsung
+--annotation=channel=unknown --annotation=device=a52sxq --annotation=gms_core_version=264330038
+--annotation=installer_package_name= --annotation=model=SM-A528B --annotation=package=com.browser.dvnex0 v814400004
+(159.0.8144.0) --annotation=plat=Android --annotation=prod=Chrome_Android --annotation=sdk=35
+--annotation=ver=159.0.8144.0 --trace-parent-with-exception=0x7ade003bc808
+  11-23 21:39:16.827 F/DEBUG   (13641): pid: 13631, tid: 13631, name: main  >>> /system/bin/linker64 <<<
+  11-23 21:39:16.827 F/DEBUG   (13641): uid: 10065
+  11-23 21:39:16.827 F/DEBUG   (13641): signal 6 (SIGABRT), code -1 (SI_QUEUE), fault addr --------
+> 11-23 21:39:16.827 F/DEBUG   (13641): Abort message: 'No pending exception expected:
+java.lang.ClassNotFoundException: .data.app.~~-TsEzsWcXmjyXNQSivq2YQ==.com.browser.dvnex0-doFVpl29k65QSLWPdRFuiQ==.base
+.apk!.lib.arm64-v8a.libchrome.so\12(Throwable with empty stack trace)'
+  11-23 21:39:16.827 F/DEBUG   (13641):     rax 0000000000000000  rbx 000000000000353f  rcx 0000754a65e7e864  rdx
+0000000000000006
+  11-23 21:39:16.827 F/DEBUG   (13641):     r8  00007fff27e10380  r9  00007fff27e10380  r10 00007fff27e10340  r11
+0000000000000207
+  11-23 21:39:16.827 F/DEBUG   (13641):     r12 00007548845ed6f0  r13 0000000000000002  r14 000000000000353f  r15
+00007fff27e10410
+  11-23 21:39:16.827 F/DEBUG   (13641):     rdi 000000000000353f  rsi 000000000000353f
+  11-23 21:39:16.827 F/DEBUG   (13641):     rbp 00007fff27e103e0  rsp 00007fff27e10340  rip 0000754a65e7e864
+  11-23 21:39:16.827 F/DEBUG   (13641): 12 total frames
+  11-23 21:39:16.827 F/DEBUG   (13641): backtrace:
+  11-23 21:39:16.827 F/DEBUG   (13641):       #00 pc 0000000000057864  /apex/com.android.runtime/lib64/bionic/libc.so
+(abort+196) (BuildId: 52bc34193ef6f6311bbb44f2305d1b1d)
+  11-23 21:39:16.827 F/DEBUG   (13641):       #01 pc 0000000000970199  /apex/com.android.art/lib64/libart.so
+(art::Runtime::Abort(char const*)+1609) (BuildId: 7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.827 F/DEBUG   (13641):       #02 pc 0000000000013ece  /apex/com.android.art/lib64/libbase.so
+(android::base::SetAborter(std::__1::function<void (char const*)>&&)::$_0::__invoke(char const*)+62) (BuildId:
+cde788c716e8bd15b2bf3bc5a87ae200)
+  11-23 21:39:16.827 F/DEBUG   (13641):       #03 pc 00000000000133c5  /apex/com.android.art/lib64/libbase.so
+(android::base::LogMessage::~LogMessage()+501) (BuildId: cde788c716e8bd15b2bf3bc5a87ae200)
+> 11-23 21:39:16.827 F/DEBUG   (13641):       #04 pc 00000000009cc070  /apex/com.android.art/lib64/libart.so
+(art::Thread::AssertNoPendingException() const+1584) (BuildId: 7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.827 F/DEBUG   (13641):       #05 pc 0000000000580227  /apex/com.android.art/lib64/libart.so
+(art::ClassLinker::FindClass(art::Thread*, char const*, unsigned long, art::Handle<art::mirror::ClassLoader>)+55)
+(BuildId: 7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.827 F/DEBUG   (13641):       #06 pc 000000000076c4c4  /apex/com.android.art/lib64/libart.so
+(art::JNI<false>::FindClass(_JNIEnv*, char const*)+1524) (BuildId: 7f5fe1677703f25adf853dccb65f9da7)
+  11-23 21:39:16.827 F/DEBUG   (13641):       #07 pc 000000000021eded  /system/lib64/libandroid_runtime.so
+(android::register_com_android_internal_os_ApplicationSharedMemory(_JNIEnv*)+45) (BuildId:
+a474bd0505570f142640e8a0ed34f4c9)
+> 11-23 21:39:16.827 F/DEBUG   (13641):       #08 pc 0000000000115032  /system/lib64/libandroid_runtime.so
+(android::AndroidRuntime::startReg(_JNIEnv*)+66) (BuildId: a474bd0505570f142640e8a0ed34f4c9)
+> 11-23 21:39:16.827 F/DEBUG   (13641):       #09 pc 0000000000114d41  /system/lib64/libandroid_runtime.so
+(android::AndroidRuntime::start(char const*, android::Vector<android::String8> const&, bool)+641) (BuildId:
+a474bd0505570f142640e8a0ed34f4c9)
+  11-23 21:39:16.827 F/DEBUG   (13641):       #10 pc 0000000000002708  /system/bin/app_process64 (main+1640) (BuildId:
+821f5c0b4d50c5a3d0d4aa5111d370d5)
+  11-23 21:39:16.827 F/DEBUG   (13641):       #11 pc 00000000000520d5  /apex/com.android.runtime/lib64/bionic/libc.so
+(__libc_init+117) (BuildId: 52bc34193ef6f6311bbb44f2305d1b1d)
+  11-23 21:39:16.830 W/NativeCrashListener(  843): Couldn't find ProcessRecord for pid 13631
+  11-23 21:39:16.831 E/crash_dump64(13641): AM data write failed: Broken pipe
+  11-23 21:39:16.831 E/tombstoned(  516): Tombstone written to: tombstone_06
+  11-23 21:39:16.835 I/DropBoxManagerService(  843): add tag=SYSTEM_TOMBSTONE_PROTO_WITH_HEADERS isTagEnabled=true
+flags=0x4
+  11-23 21:39:16.838 I/DropBoxManagerService(  843): add tag=data_app_crash isTagEnabled=true flags=0x2
+  11-23 21:39:16.839 W/ActivityTaskManager(  843):   Force finishing activity
+com.browser.dvnex0/com.google.android.apps.chrome.Main
+  11-23 21:39:16.841 I/ActivityManager(  843): Showing crash dialog for package com.browser.dvnex0 u0
+  11-23 21:39:16.843 I/BootReceiver(  843): Copying /data/tombstones/tombstone_06 to DropBox (SYSTEM_TOMBSTONE)
+  11-23 21:39:16.843 I/DropBoxManagerService(  843): add tag=SYSTEM_TOMBSTONE isTagEnabled=true flags=0x6
+  11-23 21:39:16.845 I/system_server(  843): AssetManager2(0x7ae2b3779978) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.859 I/system_server(  843): AssetManager2(0x7ae2b3779fb8) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.860 I/system_server(  843): AssetManager2(0x7ae2b3783298) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.860 I/system_server(  843): AssetManager2(0x7ae2b3781678) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.860 I/system_server(  843): AssetManager2(0x7ae2b378af98) locale list changing from [] to [pt-PT]
+> 11-23 21:39:16.861 D/CoreBackPreview(  843): Window{827dae9 u0 Application Error: com.browser.dvnex0}: Setting back
+callback
+OnBackInvokedCallbackInfo{mCallback=android.window.WindowOnBackInvokedDispatcher$OnBackInvokedCallbackWrapper@4298bda,
+mPriority=0, mIsAnimationCallback=false, mOverrideBehavior=0}
+  11-23 21:39:16.862 I/system_server(  843): AssetManager2(0x7ae2b3787758) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.863 I/system_server(  843): AssetManager2(0x7ae2b3753818) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.864 D/gralloc_kona(  843): gralloc_alloc: Creating ashmem region of size 1527808
+  11-23 21:39:16.867 I/system_server(  843): AssetManager2(0x7ae2b377d4d8) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.868 I/system_server(  843): AssetManager2(0x7ae2b377eab8) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.869 D/gralloc_kona(  843): gralloc_alloc: Creating ashmem region of size 1527808
+  11-23 21:39:16.870 D/gralloc_kona(  843): gralloc_alloc: Creating ashmem region of size 1527808
+  11-23 21:39:16.871 I/system_server(  843): AssetManager2(0x7ae2b378db58) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.872 I/system_server(  843): AssetManager2(0x7ae2b378c898) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.873 I/system_server(  843): AssetManager2(0x7ae2b37867b8) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.873 I/system_server(  843): AssetManager2(0x7ae2b3736fd8) locale list changing from [] to [pt-PT]
+  11-23 21:39:16.874 I/system_server(  843): AssetManager2(0x7ae2b3750618) locale list changing from [] to [pt-PT]
+  11-23 21:39:17.343 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.343 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.343 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:17.343 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@18eab8c
+> 11-23 21:39:17.343 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3b9d39f #u0a24/9206
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m37s18ms NET CHARGING READY}
+  11-23 21:39:17.344 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:17.344 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@540f478
+> 11-23 21:39:17.344 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f76391c #u0a24/9207
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m37s2ms IDLE READY}
+  11-23 21:39:17.344 W/ActivityManager(  843): Unable to start service Intent {
+act=com.android.launcher3.WINDOW_OVERLAY dat=app://app.lawnchair:10018/... pkg=com.google.android.googlequicksearchbox
+} U=0: not found
+  11-23 21:39:17.344 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:17.344 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@3cce024
+> 11-23 21:39:17.344 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e83e611 #u0a24/9208
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:+5d17h42m56s490ms NET READY}
+  11-23 21:39:17.345 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground }:
+user 0 is stopped
+  11-23 21:39:17.345 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@309da90
+> 11-23 21:39:17.345 E/JobScheduler.Concurrency(  843): Error executing JobStatus{91ae4b3 #u0a24/10175
+com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground u=0
+s=10024 TIME=none:-34m36s330ms NET IDLE READY}
+  11-23 21:39:17.345 D/WindowManagerShell( 1135): setLauncherKeepClearAreaHeight: visible=true, height=172
+  11-23 21:39:17.345 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:17.345 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@cda0fbc
+> 11-23 21:39:17.345 E/JobScheduler.Concurrency(  843): Error executing JobStatus{9b0a816 #u0a24/9218
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m36s48ms NET READY}
+  11-23 21:39:17.348 W/AccMsgReceiver( 1810): AccMsgReceiver: onReceive action = uu.intent.action.STOP_ACCELERATE
+  11-23 21:39:17.349 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:17.349 W/WidgetOperateReceiver( 1395): onReceive: intent = Intent { act=com.mumu.LAUNCHER_LIFECYCLE
+flg=0x30 pkg=com.mumu.store cmp=com.mumu.store/.widget.receiver.WidgetOperateReceiver (has extras) } action =
+com.mumu.LAUNCHER_LIFECYCLE
+  11-23 21:39:17.349 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@7214e66
+  11-23 21:39:17.349 W/WidgetOperateReceiver( 1395): onLauncherLifecycle: launcherLifecycle = ON_RESUME
+> 11-23 21:39:17.349 E/JobScheduler.Concurrency(  843): Error executing JobStatus{2c7e8be #u0a61/115
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=none:-34m24s552ms READY}
+  11-23 21:39:17.349 W/WidgetManager( 1395): updateLauncherLifecycle: launcherLifecycleName = ON_RESUME
+  11-23 21:39:17.349 D/gralloc_kona( 1096): gralloc_alloc: Creating ashmem region of size 5763072
+  11-23 21:39:17.349 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.349 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.349 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.349 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.349 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.349 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.350 D/BaseDepthController( 1096): setSurface:
+  11-23 21:39:17.350 D/BaseDepthController( 1096):      mWaitingOnSurfaceValidity: false
+  11-23 21:39:17.350 D/BaseDepthController( 1096):      mSurface:
+Surface(name=app.lawnchair/app.lawnchair.LawnchairLauncher)/@0x2f9f09d
+  11-23 21:39:17.350 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:17.350 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@eccf543
+> 11-23 21:39:17.350 E/JobScheduler.Concurrency(  843): Error executing JobStatus{a876204 #u0a61/112
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m45s26ms:-1h34m45s26ms PERSISTED READY}
+  11-23 21:39:17.350 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:17.351 W/AdBannerHover( 1395): [J] render-skip has=N src={} => ÕÀ▓µ©▓µƒôÕê░õ¢ìÔåÆÞÀ│Þ┐ç
+  11-23 21:39:17.351 D/HWUI    ( 1096): HOOK FAILED! Expected 3 got = 2
+  11-23 21:39:17.353 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@93fa29f
+> 11-23 21:39:17.353 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e9a23ed #u0a61/107
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m45s29ms:-1h34m45s29ms NET PERSISTED READY}
+  11-23 21:39:17.353 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:17.354 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@2900ed8
+> 11-23 21:39:17.354 E/JobScheduler.Concurrency(  843): Error executing JobStatus{4e1b222 #u0a61/54
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m45s29ms:-1h34m45s29ms PERSISTED READY}
+  11-23 21:39:17.354 W/ActivityManager(  843): Unable to launch app com.google.android.syncadapters.calendar/10030 for
+service Intent { cmp=com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService
+}: user 0 is stopped
+  11-23 21:39:17.354 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@2634084
+> 11-23 21:39:17.354 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f7572cc #u0a30/6
+com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10030
+TIME=-1h33m27s564ms:none NET READY}
+  11-23 21:39:17.354 W/ActivityManager(  843): Unable to launch app com.google.android.play.games/10033 for service
+Intent { cmp=com.google.android.play.games/androidx.work.impl.background.systemjob.SystemJobService }: user 0 is
+stopped
+  11-23 21:39:17.354 W/ActivityManager(  843): Foreground service started from background can not have
+location/camera/microphone access: service com.mumu.acc/.AccService
+  11-23 21:39:17.354 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@715e0f0
+> 11-23 21:39:17.354 E/JobScheduler.Concurrency(  843): Error executing JobStatus{d475c1c
+androidx.work.systemjobscheduler:u0a33/12 @androidx.work.systemjobscheduler@com.google.android.play.games/androidx.work
+.impl.background.systemjob.SystemJobService u=0 s=10033 READY}
+  11-23 21:39:17.355 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:17.355 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@f101c1c
+> 11-23 21:39:17.355 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3a7ef3e #u0a24/9217
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024 READY}
+  11-23 21:39:17.355 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService }: user 0 is stopped
+  11-23 21:39:17.355 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@bb897ab
+> 11-23 21:39:17.355 E/JobScheduler.Concurrency(  843): Error executing JobStatus{35b6afb #u0a24/174406261
+com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService u=0 s=10024 TIME=none:-34m37s96ms
+READY}
+  11-23 21:39:17.355 E/JobServiceContext(  843): Binding died for com.android.vending but no running job on this
+context
+  11-23 21:39:17.356 D/gralloc_kona( 1096): gralloc_alloc: Creating ashmem region of size 5763072
+  11-23 21:39:17.357 W/AccServiceManager( 1810): onAppClose: packageName = com.browser.dvnex0
+  11-23 21:39:17.370 D/StatsLog( 1096): LAUNCHER_ONRESUME
+  11-23 21:39:17.372 V/WindowManagerShell( 1135): onTransitionReady(transaction=3620657437506)
+  11-23 21:39:17.372 V/WindowManagerShell( 1135): onTransitionReady (#116) android.os.BinderProxy@5b9878: {id=116
+t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+  11-23 21:39:17.372 V/WindowManagerShell( 1135):         {m=TO_FRONT f=SHOW_WALLPAPER|MOVE_TO_TOP
+leash=Surface(name=Task=1)/@0x444ab51 sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0
+taskParent=-1},
+  11-23 21:39:17.372 V/WindowManagerShell( 1135):         {m=CLOSE f=NONE leash=Surface(name=Task=178)/@0xf15cfb6
+sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0 taskParent=-1},
+  11-23 21:39:17.372 V/WindowManagerShell( 1135):         {m=TO_FRONT f=IS_WALLPAPER
+leash=Surface(name=WallpaperWindowToken{90c6533 token=android.os.Binder@b1c64a2})/@0xe5714b7 sb=Rect(0, 0 - 1600, 900)
+eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0}
+  11-23 21:39:17.372 V/WindowManagerShell( 1135):     ]}
+  11-23 21:39:17.372 D/gralloc_kona(  698): gralloc_alloc: Creating ashmem region of size 5763072
+  11-23 21:39:17.372 V/WindowManagerShell( 1135): Playing animation for (#116) android.os.BinderProxy@5b9878@0
+  11-23 21:39:17.373 V/WindowManagerShell( 1135): loadAnimation: anim=android.view.animation.AnimationSet@bbe4553
+animAttr=0x11 type=CLOSE isEntrance=false
+  11-23 21:39:17.373 V/WindowManagerShell( 1135): loadAnimation: anim=android.view.animation.AnimationSet@f207389
+animAttr=0x10 type=CLOSE isEntrance=true
+  11-23 21:39:17.373 V/WindowManagerShell( 1135):  animated by
+com.android.wm.shell.transition.DefaultTransitionHandler@7f10580
+  11-23 21:39:17.375 V/WindowManager(  843): Sent Transition (#116) createdAt=11-23 21:39:16.519 via
+request=TransitionRequestInfo { type = CLOSE, triggerTask = null, pipChange = null, remoteTransition = null,
+displayChange = null, flags = 0, debugId = 116 }
+> 11-23 21:39:17.375 V/WindowManager(  843):     startWCT=WindowContainerTransaction { changes= {} hops= []
+errorCallbackToken=null taskFragmentOrganizer=null }
+  11-23 21:39:17.375 V/WindowManager(  843):     info={id=116 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[
+  11-23 21:39:17.375 V/WindowManager(  843):         {WCT{RemoteToken{8136107 Task{8b29f9 #1 type=home}}} m=TO_FRONT
+f=SHOW_WALLPAPER|MOVE_TO_TOP leash=Surface(name=Task=1)/@0x6e2bfa1 sb=Rect(0, 0 - 1600, 900) eb=Rect(0, 0 - 1600, 900)
+epz=Point(1600, 900) d=0 taskParent=-1},
+  11-23 21:39:17.375 V/WindowManager(  843):         {WCT{RemoteToken{b3a57ae Task{b1631b0 #178 type=standard
+A=10065:com.browser.dvnex0}}} m=CLOSE f=NONE leash=Surface(name=Task=178)/@0xc42085e sb=Rect(0, 0 - 1600, 900)
+eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0 taskParent=-1},
+  11-23 21:39:17.375 V/WindowManager(  843):         {m=TO_FRONT f=IS_WALLPAPER
+leash=Surface(name=WallpaperWindowToken{90c6533 token=android.os.Binder@b1c64a2})/@0xdbe813c sb=Rect(0, 0 - 1600, 900)
+eb=Rect(0, 0 - 1600, 900) epz=Point(1600, 900) d=0}
+  11-23 21:39:17.375 V/WindowManager(  843):     ]}
+  11-23 21:39:17.376 W/UserManagerService(  843): Requested status bar icon for non-badged user 0
+  11-23 21:39:17.378 V/WindowManagerShell( 1135): Transition animation finished (aborted=false), notifying core (#116)
+android.os.BinderProxy@5b9878@0
+  11-23 21:39:17.385 D/VRI[DVNexGoogleAuthActivity](12890): visibilityChanged oldVisibility=true newVisibility=false
+  11-23 21:39:17.385 V/WindowManager(  843): Finish Transition (#116): created at 11-23 21:39:16.519
+collect-started=0.015ms request-sent=0.038ms started=1.139ms ready=821.158ms sent=851.98ms finished=864.323ms
+  11-23 21:39:17.386 V/WindowManagerShell( 1135): Track 0 became idle
+  11-23 21:39:17.386 V/WindowManagerShell( 1135): All active transition animations finished
+  11-23 21:39:17.390 W/UserManagerService(  843): Requested status bar icon for non-badged user 0
+  11-23 21:39:17.395 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.396 W/UserManagerService(  843): Requested status bar icon for non-badged user 0
+  11-23 21:39:17.397 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:17.397 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@f7abd11
+> 11-23 21:39:17.397 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3b9d39f #u0a24/9206
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m37s72ms NET CHARGING READY}
+  11-23 21:39:17.398 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:17.398 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@dbd194d
+> 11-23 21:39:17.398 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f76391c #u0a24/9207
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m37s56ms IDLE READY}
+  11-23 21:39:17.400 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:17.400 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@d4efd49
+> 11-23 21:39:17.400 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e83e611 #u0a24/9208
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:+5d17h42m56s434ms NET READY}
+  11-23 21:39:17.401 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground }:
+user 0 is stopped
+  11-23 21:39:17.401 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@6012505
+> 11-23 21:39:17.401 E/JobScheduler.Concurrency(  843): Error executing JobStatus{91ae4b3 #u0a24/10175
+com.android.vending/com.google.android.finsky.scheduler.process.backgroundimpl.PhoneskyJobServiceBackground u=0
+s=10024 TIME=none:-34m36s387ms NET IDLE READY}
+  11-23 21:39:17.401 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:17.401 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@1f40c81
+> 11-23 21:39:17.401 E/JobScheduler.Concurrency(  843): Error executing JobStatus{9b0a816 #u0a24/9218
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024
+TIME=none:-34m36s104ms NET READY}
+  11-23 21:39:17.402 W/WindowOnBackDispatcher(12890): sendCancelIfRunning: isInProgress=false
+callback=android.view.ViewRootImpl$$ExternalSyntheticLambda13@2f1249c
+  11-23 21:39:17.402 D/ViewRootImpl(12890): Skipping stats log for color mode
+  11-23 21:39:17.402 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:17.402 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@2d3efbd
+  11-23 21:39:17.403 D/CoreBackPreview(  843): Window{d190b13 u0
+com.browser.dvnex0.authhelper/com.browser.dvnex0.auth.DVNexGoogleAuthActivity}: Setting back callback null
+> 11-23 21:39:17.403 E/JobScheduler.Concurrency(  843): Error executing JobStatus{2c7e8be #u0a61/115
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=none:-34m24s606ms READY}
+  11-23 21:39:17.403 E/JobServiceContext(  843): Binding died for com.android.vending but no running job on this
+context
+  11-23 21:39:17.403 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.403 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.403 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.403 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.403 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.403 W/JobScheduler.Concurrency(  843): Had fewer than 16 in existence
+  11-23 21:39:17.404 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:17.404 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@bbed0a
+> 11-23 21:39:17.404 E/JobScheduler.Concurrency(  843): Error executing JobStatus{a876204 #u0a61/112
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m45s80ms:-1h34m45s80ms PERSISTED READY}
+  11-23 21:39:17.405 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:17.405 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@7b3cfd6
+  11-23 21:39:17.405 D/BackgroundInstallControlService(  843): Package event received: 0
+> 11-23 21:39:17.406 E/JobScheduler.Concurrency(  843): Error executing JobStatus{e9a23ed #u0a61/107
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m45s81ms:-1h34m45s81ms NET PERSISTED READY}
+  11-23 21:39:17.406 W/ActivityManager(  843): Unable to launch app com.chrome.dev/10061 for service Intent {
+cmp=com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService }: user 0 is
+stopped
+  11-23 21:39:17.406 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@751362
+> 11-23 21:39:17.407 E/JobScheduler.Concurrency(  843): Error executing JobStatus{4e1b222 #u0a61/54
+com.chrome.dev/org.chromium.components.background_task_scheduler.internal.BackgroundTaskJobService u=0 s=10061
+TIME=-1h34m45s82ms:-1h34m45s82ms PERSISTED READY}
+  11-23 21:39:17.408 W/ActivityManager(  843): Unable to launch app com.google.android.syncadapters.calendar/10030 for
+service Intent { cmp=com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService
+}: user 0 is stopped
+  11-23 21:39:17.408 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@31503ae
+> 11-23 21:39:17.408 E/JobScheduler.Concurrency(  843): Error executing JobStatus{f7572cc #u0a30/6
+com.google.android.syncadapters.calendar/androidx.work.impl.background.systemjob.SystemJobService u=0 s=10030
+TIME=-1h33m27s618ms:none NET READY}
+  11-23 21:39:17.408 W/ActivityManager(  843): Unable to launch app com.google.android.play.games/10033 for service
+Intent { cmp=com.google.android.play.games/androidx.work.impl.background.systemjob.SystemJobService }: user 0 is
+stopped
+  11-23 21:39:17.408 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@1b1acba
+> 11-23 21:39:17.408 E/JobScheduler.Concurrency(  843): Error executing JobStatus{d475c1c
+androidx.work.systemjobscheduler:u0a33/12 @androidx.work.systemjobscheduler@com.google.android.play.games/androidx.work
+.impl.background.systemjob.SystemJobService u=0 s=10033 READY}
+  11-23 21:39:17.408 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain }: user 0 is
+stopped
+  11-23 21:39:17.408 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@3dda86
+> 11-23 21:39:17.408 E/JobScheduler.Concurrency(  843): Error executing JobStatus{3a7ef3e #u0a24/9217
+com.android.vending/com.google.android.finsky.scheduler.process.mainimpl.PhoneskyJobServiceMain u=0 s=10024 READY}
+  11-23 21:39:17.409 W/ActivityManager(  843): Unable to launch app com.android.vending/10024 for service Intent {
+cmp=com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService }: user 0 is stopped
+  11-23 21:39:17.409 W/ActivityManager(  843): Unbind failed: could not find connection for
+android.app.LoadedApk$ServiceDispatcher$InnerConnection@2a8109d
+> 11-23 21:39:17.409 E/JobScheduler.Concurrency(  843): Error executing JobStatus{35b6afb #u0a24/174406261
+com.android.vending/com.google.android.finsky.instantapps.PhenotypeUpdateService u=0 s=10024 TIME=none:-34m37s151ms
+READY}
+  11-23 21:39:17.409 E/JobServiceContext(  843): Binding died for com.chrome.dev but no running job on this context
+  11-23 21:39:17.419 I/DropBoxUtil( 1844): (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+  11-23 21:39:17.423 I/DropBoxUtil( 1844): (REDACTED) Reading dropbox entry with tag %s and timestamp %d
+  11-23 21:39:17.429 D/StrictMode(13369): StrictMode policy violation: android.os.strictmode.LeakedClosableViolation:
+A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding
+resource leaks. Callsite: close
+  11-23 21:39:17.429 D/StrictMode(13369):       at
+android.os.StrictMode$AndroidCloseGuardReporter.report(StrictMode.java:2061)
+  11-23 21:39:17.429 D/StrictMode(13369):       at dalvik.system.CloseGuard.warnIfOpen(CloseGuard.java:338)
+  11-23 21:39:17.429 D/StrictMode(13369):       at java.io.FileInputStream.finalize(FileInputStream.java:662)
+  11-23 21:39:17.429 D/StrictMode(13369):       at java.lang.Daemons$FinalizerDaemon.doFinalize(Daemons.java:387)
+  11-23 21:39:17.429 D/StrictMode(13369):       at java.lang.Daemons$FinalizerDaemon.processReference(Daemons.java:367)
+  11-23 21:39:17.429 D/StrictMode(13369):       at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:339)
+  11-23 21:39:17.429 D/StrictMode(13369):       at java.lang.Daemons$Daemon.run(Daemons.java:132)
+  11-23 21:39:17.429 D/StrictMode(13369):       at java.lang.Thread.run(Thread.java:1119)
+  11-23 21:39:17.433 D/StrictMode(13369):       at java.lang.Daemons$FinalizerDaemon.processReference(Daemons.java:367)
+  11-23 21:39:17.433 D/StrictMode(13369):       at java.lang.Daemons$FinalizerDaemon.runInternal(Daemons.java:339)
+  11-23 21:39:17.433 D/StrictMode(13369):       at java.lang.Daemons$Daemon.run(Daemons.java:132)
+  11-23 21:39:17.433 D/StrictMode(13369):       at java.lang.Thread.run(Thread.java:1119)
+> 11-23 21:39:17.433 D/StrictMode(13369): Caused by: java.lang.Throwable: Explicit termination method 'close' not
+called
+  11-23 21:39:17.433 D/StrictMode(13369):       at dalvik.system.CloseGuard.openWithCallSite(CloseGuard.java:288)
+  11-23 21:39:17.433 D/StrictMode(13369):       at dalvik.system.CloseGuard.open(CloseGuard.java:257)
+  11-23 21:39:17.433 D/StrictMode(13369):       at android.util.CloseGuard.open(CloseGuard.java:153)
+  11-23 21:39:17.433 D/StrictMode(13369):       at android.os.ParcelFileDescriptor.<init>(ParcelFileDescriptor.java:210)
+  11-23 21:39:17.433 D/StrictMode(13369):       at
+android.os.ParcelFileDescriptor$2.createFromParcel(ParcelFileDescriptor.java:1157)
+  11-23 21:39:17.433 D/StrictMode(13369):       at
+android.os.ParcelFileDescriptor$2.createFromParcel(ParcelFileDescriptor.java:1148)
+  11-23 21:39:17.433 D/StrictMode(13369):       at u57.createFromParcel(chromium-ChromePublic.apk-default-814400004:125)
+  11-23 21:39:17.433 D/StrictMode(13369):       at xc2.onTransact(chromium-ChromePublic.apk-default-814400004:64)
+  11-23 21:39:17.433 D/StrictMode(13369):       at android.os.Binder.execTransactInternal(Binder.java:1411)
+  11-23 21:39:17.433 D/StrictMode(13369):       at android.os.Binder.execTransact(Binder.java:1350)
+  11-23 21:39:17.443 W/ActivityTaskManager(  843): takeTaskSnapshot: taskId=131 not found or not visible
+  11-23 21:39:17.448 W/HWUI    (  843): Image decoding logging dropped!
